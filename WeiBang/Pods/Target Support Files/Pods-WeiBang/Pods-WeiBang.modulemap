@@ -1,0 +1,6 @@
+framework module Pods_WeiBang {
+  umbrella header "Pods-WeiBang-umbrella.h"
+
+  export *
+  module * { export * }
+}
