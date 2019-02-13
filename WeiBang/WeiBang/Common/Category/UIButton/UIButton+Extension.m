@@ -8,7 +8,7 @@
 
 #import "UIButton+Extension.h"
 #import <objc/runtime.h>
-#import <SDWebImage/UIButton+WebCache.h>
+
 static const void *UIButtonBlockKey = &UIButtonBlockKey;
 
 @implementation UIButton (Extension)

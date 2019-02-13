@@ -1,0 +1,53 @@
+//
+//  WBPrefixHeader.pch
+//  WeiBang
+//
+//  Created by tchzt on 2019/2/13.
+//  Copyright © 2019年 lkp. All rights reserved.
+//
+
+#ifndef WBPrefixHeader_pch
+#define WBPrefixHeader_pch
+
+///MARK:-常量
+#import "MacroConstantsHeader.h"
+#import "WBEnumHeader.h"
+#import "WBStaticConstant.h"
+
+///MARK:- 常用的头文件
+
+
+///MARK:- 组件类库
+#import <Masonry.h>
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import <MJRefresh.h>
+#import <YYModel.h>
+#import <IQKeyboardManager.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <SDCycleScrollView/SDCycleScrollView.h>
+
+///MARK:- category文件
+#import "UIView+MDFAnimation.h"
+#import "NSAttributedString+CalculateHeight.h"
+#import "NSData+Base64.h"
+#import "NSDate+Extension.h"
+#import "NSDecimalNumber+Quickly.h"
+#import "NSString+Base64.h"
+#import "NSString+Extenssion.h"
+#import "NSString+hash.h"
+#import "NSString+UUID.h"
+#import "UIBarButtonItem+WNXBarButtonItem.h"
+#import "UIButton+Extension.h"
+#import "UIButton+ImageAndTitle.h"
+#import "UIColor+Extension.h"
+#import "UILabel+Attribute.h"
+#import "UIScrollView+Extension.h"
+#import "UITableView+Extension.h"
+#import "UITableViewCell+Extension.h"
+#import "UITextView+Placeholder.h"
+#import "UIView+Extension.h"
+#import "UIViewController+Extension.h"
+
+#endif /* WBPrefixHeader_pch */

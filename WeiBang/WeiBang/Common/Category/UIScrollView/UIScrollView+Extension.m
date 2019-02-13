@@ -7,7 +7,7 @@
 //
 
 #import "UIScrollView+Extension.h"
-#import <MJRefresh/MJRefresh.h>
+
 
 #define KFontSize(A)  [UIFont systemFontOfSize: A]
 #define RGB(R,G,B)  [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0f]
