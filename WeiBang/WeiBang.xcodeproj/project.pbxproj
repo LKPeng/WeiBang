@@ -13,6 +13,7 @@
 		F216B959220412BB009B811D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B958220412BB009B811D /* main.m */; };
 		F216B963220412BB009B811D /* WeiBangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B962220412BB009B811D /* WeiBangTests.m */; };
 		F216B96E220412BB009B811D /* WeiBangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B96D220412BB009B811D /* WeiBangUITests.m */; };
+		F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */ = {isa = PBXBuildFile; fileRef = F23F69612215329300C2AE87 /* AppautoSizeScale.m */; };
 		F23F72142213E53600D42A02 /* WBStaticConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F23F72132213E53600D42A02 /* WBStaticConstant.m */; };
 		F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F992212A94D009C6BB9 /* WBGestureBaseController.m */; };
 		F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F9C2212A94D009C6BB9 /* WBNavigantionController.m */; };
@@ -78,6 +79,8 @@
 		F216B969220412BB009B811D /* WeiBangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiBangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B96D220412BB009B811D /* WeiBangUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiBangUITests.m; sourceTree = "<group>"; };
 		F216B96F220412BB009B811D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23F69612215329300C2AE87 /* AppautoSizeScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppautoSizeScale.m; sourceTree = "<group>"; };
+		F23F69622215329300C2AE87 /* AppautoSizeScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppautoSizeScale.h; sourceTree = "<group>"; };
 		F23F720F2213E14600D42A02 /* WBPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBPrefixHeader.pch; sourceTree = "<group>"; };
 		F23F72102213E4DC00D42A02 /* MacroConstantsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroConstantsHeader.h; sourceTree = "<group>"; };
 		F23F72112213E50400D42A02 /* WBEnumHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEnumHeader.h; sourceTree = "<group>"; };
@@ -522,6 +525,8 @@
 		F26F4FE02212A94D009C6BB9 /* HelperTool */ = {
 			isa = PBXGroup;
 			children = (
+				F23F69622215329300C2AE87 /* AppautoSizeScale.h */,
+				F23F69612215329300C2AE87 /* AppautoSizeScale.m */,
 			);
 			path = HelperTool;
 			sourceTree = "<group>";
@@ -872,6 +877,7 @@
 			files = (
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
+				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
 				F26F4FF52212A94D009C6BB9 /* UILabel+Attribute.m in Sources */,

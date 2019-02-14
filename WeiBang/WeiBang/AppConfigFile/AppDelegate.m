@@ -20,8 +20,16 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[WBTabBarController alloc] init];;
     
+    self.gestureBaseView = [[BBGestureBaseView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
+    [self.window insertSubview:self.gestureBaseView atIndex:0];
+    self.gestureBaseView.hidden = YES;
+    
     [self.window makeKeyAndVisible];
     return YES;
+}
+
++ (AppDelegate* )shareAppDelegate {
+    return (AppDelegate*)[UIApplication sharedApplication].delegate;
 }
 
 

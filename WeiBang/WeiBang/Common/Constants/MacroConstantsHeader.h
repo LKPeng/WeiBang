@@ -28,7 +28,6 @@
 #define kBaseURL @"http://www.abao.com:80/api"
 #endif
 
-#define kLaunchAdImageUrl @"http://39.108.128.90:81/cmsImages/358D1424F88E3A3AB5A5E3FCC1AC30D2.jpg"
 
 
 ///MARK-: 一些便捷的宏
@@ -46,8 +45,8 @@
 
 
 /// 字符串简单拼接用法
-#ifndef kWGB_STR
-#define kWGB_STR(str,...) [NSString stringWithFormat:str,##__VA_ARGS__]
+#ifndef WB_STR
+#define WB_STR(str,...) [NSString stringWithFormat:str,##__VA_ARGS__]
 #endif
 
 // 拨打电话
@@ -169,6 +168,11 @@ tmp;\
 #define KFontSize(A)  [UIFont systemFontOfSize: A]
 #define kFontBold(A)  [UIFont boldSystemFontOfSize:A]
 
+#define kSizeScale autoSizeScale()
+#define kSizeScale6 autoSizeScale6()
+#define kFontSize6(x) [UIFont systemFontOfSize: (x + 1.5) * kSizeScale6]
+#define kBoldFontSize6(x) [UIFont boldSystemFontOfSize: (x + 1.5) * kSizeScale6]
+
 ///MARK:- 布局与适配相关------------------------
 
 //获取view的frame
@@ -184,17 +188,6 @@ tmp;\
 #define KWIDTH  [[UIScreen mainScreen]bounds].size.width
 // 物理屏幕高度
 #define KHIGHT [[UIScreen mainScreen]bounds].size.height
-
-// 以iphone6为基准 宽度比例
-#define kIphone6ScaleWidth  (KWIDTH/375.0f)
-
-// 高度比例
-#define kIphone6ScaleHeight KHIGHT/667.0
-
-// 根据ip6的屏幕来拉伸
-#define kRateValue(with) ((with)*(KWIDTH/375.0f))
-
-
 
 // View 坐标(x,y)和宽高(width,height)
 #define X(v)               (v).frame.origin.x
@@ -219,7 +212,7 @@ tmp;\
 #define kTabBarHeight  ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
 
 #define IS_Iphone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-#define IS_Iphone_X  (IS_Iphone && KHIGHT == 812.0)
+#define IS_Iphone_X  ((int)([[UIScreen mainScreen] currentMode].size.height / [[UIScreen mainScreen] currentMode].size.width * 100) == 216)
 #define kBottomHeight IS_Iphone_X? 34 : 0
 
 
@@ -239,7 +232,6 @@ tmp;\
 
 #define IS_Iphone8p ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1080, 1920), [[UIScreen mainScreen] currentMode].size) : NO)
 
-#define IS_IphoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 
 
@@ -248,11 +240,6 @@ tmp;\
 #define RGB(R,G,B)  [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0f]
 //颜色 RGBA
 #define RGBA(R, G, B, A)   [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]\
-
-//NS_INLINE UIColor * kRGB(CGFloat red, CGFloat green, CGFloat blue)
-//{
-//    return [UIColor colorWithRed: red/255.f green: green/255.f blue: blue/255.f alpha: 1.0f];
-//}
 
 
 //十六进制颜色设置 hex是整型
@@ -266,34 +253,6 @@ tmp;\
 #define KRedColor  [UIColor redColor]
 //橙色
 #define KOrangeColor  [UIColor orangeColor]
-
-//字体颜色
-#define kTextColor      RGB(51,51,51)
-#define kTextLightColor RGB(102,102,102)
-#define kTextLightGrayColor RGB(153,153,153)
-#define kTextRedColor RGB(252,0,45)//红色
-//APP主色系(蓝色)
-#define kAppMainColor  RGB(43,163,252)
-
-//APP返回参数
-#define kAppError  @"error"
-#define kAppMsg @"msg"
-#define kAppResult  @"result"
-#define kAppStatus  @"status"
-
-//APP用户信息保存
-#define kAppMobile @"RNOL_mobile"            //电话
-#define kAppUserName @"RNOL_userName"        //名字
-#define kAppUserId @"RNOL_userId"            //userID
-#define kAppToken @"RNOL_token"              //token
-#define kAppInfo @"RNOL_info"              //用户信息
-// 底部背景颜色
-#define kBgColor RGB(245,245,245)
-#define kRedBagColor RGB(248,60,82)
-
-// 辅助色
-#define kAssistRedColor  RGB(252,89,114)
-#define kAssistGreenColor RGB(74,202,187)
 
 //随机色
 #define KRandomColor  [UIColor colorWithRed:arc4random()%256/255.0f green:arc4random()%256/255.0f  blue:arc4random()%256/255.0f alpha:1.0f]

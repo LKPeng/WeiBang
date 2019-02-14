@@ -15,7 +15,7 @@
 #import "WBStaticConstant.h"
 
 ///MARK:- 常用的头文件
-
+#import "WBGestureBaseController.h"
 
 ///MARK:- 组件类库
 #import <Masonry.h>

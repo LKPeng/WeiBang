@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface WBNavigantionController : UINavigationController
-
+@property (strong ,nonatomic) NSMutableArray *arrayScreenshot;
+@property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
 @end
