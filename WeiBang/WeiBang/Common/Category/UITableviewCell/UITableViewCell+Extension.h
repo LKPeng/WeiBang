@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface UITableViewCell (Extension)
+//复用ID
++ (NSString *)cellReuseID;
+
+//清除选中效果 选中背景
+- (void)cleanCellSelectBackgroundStyle;
+
 
 @end

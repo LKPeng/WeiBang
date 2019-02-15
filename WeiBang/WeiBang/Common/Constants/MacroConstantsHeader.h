@@ -241,7 +241,8 @@ tmp;\
 //颜色 RGBA
 #define RGBA(R, G, B, A)   [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]\
 
-
+//主色调
+#define kappMainColor RGB(240.0,240.0,240.0)
 //十六进制颜色设置 hex是整型
 #define kUIColorHex(hex) [UIColor colorWithHexString: hex]
 

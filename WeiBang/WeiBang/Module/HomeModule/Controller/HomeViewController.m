@@ -7,7 +7,7 @@
 //
 
 #import "HomeViewController.h"
-#import "ViewController.h"
+
 @interface HomeViewController ()
 
 @end
@@ -17,15 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIButton *sysBtn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    sysBtn.backgroundColor = [UIColor blueColor];
-    [sysBtn setTitle:@"sysPush" forState:UIControlStateNormal];
-    [sysBtn addTarget:self action:@selector(sysPushClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:sysBtn];
+    
+//    UIButton *sysBtn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    sysBtn.backgroundColor = [UIColor blueColor];
+//    [sysBtn setTitle:@"sysPush" forState:UIControlStateNormal];
+//    [sysBtn addTarget:self action:@selector(sysPushClick) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:sysBtn];
 }
--(void)sysPushClick{
-    [self.navigationController pushViewController:[ViewController new] animated:YES];
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

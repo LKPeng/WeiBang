@@ -110,7 +110,11 @@ static char bbListenTabbarViewMove[] = "bbListenTabbarViewMove";
 - (void)showEffectChange:(CGPoint)pt{
     
     if (pt.x > 0){
-        _maskView.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0 alpha:-pt.x / ([UIScreen mainScreen].bounds.size.width) * BBMaskingAlpha + BBMaskingAlpha];
+        _maskView.backgroundColor = [UIColor colorWithHue:0
+                                               saturation:0
+                                               brightness:0
+                                                    alpha:-pt.x / ([UIScreen mainScreen].bounds.size.width) * BBMaskingAlpha + BBMaskingAlpha];
+        
         _imgView.transform = CGAffineTransformMakeScale(BBWindowToScale + (pt.x / ([UIScreen mainScreen].bounds.size.width) * (1 - BBWindowToScale)), BBWindowToScale + (pt.x / ([UIScreen mainScreen].bounds.size.width) * (1 - BBWindowToScale)));
     }
     if (pt.x < 0){
@@ -121,7 +125,11 @@ static char bbListenTabbarViewMove[] = "bbListenTabbarViewMove";
 
 - (void)restore {
     if (_maskView && _imgView){
-        _maskView.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0 alpha:BBMaskingAlpha];
+        _maskView.backgroundColor = [UIColor colorWithHue:0
+                                               saturation:0
+                                               brightness:0
+                                                    alpha:BBMaskingAlpha];
+        
         _imgView.transform = CGAffineTransformMakeScale(BBWindowToScale, BBWindowToScale);
     }
 }
@@ -129,7 +137,9 @@ static char bbListenTabbarViewMove[] = "bbListenTabbarViewMove";
 
 
 - (void)screenShot{
+    
     AppDelegate *appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    
     UIGraphicsBeginImageContextWithOptions(CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height), YES, 0);
     [appDelegate.window.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();

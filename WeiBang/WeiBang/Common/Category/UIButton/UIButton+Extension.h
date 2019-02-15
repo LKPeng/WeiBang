@@ -12,8 +12,8 @@ typedef void(^buttonClickActionBlock)(NSInteger tagIndex);
 
 
 // 加载图片
-- (void)wgb_setImageWithUrlString:(NSString *)imageUrlStr placehoder:(NSString *)imageNameStr forState:(UIControlState )state;
-- (void)wgb_setBackgroundImageWithUrlString:(NSString *)imageUrlStr placehoder:(NSString *)imageNameStr forState:(UIControlState )state;
+- (void)wb_setImageWithUrlString:(NSString *)imageUrlStr placehoder:(NSString *)imageNameStr forState:(UIControlState )state;
+- (void)wb_setBackgroundImageWithUrlString:(NSString *)imageUrlStr placehoder:(NSString *)imageNameStr forState:(UIControlState )state;
 
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
 

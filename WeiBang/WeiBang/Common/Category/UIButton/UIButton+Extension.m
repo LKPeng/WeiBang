@@ -13,7 +13,7 @@ static const void *UIButtonBlockKey = &UIButtonBlockKey;
 
 @implementation UIButton (Extension)
 
-- (void)wgb_setImageWithUrlString:(NSString *)imageUrlStr placehoder:(NSString *)imageNameStr forState:(UIControlState )state{
+- (void)wb_setImageWithUrlString:(NSString *)imageUrlStr placehoder:(NSString *)imageNameStr forState:(UIControlState )state{
     if (!imageUrlStr.length) {
         return;
     }
@@ -28,7 +28,7 @@ static const void *UIButtonBlockKey = &UIButtonBlockKey;
 }
 
 
-- (void)wgb_setBackgroundImageWithUrlString:(NSString *)imageUrlStr placehoder:(NSString *)imageNameStr forState:(UIControlState )state{
+- (void)wb_setBackgroundImageWithUrlString:(NSString *)imageUrlStr placehoder:(NSString *)imageNameStr forState:(UIControlState )state{
     if (!imageUrlStr.length) {
         return;
     }

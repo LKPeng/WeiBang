@@ -16,6 +16,7 @@
 
 ///MARK:- 常用的头文件
 #import "WBGestureBaseController.h"
+#import "AppautoSizeScale.h"
 
 ///MARK:- 组件类库
 #import <Masonry.h>

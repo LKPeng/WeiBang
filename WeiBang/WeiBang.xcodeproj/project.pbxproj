@@ -15,6 +15,7 @@
 		F216B96E220412BB009B811D /* WeiBangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B96D220412BB009B811D /* WeiBangUITests.m */; };
 		F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */ = {isa = PBXBuildFile; fileRef = F23F69612215329300C2AE87 /* AppautoSizeScale.m */; };
 		F23F72142213E53600D42A02 /* WBStaticConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F23F72132213E53600D42A02 /* WBStaticConstant.m */; };
+		F25989C322164C1A00657F7A /* MeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F25989C222164C1A00657F7A /* MeHeadView.m */; };
 		F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F992212A94D009C6BB9 /* WBGestureBaseController.m */; };
 		F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F9C2212A94D009C6BB9 /* WBNavigantionController.m */; };
 		F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F9F2212A94D009C6BB9 /* WBTabBarController.m */; };
@@ -44,6 +45,11 @@
 		F26F503A2212A99E009C6BB9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F502A2212A99E009C6BB9 /* HomeViewController.m */; };
 		F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F50302212A99E009C6BB9 /* MeViewController.m */; };
 		F26F503C2212A99E009C6BB9 /* MsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F50362212A99E009C6BB9 /* MsgViewController.m */; };
+		F2D660712216602000943601 /* MeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F25989C222164C1A00657F7A /* MeHeadView.m */; };
+		F2D6607422166B7B00943601 /* MeHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6607322166B7B00943601 /* MeHeadCell.m */; };
+		F2D66077221699E300943601 /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D66076221699E300943601 /* MeTableViewCell.m */; };
+		F2D6607A2216A10A00943601 /* MeBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D660792216A10A00943601 /* MeBannerCell.m */; };
+		F2D6607E2216AB1400943601 /* MeCoinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6607C2216AB1400943601 /* MeCoinCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +92,8 @@
 		F23F72112213E50400D42A02 /* WBEnumHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEnumHeader.h; sourceTree = "<group>"; };
 		F23F72122213E53600D42A02 /* WBStaticConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBStaticConstant.h; sourceTree = "<group>"; };
 		F23F72132213E53600D42A02 /* WBStaticConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBStaticConstant.m; sourceTree = "<group>"; };
+		F25989C122164C1A00657F7A /* MeHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeHeadView.h; sourceTree = "<group>"; };
+		F25989C222164C1A00657F7A /* MeHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeHeadView.m; sourceTree = "<group>"; };
 		F26F4F982212A94D009C6BB9 /* WBGestureBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGestureBaseController.h; sourceTree = "<group>"; };
 		F26F4F992212A94D009C6BB9 /* WBGestureBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGestureBaseController.m; sourceTree = "<group>"; };
 		F26F4F9B2212A94D009C6BB9 /* WBNavigantionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNavigantionController.h; sourceTree = "<group>"; };
@@ -143,6 +151,14 @@
 		F26F50302212A99E009C6BB9 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		F26F50352212A99E009C6BB9 /* MsgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgViewController.h; sourceTree = "<group>"; };
 		F26F50362212A99E009C6BB9 /* MsgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgViewController.m; sourceTree = "<group>"; };
+		F2D6607222166B7B00943601 /* MeHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeHeadCell.h; sourceTree = "<group>"; };
+		F2D6607322166B7B00943601 /* MeHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeHeadCell.m; sourceTree = "<group>"; };
+		F2D66075221699E300943601 /* MeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
+		F2D66076221699E300943601 /* MeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
+		F2D660782216A10A00943601 /* MeBannerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeBannerCell.h; sourceTree = "<group>"; };
+		F2D660792216A10A00943601 /* MeBannerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeBannerCell.m; sourceTree = "<group>"; };
+		F2D6607B2216AB1400943601 /* MeCoinCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeCoinCell.h; sourceTree = "<group>"; };
+		F2D6607C2216AB1400943601 /* MeCoinCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeCoinCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +252,258 @@
 				F216B96F220412BB009B811D /* Info.plist */,
 			);
 			path = WeiBangUITests;
+			sourceTree = "<group>";
+		};
+		F23F696A22155BFC00C2AE87 /* Complaint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Complaint;
+			sourceTree = "<group>";
+		};
+		F23F696B22155BFC00C2AE87 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		F23F696C22155BFC00C2AE87 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		F23F696D22155BFC00C2AE87 /* Recharge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recharge;
+			sourceTree = "<group>";
+		};
+		F23F696E22155BFC00C2AE87 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		F23F696F22155BFC00C2AE87 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		F23F697022155BFC00C2AE87 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		F23F697122155BFD00C2AE87 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F23F697222155BFD00C2AE87 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		F23F697322155BFD00C2AE87 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		F23F697422155BFD00C2AE87 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		F23F697522155BFD00C2AE87 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		F23F697622155C0800C2AE87 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		F23F697722155C0800C2AE87 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		F23F697822155C0900C2AE87 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		F23F697922155C0900C2AE87 /* Recharge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recharge;
+			sourceTree = "<group>";
+		};
+		F23F697A22155C0900C2AE87 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		F23F697B22155C0900C2AE87 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		F23F697C22155C0900C2AE87 /* Complaint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Complaint;
+			sourceTree = "<group>";
+		};
+		F23F697D22155C0900C2AE87 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		F23F697E22155C0900C2AE87 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		F23F697F22155C0900C2AE87 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F23F698022155C0900C2AE87 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		F23F698122155C0900C2AE87 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		F23F698222155C1300C2AE87 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		F23F698322155C1300C2AE87 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		F23F698422155C1300C2AE87 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		F23F698522155C1400C2AE87 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		F23F698622155C1400C2AE87 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		F23F698722155C1400C2AE87 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		F23F698822155C1400C2AE87 /* Complaint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Complaint;
+			sourceTree = "<group>";
+		};
+		F23F698922155C1400C2AE87 /* Recharge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recharge;
+			sourceTree = "<group>";
+		};
+		F23F698A22155C1400C2AE87 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F23F698B22155C1400C2AE87 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		F23F698C22155C1400C2AE87 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		F23F698D22155C1400C2AE87 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		F26F4F2A22129F85009C6BB9 /* AppConfigFile */ = {
@@ -637,6 +905,18 @@
 			children = (
 				F26F502F2212A99E009C6BB9 /* MeViewController.h */,
 				F26F50302212A99E009C6BB9 /* MeViewController.m */,
+				F23F696B22155BFC00C2AE87 /* Album */,
+				F23F697322155BFD00C2AE87 /* Collection */,
+				F23F696A22155BFC00C2AE87 /* Complaint */,
+				F23F696F22155BFC00C2AE87 /* Dynamic */,
+				F23F697022155BFC00C2AE87 /* Follow */,
+				F23F696E22155BFC00C2AE87 /* Order */,
+				F23F697222155BFD00C2AE87 /* Personal */,
+				F23F696D22155BFC00C2AE87 /* Recharge */,
+				F23F697422155BFD00C2AE87 /* Recommend */,
+				F23F697522155BFD00C2AE87 /* Release */,
+				F23F697122155BFD00C2AE87 /* Service */,
+				F23F696C22155BFC00C2AE87 /* Setting */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -644,6 +924,18 @@
 		F26F50312212A99E009C6BB9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F23F698022155C0900C2AE87 /* Album */,
+				F23F697622155C0800C2AE87 /* Collection */,
+				F23F697C22155C0900C2AE87 /* Complaint */,
+				F23F697B22155C0900C2AE87 /* Dynamic */,
+				F23F697822155C0900C2AE87 /* Follow */,
+				F23F697E22155C0900C2AE87 /* Order */,
+				F23F697722155C0800C2AE87 /* Personal */,
+				F23F697922155C0900C2AE87 /* Recharge */,
+				F23F697D22155C0900C2AE87 /* Recommend */,
+				F23F698122155C0900C2AE87 /* Release */,
+				F23F697F22155C0900C2AE87 /* Service */,
+				F23F697A22155C0900C2AE87 /* Setting */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -651,6 +943,28 @@
 		F26F50322212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F25989C122164C1A00657F7A /* MeHeadView.h */,
+				F25989C222164C1A00657F7A /* MeHeadView.m */,
+				F2D6607222166B7B00943601 /* MeHeadCell.h */,
+				F2D6607322166B7B00943601 /* MeHeadCell.m */,
+				F2D66075221699E300943601 /* MeTableViewCell.h */,
+				F2D66076221699E300943601 /* MeTableViewCell.m */,
+				F2D660782216A10A00943601 /* MeBannerCell.h */,
+				F2D660792216A10A00943601 /* MeBannerCell.m */,
+				F2D6607B2216AB1400943601 /* MeCoinCell.h */,
+				F2D6607C2216AB1400943601 /* MeCoinCell.m */,
+				F23F698622155C1400C2AE87 /* Album */,
+				F23F698322155C1300C2AE87 /* Collection */,
+				F23F698822155C1400C2AE87 /* Complaint */,
+				F23F698222155C1300C2AE87 /* Dynamic */,
+				F23F698422155C1300C2AE87 /* Follow */,
+				F23F698522155C1400C2AE87 /* Order */,
+				F23F698C22155C1400C2AE87 /* Personal */,
+				F23F698922155C1400C2AE87 /* Recharge */,
+				F23F698B22155C1400C2AE87 /* Recommend */,
+				F23F698722155C1400C2AE87 /* Release */,
+				F23F698A22155C1400C2AE87 /* Service */,
+				F23F698D22155C1400C2AE87 /* Setting */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -876,6 +1190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
+				F2D6607422166B7B00943601 /* MeHeadCell.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
@@ -891,6 +1206,7 @@
 				F216B959220412BB009B811D /* main.m in Sources */,
 				F26F4FF72212A94D009C6BB9 /* UITableView+Extension.m in Sources */,
 				F26F4FF62212A94D009C6BB9 /* UIScrollView+Extension.m in Sources */,
+				F2D66077221699E300943601 /* MeTableViewCell.m in Sources */,
 				F26F4FF42212A94D009C6BB9 /* UIColor+Extension.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
@@ -899,15 +1215,18 @@
 				F26F4FED2212A94D009C6BB9 /* NSString+Extenssion.m in Sources */,
 				F26F4FFA2212A94D009C6BB9 /* UIView+Extension.m in Sources */,
 				F26F4FE72212A94D009C6BB9 /* UIView+MDFAnimation.m in Sources */,
+				F25989C322164C1A00657F7A /* MeHeadView.m in Sources */,
 				F26F4FE62212A94D009C6BB9 /* MDFAnimation.m in Sources */,
 				F23F72142213E53600D42A02 /* WBStaticConstant.m in Sources */,
 				F26F503A2212A99E009C6BB9 /* HomeViewController.m in Sources */,
+				F2D6607E2216AB1400943601 /* MeCoinCell.m in Sources */,
 				F216B94B220412B5009B811D /* AppDelegate.m in Sources */,
 				F26F4FE92212A94D009C6BB9 /* NSData+Base64.m in Sources */,
 				F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */,
 				F26F4FEE2212A94D009C6BB9 /* NSString+Hash.m in Sources */,
 				F26F4FF82212A94D009C6BB9 /* UITableViewCell+Extension.m in Sources */,
 				F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */,
+				F2D6607A2216A10A00943601 /* MeBannerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -923,6 +1242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D660712216602000943601 /* MeHeadView.m in Sources */,
 				F216B96E220412BB009B811D /* WeiBangUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1059,6 +1379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeiBang/Common/Constants/WBPrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/WeiBang/AppConfigFile/Info.plist";
@@ -1079,6 +1400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeiBang/Common/Constants/WBPrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/WeiBang/AppConfigFile/Info.plist";
