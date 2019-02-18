@@ -14,5 +14,4 @@ target 'WeiBang' do
     pod 'YYModel'
     pod 'SDCycleScrollView'
     pod 'SDWebImage'
-    
 end

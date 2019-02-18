@@ -50,5 +50,6 @@
 #import "UITextView+Placeholder.h"
 #import "UIView+Extension.h"
 #import "UIViewController+Extension.h"
+#import "MBProgressHUD+JJ.h"
 
 #endif /* WBPrefixHeader_pch */

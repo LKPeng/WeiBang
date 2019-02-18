@@ -82,11 +82,11 @@
     
 }
 
-- (void)pushAlbumBtn{
+- (void)pushAlbum{
     
 }
 
-- (void)pushCollectionBtn{
+- (void)pushCollection{
     
 }
 #pragma mark ----   懒加载  ----
@@ -98,9 +98,10 @@
         [_releaseBtn setTitle:@"我的发布" forState:UIControlStateNormal];
         [_releaseBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _releaseBtn.titleLabel.font = kFontSize6(13);
-        
+        weakself
         [_releaseBtn addButtonActionClickHandler:^(NSInteger tagIndex) {
-            
+            strongself
+            [strongSelf pushRelease];
         }];
     }
     return _releaseBtn;
@@ -113,6 +114,11 @@
         [_dynamicBtn setTitle:@"我的动态" forState:UIControlStateNormal];
         [_dynamicBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _dynamicBtn.titleLabel.font = kFontSize6(13);
+        weakself
+        [_dynamicBtn addButtonActionClickHandler:^(NSInteger tagIndex) {
+            strongself
+            [strongSelf pushDynamic];
+        }];
     }
     return _dynamicBtn;
 }
@@ -124,6 +130,11 @@
         [_albumBtn setTitle:@"我的相册" forState:UIControlStateNormal];
         [_albumBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _albumBtn.titleLabel.font = kFontSize6(13);
+        weakself
+        [_albumBtn addButtonActionClickHandler:^(NSInteger tagIndex) {
+            strongself
+            [strongSelf pushAlbum];
+        }];
     }
     return _albumBtn;
 }
@@ -135,6 +146,11 @@
         [_collectionBtn setTitle:@"我的收藏" forState:UIControlStateNormal];
         [_collectionBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _collectionBtn.titleLabel.font = kFontSize6(13);
+        weakself
+        [_collectionBtn addButtonActionClickHandler:^(NSInteger tagIndex) {
+            strongself
+            [strongSelf pushCollection];
+        }];
     }
     return _collectionBtn;
 }

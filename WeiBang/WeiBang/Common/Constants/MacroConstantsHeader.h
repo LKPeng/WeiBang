@@ -173,6 +173,10 @@ tmp;\
 #define kFontSize6(x) [UIFont systemFontOfSize: (x + 1.5) * kSizeScale6]
 #define kBoldFontSize6(x) [UIFont boldSystemFontOfSize: (x + 1.5) * kSizeScale6]
 
+//weakSelf,strongSelf
+#define weakself __weak __typeof(self)weakSelf = self;
+#define strongself __strong __typeof(weakSelf)strongSelf = weakSelf;
+
 ///MARK:- 布局与适配相关------------------------
 
 //获取view的frame

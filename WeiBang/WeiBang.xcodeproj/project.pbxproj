@@ -45,6 +45,17 @@
 		F26F503A2212A99E009C6BB9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F502A2212A99E009C6BB9 /* HomeViewController.m */; };
 		F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F50302212A99E009C6BB9 /* MeViewController.m */; };
 		F26F503C2212A99E009C6BB9 /* MsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F50362212A99E009C6BB9 /* MsgViewController.m */; };
+		F299D36A221A5E2C00727305 /* MBProgressHUD+JJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F299D369221A5E2C00727305 /* MBProgressHUD+JJ.m */; };
+		F299D37D221A7C2E00727305 /* PCCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = F299D370221A7C2E00727305 /* PCCircle.m */; };
+		F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F299D372221A7C2E00727305 /* PCCircleView.m */; };
+		F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F299D374221A7C2E00727305 /* PCCircleViewConst.m */; };
+		F299D380221A7C2E00727305 /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = F299D377221A7C2E00727305 /* CALayer+Anim.m */; };
+		F299D381221A7C2E00727305 /* PCCircleInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F299D37A221A7C2E00727305 /* PCCircleInfoView.m */; };
+		F299D382221A7C2E00727305 /* PCLockLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F299D37C221A7C2E00727305 /* PCLockLabel.m */; };
+		F299D38B221A7D8B00727305 /* GestureVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F299D389221A7D8B00727305 /* GestureVerifyViewController.m */; };
+		F299D38E221A7D9200727305 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F299D38D221A7D9200727305 /* GestureViewController.m */; };
+		F299D398221A87F700727305 /* WBSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F299D396221A87F700727305 /* WBSettingController.m */; };
+		F299D39C221A8C2100727305 /* WBSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F299D39B221A8C2100727305 /* WBSettingCell.m */; };
 		F2D660712216602000943601 /* MeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F25989C222164C1A00657F7A /* MeHeadView.m */; };
 		F2D6607422166B7B00943601 /* MeHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D6607322166B7B00943601 /* MeHeadCell.m */; };
 		F2D66077221699E300943601 /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D66076221699E300943601 /* MeTableViewCell.m */; };
@@ -151,6 +162,28 @@
 		F26F50302212A99E009C6BB9 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		F26F50352212A99E009C6BB9 /* MsgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgViewController.h; sourceTree = "<group>"; };
 		F26F50362212A99E009C6BB9 /* MsgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgViewController.m; sourceTree = "<group>"; };
+		F299D368221A5E2C00727305 /* MBProgressHUD+JJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JJ.h"; sourceTree = "<group>"; };
+		F299D369221A5E2C00727305 /* MBProgressHUD+JJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JJ.m"; sourceTree = "<group>"; };
+		F299D36F221A7C2E00727305 /* PCCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircle.h; sourceTree = "<group>"; };
+		F299D370221A7C2E00727305 /* PCCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircle.m; sourceTree = "<group>"; };
+		F299D371221A7C2E00727305 /* PCCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleView.h; sourceTree = "<group>"; };
+		F299D372221A7C2E00727305 /* PCCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleView.m; sourceTree = "<group>"; };
+		F299D373221A7C2E00727305 /* PCCircleViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleViewConst.h; sourceTree = "<group>"; };
+		F299D374221A7C2E00727305 /* PCCircleViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleViewConst.m; sourceTree = "<group>"; };
+		F299D376221A7C2E00727305 /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
+		F299D377221A7C2E00727305 /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
+		F299D379221A7C2E00727305 /* PCCircleInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleInfoView.h; sourceTree = "<group>"; };
+		F299D37A221A7C2E00727305 /* PCCircleInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleInfoView.m; sourceTree = "<group>"; };
+		F299D37B221A7C2E00727305 /* PCLockLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLockLabel.h; sourceTree = "<group>"; };
+		F299D37C221A7C2E00727305 /* PCLockLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLockLabel.m; sourceTree = "<group>"; };
+		F299D389221A7D8B00727305 /* GestureVerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVerifyViewController.m; sourceTree = "<group>"; };
+		F299D38A221A7D8B00727305 /* GestureVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVerifyViewController.h; sourceTree = "<group>"; };
+		F299D38C221A7D9200727305 /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
+		F299D38D221A7D9200727305 /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
+		F299D395221A87F700727305 /* WBSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBSettingController.h; sourceTree = "<group>"; };
+		F299D396221A87F700727305 /* WBSettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBSettingController.m; sourceTree = "<group>"; };
+		F299D39A221A8C2100727305 /* WBSettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBSettingCell.h; sourceTree = "<group>"; };
+		F299D39B221A8C2100727305 /* WBSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBSettingCell.m; sourceTree = "<group>"; };
 		F2D6607222166B7B00943601 /* MeHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeHeadCell.h; sourceTree = "<group>"; };
 		F2D6607322166B7B00943601 /* MeHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeHeadCell.m; sourceTree = "<group>"; };
 		F2D66075221699E300943601 /* MeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
@@ -271,6 +304,12 @@
 		F23F696C22155BFC00C2AE87 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				F299D395221A87F700727305 /* WBSettingController.h */,
+				F299D396221A87F700727305 /* WBSettingController.m */,
+				F299D38A221A7D8B00727305 /* GestureVerifyViewController.h */,
+				F299D389221A7D8B00727305 /* GestureVerifyViewController.m */,
+				F299D38C221A7D9200727305 /* GestureViewController.h */,
+				F299D38D221A7D9200727305 /* GestureViewController.m */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -502,6 +541,8 @@
 		F23F698D22155C1400C2AE87 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				F299D39A221A8C2100727305 /* WBSettingCell.h */,
+				F299D39B221A8C2100727305 /* WBSettingCell.m */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -605,6 +646,7 @@
 				F26F4FD52212A94D009C6BB9 /* UITextView+placehloder */,
 				F26F4FD82212A94D009C6BB9 /* UIView */,
 				F26F4FDB2212A94D009C6BB9 /* UIViewController */,
+				F299D367221A5E1E00727305 /* MBProgressHUD */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -809,6 +851,7 @@
 		F26F4FE22212A94D009C6BB9 /* ThirdLibs */ = {
 			isa = PBXGroup;
 			children = (
+				F299D36D221A7C2E00727305 /* PCGestureUnlock */,
 			);
 			path = ThirdLibs;
 			sourceTree = "<group>";
@@ -916,6 +959,7 @@
 				F23F697422155BFD00C2AE87 /* Recommend */,
 				F23F697522155BFD00C2AE87 /* Release */,
 				F23F697122155BFD00C2AE87 /* Service */,
+				F299D36B221A7BB900727305 /* Login */,
 				F23F696C22155BFC00C2AE87 /* Setting */,
 			);
 			path = Controller;
@@ -943,16 +987,7 @@
 		F26F50322212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F25989C122164C1A00657F7A /* MeHeadView.h */,
-				F25989C222164C1A00657F7A /* MeHeadView.m */,
-				F2D6607222166B7B00943601 /* MeHeadCell.h */,
-				F2D6607322166B7B00943601 /* MeHeadCell.m */,
-				F2D66075221699E300943601 /* MeTableViewCell.h */,
-				F2D66076221699E300943601 /* MeTableViewCell.m */,
-				F2D660782216A10A00943601 /* MeBannerCell.h */,
-				F2D660792216A10A00943601 /* MeBannerCell.m */,
-				F2D6607B2216AB1400943601 /* MeCoinCell.h */,
-				F2D6607C2216AB1400943601 /* MeCoinCell.m */,
+				F299D362221A54B600727305 /* MeViewController */,
 				F23F698622155C1400C2AE87 /* Album */,
 				F23F698322155C1300C2AE87 /* Collection */,
 				F23F698822155C1400C2AE87 /* Complaint */,
@@ -964,6 +999,7 @@
 				F23F698B22155C1400C2AE87 /* Recommend */,
 				F23F698722155C1400C2AE87 /* Release */,
 				F23F698A22155C1400C2AE87 /* Service */,
+				F299D36C221A7BCF00727305 /* Login */,
 				F23F698D22155C1400C2AE87 /* Setting */,
 			);
 			path = View;
@@ -998,6 +1034,89 @@
 		F26F50382212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F299D362221A54B600727305 /* MeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F25989C122164C1A00657F7A /* MeHeadView.h */,
+				F25989C222164C1A00657F7A /* MeHeadView.m */,
+				F2D6607222166B7B00943601 /* MeHeadCell.h */,
+				F2D6607322166B7B00943601 /* MeHeadCell.m */,
+				F2D66075221699E300943601 /* MeTableViewCell.h */,
+				F2D66076221699E300943601 /* MeTableViewCell.m */,
+				F2D660782216A10A00943601 /* MeBannerCell.h */,
+				F2D660792216A10A00943601 /* MeBannerCell.m */,
+				F2D6607B2216AB1400943601 /* MeCoinCell.h */,
+				F2D6607C2216AB1400943601 /* MeCoinCell.m */,
+			);
+			path = MeViewController;
+			sourceTree = "<group>";
+		};
+		F299D367221A5E1E00727305 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F299D368221A5E2C00727305 /* MBProgressHUD+JJ.h */,
+				F299D369221A5E2C00727305 /* MBProgressHUD+JJ.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		F299D36B221A7BB900727305 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F299D36C221A7BCF00727305 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F299D36D221A7C2E00727305 /* PCGestureUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				F299D36E221A7C2E00727305 /* FrameWork */,
+				F299D375221A7C2E00727305 /* Gategory */,
+				F299D378221A7C2E00727305 /* View */,
+			);
+			path = PCGestureUnlock;
+			sourceTree = "<group>";
+		};
+		F299D36E221A7C2E00727305 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				F299D36F221A7C2E00727305 /* PCCircle.h */,
+				F299D370221A7C2E00727305 /* PCCircle.m */,
+				F299D371221A7C2E00727305 /* PCCircleView.h */,
+				F299D372221A7C2E00727305 /* PCCircleView.m */,
+				F299D373221A7C2E00727305 /* PCCircleViewConst.h */,
+				F299D374221A7C2E00727305 /* PCCircleViewConst.m */,
+			);
+			path = FrameWork;
+			sourceTree = "<group>";
+		};
+		F299D375221A7C2E00727305 /* Gategory */ = {
+			isa = PBXGroup;
+			children = (
+				F299D376221A7C2E00727305 /* CALayer+Anim.h */,
+				F299D377221A7C2E00727305 /* CALayer+Anim.m */,
+			);
+			path = Gategory;
+			sourceTree = "<group>";
+		};
+		F299D378221A7C2E00727305 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F299D379221A7C2E00727305 /* PCCircleInfoView.h */,
+				F299D37A221A7C2E00727305 /* PCCircleInfoView.m */,
+				F299D37B221A7C2E00727305 /* PCLockLabel.h */,
+				F299D37C221A7C2E00727305 /* PCLockLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1190,8 +1309,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
+				F299D38E221A7D9200727305 /* GestureViewController.m in Sources */,
+				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
 				F2D6607422166B7B00943601 /* MeHeadCell.m in Sources */,
+				F299D37D221A7C2E00727305 /* PCCircle.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
+				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
@@ -1203,11 +1326,16 @@
 				F26F4FEA2212A94D009C6BB9 /* NSDate+Extension.m in Sources */,
 				F26F4FF12212A94D009C6BB9 /* UIBarButtonItem+WNXBarButtonItem.m in Sources */,
 				F26F4FF32212A94D009C6BB9 /* UIButton+ImageAndTitle.m in Sources */,
+				F299D382221A7C2E00727305 /* PCLockLabel.m in Sources */,
+				F299D381221A7C2E00727305 /* PCCircleInfoView.m in Sources */,
 				F216B959220412BB009B811D /* main.m in Sources */,
 				F26F4FF72212A94D009C6BB9 /* UITableView+Extension.m in Sources */,
+				F299D38B221A7D8B00727305 /* GestureVerifyViewController.m in Sources */,
 				F26F4FF62212A94D009C6BB9 /* UIScrollView+Extension.m in Sources */,
 				F2D66077221699E300943601 /* MeTableViewCell.m in Sources */,
+				F299D36A221A5E2C00727305 /* MBProgressHUD+JJ.m in Sources */,
 				F26F4FF42212A94D009C6BB9 /* UIColor+Extension.m in Sources */,
+				F299D398221A87F700727305 /* WBSettingController.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
 				F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */,
@@ -1218,12 +1346,14 @@
 				F25989C322164C1A00657F7A /* MeHeadView.m in Sources */,
 				F26F4FE62212A94D009C6BB9 /* MDFAnimation.m in Sources */,
 				F23F72142213E53600D42A02 /* WBStaticConstant.m in Sources */,
+				F299D380221A7C2E00727305 /* CALayer+Anim.m in Sources */,
 				F26F503A2212A99E009C6BB9 /* HomeViewController.m in Sources */,
 				F2D6607E2216AB1400943601 /* MeCoinCell.m in Sources */,
 				F216B94B220412B5009B811D /* AppDelegate.m in Sources */,
 				F26F4FE92212A94D009C6BB9 /* NSData+Base64.m in Sources */,
 				F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */,
 				F26F4FEE2212A94D009C6BB9 /* NSString+Hash.m in Sources */,
+				F299D39C221A8C2100727305 /* WBSettingCell.m in Sources */,
 				F26F4FF82212A94D009C6BB9 /* UITableViewCell+Extension.m in Sources */,
 				F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */,
 				F2D6607A2216A10A00943601 /* MeBannerCell.m in Sources */,
@@ -1390,6 +1520,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lkp.WeiBang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1411,6 +1542,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lkp.WeiBang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

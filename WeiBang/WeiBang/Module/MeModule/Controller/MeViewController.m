@@ -14,6 +14,8 @@
 #import "MeBannerCell.h"
 #import "MeCoinCell.h"
 
+#import "WBSettingController.h"
+
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
@@ -119,8 +121,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *title = self.dataSource[indexPath.row];
-    if (kCompareTwoString(title, @"我的推荐人")) {
+    NSString *title = self.dataSource[indexPath.row - 3];
+    if (kCompareTwoString(title, @"设置")) {
+        WBSettingController *setting = [[WBSettingController alloc]init];
+        [self.navigationController pushViewController:setting animated:YES];
+        
     }else if (kCompareTwoString(title, @"当面邀友")) {
         
     }else if (kCompareTwoString(title, @"分享邀友")) {
