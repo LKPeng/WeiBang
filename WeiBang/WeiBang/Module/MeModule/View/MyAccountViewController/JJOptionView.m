@@ -167,7 +167,7 @@ static CGFloat const rowheight = 42;
 - (UILabel *)titleLabel1 {
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
-        _titleLabel.text = @"请选择选项";
+        _titleLabel.text = @"类型 ↓";
         _titleLabel.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
         _titleLabel.font = [UIFont systemFontOfSize:16];
     }
@@ -177,7 +177,7 @@ static CGFloat const rowheight = 42;
 - (UILabel *)titleLabel2 {
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
-        _titleLabel.text = @"请选择选项";
+        _titleLabel.text = @"期限 ↓";
         _titleLabel.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
         _titleLabel.font = [UIFont systemFontOfSize:16];
     }
@@ -187,7 +187,7 @@ static CGFloat const rowheight = 42;
 - (UILabel *)titleLabel3 {
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
-        _titleLabel.text = @"请选择选项";
+        _titleLabel.text = @"状态 ↓";
         _titleLabel.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
         _titleLabel.font = [UIFont systemFontOfSize:16];
     }
