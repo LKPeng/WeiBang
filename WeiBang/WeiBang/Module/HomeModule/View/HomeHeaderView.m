@@ -17,7 +17,7 @@
 @property(strong,nonatomic) UIButton *loanButton;
 @property(strong,nonatomic) UIButton *userButton;
 @property(strong,nonatomic) UIButton *newsButton;
-
+@property(strong,nonatomic) UIImageView *centerImageView;
 @end
 
 @implementation HomeHeaderView
@@ -38,6 +38,15 @@
     [self addSubview:self.loanButton];
     [self addSubview:self.userButton];
     [self addSubview:self.newsButton];
+    [self addSubview:self.centerImageView];
+    UIImageView *icon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"love.png"]];
+    icon.frame = CGRectMake(KWIDTH*0.5-scaleX(22), CGRectGetMaxY(self.centerImageView.frame)+scaleX(5), scaleX(12), scaleX(12));
+    [self addSubview:icon];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(KWIDTH*0.5-scaleX(5), CGRectGetMaxY(self.centerImageView.frame)+scaleX(2), KWIDTH*0.4, scaleX(16))];
+    label.text = @"推荐项目";
+    label.textColor = [UIColor blackColor];
+    label.font = [UIFont systemFontOfSize:scaleX(12)];
+    [self addSubview:label];
 }
 
 - (PlanADScrollView *)bannerView{
@@ -95,4 +104,13 @@
     }
     return _newsButton;
 }
+
+- (UIImageView *)centerImageView{
+    if (!_centerImageView) {
+        _centerImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"1.jpg"]];
+        _centerImageView.frame = CGRectMake(0, CGRectGetMaxY(self.userButton.frame), KWIDTH, scaleX(140));
+    }
+    return _centerImageView;
+}
+
 @end

@@ -62,7 +62,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         
-        HomeHeaderView *headerView = [[HomeHeaderView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleX(275))];
+        HomeHeaderView *headerView = [[HomeHeaderView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleX(435))];
         _tableView.tableHeaderView = headerView;
         _tableView.tableFooterView = [UIView new];
         [_tableView regsiterCellWithCellClass:[HomeTableViewCell class] isNib:NO];
