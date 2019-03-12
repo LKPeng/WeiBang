@@ -23,8 +23,6 @@
     self.gestureBaseView = [[BBGestureBaseView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
     [self.window insertSubview:self.gestureBaseView atIndex:0];
     self.gestureBaseView.hidden = YES;
-    ///sdfsdfjs
-    ////sdfsdfsdfsd
     [self.window makeKeyAndVisible];
     return YES;
 }

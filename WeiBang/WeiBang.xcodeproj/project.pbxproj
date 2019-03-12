@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A025107722373E3500E0A2AA /* MyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A025107622373E3500E0A2AA /* MyAccountViewController.m */; };
+		A025107F223741D600E0A2AA /* AccountOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A025107E223741D600E0A2AA /* AccountOperationTableViewCell.m */; };
+		A0251082223745CB00E0A2AA /* AccountItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0251081223745CB00E0A2AA /* AccountItemTableViewCell.m */; };
+		A02510852237573B00E0A2AA /* MyAccountHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510842237573B00E0A2AA /* MyAccountHeaderView.m */; };
+		A0251088223785C400E0A2AA /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0251087223785C400E0A2AA /* ProgressView.m */; };
+		A025108C223789D100E0A2AA /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A025108B223789D100E0A2AA /* HomeTableViewCell.m */; };
+		A025109122379D3E00E0A2AA /* HomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A025109022379D3E00E0A2AA /* HomeHeaderView.m */; };
+		A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510952237A05200E0A2AA /* PlanPageControl.m */; };
+		A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510962237A05200E0A2AA /* PlanADScrollView.m */; };
+		A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */; };
+		A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */; };
 		D5E9A4519650E96C703ECB0F /* Pods_WeiBang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */; };
 		F216B94B220412B5009B811D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B94A220412B5009B811D /* AppDelegate.m */; };
 		F216B953220412BB009B811D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F216B952220412BB009B811D /* Assets.xcassets */; };
@@ -83,6 +94,28 @@
 /* Begin PBXFileReference section */
 		31F2A15441CF236127A7E51B /* Pods-WeiBang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.release.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.release.xcconfig"; sourceTree = "<group>"; };
 		9AF203E0899EEC02D8792DAE /* Pods-WeiBang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.debug.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.debug.xcconfig"; sourceTree = "<group>"; };
+		A025107522373E3500E0A2AA /* MyAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAccountViewController.h; sourceTree = "<group>"; };
+		A025107622373E3500E0A2AA /* MyAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAccountViewController.m; sourceTree = "<group>"; };
+		A025107D223741D600E0A2AA /* AccountOperationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountOperationTableViewCell.h; sourceTree = "<group>"; };
+		A025107E223741D600E0A2AA /* AccountOperationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountOperationTableViewCell.m; sourceTree = "<group>"; };
+		A0251080223745CB00E0A2AA /* AccountItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountItemTableViewCell.h; sourceTree = "<group>"; };
+		A0251081223745CB00E0A2AA /* AccountItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountItemTableViewCell.m; sourceTree = "<group>"; };
+		A02510832237573B00E0A2AA /* MyAccountHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAccountHeaderView.h; sourceTree = "<group>"; };
+		A02510842237573B00E0A2AA /* MyAccountHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAccountHeaderView.m; sourceTree = "<group>"; };
+		A0251086223785C400E0A2AA /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		A0251087223785C400E0A2AA /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		A025108A223789D100E0A2AA /* HomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		A025108B223789D100E0A2AA /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		A025108F22379D3E00E0A2AA /* HomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeHeaderView.h; sourceTree = "<group>"; };
+		A025109022379D3E00E0A2AA /* HomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderView.m; sourceTree = "<group>"; };
+		A02510932237A05200E0A2AA /* PlanADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADScrollView.h; sourceTree = "<group>"; };
+		A02510942237A05200E0A2AA /* PlanADCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADCollectionViewCell.h; sourceTree = "<group>"; };
+		A02510952237A05200E0A2AA /* PlanPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanPageControl.m; sourceTree = "<group>"; };
+		A02510962237A05200E0A2AA /* PlanADScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanADScrollView.m; sourceTree = "<group>"; };
+		A02510972237A05200E0A2AA /* PlanPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanPageControl.h; sourceTree = "<group>"; };
+		A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanADCollectionViewCell.m; sourceTree = "<group>"; };
+		A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOLHomeNoticeView.m; sourceTree = "<group>"; };
+		A025109E2237A33500E0A2AA /* RNOLHomeNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOLHomeNoticeView.h; sourceTree = "<group>"; };
 		B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiBang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B946220412B5009B811D /* WeiBang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B949220412B5009B811D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -226,6 +259,41 @@
 				B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A02510892237862700E0A2AA /* MyAccountViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A025107D223741D600E0A2AA /* AccountOperationTableViewCell.h */,
+				A025107E223741D600E0A2AA /* AccountOperationTableViewCell.m */,
+				A0251080223745CB00E0A2AA /* AccountItemTableViewCell.h */,
+				A0251081223745CB00E0A2AA /* AccountItemTableViewCell.m */,
+				A02510832237573B00E0A2AA /* MyAccountHeaderView.h */,
+				A02510842237573B00E0A2AA /* MyAccountHeaderView.m */,
+			);
+			path = MyAccountViewController;
+			sourceTree = "<group>";
+		};
+		A02510922237A05200E0A2AA /* PlanADScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				A02510932237A05200E0A2AA /* PlanADScrollView.h */,
+				A02510942237A05200E0A2AA /* PlanADCollectionViewCell.h */,
+				A02510952237A05200E0A2AA /* PlanPageControl.m */,
+				A02510962237A05200E0A2AA /* PlanADScrollView.m */,
+				A02510972237A05200E0A2AA /* PlanPageControl.h */,
+				A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */,
+			);
+			path = PlanADScrollView;
+			sourceTree = "<group>";
+		};
+		A025109C2237A33500E0A2AA /* NoticeView */ = {
+			isa = PBXGroup;
+			children = (
+				A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */,
+				A025109E2237A33500E0A2AA /* RNOLHomeNoticeView.h */,
+			);
+			path = NoticeView;
 			sourceTree = "<group>";
 		};
 		AD87216239263BC406F97D25 /* Pods */ = {
@@ -929,6 +997,14 @@
 		F26F502C2212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A025109C2237A33500E0A2AA /* NoticeView */,
+				A02510922237A05200E0A2AA /* PlanADScrollView */,
+				A0251086223785C400E0A2AA /* ProgressView.h */,
+				A0251087223785C400E0A2AA /* ProgressView.m */,
+				A025108A223789D100E0A2AA /* HomeTableViewCell.h */,
+				A025108B223789D100E0A2AA /* HomeTableViewCell.m */,
+				A025108F22379D3E00E0A2AA /* HomeHeaderView.h */,
+				A025109022379D3E00E0A2AA /* HomeHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -948,6 +1024,8 @@
 			children = (
 				F26F502F2212A99E009C6BB9 /* MeViewController.h */,
 				F26F50302212A99E009C6BB9 /* MeViewController.m */,
+				A025107522373E3500E0A2AA /* MyAccountViewController.h */,
+				A025107622373E3500E0A2AA /* MyAccountViewController.m */,
 				F23F696B22155BFC00C2AE87 /* Album */,
 				F23F697322155BFD00C2AE87 /* Collection */,
 				F23F696A22155BFC00C2AE87 /* Complaint */,
@@ -987,6 +1065,7 @@
 		F26F50322212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A02510892237862700E0A2AA /* MyAccountViewController */,
 				F299D362221A54B600727305 /* MeViewController */,
 				F23F698622155C1400C2AE87 /* Album */,
 				F23F698322155C1300C2AE87 /* Collection */,
@@ -1312,24 +1391,32 @@
 				F299D38E221A7D9200727305 /* GestureViewController.m in Sources */,
 				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
 				F2D6607422166B7B00943601 /* MeHeadCell.m in Sources */,
+				A025107722373E3500E0A2AA /* MyAccountViewController.m in Sources */,
 				F299D37D221A7C2E00727305 /* PCCircle.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
 				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
+				A0251088223785C400E0A2AA /* ProgressView.m in Sources */,
+				A02510852237573B00E0A2AA /* MyAccountHeaderView.m in Sources */,
 				F26F4FF52212A94D009C6BB9 /* UILabel+Attribute.m in Sources */,
 				F26F4FEC2212A94D009C6BB9 /* NSString+Base64.m in Sources */,
 				F26F4FE82212A94D009C6BB9 /* NSAttributedString+CalculateHeight.m in Sources */,
 				F26F4FEB2212A94D009C6BB9 /* NSDecimalNumber+Quickly.m in Sources */,
 				F26F4FEF2212A94D009C6BB9 /* NSString+UUID.m in Sources */,
+				A0251082223745CB00E0A2AA /* AccountItemTableViewCell.m in Sources */,
 				F26F4FEA2212A94D009C6BB9 /* NSDate+Extension.m in Sources */,
+				A025107F223741D600E0A2AA /* AccountOperationTableViewCell.m in Sources */,
 				F26F4FF12212A94D009C6BB9 /* UIBarButtonItem+WNXBarButtonItem.m in Sources */,
 				F26F4FF32212A94D009C6BB9 /* UIButton+ImageAndTitle.m in Sources */,
 				F299D382221A7C2E00727305 /* PCLockLabel.m in Sources */,
+				A025109122379D3E00E0A2AA /* HomeHeaderView.m in Sources */,
 				F299D381221A7C2E00727305 /* PCCircleInfoView.m in Sources */,
+				A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */,
 				F216B959220412BB009B811D /* main.m in Sources */,
 				F26F4FF72212A94D009C6BB9 /* UITableView+Extension.m in Sources */,
+				A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */,
 				F299D38B221A7D8B00727305 /* GestureVerifyViewController.m in Sources */,
 				F26F4FF62212A94D009C6BB9 /* UIScrollView+Extension.m in Sources */,
 				F2D66077221699E300943601 /* MeTableViewCell.m in Sources */,
@@ -1350,11 +1437,14 @@
 				F26F503A2212A99E009C6BB9 /* HomeViewController.m in Sources */,
 				F2D6607E2216AB1400943601 /* MeCoinCell.m in Sources */,
 				F216B94B220412B5009B811D /* AppDelegate.m in Sources */,
+				A025108C223789D100E0A2AA /* HomeTableViewCell.m in Sources */,
 				F26F4FE92212A94D009C6BB9 /* NSData+Base64.m in Sources */,
 				F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */,
 				F26F4FEE2212A94D009C6BB9 /* NSString+Hash.m in Sources */,
 				F299D39C221A8C2100727305 /* WBSettingCell.m in Sources */,
 				F26F4FF82212A94D009C6BB9 /* UITableViewCell+Extension.m in Sources */,
+				A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */,
+				A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */,
 				F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */,
 				F2D6607A2216A10A00943601 /* MeBannerCell.m in Sources */,
 			);

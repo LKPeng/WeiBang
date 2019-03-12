@@ -12,6 +12,7 @@
 #import "MsgViewController.h"
 #import "DiscoverViewController.h"
 #import "MeViewController.h"
+#import "MyAccountViewController.h"
 
 #import "WBNavigantionController.h"
 
@@ -37,7 +38,7 @@
     DiscoverViewController *discover = [[DiscoverViewController alloc] init];
     [self setUpOneChildViewController:discover image:[UIImage imageNamed:@"TabBarUserNormal"] selectedImage:[UIImage imageNamed:@"TabBarUserSelected"] title:@"User"];
     
-    MeViewController *me = [[MeViewController alloc] init];
+    MyAccountViewController *me = [[MyAccountViewController alloc] init];
     [self setUpOneChildViewController:me image:[UIImage imageNamed:@"TabBarUserNormal"] selectedImage:[UIImage imageNamed:@"TabBarUserSelected"] title:@"User"];
 }
 - (void)setUpOneChildViewController:(UIViewController *)vc image:(UIImage *)image selectedImage:(UIImage *)selectedImage title:(NSString *)title {
