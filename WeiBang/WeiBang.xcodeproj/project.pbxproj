@@ -18,6 +18,7 @@
 		A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510962237A05200E0A2AA /* PlanADScrollView.m */; };
 		A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */; };
 		A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */; };
+		A02510A22237CF0500E0A2AA /* JJOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510A02237CF0500E0A2AA /* JJOptionView.m */; };
 		D5E9A4519650E96C703ECB0F /* Pods_WeiBang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */; };
 		F216B94B220412B5009B811D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B94A220412B5009B811D /* AppDelegate.m */; };
 		F216B953220412BB009B811D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F216B952220412BB009B811D /* Assets.xcassets */; };
@@ -116,6 +117,8 @@
 		A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanADCollectionViewCell.m; sourceTree = "<group>"; };
 		A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOLHomeNoticeView.m; sourceTree = "<group>"; };
 		A025109E2237A33500E0A2AA /* RNOLHomeNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOLHomeNoticeView.h; sourceTree = "<group>"; };
+		A02510A02237CF0500E0A2AA /* JJOptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJOptionView.m; sourceTree = "<group>"; };
+		A02510A12237CF0500E0A2AA /* JJOptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJOptionView.h; sourceTree = "<group>"; };
 		B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiBang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B946220412B5009B811D /* WeiBang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B949220412B5009B811D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -264,6 +267,8 @@
 		A02510892237862700E0A2AA /* MyAccountViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A02510A12237CF0500E0A2AA /* JJOptionView.h */,
+				A02510A02237CF0500E0A2AA /* JJOptionView.m */,
 				A025107D223741D600E0A2AA /* AccountOperationTableViewCell.h */,
 				A025107E223741D600E0A2AA /* AccountOperationTableViewCell.m */,
 				A0251080223745CB00E0A2AA /* AccountItemTableViewCell.h */,
@@ -1387,6 +1392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A02510A22237CF0500E0A2AA /* JJOptionView.m in Sources */,
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
 				F299D38E221A7D9200727305 /* GestureViewController.m in Sources */,
 				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
