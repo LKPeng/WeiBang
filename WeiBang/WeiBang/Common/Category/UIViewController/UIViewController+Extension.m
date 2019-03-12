@@ -12,7 +12,7 @@
 
 - (void)setupNavBarTitleViewWithText:(NSString *)text {
     UILabel *titleLable = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 35)];
-    titleLable.textColor = [UIColor blackColor];
+    titleLable.textColor = [UIColor whiteColor];
     titleLable.font = KFontSize(17);
     titleLable.text = text;
     titleLable.textAlignment = NSTextAlignmentCenter;

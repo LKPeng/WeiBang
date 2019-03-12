@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class NewsBulletinModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NewsBulletinCell : UITableViewCell
+
+@property(nonatomic, strong) NewsBulletinModel *model;
 
 @end
 

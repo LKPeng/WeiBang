@@ -262,8 +262,9 @@ tmp;\
 //随机色
 #define KRandomColor  [UIColor colorWithRed:arc4random()%256/255.0f green:arc4random()%256/255.0f  blue:arc4random()%256/255.0f alpha:1.0f]
 
-
-
+//下横线颜色
+#define kappLineColor RGB(249, 249, 249)
+#define kappRed RGB(238,61,61)
 ///MARK:- property属性快速声明
 // 字符串属性
 #define PropertyString(s) \

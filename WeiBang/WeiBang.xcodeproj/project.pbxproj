@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AFF01592237D172007865AF /* MeLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01582237D172007865AF /* MeLoginController.m */; };
+		2AFF015C2237D1DE007865AF /* TemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF015A2237D1DD007865AF /* TemplateView.m */; };
+		2AFF01622237E316007865AF /* NewsBulletinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01612237E316007865AF /* NewsBulletinModel.m */; };
+		2AFF016B2237E3FF007865AF /* InvestInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01682237E3FF007865AF /* InvestInfoView.m */; };
+		2AFF016C2237E3FF007865AF /* InvestContectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01692237E3FF007865AF /* InvestContectView.m */; };
+		2AFF016F2237E4B5007865AF /* MeRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF016E2237E4B5007865AF /* MeRegisterController.m */; };
+		2AFF01722237E5FA007865AF /* VerificationCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01712237E5FA007865AF /* VerificationCodeView.m */; };
+		2AFF01752237E81A007865AF /* MeForgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01742237E81A007865AF /* MeForgetController.m */; };
+		2AFF01782237EAA9007865AF /* InvestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01772237EAA9007865AF /* InvestController.m */; };
+		2AFF017B2237EB38007865AF /* InvestHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF017A2237EB38007865AF /* InvestHeadView.m */; };
+		2AFF017E2237EC45007865AF /* NewsBulletinControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF017C2237EC45007865AF /* NewsBulletinControllerViewController.m */; };
+		2AFF01812237ECF4007865AF /* NewsBulletinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01802237ECF4007865AF /* NewsBulletinCell.m */; };
 		A025107722373E3500E0A2AA /* MyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A025107622373E3500E0A2AA /* MyAccountViewController.m */; };
 		A025107F223741D600E0A2AA /* AccountOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A025107E223741D600E0A2AA /* AccountOperationTableViewCell.m */; };
 		A0251082223745CB00E0A2AA /* AccountItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0251081223745CB00E0A2AA /* AccountItemTableViewCell.m */; };
@@ -93,6 +105,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AFF01572237D172007865AF /* MeLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeLoginController.h; sourceTree = "<group>"; };
+		2AFF01582237D172007865AF /* MeLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeLoginController.m; sourceTree = "<group>"; };
+		2AFF015A2237D1DD007865AF /* TemplateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateView.m; sourceTree = "<group>"; };
+		2AFF015B2237D1DE007865AF /* TemplateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateView.h; sourceTree = "<group>"; };
+		2AFF01602237E316007865AF /* NewsBulletinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsBulletinModel.h; path = ../../../../../../../HomeModule/Model/NewsBulletinModel.h; sourceTree = "<group>"; };
+		2AFF01612237E316007865AF /* NewsBulletinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsBulletinModel.m; path = ../../../../../../../HomeModule/Model/NewsBulletinModel.m; sourceTree = "<group>"; };
+		2AFF01672237E3FF007865AF /* InvestContectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestContectView.h; sourceTree = "<group>"; };
+		2AFF01682237E3FF007865AF /* InvestInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestInfoView.m; sourceTree = "<group>"; };
+		2AFF01692237E3FF007865AF /* InvestContectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestContectView.m; sourceTree = "<group>"; };
+		2AFF016A2237E3FF007865AF /* InvestInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestInfoView.h; sourceTree = "<group>"; };
+		2AFF016D2237E4B5007865AF /* MeRegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeRegisterController.h; sourceTree = "<group>"; };
+		2AFF016E2237E4B5007865AF /* MeRegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeRegisterController.m; sourceTree = "<group>"; };
+		2AFF01702237E5FA007865AF /* VerificationCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationCodeView.h; sourceTree = "<group>"; };
+		2AFF01712237E5FA007865AF /* VerificationCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationCodeView.m; sourceTree = "<group>"; };
+		2AFF01732237E81A007865AF /* MeForgetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeForgetController.h; sourceTree = "<group>"; };
+		2AFF01742237E81A007865AF /* MeForgetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeForgetController.m; sourceTree = "<group>"; };
+		2AFF01762237EAA9007865AF /* InvestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvestController.h; sourceTree = "<group>"; };
+		2AFF01772237EAA9007865AF /* InvestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestController.m; sourceTree = "<group>"; };
+		2AFF01792237EB38007865AF /* InvestHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvestHeadView.h; sourceTree = "<group>"; };
+		2AFF017A2237EB38007865AF /* InvestHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestHeadView.m; sourceTree = "<group>"; };
+		2AFF017C2237EC45007865AF /* NewsBulletinControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBulletinControllerViewController.m; sourceTree = "<group>"; };
+		2AFF017D2237EC45007865AF /* NewsBulletinControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBulletinControllerViewController.h; sourceTree = "<group>"; };
+		2AFF017F2237ECF4007865AF /* NewsBulletinCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBulletinCell.h; sourceTree = "<group>"; };
+		2AFF01802237ECF4007865AF /* NewsBulletinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBulletinCell.m; sourceTree = "<group>"; };
 		31F2A15441CF236127A7E51B /* Pods-WeiBang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.release.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.release.xcconfig"; sourceTree = "<group>"; };
 		9AF203E0899EEC02D8792DAE /* Pods-WeiBang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.debug.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.debug.xcconfig"; sourceTree = "<group>"; };
 		A025107522373E3500E0A2AA /* MyAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAccountViewController.h; sourceTree = "<group>"; };
@@ -256,6 +292,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AFF01552237D12E007865AF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2AFF01572237D172007865AF /* MeLoginController.h */,
+				2AFF01582237D172007865AF /* MeLoginController.m */,
+				2AFF016D2237E4B5007865AF /* MeRegisterController.h */,
+				2AFF016E2237E4B5007865AF /* MeRegisterController.m */,
+				2AFF01732237E81A007865AF /* MeForgetController.h */,
+				2AFF01742237E81A007865AF /* MeForgetController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2AFF01562237D142007865AF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2AFF015B2237D1DE007865AF /* TemplateView.h */,
+				2AFF015A2237D1DD007865AF /* TemplateView.m */,
+				2AFF01702237E5FA007865AF /* VerificationCodeView.h */,
+				2AFF01712237E5FA007865AF /* VerificationCodeView.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2AFF01662237E3DC007865AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AFF01672237E3FF007865AF /* InvestContectView.h */,
+				2AFF01692237E3FF007865AF /* InvestContectView.m */,
+				2AFF016A2237E3FF007865AF /* InvestInfoView.h */,
+				2AFF01682237E3FF007865AF /* InvestInfoView.m */,
+				2AFF01792237EB38007865AF /* InvestHeadView.h */,
+				2AFF017A2237EB38007865AF /* InvestHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		924A96580CEB8FEF8BC580C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,20 +433,6 @@
 			path = WeiBangUITests;
 			sourceTree = "<group>";
 		};
-		F23F696A22155BFC00C2AE87 /* Complaint */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Complaint;
-			sourceTree = "<group>";
-		};
-		F23F696B22155BFC00C2AE87 /* Album */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Album;
-			sourceTree = "<group>";
-		};
 		F23F696C22155BFC00C2AE87 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,228 +446,11 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		F23F696D22155BFC00C2AE87 /* Recharge */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Recharge;
-			sourceTree = "<group>";
-		};
-		F23F696E22155BFC00C2AE87 /* Order */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Order;
-			sourceTree = "<group>";
-		};
-		F23F696F22155BFC00C2AE87 /* Dynamic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Dynamic;
-			sourceTree = "<group>";
-		};
-		F23F697022155BFC00C2AE87 /* Follow */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Follow;
-			sourceTree = "<group>";
-		};
-		F23F697122155BFD00C2AE87 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		F23F697222155BFD00C2AE87 /* Personal */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Personal;
-			sourceTree = "<group>";
-		};
-		F23F697322155BFD00C2AE87 /* Collection */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Collection;
-			sourceTree = "<group>";
-		};
-		F23F697422155BFD00C2AE87 /* Recommend */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Recommend;
-			sourceTree = "<group>";
-		};
-		F23F697522155BFD00C2AE87 /* Release */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Release;
-			sourceTree = "<group>";
-		};
-		F23F697622155C0800C2AE87 /* Collection */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Collection;
-			sourceTree = "<group>";
-		};
-		F23F697722155C0800C2AE87 /* Personal */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Personal;
-			sourceTree = "<group>";
-		};
-		F23F697822155C0900C2AE87 /* Follow */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Follow;
-			sourceTree = "<group>";
-		};
-		F23F697922155C0900C2AE87 /* Recharge */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Recharge;
-			sourceTree = "<group>";
-		};
-		F23F697A22155C0900C2AE87 /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
-		F23F697B22155C0900C2AE87 /* Dynamic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Dynamic;
-			sourceTree = "<group>";
-		};
-		F23F697C22155C0900C2AE87 /* Complaint */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Complaint;
-			sourceTree = "<group>";
-		};
-		F23F697D22155C0900C2AE87 /* Recommend */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Recommend;
-			sourceTree = "<group>";
-		};
-		F23F697E22155C0900C2AE87 /* Order */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Order;
-			sourceTree = "<group>";
-		};
-		F23F697F22155C0900C2AE87 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		F23F698022155C0900C2AE87 /* Album */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Album;
-			sourceTree = "<group>";
-		};
-		F23F698122155C0900C2AE87 /* Release */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Release;
-			sourceTree = "<group>";
-		};
-		F23F698222155C1300C2AE87 /* Dynamic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Dynamic;
-			sourceTree = "<group>";
-		};
-		F23F698322155C1300C2AE87 /* Collection */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Collection;
-			sourceTree = "<group>";
-		};
-		F23F698422155C1300C2AE87 /* Follow */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Follow;
-			sourceTree = "<group>";
-		};
-		F23F698522155C1400C2AE87 /* Order */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Order;
-			sourceTree = "<group>";
-		};
-		F23F698622155C1400C2AE87 /* Album */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Album;
-			sourceTree = "<group>";
-		};
-		F23F698722155C1400C2AE87 /* Release */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Release;
-			sourceTree = "<group>";
-		};
-		F23F698822155C1400C2AE87 /* Complaint */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Complaint;
-			sourceTree = "<group>";
-		};
-		F23F698922155C1400C2AE87 /* Recharge */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Recharge;
-			sourceTree = "<group>";
-		};
-		F23F698A22155C1400C2AE87 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		F23F698B22155C1400C2AE87 /* Recommend */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Recommend;
-			sourceTree = "<group>";
-		};
-		F23F698C22155C1400C2AE87 /* Personal */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Personal;
 			sourceTree = "<group>";
 		};
 		F23F698D22155C1400C2AE87 /* Setting */ = {
@@ -988,6 +830,8 @@
 			children = (
 				F26F50292212A99E009C6BB9 /* HomeViewController.h */,
 				F26F502A2212A99E009C6BB9 /* HomeViewController.m */,
+				2AFF017D2237EC45007865AF /* NewsBulletinControllerViewController.h */,
+				2AFF017C2237EC45007865AF /* NewsBulletinControllerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -995,6 +839,8 @@
 		F26F502B2212A99E009C6BB9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2AFF01602237E316007865AF /* NewsBulletinModel.h */,
+				2AFF01612237E316007865AF /* NewsBulletinModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1010,6 +856,8 @@
 				A025108B223789D100E0A2AA /* HomeTableViewCell.m */,
 				A025108F22379D3E00E0A2AA /* HomeHeaderView.h */,
 				A025109022379D3E00E0A2AA /* HomeHeaderView.m */,
+				2AFF017F2237ECF4007865AF /* NewsBulletinCell.h */,
+				2AFF01802237ECF4007865AF /* NewsBulletinCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1031,19 +879,8 @@
 				F26F50302212A99E009C6BB9 /* MeViewController.m */,
 				A025107522373E3500E0A2AA /* MyAccountViewController.h */,
 				A025107622373E3500E0A2AA /* MyAccountViewController.m */,
-				F23F696B22155BFC00C2AE87 /* Album */,
-				F23F697322155BFD00C2AE87 /* Collection */,
-				F23F696A22155BFC00C2AE87 /* Complaint */,
-				F23F696F22155BFC00C2AE87 /* Dynamic */,
-				F23F697022155BFC00C2AE87 /* Follow */,
-				F23F696E22155BFC00C2AE87 /* Order */,
-				F23F697222155BFD00C2AE87 /* Personal */,
-				F23F696D22155BFC00C2AE87 /* Recharge */,
-				F23F697422155BFD00C2AE87 /* Recommend */,
-				F23F697522155BFD00C2AE87 /* Release */,
-				F23F697122155BFD00C2AE87 /* Service */,
-				F299D36B221A7BB900727305 /* Login */,
 				F23F696C22155BFC00C2AE87 /* Setting */,
+				2AFF01552237D12E007865AF /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1052,17 +889,6 @@
 			isa = PBXGroup;
 			children = (
 				F23F698022155C0900C2AE87 /* Album */,
-				F23F697622155C0800C2AE87 /* Collection */,
-				F23F697C22155C0900C2AE87 /* Complaint */,
-				F23F697B22155C0900C2AE87 /* Dynamic */,
-				F23F697822155C0900C2AE87 /* Follow */,
-				F23F697E22155C0900C2AE87 /* Order */,
-				F23F697722155C0800C2AE87 /* Personal */,
-				F23F697922155C0900C2AE87 /* Recharge */,
-				F23F697D22155C0900C2AE87 /* Recommend */,
-				F23F698122155C0900C2AE87 /* Release */,
-				F23F697F22155C0900C2AE87 /* Service */,
-				F23F697A22155C0900C2AE87 /* Setting */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1072,19 +898,8 @@
 			children = (
 				A02510892237862700E0A2AA /* MyAccountViewController */,
 				F299D362221A54B600727305 /* MeViewController */,
-				F23F698622155C1400C2AE87 /* Album */,
-				F23F698322155C1300C2AE87 /* Collection */,
-				F23F698822155C1400C2AE87 /* Complaint */,
-				F23F698222155C1300C2AE87 /* Dynamic */,
-				F23F698422155C1300C2AE87 /* Follow */,
-				F23F698522155C1400C2AE87 /* Order */,
-				F23F698C22155C1400C2AE87 /* Personal */,
-				F23F698922155C1400C2AE87 /* Recharge */,
-				F23F698B22155C1400C2AE87 /* Recommend */,
-				F23F698722155C1400C2AE87 /* Release */,
-				F23F698A22155C1400C2AE87 /* Service */,
-				F299D36C221A7BCF00727305 /* Login */,
 				F23F698D22155C1400C2AE87 /* Setting */,
+				2AFF01562237D142007865AF /* Login */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1093,8 +908,7 @@
 			isa = PBXGroup;
 			children = (
 				F26F50342212A99E009C6BB9 /* Controller */,
-				F26F50372212A99E009C6BB9 /* Model */,
-				F26F50382212A99E009C6BB9 /* View */,
+				2AFF01662237E3DC007865AF /* View */,
 			);
 			path = MsgModule;
 			sourceTree = "<group>";
@@ -1104,22 +918,10 @@
 			children = (
 				F26F50352212A99E009C6BB9 /* MsgViewController.h */,
 				F26F50362212A99E009C6BB9 /* MsgViewController.m */,
+				2AFF01762237EAA9007865AF /* InvestController.h */,
+				2AFF01772237EAA9007865AF /* InvestController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		F26F50372212A99E009C6BB9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F26F50382212A99E009C6BB9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F299D362221A54B600727305 /* MeViewController */ = {
@@ -1146,20 +948,6 @@
 				F299D369221A5E2C00727305 /* MBProgressHUD+JJ.m */,
 			);
 			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		F299D36B221A7BB900727305 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		F299D36C221A7BCF00727305 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		F299D36D221A7C2E00727305 /* PCGestureUnlock */ = {
@@ -1394,27 +1182,34 @@
 			files = (
 				A02510A22237CF0500E0A2AA /* JJOptionView.m in Sources */,
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
+				2AFF017B2237EB38007865AF /* InvestHeadView.m in Sources */,
 				F299D38E221A7D9200727305 /* GestureViewController.m in Sources */,
+				2AFF016F2237E4B5007865AF /* MeRegisterController.m in Sources */,
 				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
 				F2D6607422166B7B00943601 /* MeHeadCell.m in Sources */,
 				A025107722373E3500E0A2AA /* MyAccountViewController.m in Sources */,
 				F299D37D221A7C2E00727305 /* PCCircle.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
+				2AFF01622237E316007865AF /* NewsBulletinModel.m in Sources */,
 				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
 				A0251088223785C400E0A2AA /* ProgressView.m in Sources */,
 				A02510852237573B00E0A2AA /* MyAccountHeaderView.m in Sources */,
+				2AFF015C2237D1DE007865AF /* TemplateView.m in Sources */,
 				F26F4FF52212A94D009C6BB9 /* UILabel+Attribute.m in Sources */,
 				F26F4FEC2212A94D009C6BB9 /* NSString+Base64.m in Sources */,
+				2AFF01722237E5FA007865AF /* VerificationCodeView.m in Sources */,
 				F26F4FE82212A94D009C6BB9 /* NSAttributedString+CalculateHeight.m in Sources */,
 				F26F4FEB2212A94D009C6BB9 /* NSDecimalNumber+Quickly.m in Sources */,
 				F26F4FEF2212A94D009C6BB9 /* NSString+UUID.m in Sources */,
+				2AFF017E2237EC45007865AF /* NewsBulletinControllerViewController.m in Sources */,
 				A0251082223745CB00E0A2AA /* AccountItemTableViewCell.m in Sources */,
 				F26F4FEA2212A94D009C6BB9 /* NSDate+Extension.m in Sources */,
 				A025107F223741D600E0A2AA /* AccountOperationTableViewCell.m in Sources */,
 				F26F4FF12212A94D009C6BB9 /* UIBarButtonItem+WNXBarButtonItem.m in Sources */,
+				2AFF01812237ECF4007865AF /* NewsBulletinCell.m in Sources */,
 				F26F4FF32212A94D009C6BB9 /* UIButton+ImageAndTitle.m in Sources */,
 				F299D382221A7C2E00727305 /* PCLockLabel.m in Sources */,
 				A025109122379D3E00E0A2AA /* HomeHeaderView.m in Sources */,
@@ -1425,11 +1220,15 @@
 				A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */,
 				F299D38B221A7D8B00727305 /* GestureVerifyViewController.m in Sources */,
 				F26F4FF62212A94D009C6BB9 /* UIScrollView+Extension.m in Sources */,
+				2AFF016B2237E3FF007865AF /* InvestInfoView.m in Sources */,
 				F2D66077221699E300943601 /* MeTableViewCell.m in Sources */,
+				2AFF016C2237E3FF007865AF /* InvestContectView.m in Sources */,
 				F299D36A221A5E2C00727305 /* MBProgressHUD+JJ.m in Sources */,
+				2AFF01782237EAA9007865AF /* InvestController.m in Sources */,
 				F26F4FF42212A94D009C6BB9 /* UIColor+Extension.m in Sources */,
 				F299D398221A87F700727305 /* WBSettingController.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
+				2AFF01752237E81A007865AF /* MeForgetController.m in Sources */,
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
 				F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */,
 				F26F503C2212A99E009C6BB9 /* MsgViewController.m in Sources */,
@@ -1445,6 +1244,7 @@
 				F216B94B220412B5009B811D /* AppDelegate.m in Sources */,
 				A025108C223789D100E0A2AA /* HomeTableViewCell.m in Sources */,
 				F26F4FE92212A94D009C6BB9 /* NSData+Base64.m in Sources */,
+				2AFF01592237D172007865AF /* MeLoginController.m in Sources */,
 				F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */,
 				F26F4FEE2212A94D009C6BB9 /* NSString+Hash.m in Sources */,
 				F299D39C221A8C2100727305 /* WBSettingCell.m in Sources */,

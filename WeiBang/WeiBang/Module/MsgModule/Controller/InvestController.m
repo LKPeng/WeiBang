@@ -1,17 +1,17 @@
 //
-//  NewsBulletinControllerViewController.m
+//  InvestController.m
 //  WeiBang
 //
-//  Created by 刘昆朋 on 2019/3/11.
+//  Created by 刘昆朋 on 2019/3/12.
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 
-#import "NewsBulletinControllerViewController.h"
+#import "InvestController.h"
 #import "NewsBulletinCell.h"
 #import "NewsBulletinModel.h"
+#import "InvestHeadView.h"
 
-@interface NewsBulletinControllerViewController ()<UITableViewDelegate,UITableViewDataSource>
-
+@interface InvestController ()
 @property (nonatomic,strong) UITableView *myTableView;
 
 @property (nonatomic, strong) NSMutableArray<NewsBulletinModel *> *newsModels;
@@ -19,8 +19,7 @@
 @property(nonatomic, assign)NSInteger pageNum;
 @end
 
-@implementation NewsBulletinControllerViewController
-
+@implementation InvestController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -201,7 +200,7 @@
         _myTableView.rowHeight = 60;
         _myTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         
-        UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , 0.001)];
+        InvestHeadView *headerView = [[InvestHeadView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , 150)];
         _myTableView.tableHeaderView = headerView;
         _myTableView.tableFooterView = [UIView new];
         [_myTableView regsiterCellWithCellClass:[NewsBulletinCell class] isNib:NO];
@@ -220,4 +219,7 @@
     }
     return _newsModels;
 }
+
+
+
 @end

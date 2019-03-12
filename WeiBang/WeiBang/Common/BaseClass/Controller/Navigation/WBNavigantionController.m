@@ -6,6 +6,7 @@
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 
+
 #import "WBNavigantionController.h"
 #import "AppDelegate.h"
 #import "WBGestureBaseController.h"
@@ -35,6 +36,10 @@
     _panGesture.delegate = self;
     [self.view addGestureRecognizer:_panGesture];
 }
+
+
+
+
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer {
     if (gestureRecognizer.view == self.view && [gestureRecognizer locationInView:self.view].x < (BBDistanceToStart == 0 ? UIScreen.mainScreen.bounds.size.width : BBDistanceToStart)) {
         WBGestureBaseController *topView = (WBGestureBaseController *)self.topViewController;
@@ -115,6 +120,7 @@
         return NO;
     }
     
+    
     WBGestureBaseController *topView = (WBGestureBaseController *)self.topViewController;
     if (topView.isEnablePanGesture == NO)     return NO;
     if (self.viewControllers.count <= 1)    return NO;
@@ -136,6 +142,22 @@
     return arr;
 }
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    //设置返回按钮
+    if (self.childViewControllers.count > 0) { // 如果push进来的不是第一个控制器
+        UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        leftButton.frame = CGRectMake(0, 0, 30, 30);
+        leftButton.imageEdgeInsets = UIEdgeInsetsMake(0, -15, 0, 0);
+        UIImage *leftButtonImg = [UIImage imageNamed:@"goback"];
+        [leftButton setImage: leftButtonImg
+                    forState:UIControlStateNormal];
+        //        leftButton.backgroundColor = [UIColor redColor];
+        [leftButton addTarget:self action:@selector(popViewControllerAnimated:) forControlEvents:UIControlEventTouchUpInside];
+        // 修改导航栏左边的item
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+        
+    }
+    
     if (self.viewControllers.count == 0) {
         return [super pushViewController:viewController animated:animated];
     }else if (self.viewControllers.count >= 1) {
@@ -149,6 +171,7 @@
     [self.arrayScreenshot addObject:viewImage];
     appdelegate.gestureBaseView.imgView.image = viewImage;
     [super pushViewController:viewController animated:animated];
+    
 }
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated {
     
