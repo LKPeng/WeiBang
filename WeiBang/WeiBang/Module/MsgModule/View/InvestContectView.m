@@ -31,7 +31,7 @@
     
     [self.origin mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).offset(scaleX_6(10));
-        make.top.equalTo(self).offset(scaleY_6(15));
+        make.top.equalTo(self).offset(scaleY_6(5));
         make.width.mas_equalTo(SCREEN_WIDTH/2 - scaleX_6(10));
     }];
     
@@ -43,7 +43,7 @@
     
     [self.time mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).offset(scaleX_6(10));
-        make.top.equalTo(self.origin.mas_bottom).offset(scaleY_6(15));
+        make.top.equalTo(self.origin.mas_bottom).offset(scaleY_6(5));
         make.width.mas_equalTo(SCREEN_WIDTH/2 - scaleX_6(10));
     }];
     
@@ -58,7 +58,7 @@
     
     [self layoutIfNeeded];
     
-    return CGRectGetMaxY(self.award.frame) + scaleY_6(15);
+    return CGRectGetMaxY(self.award.frame) + scaleY_6(5);
     
 }
 

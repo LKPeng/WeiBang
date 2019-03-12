@@ -9,12 +9,20 @@
 #import "InvestHeadView.h"
 
 #import "ProgressView.h"
+#import "InvestInfoView.h"
+#import "InvestContectView.h"
 
 @interface InvestHeadView()
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *moneyLabel;
 @property (strong, nonatomic) UILabel *rateLabel;
 @property (strong, nonatomic) UILabel *termLabel;
+@property (weak, nonatomic) UIView *lineV ;
+
+/* 设备 */
+@property (strong, nonatomic) InvestInfoView *InvestInfoView;
+/* 设备 */
+@property (strong, nonatomic) InvestContectView *InvestContectView;
 @end
 
 @implementation InvestHeadView
@@ -23,7 +31,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor yellowColor];
+        self.backgroundColor = [UIColor whiteColor];
         [self setUp];
         
     }
@@ -87,33 +95,74 @@
         make.leading.mas_equalTo(scaleX(10));
         make.trailing.mas_equalTo(scaleX(-30));
         make.height.mas_equalTo(scaleX(50));
-        make.bottom.mas_equalTo(0);
+        make.top.equalTo(self.termLabel.mas_bottom).offset(scaleY_6(10));
     }];
+    
+    UIView *lineV = [[UIView alloc]init];
+    lineV.backgroundColor = kappLineColor;
+    [self addSubview:lineV];
+    
+    [lineV mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(scaleY_6(2));
+        make.left.right.equalTo(self);
+        make.top.equalTo(progressView.mas_bottom);
+    }];
+    
+    self.lineV = lineV;
+    
+    [self addSubview:self.InvestInfoView];
+    [self addSubview:self.InvestContectView];
 }
 
-- (void)setDataWithIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row%7 == 0){
-        self.titleLabel.text = @"富桢流程测试";
-        self.rateLabel.text = @"预期年化收益率12%";
-        self.termLabel.text = @"期限一个月";
-    }else if (indexPath.row%7 == 1){
-        self.titleLabel.text = @"车辆抵押";
-        self.rateLabel.text = @"预期年化收益率16%";
-        self.termLabel.text = @"期限一个月";
-    }else if (indexPath.row%7 == 2) {
-        self.titleLabel.text = @"新年地产开盘";
-        self.rateLabel.text = @"预期年化收益率8%";
-        self.termLabel.text = @"期限一个月";
-    }else if (indexPath.row%7 == 3) {
-        self.titleLabel.text = @"个人房屋抵押借款";
-        self.rateLabel.text = @"预期年化收益率5%";
-        self.termLabel.text = @"期限一个月";
-    }else{
-        self.titleLabel.text = [[NSString alloc]initWithFormat:@"个人标的测试流程%ld",(long)indexPath.row%5];
+- (void)setDataWithIndexPath:(NSInteger)indexPath{
+//    if (indexPath.row%7 == 0){
+//        self.titleLabel.text = @"富桢流程测试";
+//        self.rateLabel.text = @"预期年化收益率12%";
+//        self.termLabel.text = @"期限一个月";
+//    }else if (indexPath.row%7 == 1){
+//        self.titleLabel.text = @"车辆抵押";
+//        self.rateLabel.text = @"预期年化收益率16%";
+//        self.termLabel.text = @"期限一个月";
+//    }else if (indexPath.row%7 == 2) {
+//        self.titleLabel.text = @"新年地产开盘";
+//        self.rateLabel.text = @"预期年化收益率8%";
+//        self.termLabel.text = @"期限一个月";
+//    }else if (indexPath.row%7 == 3) {
+//        self.titleLabel.text = @"个人房屋抵押借款";
+//        self.rateLabel.text = @"预期年化收益率5%";
+//        self.termLabel.text = @"期限一个月";
+//    }else{
+        self.titleLabel.text = [[NSString alloc]initWithFormat:@"个人标的测试流程%ld",3%5];
         self.rateLabel.text = @"预期年化收益率10%";
         self.termLabel.text = @"期限一个月";
-    }
+//    }
 }
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    
+    CGFloat InvestInfoViewHeight = self.InvestInfoView.viewHeight;
+    CGFloat InvestContectViewHeight = self.InvestContectView.viewHeight;
+
+    
+    NSLog(@"%f---%f",InvestInfoViewHeight,InvestContectViewHeight);
+    
+    [self.InvestContectView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self);
+        make.top.equalTo(self.lineV.mas_bottom).offset(scaleY_6(10));
+        make.height.mas_equalTo(InvestContectViewHeight);
+    }];
+
+    [self.InvestInfoView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self);
+        make.top.equalTo(self.InvestContectView.mas_bottom).offset(scaleY_6(10));
+        make.height.mas_equalTo(InvestInfoViewHeight);
+    }];
+//
+//    [self layoutIfNeeded];
+    self.viewHeight = CGRectGetMaxY(self.lineV.frame) + scaleY_6(10);
+}
+
 
 
 
@@ -160,6 +209,31 @@
         _termLabel.textColor = [UIColor lightGrayColor];
     }
     return _termLabel;
+}
+
+
+
+#pragma mark ----   懒加载  ----
+- (InvestInfoView *)InvestInfoView{
+    if (!_InvestInfoView) {
+        _InvestInfoView = [[InvestInfoView alloc]init];
+        _InvestInfoView.canAmount.text   = @"0.00元";
+        _InvestInfoView.smallAmount.text = @"0.00元";
+        _InvestInfoView.highAmount.text  = @"50.00元";
+        _InvestInfoView.awardAmount.text = @"无";
+    }
+    return _InvestInfoView;
+}
+
+- (InvestContectView *)InvestContectView{
+    if (!_InvestContectView) {
+        _InvestContectView = [[InvestContectView alloc]init];
+        _InvestContectView.origin.text    = @"项目起息:审核通过后";
+        _InvestContectView.returnWay.text = @"还款方式:按月分期还款";
+        _InvestContectView.time.text      = @"剩余时间:0天0小时0分0秒";
+        _InvestContectView.award.text     = @"是否奖励:无";
+    }
+    return _InvestContectView;
 }
 
 

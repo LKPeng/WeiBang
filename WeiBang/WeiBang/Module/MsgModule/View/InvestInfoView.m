@@ -57,48 +57,49 @@
     [self createLabel:awardAmountL WithText:@"投标奖励"];
     [self addSubview:awardAmountL];
     
+    
     //1
     [canAmountL mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).offset(scaleX_6(10));
-        make.top.equalTo(self).offset(scaleY_6(15));
+        make.top.equalTo(self).offset(scaleY_6(5));
     }];
     
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(1);
         make.left.equalTo(self).offset(scaleX_6(10));
         make.right.equalTo(self).offset(-scaleX_6(10));
-        make.top.equalTo(canAmountL.mas_bottom).offset(scaleY_6(15));
+        make.top.equalTo(canAmountL.mas_bottom).offset(scaleY_6(5));
     }];
     //2
     [smallAmountL mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).offset(scaleX_6(10));
-        make.top.equalTo(lineView1.mas_bottom).offset(scaleY_6(15));
+        make.top.equalTo(lineView1.mas_bottom).offset(scaleY_6(5));
     }];
     
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(1);
         make.left.equalTo(self).offset(scaleX_6(10));
         make.right.equalTo(self).offset(-scaleX_6(10));
-        make.top.equalTo(smallAmountL.mas_bottom).offset(scaleY_6(15));
+        make.top.equalTo(smallAmountL.mas_bottom).offset(scaleY_6(5));
     }];
     
     //3
     [highAmountL mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).offset(scaleX_6(10));
-        make.top.equalTo(lineView2.mas_bottom).offset(scaleY_6(15));
+        make.top.equalTo(lineView2.mas_bottom).offset(scaleY_6(5));
     }];
     
     [lineView3 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(1);
         make.left.equalTo(self).offset(scaleX_6(10));
         make.right.equalTo(self).offset(-scaleX_6(10));
-        make.top.equalTo(highAmountL.mas_bottom).offset(scaleY_6(15));
+        make.top.equalTo(highAmountL.mas_bottom).offset(scaleY_6(5));
     }];
     
     //4
     [awardAmountL mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).offset(scaleX_6(10));
-        make.top.equalTo(lineView3.mas_bottom).offset(scaleY_6(15));
+        make.top.equalTo(lineView3.mas_bottom).offset(scaleY_6(5));
     }];
     
     //
@@ -132,7 +133,7 @@
 
 - (CGFloat)viewHeight{
     [self layoutIfNeeded];
-    return CGRectGetMaxY(self.awardAmount.frame) + scaleY_6(15);
+    return CGRectGetMaxY(self.awardAmount.frame) + scaleY_6(5);
 }
 #pragma mark ----   懒加载  ----
 

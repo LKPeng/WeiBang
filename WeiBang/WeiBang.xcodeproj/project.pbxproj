@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2AFF01592237D172007865AF /* MeLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01582237D172007865AF /* MeLoginController.m */; };
 		2AFF015C2237D1DE007865AF /* TemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF015A2237D1DD007865AF /* TemplateView.m */; };
-		2AFF01622237E316007865AF /* NewsBulletinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01612237E316007865AF /* NewsBulletinModel.m */; };
 		2AFF016B2237E3FF007865AF /* InvestInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01682237E3FF007865AF /* InvestInfoView.m */; };
 		2AFF016C2237E3FF007865AF /* InvestContectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01692237E3FF007865AF /* InvestContectView.m */; };
 		2AFF016F2237E4B5007865AF /* MeRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF016E2237E4B5007865AF /* MeRegisterController.m */; };
@@ -19,6 +18,7 @@
 		2AFF017B2237EB38007865AF /* InvestHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF017A2237EB38007865AF /* InvestHeadView.m */; };
 		2AFF017E2237EC45007865AF /* NewsBulletinControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF017C2237EC45007865AF /* NewsBulletinControllerViewController.m */; };
 		2AFF01812237ECF4007865AF /* NewsBulletinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01802237ECF4007865AF /* NewsBulletinCell.m */; };
+		2AFF01842237F804007865AF /* NewsBulletinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01822237F804007865AF /* NewsBulletinModel.m */; };
 		A025107722373E3500E0A2AA /* MyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A025107622373E3500E0A2AA /* MyAccountViewController.m */; };
 		A025107F223741D600E0A2AA /* AccountOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A025107E223741D600E0A2AA /* AccountOperationTableViewCell.m */; };
 		A0251082223745CB00E0A2AA /* AccountItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0251081223745CB00E0A2AA /* AccountItemTableViewCell.m */; };
@@ -109,8 +109,6 @@
 		2AFF01582237D172007865AF /* MeLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeLoginController.m; sourceTree = "<group>"; };
 		2AFF015A2237D1DD007865AF /* TemplateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateView.m; sourceTree = "<group>"; };
 		2AFF015B2237D1DE007865AF /* TemplateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateView.h; sourceTree = "<group>"; };
-		2AFF01602237E316007865AF /* NewsBulletinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsBulletinModel.h; path = ../../../../../../../HomeModule/Model/NewsBulletinModel.h; sourceTree = "<group>"; };
-		2AFF01612237E316007865AF /* NewsBulletinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsBulletinModel.m; path = ../../../../../../../HomeModule/Model/NewsBulletinModel.m; sourceTree = "<group>"; };
 		2AFF01672237E3FF007865AF /* InvestContectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestContectView.h; sourceTree = "<group>"; };
 		2AFF01682237E3FF007865AF /* InvestInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestInfoView.m; sourceTree = "<group>"; };
 		2AFF01692237E3FF007865AF /* InvestContectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestContectView.m; sourceTree = "<group>"; };
@@ -129,6 +127,8 @@
 		2AFF017D2237EC45007865AF /* NewsBulletinControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBulletinControllerViewController.h; sourceTree = "<group>"; };
 		2AFF017F2237ECF4007865AF /* NewsBulletinCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBulletinCell.h; sourceTree = "<group>"; };
 		2AFF01802237ECF4007865AF /* NewsBulletinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBulletinCell.m; sourceTree = "<group>"; };
+		2AFF01822237F804007865AF /* NewsBulletinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBulletinModel.m; sourceTree = "<group>"; };
+		2AFF01832237F804007865AF /* NewsBulletinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBulletinModel.h; sourceTree = "<group>"; };
 		31F2A15441CF236127A7E51B /* Pods-WeiBang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.release.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.release.xcconfig"; sourceTree = "<group>"; };
 		9AF203E0899EEC02D8792DAE /* Pods-WeiBang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.debug.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.debug.xcconfig"; sourceTree = "<group>"; };
 		A025107522373E3500E0A2AA /* MyAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAccountViewController.h; sourceTree = "<group>"; };
@@ -839,8 +839,8 @@
 		F26F502B2212A99E009C6BB9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2AFF01602237E316007865AF /* NewsBulletinModel.h */,
-				2AFF01612237E316007865AF /* NewsBulletinModel.m */,
+				2AFF01832237F804007865AF /* NewsBulletinModel.h */,
+				2AFF01822237F804007865AF /* NewsBulletinModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1190,7 +1190,6 @@
 				A025107722373E3500E0A2AA /* MyAccountViewController.m in Sources */,
 				F299D37D221A7C2E00727305 /* PCCircle.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
-				2AFF01622237E316007865AF /* NewsBulletinModel.m in Sources */,
 				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
@@ -1229,6 +1228,7 @@
 				F299D398221A87F700727305 /* WBSettingController.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
 				2AFF01752237E81A007865AF /* MeForgetController.m in Sources */,
+				2AFF01842237F804007865AF /* NewsBulletinModel.m in Sources */,
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
 				F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */,
 				F26F503C2212A99E009C6BB9 /* MsgViewController.m in Sources */,

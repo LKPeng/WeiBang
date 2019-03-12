@@ -8,6 +8,7 @@
 
 #import "MsgViewController.h"
 #import "HomeTableViewCell.h"
+#import "InvestController.h"
 
 @interface MsgViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -50,6 +51,10 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    InvestController *invest = [[InvestController alloc]init];
+    [self.navigationController pushViewController:invest animated:YES];
+}
 
 #pragma mark ----   懒加载  ----
 - (UITableView *)tableView{

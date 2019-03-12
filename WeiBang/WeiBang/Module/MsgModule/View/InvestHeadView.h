@@ -12,6 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface InvestHeadView : UIView
 
+/**
+ * <#注释#>
+ */
+@property (nonatomic,assign) CGFloat viewHeight;
+
+
+-(void)setDataWithIndexPath:(NSInteger)indexPath;
+
 @end
 
 NS_ASSUME_NONNULL_END
