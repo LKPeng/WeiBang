@@ -43,16 +43,21 @@
     if (indexPath.section == 1){
         if (indexPath.row == 0) {
             self.titleLabel.text = @"融泽介绍";
+            self.iconImageView.image = [UIImage imageNamed:@"me_recommend.png"];
         }else if (indexPath.row == 1){
             self.titleLabel.text = @"投资管理";
+            self.iconImageView.image = [UIImage imageNamed:@"me_manage.png"];
         }else if (indexPath.row == 2) {
             self.titleLabel.text = @"借款管理";
+            self.iconImageView.image = [UIImage imageNamed:@"loan.png"];
         }
     }else if (indexPath.section == 2){
         if (indexPath.row == 0) {
             self.titleLabel.text = @"我的资产";
+            self.iconImageView.image = [UIImage imageNamed:@"me_wallet.png"];
         }else if (indexPath.row == 1){
             self.titleLabel.text = @"关于我们";
+            self.iconImageView.image = [UIImage imageNamed:@"me_aboutus.png"];
         }
     }
 }
