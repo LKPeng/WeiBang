@@ -10,6 +10,7 @@
 #import "AccountOperationTableViewCell.h"
 #import "AccountItemTableViewCell.h"
 #import "MyAccountHeaderView.h"
+#import "OpenAccountViewController.h"
 
 @interface MyAccountViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -39,6 +40,8 @@
     self.view.backgroundColor = kappMainColor;
     self.automaticallyAdjustsScrollViewInsets = true;
     [self.tableView reloadData];
+    
+    
 }
 
 
@@ -57,16 +60,28 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 1 || indexPath.section == 2) {
-        return scaleY_6(40);
+        return scaleX(49);
     }
-    return scaleY_6(50);
+    return scaleX(50);
 }
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if (section == 1 || section == 2) {
-        return scaleY_6(8);
-    }
-    return 0;
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return scaleX(8);
 }
+
+//section头部间距
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 0.01f;//section头部高度
+}
+//section底部视图
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 1)];
+    view.backgroundColor = [UIColor clearColor];
+    return view;
+}
+
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *header = [[UIView alloc]initWithFrame:CGRectZero];
     header.backgroundColor = [UIColor colorWithHexString:@"f2f2f4"];
@@ -75,6 +90,14 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         AccountOperationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: [AccountOperationTableViewCell cellReuseID]];
+        cell.rechargeBlock = ^{
+            OpenAccountViewController *vc = [[OpenAccountViewController alloc] initWithNibName:@"OpenAccountViewController" bundle:nil];
+            [self.navigationController pushViewController:vc animated:true];
+        };
+        cell.withdrawBlock = ^{
+            OpenAccountViewController *vc = [[OpenAccountViewController alloc] initWithNibName:@"OpenAccountViewController" bundle:nil];
+            [self.navigationController pushViewController:vc animated:true];
+        };
         return cell;
     }
     AccountItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[AccountItemTableViewCell cellReuseID]];
@@ -91,7 +114,7 @@
         adjustsScrollViewInsets_NO(_tableView, self);
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        
+        _tableView.scrollEnabled = false;
         MyAccountHeaderView *headerView = [[MyAccountHeaderView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleY(120))];
         _tableView.tableHeaderView = headerView;
         _tableView.tableFooterView = [UIView new];

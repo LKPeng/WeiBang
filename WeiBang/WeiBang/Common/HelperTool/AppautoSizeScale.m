@@ -41,7 +41,7 @@ CGFloat autoSizeScaleY()
 CGFloat autoSizeScale()
 {
     if ([[UIScreen mainScreen] bounds].size.height > 568.0f) {
-        NSLog(@"当前比例为%f",MIN(autoSizeScaleX(), autoSizeScaleY()));
+//        NSLog(@"当前比例为%f",MIN(autoSizeScaleX(), autoSizeScaleY()));
         return MIN(autoSizeScaleX(), autoSizeScaleY());
     }
     return 1.0f;

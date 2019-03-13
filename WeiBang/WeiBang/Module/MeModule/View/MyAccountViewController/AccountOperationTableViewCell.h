@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AccountOperationTableViewCell : UITableViewCell
-
+@property (nonatomic,copy) dispatch_block_t rechargeBlock;
+@property (nonatomic,copy) dispatch_block_t withdrawBlock;
 @end

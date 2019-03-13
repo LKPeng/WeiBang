@@ -35,6 +35,8 @@
 		A02510BD2238833500E0A2AA /* IconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02510BB2238833500E0A2AA /* IconView.xib */; };
 		A02510C2223885AE00E0A2AA /* JJOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510BF223885AD00E0A2AA /* JJOptionView.m */; };
 		A02510C3223885AE00E0A2AA /* JJOptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510C0223885AD00E0A2AA /* JJOptionTableViewCell.m */; };
+		A02510C722389A4900E0A2AA /* OpenAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510C522389A4900E0A2AA /* OpenAccountViewController.m */; };
+		A02510C822389A4900E0A2AA /* OpenAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02510C622389A4900E0A2AA /* OpenAccountViewController.xib */; };
 		D5E9A4519650E96C703ECB0F /* Pods_WeiBang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */; };
 		F216B94B220412B5009B811D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B94A220412B5009B811D /* AppDelegate.m */; };
 		F216B953220412BB009B811D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F216B952220412BB009B811D /* Assets.xcassets */; };
@@ -166,6 +168,9 @@
 		A02510BF223885AD00E0A2AA /* JJOptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJOptionView.m; sourceTree = "<group>"; };
 		A02510C0223885AD00E0A2AA /* JJOptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJOptionTableViewCell.m; sourceTree = "<group>"; };
 		A02510C1223885AE00E0A2AA /* JJOptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJOptionView.h; sourceTree = "<group>"; };
+		A02510C422389A4900E0A2AA /* OpenAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenAccountViewController.h; sourceTree = "<group>"; };
+		A02510C522389A4900E0A2AA /* OpenAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenAccountViewController.m; sourceTree = "<group>"; };
+		A02510C622389A4900E0A2AA /* OpenAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenAccountViewController.xib; sourceTree = "<group>"; };
 		B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiBang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B946220412B5009B811D /* WeiBang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B949220412B5009B811D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -897,6 +902,9 @@
 				F26F50302212A99E009C6BB9 /* MeViewController.m */,
 				A025107522373E3500E0A2AA /* MyAccountViewController.h */,
 				A025107622373E3500E0A2AA /* MyAccountViewController.m */,
+				A02510C422389A4900E0A2AA /* OpenAccountViewController.h */,
+				A02510C522389A4900E0A2AA /* OpenAccountViewController.m */,
+				A02510C622389A4900E0A2AA /* OpenAccountViewController.xib */,
 				F23F696C22155BFC00C2AE87 /* Setting */,
 				2AFF01552237D12E007865AF /* Login */,
 			);
@@ -1116,6 +1124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A02510C822389A4900E0A2AA /* OpenAccountViewController.xib in Resources */,
 				F216B953220412BB009B811D /* Assets.xcassets in Resources */,
 				A02510BD2238833500E0A2AA /* IconView.xib in Resources */,
 			);
@@ -1212,6 +1221,7 @@
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
+				A02510C722389A4900E0A2AA /* OpenAccountViewController.m in Sources */,
 				A0251088223785C400E0A2AA /* ProgressView.m in Sources */,
 				A02510852237573B00E0A2AA /* MyAccountHeaderView.m in Sources */,
 				2AFF015C2237D1DE007865AF /* TemplateView.m in Sources */,

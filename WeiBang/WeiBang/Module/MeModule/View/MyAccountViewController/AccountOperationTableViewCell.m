@@ -28,8 +28,8 @@
 -(void)setUp{
     [self addSubview:self.rechargeButton];
     [self.rechargeButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(scaleY(6));
-        make.bottom.mas_equalTo(scaleY(-6));
+        make.top.mas_equalTo(scaleY(10));
+        make.bottom.mas_equalTo(scaleY(-10));
         make.left.mas_equalTo(scaleX(50));
         make.width.mas_equalTo(scaleX(80));
     }];
@@ -50,10 +50,10 @@
 
 //--事件
 -(void)rechargeFunction{
-    
+    self.rechargeBlock? : self.rechargeBlock();
 }
 -(void)withdrawalFunction{
-    
+    self.withdrawBlock? : self.withdrawBlock();
 }
 //--懒加载
 - (UIButton *)rechargeButton{
@@ -69,7 +69,7 @@
         weakself
         [_rechargeButton addButtonActionClickHandler:^(NSInteger tagIndex) {
             strongself
-            [strongSelf rechargeFunction];
+            !self.rechargeBlock? : self.rechargeBlock();
         }];
     }
     return _rechargeButton;
@@ -88,7 +88,7 @@
         weakself
         [_withdrawalButton addButtonActionClickHandler:^(NSInteger tagIndex) {
             strongself
-            [strongSelf withdrawalFunction];
+            !self.withdrawBlock? : self.withdrawBlock();
         }];
     }
     return _withdrawalButton;
