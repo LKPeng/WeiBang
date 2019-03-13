@@ -151,6 +151,7 @@
         _AccountView = [[TemplateView alloc]init];
         _AccountView.accountImage.image = [UIImage imageNamed:@"zhanghao"];
         _AccountView.accountText.placeholder = @"请输入手机号码";
+        _AccountView.testSecureTextEntry = NO;
         
     }
     return _AccountView;
@@ -161,6 +162,7 @@
         _passwordView = [[TemplateView alloc]init];
         _passwordView.accountImage.image = [UIImage imageNamed:@"mima"];
         _passwordView.accountText.placeholder = @"请输入密码";
+        _passwordView.testSecureTextEntry = YES;
     }
     return _passwordView;
 }

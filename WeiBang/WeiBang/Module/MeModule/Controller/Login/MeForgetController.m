@@ -117,12 +117,12 @@
     }
     
     
-    if (self.passwordView.accountText.text.length > 16 && 6 > self.passwordView.accountText.text.length) {
+    if (self.passwordView.accountText.text.length > 16 || 6 > self.passwordView.accountText.text.length) {
         [MBProgressHUD showMessage:@"请输入6-15位之间密码!"];
         return;
     }
     
-    if (self.surePasswordView.accountText.text.length > 16 && 6 > self.surePasswordView.accountText.text.length) {
+    if (self.surePasswordView.accountText.text.length > 16 || 6 > self.surePasswordView.accountText.text.length) {
         [MBProgressHUD showMessage:@"请输入6-15位之间确认密码!"];
         return;
     }
@@ -144,7 +144,7 @@
         _AccountView = [[TemplateView alloc]init];
         _AccountView.accountImage.image = [UIImage imageNamed:@"zhanghao"];
         _AccountView.accountText.placeholder = @"请输入手机号码";
-        
+        _AccountView.testSecureTextEntry = NO;
     }
     return _AccountView;
 }
@@ -154,6 +154,7 @@
         _passwordView = [[TemplateView alloc]init];
         _passwordView.accountImage.image = [UIImage imageNamed:@"mima"];
         _passwordView.accountText.placeholder = @"密码范围在6-15位之间";
+        _passwordView.testSecureTextEntry = YES;
     }
     return _passwordView;
 }
@@ -163,7 +164,7 @@
         _surePasswordView = [[TemplateView alloc]init];
         _surePasswordView.accountImage.image = [UIImage imageNamed:@"zhanghao"];
         _surePasswordView.accountText.placeholder = @"请输入确认密码";
-        
+        _surePasswordView.testSecureTextEntry = YES;
     }
     return _surePasswordView;
 }

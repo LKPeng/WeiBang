@@ -19,6 +19,9 @@
 		2AFF017E2237EC45007865AF /* NewsBulletinControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF017C2237EC45007865AF /* NewsBulletinControllerViewController.m */; };
 		2AFF01812237ECF4007865AF /* NewsBulletinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01802237ECF4007865AF /* NewsBulletinCell.m */; };
 		2AFF01842237F804007865AF /* NewsBulletinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01822237F804007865AF /* NewsBulletinModel.m */; };
+		2AFF01872239333F007865AF /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01862239333F007865AF /* NewsViewController.m */; };
+		2AFF018A223933AA007865AF /* newsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF0189223933AA007865AF /* newsCell.m */; };
+		2AFF018D2239350B007865AF /* NewsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF018C2239350B007865AF /* NewsViewCell.m */; };
 		A025107722373E3500E0A2AA /* MyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A025107622373E3500E0A2AA /* MyAccountViewController.m */; };
 		A025107F223741D600E0A2AA /* AccountOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A025107E223741D600E0A2AA /* AccountOperationTableViewCell.m */; };
 		A0251082223745CB00E0A2AA /* AccountItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0251081223745CB00E0A2AA /* AccountItemTableViewCell.m */; };
@@ -144,6 +147,12 @@
 		2AFF01802237ECF4007865AF /* NewsBulletinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBulletinCell.m; sourceTree = "<group>"; };
 		2AFF01822237F804007865AF /* NewsBulletinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBulletinModel.m; sourceTree = "<group>"; };
 		2AFF01832237F804007865AF /* NewsBulletinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBulletinModel.h; sourceTree = "<group>"; };
+		2AFF01852239333F007865AF /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		2AFF01862239333F007865AF /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		2AFF0188223933AA007865AF /* newsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = newsCell.h; sourceTree = "<group>"; };
+		2AFF0189223933AA007865AF /* newsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = newsCell.m; sourceTree = "<group>"; };
+		2AFF018B2239350B007865AF /* NewsViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewCell.h; sourceTree = "<group>"; };
+		2AFF018C2239350B007865AF /* NewsViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewCell.m; sourceTree = "<group>"; };
 		31F2A15441CF236127A7E51B /* Pods-WeiBang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.release.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.release.xcconfig"; sourceTree = "<group>"; };
 		9AF203E0899EEC02D8792DAE /* Pods-WeiBang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.debug.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.debug.xcconfig"; sourceTree = "<group>"; };
 		A025107522373E3500E0A2AA /* MyAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAccountViewController.h; sourceTree = "<group>"; };
@@ -879,6 +888,8 @@
 				2AFF017C2237EC45007865AF /* NewsBulletinControllerViewController.m */,
 				A02510B6223882DA00E0A2AA /* NewUsersViewController.h */,
 				A02510B7223882DB00E0A2AA /* NewUsersViewController.m */,
+				2AFF01852239333F007865AF /* NewsViewController.h */,
+				2AFF01862239333F007865AF /* NewsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -908,6 +919,10 @@
 				A02510B92238833500E0A2AA /* IconView.h */,
 				A02510BA2238833500E0A2AA /* IconView.m */,
 				A02510BB2238833500E0A2AA /* IconView.xib */,
+				2AFF0188223933AA007865AF /* newsCell.h */,
+				2AFF0189223933AA007865AF /* newsCell.m */,
+				2AFF018B2239350B007865AF /* NewsViewCell.h */,
+				2AFF018C2239350B007865AF /* NewsViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1259,6 +1274,7 @@
 				F299D37D221A7C2E00727305 /* PCCircle.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
 				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
+				2AFF018A223933AA007865AF /* newsCell.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
@@ -1277,6 +1293,7 @@
 				F26F4FEA2212A94D009C6BB9 /* NSDate+Extension.m in Sources */,
 				A025107F223741D600E0A2AA /* AccountOperationTableViewCell.m in Sources */,
 				A02510DB2238DDE400E0A2AA /* SetTableViewCell.m in Sources */,
+				2AFF01872239333F007865AF /* NewsViewController.m in Sources */,
 				F26F4FF12212A94D009C6BB9 /* UIBarButtonItem+WNXBarButtonItem.m in Sources */,
 				2AFF01812237ECF4007865AF /* NewsBulletinCell.m in Sources */,
 				F26F4FF32212A94D009C6BB9 /* UIButton+ImageAndTitle.m in Sources */,
@@ -1287,6 +1304,7 @@
 				A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */,
 				F216B959220412BB009B811D /* main.m in Sources */,
 				F26F4FF72212A94D009C6BB9 /* UITableView+Extension.m in Sources */,
+				2AFF018D2239350B007865AF /* NewsViewCell.m in Sources */,
 				A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */,
 				F299D38B221A7D8B00727305 /* GestureVerifyViewController.m in Sources */,
 				F26F4FF62212A94D009C6BB9 /* UIScrollView+Extension.m in Sources */,
@@ -1481,8 +1499,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V4X3MNBDJ6;
+				DEVELOPMENT_TEAM = 5G2YR2TKN7;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeiBang/Common/Constants/WBPrefixHeader.pch;
@@ -1492,8 +1512,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lkp.WeiBang;
+				PRODUCT_BUNDLE_IDENTIFIER = iosed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1505,8 +1526,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V4X3MNBDJ6;
+				DEVELOPMENT_TEAM = 5G2YR2TKN7;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeiBang/Common/Constants/WBPrefixHeader.pch;
@@ -1516,8 +1539,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lkp.WeiBang;
+				PRODUCT_BUNDLE_IDENTIFIER = iosed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
