@@ -30,6 +30,16 @@
 }
 
 - (void)setup{
+    
+    UIButton *itemButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    itemButton.frame = CGRectMake(0, 0, 30, 30);
+    itemButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    UIImage *leftButtonImg = [UIImage imageNamed:@"message.png"];
+    [itemButton setImage: leftButtonImg
+                forState:UIControlStateNormal];
+    [itemButton addTarget:self action:@selector(messageFunction) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:itemButton];
+    
     self.view.backgroundColor = kappMainColor;
     self.automaticallyAdjustsScrollViewInsets = true;
     [self.tableView reloadData];
@@ -90,9 +100,15 @@
         _tableView.dataSource = self;
         _tableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight+22, 0);
         HomeHeaderView *headerView = [[HomeHeaderView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleX(415))];
-        headerView.rechargeBlock = ^{
+        headerView.newUserBlock = ^{
             NewUsersViewController *vc = [[NewUsersViewController alloc] init];
             [self.navigationController pushViewController:vc animated:true];
+        };
+        headerView.loanBlock = ^{
+            self.navigationController.tabBarController.selectedIndex = 1;
+        };
+        headerView.newsBlock = ^{
+            
         };
         _tableView.tableHeaderView = headerView;
         _tableView.tableFooterView = [UIView new];

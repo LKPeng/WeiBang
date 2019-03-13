@@ -87,6 +87,11 @@
         [_loanButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _loanButton.titleLabel.font = KFontSize(12);
         [_loanButton verticalCenterImageAndTitle:scaleX(6)];
+        weakself;
+        [_loanButton addButtonActionClickHandler:^(NSInteger tagIndex) {
+            strongself;
+            !self.loanBlock? : self.loanBlock();
+        }];
     }
     return _loanButton;
 }
@@ -102,7 +107,7 @@
         weakself;
         [_userButton addButtonActionClickHandler:^(NSInteger tagIndex) {
             strongself;
-            !self.rechargeBlock? : self.rechargeBlock();
+            !self.newUserBlock? : self.newUserBlock();
         }];
         
     }
@@ -117,6 +122,11 @@
         [_newsButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _newsButton.titleLabel.font = KFontSize(12);
         [_newsButton verticalCenterImageAndTitle:scaleX(6)];
+        weakself;
+        [_newsButton addButtonActionClickHandler:^(NSInteger tagIndex) {
+            strongself;
+            !self.newsBlock? : self.newsBlock();
+        }];
     }
     return _newsButton;
 }

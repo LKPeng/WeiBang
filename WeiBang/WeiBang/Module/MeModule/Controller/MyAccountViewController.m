@@ -11,6 +11,8 @@
 #import "AccountItemTableViewCell.h"
 #import "MyAccountHeaderView.h"
 #import "OpenAccountViewController.h"
+#import "IntroduceViewController.h"
+#import "SetViewController.h"
 
 @interface MyAccountViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -37,17 +39,28 @@
 }
 
 - (void)setup{
+    UIButton *itemButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    itemButton.frame = CGRectMake(0, 0, 30, 30);
+    itemButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    UIImage *leftButtonImg = [UIImage imageNamed:@"set.png"];
+    [itemButton setImage: leftButtonImg
+                forState:UIControlStateNormal];
+    [itemButton addTarget:self action:@selector(setFunction) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:itemButton];
+    
     self.view.backgroundColor = kappMainColor;
-    self.automaticallyAdjustsScrollViewInsets = true;
     [self.tableView reloadData];
-    
-    
 }
 
+-(void)setFunction{
+    SetViewController *vc = [[SetViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:true];
+}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 3;
 }
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
         return 1;
@@ -103,6 +116,11 @@
     AccountItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[AccountItemTableViewCell cellReuseID]];
     [cell setDataWithIndexPath:indexPath];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    IntroduceViewController *vc = [[IntroduceViewController alloc] initWithNibName:@"IntroduceViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 
