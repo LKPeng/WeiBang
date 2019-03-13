@@ -19,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    [self setupNavBarTitleViewWithText:@"开户"];
     self.openButton.layer.cornerRadius = 25;
     self.openButton.clipsToBounds = true;
 }

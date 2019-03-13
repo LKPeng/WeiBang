@@ -28,9 +28,23 @@
 }
 
 - (void)setup{
+    
+    UIButton *itemButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    itemButton.frame = CGRectMake(0, 0, 30, 30);
+    itemButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    UIImage *leftButtonImg = [UIImage imageNamed:@"message.png"];
+    [itemButton setImage: leftButtonImg
+                forState:UIControlStateNormal];
+    [itemButton addTarget:self action:@selector(messageFunction) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:itemButton];
+    
     self.view.backgroundColor = kappMainColor;
     self.automaticallyAdjustsScrollViewInsets = true;
     [self.tableView reloadData];
+}
+
+-(void)messageFunction {
+    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

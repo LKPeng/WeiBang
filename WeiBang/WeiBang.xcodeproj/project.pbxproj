@@ -42,6 +42,9 @@
 		A02510D22238A78700E0A2AA /* base.css in Resources */ = {isa = PBXBuildFile; fileRef = A02510CF2238A78600E0A2AA /* base.css */; };
 		A02510D32238A78700E0A2AA /* base.js in Resources */ = {isa = PBXBuildFile; fileRef = A02510D02238A78600E0A2AA /* base.js */; };
 		A02510D42238A78700E0A2AA /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = A02510D12238A78700E0A2AA /* index.html */; };
+		A02510D72238DCE700E0A2AA /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510D62238DCE700E0A2AA /* SetViewController.m */; };
+		A02510DB2238DDE400E0A2AA /* SetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510D92238DDE400E0A2AA /* SetTableViewCell.m */; };
+		A02510DC2238DDE400E0A2AA /* SetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02510DA2238DDE400E0A2AA /* SetTableViewCell.xib */; };
 		D5E9A4519650E96C703ECB0F /* Pods_WeiBang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */; };
 		F216B94B220412B5009B811D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B94A220412B5009B811D /* AppDelegate.m */; };
 		F216B953220412BB009B811D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F216B952220412BB009B811D /* Assets.xcassets */; };
@@ -182,6 +185,11 @@
 		A02510CF2238A78600E0A2AA /* base.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = base.css; sourceTree = "<group>"; };
 		A02510D02238A78600E0A2AA /* base.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = base.js; sourceTree = "<group>"; };
 		A02510D12238A78700E0A2AA /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		A02510D52238DCE700E0A2AA /* SetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		A02510D62238DCE700E0A2AA /* SetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		A02510D82238DDE400E0A2AA /* SetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetTableViewCell.h; sourceTree = "<group>"; };
+		A02510D92238DDE400E0A2AA /* SetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetTableViewCell.m; sourceTree = "<group>"; };
+		A02510DA2238DDE400E0A2AA /* SetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetTableViewCell.xib; sourceTree = "<group>"; };
 		B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiBang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B946220412B5009B811D /* WeiBang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B949220412B5009B811D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -487,6 +495,9 @@
 			children = (
 				F299D39A221A8C2100727305 /* WBSettingCell.h */,
 				F299D39B221A8C2100727305 /* WBSettingCell.m */,
+				A02510D82238DDE400E0A2AA /* SetTableViewCell.h */,
+				A02510D92238DDE400E0A2AA /* SetTableViewCell.m */,
+				A02510DA2238DDE400E0A2AA /* SetTableViewCell.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -919,6 +930,8 @@
 				A02510CA2238A67100E0A2AA /* IntroduceViewController.h */,
 				A02510CB2238A67100E0A2AA /* IntroduceViewController.m */,
 				A02510CC2238A67100E0A2AA /* IntroduceViewController.xib */,
+				A02510D52238DCE700E0A2AA /* SetViewController.h */,
+				A02510D62238DCE700E0A2AA /* SetViewController.m */,
 				A02510CF2238A78600E0A2AA /* base.css */,
 				A02510D02238A78600E0A2AA /* base.js */,
 				A02510D12238A78700E0A2AA /* index.html */,
@@ -1145,6 +1158,7 @@
 				A02510CE2238A67100E0A2AA /* IntroduceViewController.xib in Resources */,
 				A02510D22238A78700E0A2AA /* base.css in Resources */,
 				A02510C822389A4900E0A2AA /* OpenAccountViewController.xib in Resources */,
+				A02510DC2238DDE400E0A2AA /* SetTableViewCell.xib in Resources */,
 				A02510D32238A78700E0A2AA /* base.js in Resources */,
 				F216B953220412BB009B811D /* Assets.xcassets in Resources */,
 				A02510BD2238833500E0A2AA /* IconView.xib in Resources */,
@@ -1232,6 +1246,7 @@
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
 				2AFF017B2237EB38007865AF /* InvestHeadView.m in Sources */,
 				F299D38E221A7D9200727305 /* GestureViewController.m in Sources */,
+				A02510D72238DCE700E0A2AA /* SetViewController.m in Sources */,
 				2AFF016F2237E4B5007865AF /* MeRegisterController.m in Sources */,
 				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
 				F2D6607422166B7B00943601 /* MeHeadCell.m in Sources */,
@@ -1256,6 +1271,7 @@
 				A0251082223745CB00E0A2AA /* AccountItemTableViewCell.m in Sources */,
 				F26F4FEA2212A94D009C6BB9 /* NSDate+Extension.m in Sources */,
 				A025107F223741D600E0A2AA /* AccountOperationTableViewCell.m in Sources */,
+				A02510DB2238DDE400E0A2AA /* SetTableViewCell.m in Sources */,
 				F26F4FF12212A94D009C6BB9 /* UIBarButtonItem+WNXBarButtonItem.m in Sources */,
 				2AFF01812237ECF4007865AF /* NewsBulletinCell.m in Sources */,
 				F26F4FF32212A94D009C6BB9 /* UIButton+ImageAndTitle.m in Sources */,
@@ -1459,6 +1475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4X3MNBDJ6;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeiBang/Common/Constants/WBPrefixHeader.pch;
@@ -1481,6 +1498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V4X3MNBDJ6;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeiBang/Common/Constants/WBPrefixHeader.pch;

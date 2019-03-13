@@ -26,8 +26,6 @@
 
 @implementation MeViewController
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setup];
