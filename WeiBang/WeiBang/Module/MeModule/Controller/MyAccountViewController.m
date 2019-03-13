@@ -52,18 +52,6 @@
     self.automaticallyAdjustsScrollViewInsets = true;
     [self.tableView reloadData];
     
-    UILabel *titleLable = [[UILabel alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - scaleX_6(80))/2, kStatusBarHeight, scaleX_6(80), scaleY_6(44))];
-    titleLable.textColor = [UIColor whiteColor];
-    titleLable.font = KFontSize(17);
-    titleLable.text = @"我的账户";
-    titleLable.textAlignment = NSTextAlignmentCenter;
-    titleLable.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:titleLable];
-    
-    UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - scaleX_6(40) -scaleX_6(10), kStatusBarHeight, scaleX_6(40), scaleX_6(40))];
-    [settingBtn setImage:[UIImage imageNamed:@"设置"] forState:UIControlStateNormal];
-    [settingBtn addTarget:self action:@selector(settingBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:settingBtn];
 }
 
 
