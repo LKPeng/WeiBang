@@ -61,6 +61,7 @@
     [settingBtn setImage:[UIImage imageNamed:@"设置"] forState:UIControlStateNormal];
     [settingBtn addTarget:self action:@selector(setFunction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:settingBtn];
+    NSLog(@"1");
 }
 
 
