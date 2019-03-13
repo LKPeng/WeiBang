@@ -116,8 +116,19 @@
     }];
 }
 
+/*
+ * 注册
+ */
 - (void)btnClick{
+    if (self.AccountView.accountText.text.length < 11) {
+        [MBProgressHUD showMessage:@"请输入11位手机号码!"];
+        return;
+    }
     
+    if (self.AccountView.accountText.text.length < 11) {
+        [MBProgressHUD showMessage:@"请输入11位手机号码!"];
+        return;
+    }
 }
 
 - (void)popViewControllerAnimated:(UIButton *)button{

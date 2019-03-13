@@ -58,6 +58,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     InvestController *invest = [[InvestController alloc]init];
+    [invest setDataWithIndexPath:indexPath];
     [self.navigationController pushViewController:invest animated:YES];
 }
 
