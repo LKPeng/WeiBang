@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)setDataWithIndexPath:(NSInteger)indexPath;
 
+@property (strong, nonatomic) NSMutableArray *titleTextArray;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -20,15 +20,22 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setup];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,13 +44,32 @@
 }
 
 - (void)setup{
+    
+    
+    
+    
     self.view.backgroundColor = kappMainColor;
     self.automaticallyAdjustsScrollViewInsets = true;
     [self.tableView reloadData];
     
+    UILabel *titleLable = [[UILabel alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - scaleX_6(80))/2, kStatusBarHeight, scaleX_6(80), scaleY_6(44))];
+    titleLable.textColor = [UIColor whiteColor];
+    titleLable.font = KFontSize(17);
+    titleLable.text = @"我的账户";
+    titleLable.textAlignment = NSTextAlignmentCenter;
+    titleLable.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:titleLable];
     
+    UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - scaleX_6(40) -scaleX_6(10), kStatusBarHeight, scaleX_6(40), scaleX_6(40))];
+    [settingBtn setImage:[UIImage imageNamed:@"设置"] forState:UIControlStateNormal];
+    [settingBtn addTarget:self action:@selector(settingBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:settingBtn];
 }
 
+
+- (void)settingBtnClick{
+    
+}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 3;
@@ -109,13 +135,13 @@
 #pragma mark ----   懒加载  ----
 - (UITableView *)tableView{
     if(!_tableView){
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, KWIDTH , KHIGHT) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , KHIGHT) style:UITableViewStyleGrouped];
         _tableView.backgroundColor = [UIColor colorWithHexString:@"#f2f4f4"];
         adjustsScrollViewInsets_NO(_tableView, self);
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.scrollEnabled = false;
-        MyAccountHeaderView *headerView = [[MyAccountHeaderView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleY(120))];
+        MyAccountHeaderView *headerView = [[MyAccountHeaderView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, KWIDTH , scaleY(120) + kNavBarHeight)];
         _tableView.tableHeaderView = headerView;
         _tableView.tableFooterView = [UIView new];
         [_tableView regsiterCellWithCellClass:[AccountOperationTableViewCell class] isNib:NO];

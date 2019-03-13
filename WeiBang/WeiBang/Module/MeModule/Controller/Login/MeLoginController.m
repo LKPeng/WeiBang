@@ -130,7 +130,21 @@
     [self.navigationController pushViewController:regis animated:YES];
 }
 
-
+- (void)btnClick{
+    if (self.AccountView.accountText.text.length != 11) {
+        [MBProgressHUD showMessage:@"请输入11位手机号码!"];
+        return;
+    }
+    
+    if (self.passwordView.accountText.text.length < 11) {
+        [MBProgressHUD showMessage:@"请输入6-15位之间密码!"];
+        return;
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"user_login"];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (TemplateView *)AccountView{
     if (!_AccountView) {

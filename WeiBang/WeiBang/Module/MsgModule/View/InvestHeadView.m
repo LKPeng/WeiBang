@@ -11,6 +11,7 @@
 #import "ProgressView.h"
 #import "InvestInfoView.h"
 #import "InvestContectView.h"
+#import "investScrollView.h"
 
 @interface InvestHeadView()
 @property (strong, nonatomic) UILabel *titleLabel;
@@ -23,6 +24,8 @@
 @property (strong, nonatomic) InvestInfoView *InvestInfoView;
 /* 设备 */
 @property (strong, nonatomic) InvestContectView *InvestContectView;
+/* 设备 */
+@property (strong, nonatomic) investScrollView *investScrollView;
 @end
 
 @implementation InvestHeadView
@@ -112,6 +115,7 @@
     
     [self addSubview:self.InvestInfoView];
     [self addSubview:self.InvestContectView];
+    [self addSubview:self.investScrollView];
 }
 
 - (void)setDataWithIndexPath:(NSInteger)indexPath{
@@ -132,11 +136,18 @@
 //        self.rateLabel.text = @"预期年化收益率5%";
 //        self.termLabel.text = @"期限一个月";
 //    }else{
-        self.titleLabel.text = [[NSString alloc]initWithFormat:@"个人标的测试流程%ld",3%5];
-        self.rateLabel.text = @"预期年化收益率10%";
-        self.termLabel.text = @"期限一个月";
+//        self.titleLabel.text = [[NSString alloc]initWithFormat:@"个人标的测试流程%ld",3%5];
+//        self.rateLabel.text = @"预期年化收益率10%";
+//        self.termLabel.text = @"期限一个月";
 //    }
 }
+
+- (void)setTitleTextArray:(NSMutableArray *)titleTextArray{
+    self.titleLabel.text =  [NSString stringWithFormat:@"项目名称:%@",titleTextArray[0]];
+    self.rateLabel.text  =  titleTextArray[1];
+    self.termLabel.text  =  titleTextArray[2];
+}
+
 
 - (void)layoutSubviews{
     [super layoutSubviews];
@@ -157,6 +168,12 @@
         make.left.right.equalTo(self);
         make.top.equalTo(self.InvestContectView.mas_bottom).offset(scaleY_6(10));
         make.height.mas_equalTo(InvestInfoViewHeight);
+    }];
+    
+    [self.investScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self);
+        make.top.equalTo(self.InvestInfoView.mas_bottom).offset(scaleY_6(10));
+        make.height.mas_equalTo(scaleY_6(45));
     }];
 //
 //    [self layoutIfNeeded];
@@ -234,6 +251,13 @@
         _InvestContectView.award.text     = @"是否奖励:无";
     }
     return _InvestContectView;
+}
+
+- (investScrollView *)investScrollView{
+    if (!_investScrollView) {
+        _investScrollView = [[investScrollView alloc]init];
+    }
+    return _investScrollView;
 }
 
 

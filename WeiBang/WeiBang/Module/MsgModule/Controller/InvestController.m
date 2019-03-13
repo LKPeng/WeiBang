@@ -10,6 +10,7 @@
 #import "NewsBulletinCell.h"
 #import "NewsBulletinModel.h"
 #import "InvestHeadView.h"
+#import "OpenAccountViewController.h"
 
 @interface InvestController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *myTableView;
@@ -17,6 +18,11 @@
 @property (nonatomic, strong) NSMutableArray<NewsBulletinModel *> *newsModels;
 
 @property(nonatomic, assign)NSInteger pageNum;
+
+/* 设备 */
+@property (strong, nonatomic) NSMutableArray *titleTextArray;
+
+@property(nonatomic, strong) UIButton *saveBtn;
 @end
 
 @implementation InvestController
@@ -30,11 +36,15 @@
     
     self.view.backgroundColor = kappMainColor;
     
-    [self setupNavBarTitleViewWithText:@"新闻公告"];
+    [self setupNavBarTitleViewWithText:@"投资"];
     
     self.pageNum = 1;
     
-    [self requestMoneyPageData];
+    [self createModel];
+    
+    [self.myTableView reloadData];
+    
+    [self.view addSubview:self.saveBtn];
 }
 
 #pragma mark ----   加载数据  ----
@@ -70,9 +80,37 @@
     
 }
 
+- (void)setDataWithIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row%7 == 0){
+        [self.titleTextArray addObject: @"富桢流程测试"];
+        [self.titleTextArray addObject: @"预期年化收益率12%"];
+        [self.titleTextArray addObject: @"期限一个月"];
+    }else if (indexPath.row%7 == 1){
+        [self.titleTextArray addObject: @"车辆抵押"];
+        [self.titleTextArray addObject: @"预期年化收益率16%"];
+        [self.titleTextArray addObject: @"期限一个月"];
+    }else if (indexPath.row%7 == 2) {
+        [self.titleTextArray addObject: @"新年地产开盘"];
+        [self.titleTextArray addObject: @"预期年化收益率8%"];
+        [self.titleTextArray addObject: @"期限一个月"];
+    }else if (indexPath.row%7 == 3) {
+        [self.titleTextArray addObject: @"个人房屋抵押借款"];
+        [self.titleTextArray addObject: @"预期年化收益率5%"];
+        [self.titleTextArray addObject: @"期限一个月"];
+    }else{
+        NSString *text = [[NSString alloc]initWithFormat:@"个人标的测试流程%ld",(long)indexPath.row%5];
+        [self.titleTextArray addObject: text];
+        [self.titleTextArray addObject: @"预期年化收益率10%"];
+        [self.titleTextArray addObject: @"期限一个月"];
+    }
+    
+}
+#pragma mark ----   点击  ----
 
-
-
+- (void)saveBtnClick{
+    OpenAccountViewController *open = [[OpenAccountViewController alloc]init];
+    [self.navigationController pushViewController:open animated:YES];
+}
 
 #pragma mark -  UITableViewDelegate && UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -107,9 +145,6 @@
         [self.myTableView setLayoutMargins:UIEdgeInsetsMake(0,0,0,0)];
     }
     
-//    InvestHeadView *headerView = [[InvestHeadView alloc] init];
-//    headerView.frame =    CGRectMake(0, 0, KWIDTH , headerView.viewHeight);
-//    _myTableView.tableHeaderView = headerView;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -165,15 +200,16 @@
         _myTableView.rowHeight = 60;
         _myTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         
-        InvestHeadView *headerView = [[InvestHeadView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleY_6(160 + 10 + 120 + 50 + 30))];
+        InvestHeadView *headerView = [[InvestHeadView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleY_6(160 + 10 + 120 + 50 + 30 + 45))];
+        headerView.titleTextArray = self.titleTextArray;
         headerView.backgroundColor = [UIColor whiteColor];
         [headerView setDataWithIndexPath:1];
         _myTableView.tableHeaderView = headerView;
         _myTableView.tableFooterView = [UIView new];
         [_myTableView regsiterCellWithCellClass:[NewsBulletinCell class] isNib:NO];
         
-        [_myTableView addHeaderRefreshWithTarget:self eventAction:@selector(requestMoneyPageData)];
-        [_myTableView addFooterRefreshWithTarget:self eventAction:@selector(requestMoneyPageNoData)];
+//        [_myTableView addHeaderRefreshWithTarget:self eventAction:@selector(requestMoneyPageData)];
+//        [_myTableView addFooterRefreshWithTarget:self eventAction:@selector(requestMoneyPageNoData)];
         
         [self.view addSubview: _myTableView];
     }
@@ -187,5 +223,25 @@
     return _newsModels;
 }
 
+- (NSMutableArray *)titleTextArray{
+    if (!_titleTextArray) {
+        _titleTextArray = [[NSMutableArray alloc]init];
+    }
+    return _titleTextArray;
+}
+
+- (UIButton *)saveBtn{
+    if (!_saveBtn) {
+        UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [saveBtn setTitle:@"立即投资" forState:UIControlStateNormal];
+        saveBtn.backgroundColor = kappRed;
+        saveBtn.tintColor = [UIColor whiteColor];
+        saveBtn.titleLabel.font = kFontSize6(13);
+        saveBtn.frame = CGRectMake(10, SCREEN_HEIGHT - scaleY_6(10) - scaleY_6(40), SCREEN_WIDTH - 20, scaleY_6(40));
+        [saveBtn addTarget:self action:@selector(saveBtnClick) forControlEvents:UIControlEventTouchUpInside];
+        _saveBtn = saveBtn;
+    }
+    return _saveBtn;
+}
 
 @end

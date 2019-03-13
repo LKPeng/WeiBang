@@ -10,6 +10,8 @@
 #import "HomeTableViewCell.h"
 #import "HomeHeaderView.h"
 #import "NewUsersViewController.h"
+#import "InvestController.h"
+#import "NewsBulletinControllerViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -31,7 +33,26 @@
     self.view.backgroundColor = kappMainColor;
     self.automaticallyAdjustsScrollViewInsets = true;
     [self.tableView reloadData];
+    
+    UIButton *cancleButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [cancleButton setTitle:@"公告" forState:UIControlStateNormal];
+    [cancleButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [cancleButton addTarget:self action:@selector(cancleButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:cancleButton];
+    rightItem.imageInsets = UIEdgeInsetsMake(0, -15,0, 0);//设置向左偏移
+    self.navigationItem.rightBarButtonItem = rightItem;
+    
 }
+
+#pragma mark ----   点击  ----
+
+- (void)cancleButtonClicked{
+    NewsBulletinControllerViewController *invest = [[NewsBulletinControllerViewController alloc]init];
+    [self.navigationController pushViewController:invest animated:YES];
+}
+
+#pragma mark ----   UITableViewDelegate  ----
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -52,6 +73,11 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    InvestController *invest = [[InvestController alloc]init];
+    [invest setDataWithIndexPath:indexPath];
+    [self.navigationController pushViewController:invest animated:YES];
+}
 
 
 #pragma mark ----   懒加载  ----

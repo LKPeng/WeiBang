@@ -22,7 +22,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = UIColor.redColor;
+        self.backgroundColor = kappRed;
         [self setUp];
     }
     return self;

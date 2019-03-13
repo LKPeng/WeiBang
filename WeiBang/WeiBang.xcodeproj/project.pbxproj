@@ -46,6 +46,7 @@
 		F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */ = {isa = PBXBuildFile; fileRef = F23F69612215329300C2AE87 /* AppautoSizeScale.m */; };
 		F23F72142213E53600D42A02 /* WBStaticConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F23F72132213E53600D42A02 /* WBStaticConstant.m */; };
 		F25989C322164C1A00657F7A /* MeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F25989C222164C1A00657F7A /* MeHeadView.m */; };
+		F26AB7DD2238D4D60029010A /* investScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AB7DC2238D4D60029010A /* investScrollView.m */; };
 		F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F992212A94D009C6BB9 /* WBGestureBaseController.m */; };
 		F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F9C2212A94D009C6BB9 /* WBNavigantionController.m */; };
 		F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F9F2212A94D009C6BB9 /* WBTabBarController.m */; };
@@ -193,6 +194,8 @@
 		F23F72132213E53600D42A02 /* WBStaticConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBStaticConstant.m; sourceTree = "<group>"; };
 		F25989C122164C1A00657F7A /* MeHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeHeadView.h; sourceTree = "<group>"; };
 		F25989C222164C1A00657F7A /* MeHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeHeadView.m; sourceTree = "<group>"; };
+		F26AB7DB2238D4D60029010A /* investScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = investScrollView.h; sourceTree = "<group>"; };
+		F26AB7DC2238D4D60029010A /* investScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = investScrollView.m; sourceTree = "<group>"; };
 		F26F4F982212A94D009C6BB9 /* WBGestureBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGestureBaseController.h; sourceTree = "<group>"; };
 		F26F4F992212A94D009C6BB9 /* WBGestureBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGestureBaseController.m; sourceTree = "<group>"; };
 		F26F4F9B2212A94D009C6BB9 /* WBNavigantionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNavigantionController.h; sourceTree = "<group>"; };
@@ -345,6 +348,8 @@
 				A02510C0223885AD00E0A2AA /* JJOptionTableViewCell.m */,
 				A02510C1223885AE00E0A2AA /* JJOptionView.h */,
 				A02510BF223885AD00E0A2AA /* JJOptionView.m */,
+				F26AB7DB2238D4D60029010A /* investScrollView.h */,
+				F26AB7DC2238D4D60029010A /* investScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1262,6 +1267,7 @@
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
 				F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */,
 				F26F503C2212A99E009C6BB9 /* MsgViewController.m in Sources */,
+				F26AB7DD2238D4D60029010A /* investScrollView.m in Sources */,
 				A02510BC2238833500E0A2AA /* IconView.m in Sources */,
 				F26F4FED2212A94D009C6BB9 /* NSString+Extenssion.m in Sources */,
 				F26F4FFA2212A94D009C6BB9 /* UIView+Extension.m in Sources */,
