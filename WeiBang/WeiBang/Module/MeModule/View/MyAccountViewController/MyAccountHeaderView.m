@@ -70,7 +70,7 @@
 
 - (UIImageView *)imageView{
     if (!_imageView) {
-        _imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"u2779"]];
+        _imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"personal_backgroud_icon.png"]];
     }
     return _imageView;
 }
@@ -87,7 +87,7 @@
 - (UILabel *)assetsLabel{
     if (!_assetsLabel) {
         _assetsLabel = [[UILabel alloc]init];
-        _assetsLabel.font = kFontSize6(11);
+        _assetsLabel.font = kFontSize6(12);
         _assetsLabel.textColor = [UIColor whiteColor];
         _assetsLabel.text = @"0.00元";
     }
@@ -97,7 +97,7 @@
 - (UILabel *)codeLabel{
     if (!_codeLabel) {
         _codeLabel = [[UILabel alloc]init];
-        _codeLabel.font = kFontSize6(11);
+        _codeLabel.font = kFontSize6(12);
         _codeLabel.textColor = [UIColor whiteColor];
         _codeLabel.text = @"13789897890";
     }
@@ -107,7 +107,7 @@
 - (UILabel *)recommendCodeLabel{
     if (!_recommendCodeLabel) {
          _recommendCodeLabel = [[UILabel alloc]init];
-        _recommendCodeLabel.font = kFontSize6(11);
+        _recommendCodeLabel.font = kFontSize6(13);
         _recommendCodeLabel.textColor = [UIColor whiteColor];
         _recommendCodeLabel.text = @"推荐码:2864107";
     }

@@ -11,8 +11,9 @@
 
 @interface NewUsersViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
-
 @end
+
+int cellCount = 10;
 
 @implementation NewUsersViewController
 
@@ -33,6 +34,12 @@
     self.view.backgroundColor = kappMainColor;
     self.automaticallyAdjustsScrollViewInsets = true;
     [self.tableView reloadData];
+    
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        [ self.tableView.mj_footer endRefreshing];
+        cellCount += 10;
+        [self.tableView reloadData];
+    }];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -40,7 +47,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return cellCount;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -112,6 +119,7 @@
         _tableView.tableFooterView = [UIView new];
         UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , 0.001)];
         _tableView.tableHeaderView = headerView;
+//        _tableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight+25, 0);
         [_tableView regsiterCellWithCellClass:[HomeTableViewCell class] isNib:NO];
         [self.view addSubview: _tableView];
     }

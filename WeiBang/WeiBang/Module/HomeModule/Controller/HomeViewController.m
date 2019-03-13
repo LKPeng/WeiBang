@@ -99,7 +99,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight+22, 0);
-        HomeHeaderView *headerView = [[HomeHeaderView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleX(415))];
+        HomeHeaderView *headerView = [[HomeHeaderView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleX(425))];
         headerView.newUserBlock = ^{
             NewUsersViewController *vc = [[NewUsersViewController alloc] init];
             [self.navigationController pushViewController:vc animated:true];

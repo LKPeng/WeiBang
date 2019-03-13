@@ -8,6 +8,7 @@
 
 #import "SetViewController.h"
 #import "SetTableViewCell.h"
+#import "IntroduceViewController.h"
 
 @interface SetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -50,6 +51,11 @@
     SetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[SetTableViewCell cellReuseID]];
     [cell setTitleWithRow:indexPath.row];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    IntroduceViewController *vc = [[IntroduceViewController alloc] initWithNibName:@"IntroduceViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 #pragma mark ----   懒加载  ----

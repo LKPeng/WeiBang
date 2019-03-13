@@ -15,6 +15,8 @@
 @property (nonatomic,strong) UITableView *tableView;
 @end
 
+int count = 10;
+
 @implementation MsgViewController
 
 - (void)viewDidLoad {
@@ -35,6 +37,12 @@
     JJOptionView *view1 = [[JJOptionView alloc] initWithFrame:CGRectMake(0, kNavBarHeight , KWIDTH, 40)];
     view1.delegate = self;
     [self.view addSubview:view1];
+    
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        [ self.tableView.mj_footer endRefreshing];
+        count += 10;
+        [self.tableView reloadData];
+    }];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -42,7 +50,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -71,7 +79,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableFooterView = [UIView new];
-        _tableView.contentInset = UIEdgeInsetsMake(40, 0, kTabBarHeight, 0);
+        _tableView.contentInset = UIEdgeInsetsMake(40, 0, kTabBarHeight+25, 0);
         [_tableView regsiterCellWithCellClass:[HomeTableViewCell class] isNib:NO];
         UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , 0.001)];
         _tableView.tableHeaderView = headerView;

@@ -101,7 +101,7 @@
         self.titleLabel.text = @"新年地产开盘";
         self.rateLabel.text = @"预期年化收益率8%";
         self.termLabel.text = @"期限一个月";
-    }else if (indexPath.row%7 == 3) {
+    }else if (indexPath.row%7 == 5) {
         self.titleLabel.text = @"个人房屋抵押借款";
         self.rateLabel.text = @"预期年化收益率5%";
         self.termLabel.text = @"期限一个月";

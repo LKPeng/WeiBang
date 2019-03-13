@@ -208,7 +208,7 @@ static CGFloat const rowheight = 42;
         _titleLabel1 = [UILabel new];
         _titleLabel1.text = @"类型 ↓";
         _titleLabel1.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
-        _titleLabel1.font = [UIFont systemFontOfSize:16];
+        _titleLabel1.font = [UIFont systemFontOfSize:12];
         _titleLabel1.textAlignment = NSTextAlignmentCenter;
     }
     return _titleLabel1;
@@ -219,7 +219,7 @@ static CGFloat const rowheight = 42;
         _titleLabel2 = [UILabel new];
         _titleLabel2.text = @"期限 ↓";
         _titleLabel2.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
-        _titleLabel2.font = [UIFont systemFontOfSize:16];
+        _titleLabel2.font = [UIFont systemFontOfSize:12];
         _titleLabel2.textAlignment = NSTextAlignmentCenter;
     }
     return _titleLabel2;
@@ -230,7 +230,7 @@ static CGFloat const rowheight = 42;
         _titleLabel3 = [UILabel new];
         _titleLabel3.text = @"状态 ↓";
         _titleLabel3.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
-        _titleLabel3.font = [UIFont systemFontOfSize:16];
+        _titleLabel3.font = [UIFont systemFontOfSize:12];
         _titleLabel3.textAlignment = NSTextAlignmentCenter;
     }
     return _titleLabel3;

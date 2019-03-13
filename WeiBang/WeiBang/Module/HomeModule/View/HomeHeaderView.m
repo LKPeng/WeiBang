@@ -42,9 +42,9 @@
     [self addSubview:self.newsButton];
     [self addSubview:self.centerImageView];
     UIImageView *icon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"love.png"]];
-    icon.frame = CGRectMake(KWIDTH*0.5-scaleX(22), CGRectGetMaxY(self.centerImageView.frame)+scaleX(5), scaleX(12), scaleX(12));
+    icon.frame = CGRectMake(KWIDTH*0.5-scaleX(37), CGRectGetMaxY(self.centerImageView.frame)+scaleX(10), scaleX(12), scaleX(12));
     [self addSubview:icon];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(KWIDTH*0.5-scaleX(5), CGRectGetMaxY(self.centerImageView.frame)+scaleX(2), KWIDTH*0.4, scaleX(16))];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(KWIDTH*0.5-scaleX(20), CGRectGetMaxY(self.centerImageView.frame)+scaleX(7), KWIDTH*0.4, scaleX(16))];
     label.text = @"推荐项目";
     label.textColor = [UIColor blackColor];
     label.font = [UIFont systemFontOfSize:scaleX(12)];

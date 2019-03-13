@@ -86,9 +86,9 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 1 || indexPath.section == 2) {
-        return scaleX(49);
+        return scaleX(42);
     }
-    return scaleX(50);
+    return scaleX(45);
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{

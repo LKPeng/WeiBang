@@ -28,8 +28,8 @@
 -(void)setUp{
     [self addSubview:self.rechargeButton];
     [self.rechargeButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(scaleY(10));
-        make.bottom.mas_equalTo(scaleY(-10));
+        make.top.mas_equalTo(scaleY(8));
+        make.bottom.mas_equalTo(scaleY(-8));
         make.left.mas_equalTo(scaleX(50));
         make.width.mas_equalTo(scaleX(80));
     }];
@@ -61,10 +61,10 @@
         _rechargeButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_rechargeButton setTitle:@"充值" forState:UIControlStateNormal];
         [_rechargeButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        _rechargeButton.layer.cornerRadius = autoSizeScale6(6);
-        _rechargeButton.layer.borderWidth  = autoSizeScale6(0.8);
+        _rechargeButton.layer.cornerRadius = scaleX(6);
+        _rechargeButton.layer.borderWidth  = scaleX(0.5);
         _rechargeButton.layer.borderColor  = UIColor.redColor.CGColor;
-        _rechargeButton.titleLabel.font = kFontSize6(13);
+        _rechargeButton.titleLabel.font = kFontSize6(12);
         _rechargeButton.clipsToBounds = true;
         weakself
         [_rechargeButton addButtonActionClickHandler:^(NSInteger tagIndex) {
@@ -80,10 +80,10 @@
         _withdrawalButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_withdrawalButton setTitle:@"提现" forState:UIControlStateNormal];
         [_withdrawalButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        _withdrawalButton.layer.cornerRadius = autoSizeScale6(6);
-        _withdrawalButton.layer.borderWidth  = autoSizeScale6(0.8);
+        _withdrawalButton.layer.cornerRadius = scaleX(6);
+        _withdrawalButton.layer.borderWidth  = scaleX(0.5);
         _withdrawalButton.layer.borderColor  = UIColor.redColor.CGColor;
-        _withdrawalButton.titleLabel.font = kFontSize6(13);
+        _withdrawalButton.titleLabel.font = kFontSize6(12);
         _withdrawalButton.clipsToBounds = true;
         weakself
         [_withdrawalButton addButtonActionClickHandler:^(NSInteger tagIndex) {
