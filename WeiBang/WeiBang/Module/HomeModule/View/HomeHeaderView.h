@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeHeaderView : UIView
-@property (nonatomic,copy) dispatch_block_t rechargeBlock;
+@property (nonatomic,copy) dispatch_block_t newUserBlock;
+@property (nonatomic,copy) dispatch_block_t loanBlock;
+@property (nonatomic,copy) dispatch_block_t newsBlock;
 @end

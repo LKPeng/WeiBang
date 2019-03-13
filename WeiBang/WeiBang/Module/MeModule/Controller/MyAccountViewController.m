@@ -11,6 +11,7 @@
 #import "AccountItemTableViewCell.h"
 #import "MyAccountHeaderView.h"
 #import "OpenAccountViewController.h"
+#import "IntroduceViewController.h"
 
 @interface MyAccountViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -103,6 +104,11 @@
     AccountItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[AccountItemTableViewCell cellReuseID]];
     [cell setDataWithIndexPath:indexPath];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    IntroduceViewController *vc = [[IntroduceViewController alloc] initWithNibName:@"IntroduceViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 

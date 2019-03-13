@@ -37,6 +37,11 @@
 		A02510C3223885AE00E0A2AA /* JJOptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510C0223885AD00E0A2AA /* JJOptionTableViewCell.m */; };
 		A02510C722389A4900E0A2AA /* OpenAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510C522389A4900E0A2AA /* OpenAccountViewController.m */; };
 		A02510C822389A4900E0A2AA /* OpenAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02510C622389A4900E0A2AA /* OpenAccountViewController.xib */; };
+		A02510CD2238A67100E0A2AA /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510CB2238A67100E0A2AA /* IntroduceViewController.m */; };
+		A02510CE2238A67100E0A2AA /* IntroduceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02510CC2238A67100E0A2AA /* IntroduceViewController.xib */; };
+		A02510D22238A78700E0A2AA /* base.css in Resources */ = {isa = PBXBuildFile; fileRef = A02510CF2238A78600E0A2AA /* base.css */; };
+		A02510D32238A78700E0A2AA /* base.js in Resources */ = {isa = PBXBuildFile; fileRef = A02510D02238A78600E0A2AA /* base.js */; };
+		A02510D42238A78700E0A2AA /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = A02510D12238A78700E0A2AA /* index.html */; };
 		D5E9A4519650E96C703ECB0F /* Pods_WeiBang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */; };
 		F216B94B220412B5009B811D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B94A220412B5009B811D /* AppDelegate.m */; };
 		F216B953220412BB009B811D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F216B952220412BB009B811D /* Assets.xcassets */; };
@@ -171,6 +176,12 @@
 		A02510C422389A4900E0A2AA /* OpenAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenAccountViewController.h; sourceTree = "<group>"; };
 		A02510C522389A4900E0A2AA /* OpenAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenAccountViewController.m; sourceTree = "<group>"; };
 		A02510C622389A4900E0A2AA /* OpenAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenAccountViewController.xib; sourceTree = "<group>"; };
+		A02510CA2238A67100E0A2AA /* IntroduceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroduceViewController.h; sourceTree = "<group>"; };
+		A02510CB2238A67100E0A2AA /* IntroduceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroduceViewController.m; sourceTree = "<group>"; };
+		A02510CC2238A67100E0A2AA /* IntroduceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroduceViewController.xib; sourceTree = "<group>"; };
+		A02510CF2238A78600E0A2AA /* base.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = base.css; sourceTree = "<group>"; };
+		A02510D02238A78600E0A2AA /* base.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = base.js; sourceTree = "<group>"; };
+		A02510D12238A78700E0A2AA /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiBang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B946220412B5009B811D /* WeiBang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B949220412B5009B811D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -905,6 +916,12 @@
 				A02510C422389A4900E0A2AA /* OpenAccountViewController.h */,
 				A02510C522389A4900E0A2AA /* OpenAccountViewController.m */,
 				A02510C622389A4900E0A2AA /* OpenAccountViewController.xib */,
+				A02510CA2238A67100E0A2AA /* IntroduceViewController.h */,
+				A02510CB2238A67100E0A2AA /* IntroduceViewController.m */,
+				A02510CC2238A67100E0A2AA /* IntroduceViewController.xib */,
+				A02510CF2238A78600E0A2AA /* base.css */,
+				A02510D02238A78600E0A2AA /* base.js */,
+				A02510D12238A78700E0A2AA /* index.html */,
 				F23F696C22155BFC00C2AE87 /* Setting */,
 				2AFF01552237D12E007865AF /* Login */,
 			);
@@ -1124,7 +1141,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A02510D42238A78700E0A2AA /* index.html in Resources */,
+				A02510CE2238A67100E0A2AA /* IntroduceViewController.xib in Resources */,
+				A02510D22238A78700E0A2AA /* base.css in Resources */,
 				A02510C822389A4900E0A2AA /* OpenAccountViewController.xib in Resources */,
+				A02510D32238A78700E0A2AA /* base.js in Resources */,
 				F216B953220412BB009B811D /* Assets.xcassets in Resources */,
 				A02510BD2238833500E0A2AA /* IconView.xib in Resources */,
 			);
@@ -1276,6 +1297,7 @@
 				A025108C223789D100E0A2AA /* HomeTableViewCell.m in Sources */,
 				F26F4FE92212A94D009C6BB9 /* NSData+Base64.m in Sources */,
 				2AFF01592237D172007865AF /* MeLoginController.m in Sources */,
+				A02510CD2238A67100E0A2AA /* IntroduceViewController.m in Sources */,
 				F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */,
 				F26F4FEE2212A94D009C6BB9 /* NSString+Hash.m in Sources */,
 				F299D39C221A8C2100727305 /* WBSettingCell.m in Sources */,

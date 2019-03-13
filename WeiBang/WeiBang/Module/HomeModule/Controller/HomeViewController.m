@@ -64,9 +64,15 @@
         _tableView.dataSource = self;
         _tableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight+22, 0);
         HomeHeaderView *headerView = [[HomeHeaderView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleX(415))];
-        headerView.rechargeBlock = ^{
+        headerView.newUserBlock = ^{
             NewUsersViewController *vc = [[NewUsersViewController alloc] init];
             [self.navigationController pushViewController:vc animated:true];
+        };
+        headerView.loanBlock = ^{
+            self.navigationController.tabBarController.selectedIndex = 1;
+        };
+        headerView.newsBlock = ^{
+            
         };
         _tableView.tableHeaderView = headerView;
         _tableView.tableFooterView = [UIView new];
