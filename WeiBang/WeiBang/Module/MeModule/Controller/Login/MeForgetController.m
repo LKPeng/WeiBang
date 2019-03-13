@@ -111,7 +111,28 @@
 }
 
 - (void)btnClick{
+    if (self.AccountView.accountText.text.length != 11) {
+        [MBProgressHUD showMessage:@"请输入11位手机号码!"];
+        return;
+    }
     
+    
+    if (self.passwordView.accountText.text.length > 16 && 6 > self.passwordView.accountText.text.length) {
+        [MBProgressHUD showMessage:@"请输入6-15位之间密码!"];
+        return;
+    }
+    
+    if (self.surePasswordView.accountText.text.length > 16 && 6 > self.surePasswordView.accountText.text.length) {
+        [MBProgressHUD showMessage:@"请输入6-15位之间确认密码!"];
+        return;
+    }
+    
+    if(self.passwordView.accountText.text != self.surePasswordView.accountText.text){
+        [MBProgressHUD showMessage:@"密码不一致!"];
+        return;
+    }
+    
+    [MBProgressHUD showMessage:@"找回密码失败,请稍后再试"];
 }
 
 - (void)popViewControllerAnimated:(UIButton *)button{

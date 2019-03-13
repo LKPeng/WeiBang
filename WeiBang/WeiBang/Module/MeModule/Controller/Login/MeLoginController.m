@@ -135,8 +135,8 @@
         [MBProgressHUD showMessage:@"请输入11位手机号码!"];
         return;
     }
-    
-    if (self.passwordView.accountText.text.length < 11) {
+    NSLog(@"%lu..",self.passwordView.accountText.text.length);
+    if (self.passwordView.accountText.text.length > 16 || 6 > self.passwordView.accountText.text.length) {
         [MBProgressHUD showMessage:@"请输入6-15位之间密码!"];
         return;
     }

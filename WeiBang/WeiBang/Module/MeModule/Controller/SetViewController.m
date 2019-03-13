@@ -92,16 +92,22 @@
 }
 
 -(void)quitfunction{
+    weakself
     UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提示" message:@"确定要退出登录吗？" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction * cancelAc = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //点击取消要执行的代码
     }];
     UIAlertAction *comfirmAc = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //点击确定要执行的代码
+        strongself
+        [[NSUserDefaults standardUserDefaults] setObject:@"NO" forKey:@"user_login"];
+        [MBProgressHUD showMessage:@"退出成功"];
+        [strongSelf bb_popViewController];
     }];
     [alertVC addAction:cancelAc];
     [alertVC addAction:comfirmAc];
     [self presentViewController:alertVC animated:YES completion:nil];
 }
+
 
 @end

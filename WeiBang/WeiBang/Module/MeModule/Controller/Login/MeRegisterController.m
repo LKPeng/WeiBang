@@ -15,6 +15,8 @@
 @property (strong, nonatomic) TemplateView         *passwordView;
 @property (strong, nonatomic) TemplateView         *surePasswordView;
 @property (strong, nonatomic) TemplateView         *pushView;
+
+@property (weak, nonatomic) VerificationCodeView *verificationCodeView;
 @end
 
 @implementation MeRegisterController
@@ -65,8 +67,8 @@
     AccountView.accountImage.image = [UIImage imageNamed:@"zhanghao"];
     AccountView.accountText.placeholder = @"请输入手机验证码";
     [self.view addSubview:AccountView];
+    self.verificationCodeView = AccountView;
     
-
     
     [_AccountView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view.mas_left).offset(scaleX_6(15));
@@ -120,15 +122,33 @@
  * 注册
  */
 - (void)btnClick{
-    if (self.AccountView.accountText.text.length < 11) {
+    if (self.AccountView.accountText.text.length != 11) {
         [MBProgressHUD showMessage:@"请输入11位手机号码!"];
         return;
     }
     
-    if (self.AccountView.accountText.text.length < 11) {
-        [MBProgressHUD showMessage:@"请输入11位手机号码!"];
+    if (self.verificationCodeView.accountText.text.length != 6) {
+        [MBProgressHUD showMessage:@"请输入6位验证码!"];
         return;
     }
+    
+    if (self.passwordView.accountText.text.length > 16 && 6 > self.passwordView.accountText.text.length) {
+        [MBProgressHUD showMessage:@"请输入6-15位之间密码!"];
+        return;
+    }
+    
+    if (self.surePasswordView.accountText.text.length > 16 && 6 > self.surePasswordView.accountText.text.length) {
+        [MBProgressHUD showMessage:@"请输入6-15位之间确认密码!"];
+        return;
+    }
+    
+    if(self.passwordView.accountText.text != self.surePasswordView.accountText.text){
+        [MBProgressHUD showMessage:@"密码不一致!"];
+        return;
+    }
+    
+    [MBProgressHUD showMessage:@"注册失败,请稍后再试"];
+    
 }
 
 - (void)popViewControllerAnimated:(UIButton *)button{
