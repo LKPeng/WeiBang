@@ -10,6 +10,7 @@
 #import "UIImageView+WebCache.h"
 #import "PlanADScrollView.h"
 #import "RNOLHomeNoticeView.h"
+#import "IconView.h"
 
 @interface HomeHeaderView()<PlanADScrollViewDelegate>
 @property(strong,nonatomic) PlanADScrollView *bannerView;
@@ -35,6 +36,7 @@
 - (void)setUp{
     [self addSubview:self.bannerView];
     [self addSubview:self.noticeView];
+    [self addIconView];
     [self addSubview:self.loanButton];
     [self addSubview:self.userButton];
     [self addSubview:self.newsButton];
@@ -48,6 +50,14 @@
     label.font = [UIFont systemFontOfSize:scaleX(12)];
     [self addSubview:label];
 }
+
+-(void)addIconView{
+    NSArray *arr = [[NSBundle mainBundle] loadNibNamed:@"IconView" owner:self options:nil];
+    IconView *iconView = [arr lastObject];
+    iconView.frame = CGRectMake(0, CGRectGetMaxY(self.noticeView.frame), KWIDTH, scaleX(80));
+    [self addSubview:iconView];
+}
+
 
 - (PlanADScrollView *)bannerView{
     if (!_bannerView) {
@@ -71,9 +81,9 @@
 
 - (UIButton *)loanButton{
     if (!_loanButton) {
-        _loanButton = [[UIButton alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.noticeView.frame), KWIDTH*0.333, scaleX(100))];
-        [_loanButton setTitle:@"借款" forState:UIControlStateNormal];
-        [_loanButton setImage:[UIImage imageNamed:@"loan.png"] forState:UIControlStateNormal];
+        _loanButton = [[UIButton alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.noticeView.frame), KWIDTH*0.333, scaleX(80))];
+        //        [_loanButton setTitle:@"借款" forState:UIControlStateNormal];
+        //        [_loanButton setImage:[UIImage imageNamed:@"loan.png"] forState:UIControlStateNormal];
         [_loanButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _loanButton.titleLabel.font = KFontSize(12);
         [_loanButton verticalCenterImageAndTitle:scaleX(6)];
@@ -83,21 +93,27 @@
 
 - (UIButton *)userButton{
     if (!_userButton) {
-        _userButton = [[UIButton alloc] initWithFrame:CGRectMake(KWIDTH*0.333, CGRectGetMaxY(self.noticeView.frame), KWIDTH*0.333, scaleX(100))];
-        [_userButton setTitle:@"借款" forState:UIControlStateNormal];
-        [_userButton setImage:[UIImage imageNamed:@"new_user.png"] forState:UIControlStateNormal];
+        _userButton = [[UIButton alloc] initWithFrame:CGRectMake(KWIDTH*0.333, CGRectGetMaxY(self.noticeView.frame), KWIDTH*0.333, scaleX(80))];
+        //        [_userButton setTitle:@"借款" forState:UIControlStateNormal];
+        //        [_userButton setImage:[UIImage imageNamed:@"new_user.png"] forState:UIControlStateNormal];
         [_userButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _userButton.titleLabel.font = KFontSize(12);
         [_userButton verticalCenterImageAndTitle:scaleX(6)];
+        weakself;
+        [_userButton addButtonActionClickHandler:^(NSInteger tagIndex) {
+            strongself;
+            !self.rechargeBlock? : self.rechargeBlock();
+        }];
+        
     }
     return _userButton;
 }
 
 - (UIButton *)newsButton{
     if (!_newsButton) {
-        _newsButton = [[UIButton alloc] initWithFrame:CGRectMake(KWIDTH*0.666, CGRectGetMaxY(self.noticeView.frame), KWIDTH*0.333, scaleX(100))];
-        [_newsButton setTitle:@"借款" forState:UIControlStateNormal];
-        [_newsButton setImage:[UIImage imageNamed:@"news.png"] forState:UIControlStateNormal];
+        _newsButton = [[UIButton alloc] initWithFrame:CGRectMake(KWIDTH*0.666, CGRectGetMaxY(self.noticeView.frame), KWIDTH*0.333, scaleX(80))];
+        //        [_newsButton setTitle:@"借款" forState:UIControlStateNormal];
+        //        [_newsButton setImage:[UIImage imageNamed:@"news.png"] forState:UIControlStateNormal];
         [_newsButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         _newsButton.titleLabel.font = KFontSize(12);
         [_newsButton verticalCenterImageAndTitle:scaleX(6)];

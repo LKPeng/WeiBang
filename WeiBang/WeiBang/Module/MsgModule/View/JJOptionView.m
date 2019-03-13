@@ -8,7 +8,7 @@
 
 #import "JJOptionView.h"
 #import "Masonry.h"
-
+#import "JJOptionTableViewCell.h"
 #define WEAKSELF __weak typeof(self) weakSelf = self;
 
 @interface JJOptionView ()<UITableViewDelegate,UITableViewDataSource>
@@ -16,7 +16,9 @@
 /**
  标题控件
  */
-@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *titleLabel1;
+@property (nonatomic, strong) UILabel *titleLabel2;
+@property (nonatomic, strong) UILabel *titleLabel3;
 
 /**
  右边箭头图片
@@ -26,8 +28,9 @@
 /**
  控件透明按钮，也可以给控件加手势
  */
-@property (nonatomic, strong) UIButton *maskBtn;
-
+@property (nonatomic, strong) UIButton *maskBtn1;
+@property (nonatomic, strong) UIButton *maskBtn2;
+@property (nonatomic, strong) UIButton *maskBtn3;
 /**
  选项列表
  */
@@ -74,28 +77,64 @@ static CGFloat const rowheight = 42;
 
 - (void)setUI {
     
-    [self addSubview:self.rightImageView];
-    [self addSubview:self.titleLabel];
-    [self addSubview:self.maskBtn];
-    [self.rightImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self);
-        make.right.equalTo(self.mas_right).offset(-10);
-    }];
-    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self);
-        make.left.equalTo(self.mas_left).offset(10);
-        make.right.equalTo(self.rightImageView);
-    }];
-    [self.maskBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.bottom.equalTo(self);
+    self.backgroundColor = [UIColor whiteColor];
+    
+//    [self addSubview:self.rightImageView];
+    [self addSubview:self.titleLabel1];
+    [self.titleLabel1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(self.mas_centerY);
+        make.leading.mas_equalTo(0);
+        make.top.mas_equalTo(0);
+        make.width.mas_equalTo(self.width*0.33);
     }];
     
+    [self addSubview:self.titleLabel2];
+    [self.titleLabel2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(self.mas_centerY);
+        make.leading.mas_equalTo(self.width*0.33);
+        make.top.mas_equalTo(0);
+        make.width.mas_equalTo(self.width*0.33);
+    }];
+    
+    [self addSubview:self.titleLabel3];
+    [self.titleLabel3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(self.mas_centerY);
+        make.leading.mas_equalTo(self.width*0.66);
+        make.top.mas_equalTo(0);
+        make.width.mas_equalTo(self.width*0.33);
+    }];
+    
+    [self addSubview:self.maskBtn1];
+    [self.maskBtn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.bottom.equalTo(self);
+        make.width.mas_equalTo(KWIDTH*0.33);
+    }];
+    [self addSubview:self.maskBtn2];
+    [self.maskBtn2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(self);
+        make.leading.mas_equalTo(KWIDTH*0.33);
+        make.width.mas_equalTo(KWIDTH*0.33);
+    }];
+    [self addSubview:self.maskBtn3];
+    [self.maskBtn3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(self);
+        make.trailing.mas_equalTo(self);
+        make.width.mas_equalTo(KWIDTH*0.33);
+    }];
 }
 
 
-- (void)show {
+- (void)showWith:(UIButton*)button {
     WEAKSELF;
     
+    if (button.tag == 1) {
+        self.dataSource =  @[@"不限",@"信用标",@"秒标",@"净值标",@"抵押标"];
+    }else if (button.tag == 2) {
+        self.dataSource =  @[@"不限",@"1-3个月",@"4-6个月",@"7-9个月",@"10-12个月"];
+    }else if (button.tag == 3) {
+        self.dataSource =  @[@"全部",@"正在投标",@"满标待审",@"正在还款",@"还款完成"];
+    }
+    [self.tableView reloadData];
     
     UIWindow * window = [UIApplication sharedApplication].keyWindow;
     [window addSubview:self.backgroundBtn];
@@ -145,8 +184,8 @@ static CGFloat const rowheight = 42;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
-    cell.textLabel.text = self.dataSource[indexPath.row];
+    JJOptionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[JJOptionTableViewCell cellReuseID]];
+    [cell setData:self.dataSource[indexPath.row]];
     return cell;
 }
 
@@ -165,33 +204,36 @@ static CGFloat const rowheight = 42;
 #pragma mark getter && setter
 
 - (UILabel *)titleLabel1 {
-    if (!_titleLabel) {
-        _titleLabel = [UILabel new];
-        _titleLabel.text = @"类型 ↓";
-        _titleLabel.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
-        _titleLabel.font = [UIFont systemFontOfSize:16];
+    if (!_titleLabel1) {
+        _titleLabel1 = [UILabel new];
+        _titleLabel1.text = @"类型 ↓";
+        _titleLabel1.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
+        _titleLabel1.font = [UIFont systemFontOfSize:16];
+        _titleLabel1.textAlignment = NSTextAlignmentCenter;
     }
-    return _titleLabel;
+    return _titleLabel1;
 }
 
 - (UILabel *)titleLabel2 {
-    if (!_titleLabel) {
-        _titleLabel = [UILabel new];
-        _titleLabel.text = @"期限 ↓";
-        _titleLabel.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
-        _titleLabel.font = [UIFont systemFontOfSize:16];
+    if (!_titleLabel2) {
+        _titleLabel2 = [UILabel new];
+        _titleLabel2.text = @"期限 ↓";
+        _titleLabel2.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
+        _titleLabel2.font = [UIFont systemFontOfSize:16];
+        _titleLabel2.textAlignment = NSTextAlignmentCenter;
     }
-    return _titleLabel;
+    return _titleLabel2;
 }
 
 - (UILabel *)titleLabel3 {
-    if (!_titleLabel) {
-        _titleLabel = [UILabel new];
-        _titleLabel.text = @"状态 ↓";
-        _titleLabel.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
-        _titleLabel.font = [UIFont systemFontOfSize:16];
+    if (!_titleLabel3) {
+        _titleLabel3 = [UILabel new];
+        _titleLabel3.text = @"状态 ↓";
+        _titleLabel3.textColor = [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1];
+        _titleLabel3.font = [UIFont systemFontOfSize:16];
+        _titleLabel3.textAlignment = NSTextAlignmentCenter;
     }
-    return _titleLabel;
+    return _titleLabel3;
 }
 
 - (UIImageView *)rightImageView {
@@ -202,15 +244,37 @@ static CGFloat const rowheight = 42;
     return _rightImageView;
 }
 
-- (UIButton *)maskBtn {
-    if (!_maskBtn) {
-        _maskBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _maskBtn.backgroundColor = [UIColor clearColor];
-        _maskBtn.clipsToBounds = YES;
-        [_maskBtn addTarget:self action:@selector(show) forControlEvents:UIControlEventTouchUpInside];
+- (UIButton *)maskBtn1 {
+    if (!_maskBtn1) {
+        _maskBtn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+        _maskBtn1.backgroundColor = [UIColor clearColor];
+        _maskBtn1.clipsToBounds = YES;
+        _maskBtn1.tag = 1;
+        [_maskBtn1 addTarget:self action:@selector(showWith:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _maskBtn;
+    return _maskBtn1;
 }
+- (UIButton *)maskBtn2 {
+    if (!_maskBtn2) {
+        _maskBtn2 = [UIButton buttonWithType:UIButtonTypeCustom];
+        _maskBtn2.backgroundColor = [UIColor clearColor];
+        _maskBtn2.clipsToBounds = YES;
+        _maskBtn2.tag = 2;
+        [_maskBtn2 addTarget:self action:@selector(showWith:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _maskBtn2;
+}
+- (UIButton *)maskBtn3 {
+    if (!_maskBtn3) {
+        _maskBtn3 = [UIButton buttonWithType:UIButtonTypeCustom];
+        _maskBtn3.backgroundColor = [UIColor clearColor];
+        _maskBtn3.clipsToBounds = YES;
+        _maskBtn3.tag = 3;
+        [_maskBtn3 addTarget:self action:@selector(showWith:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _maskBtn3;
+}
+
 
 - (UITableView *)tableView {
     if (!_tableView) {
@@ -228,6 +292,7 @@ static CGFloat const rowheight = 42;
         _tableView.layer.borderWidth = 0.5;
         _tableView.layer.cornerRadius = self.cornerRadius;
         _tableView.separatorInset = UIEdgeInsetsMake(0, 5, 0, 5);
+        [_tableView regsiterCellWithCellClass:[JJOptionTableViewCell class] isNib:NO];
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
         if (@available(iOS 11.0, *)) {
             _tableView.contentInsetAdjustmentBehavior = UIApplicationBackgroundFetchIntervalNever;
@@ -253,7 +318,7 @@ static CGFloat const rowheight = 42;
 
 - (void)setTitle:(NSString *)title {
     _title = title;
-    self.titleLabel.text = title;
+//    self.titleLabel.text = title;
 }
 
 - (void)setDataSource:(NSArray *)dataSource {
@@ -267,12 +332,16 @@ static CGFloat const rowheight = 42;
 
 - (void)setTitleFontSize:(CGFloat)titleFontSize {
     _titleFontSize = titleFontSize;
-    self.titleLabel.font = [UIFont systemFontOfSize:titleFontSize];
+    self.titleLabel1.font = [UIFont systemFontOfSize:scaleX(12)];
+    self.titleLabel2.font = [UIFont systemFontOfSize:scaleX(12)];
+    self.titleLabel3.font = [UIFont systemFontOfSize:scaleX(12)];
 }
 
 - (void)setTitleColor:(UIColor *)titleColor {
     _titleColor = titleColor;
-    self.titleLabel.textColor = titleColor;
+    self.titleLabel1.textColor = [UIColor blackColor];
+    self.titleLabel2.textColor = [UIColor blackColor];
+    self.titleLabel3.textColor = [UIColor blackColor];
 }
 
 - (void)setCornerRadius:(CGFloat)cornerRadius {

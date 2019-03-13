@@ -1,24 +1,24 @@
 //
-//  MsgViewController.m
+//  NewUsersViewController.m
 //  WeiBang
 //
-//  Created by tchzt on 2019/2/12.
+//  Created by 吴凯耀 on 2019/3/12.
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 
-#import "MsgViewController.h"
+#import "NewUsersViewController.h"
 #import "HomeTableViewCell.h"
-#import "InvestController.h"
-#import "JJOptionView.h"
 
-@interface MsgViewController ()<UITableViewDelegate,UITableViewDataSource,JJOptionViewDelegate>
+@interface NewUsersViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
+
 @end
 
-@implementation MsgViewController
+@implementation NewUsersViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     [self setup];
 }
 
@@ -28,13 +28,11 @@
 }
 
 - (void)setup{
+    self.title = @"新手区";
+    [self setAutomaticallyAdjustsScrollViewInsets:false];
     self.view.backgroundColor = kappMainColor;
     self.automaticallyAdjustsScrollViewInsets = true;
     [self.tableView reloadData];
-    
-    JJOptionView *view1 = [[JJOptionView alloc] initWithFrame:CGRectMake(0, kNavBarHeight , KWIDTH, 40)];
-    view1.delegate = self;
-    [self.view addSubview:view1];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -46,7 +44,6 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     return scaleX(160);
 }
 
@@ -56,10 +53,6 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    InvestController *invest = [[InvestController alloc]init];
-    [self.navigationController pushViewController:invest animated:YES];
-}
 //section底部视图
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
@@ -106,6 +99,8 @@
 {
     return 0.001;
 }
+
+
 #pragma mark ----   懒加载  ----
 - (UITableView *)tableView{
     if(!_tableView){
@@ -115,10 +110,9 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableFooterView = [UIView new];
-        _tableView.contentInset = UIEdgeInsetsMake(40, 0, kTabBarHeight-20, 0);
-        [_tableView regsiterCellWithCellClass:[HomeTableViewCell class] isNib:NO];
         UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , 0.001)];
         _tableView.tableHeaderView = headerView;
+        [_tableView regsiterCellWithCellClass:[HomeTableViewCell class] isNib:NO];
         [self.view addSubview: _tableView];
     }
     return _tableView;

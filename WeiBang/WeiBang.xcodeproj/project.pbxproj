@@ -30,7 +30,11 @@
 		A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510962237A05200E0A2AA /* PlanADScrollView.m */; };
 		A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */; };
 		A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */; };
-		A02510A22237CF0500E0A2AA /* JJOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510A02237CF0500E0A2AA /* JJOptionView.m */; };
+		A02510B8223882DB00E0A2AA /* NewUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510B7223882DB00E0A2AA /* NewUsersViewController.m */; };
+		A02510BC2238833500E0A2AA /* IconView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510BA2238833500E0A2AA /* IconView.m */; };
+		A02510BD2238833500E0A2AA /* IconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02510BB2238833500E0A2AA /* IconView.xib */; };
+		A02510C2223885AE00E0A2AA /* JJOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510BF223885AD00E0A2AA /* JJOptionView.m */; };
+		A02510C3223885AE00E0A2AA /* JJOptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510C0223885AD00E0A2AA /* JJOptionTableViewCell.m */; };
 		D5E9A4519650E96C703ECB0F /* Pods_WeiBang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */; };
 		F216B94B220412B5009B811D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B94A220412B5009B811D /* AppDelegate.m */; };
 		F216B953220412BB009B811D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F216B952220412BB009B811D /* Assets.xcassets */; };
@@ -153,8 +157,15 @@
 		A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanADCollectionViewCell.m; sourceTree = "<group>"; };
 		A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOLHomeNoticeView.m; sourceTree = "<group>"; };
 		A025109E2237A33500E0A2AA /* RNOLHomeNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOLHomeNoticeView.h; sourceTree = "<group>"; };
-		A02510A02237CF0500E0A2AA /* JJOptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJOptionView.m; sourceTree = "<group>"; };
-		A02510A12237CF0500E0A2AA /* JJOptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJOptionView.h; sourceTree = "<group>"; };
+		A02510B6223882DA00E0A2AA /* NewUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUsersViewController.h; sourceTree = "<group>"; };
+		A02510B7223882DB00E0A2AA /* NewUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUsersViewController.m; sourceTree = "<group>"; };
+		A02510B92238833500E0A2AA /* IconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconView.h; sourceTree = "<group>"; };
+		A02510BA2238833500E0A2AA /* IconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconView.m; sourceTree = "<group>"; };
+		A02510BB2238833500E0A2AA /* IconView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IconView.xib; sourceTree = "<group>"; };
+		A02510BE223885AD00E0A2AA /* JJOptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJOptionTableViewCell.h; sourceTree = "<group>"; };
+		A02510BF223885AD00E0A2AA /* JJOptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJOptionView.m; sourceTree = "<group>"; };
+		A02510C0223885AD00E0A2AA /* JJOptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJOptionTableViewCell.m; sourceTree = "<group>"; };
+		A02510C1223885AE00E0A2AA /* JJOptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJOptionView.h; sourceTree = "<group>"; };
 		B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiBang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B946220412B5009B811D /* WeiBang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B949220412B5009B811D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -325,6 +336,10 @@
 				2AFF01682237E3FF007865AF /* InvestInfoView.m */,
 				2AFF01792237EB38007865AF /* InvestHeadView.h */,
 				2AFF017A2237EB38007865AF /* InvestHeadView.m */,
+				A02510BE223885AD00E0A2AA /* JJOptionTableViewCell.h */,
+				A02510C0223885AD00E0A2AA /* JJOptionTableViewCell.m */,
+				A02510C1223885AE00E0A2AA /* JJOptionView.h */,
+				A02510BF223885AD00E0A2AA /* JJOptionView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,8 +355,6 @@
 		A02510892237862700E0A2AA /* MyAccountViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A02510A12237CF0500E0A2AA /* JJOptionView.h */,
-				A02510A02237CF0500E0A2AA /* JJOptionView.m */,
 				A025107D223741D600E0A2AA /* AccountOperationTableViewCell.h */,
 				A025107E223741D600E0A2AA /* AccountOperationTableViewCell.m */,
 				A0251080223745CB00E0A2AA /* AccountItemTableViewCell.h */,
@@ -832,6 +845,8 @@
 				F26F502A2212A99E009C6BB9 /* HomeViewController.m */,
 				2AFF017D2237EC45007865AF /* NewsBulletinControllerViewController.h */,
 				2AFF017C2237EC45007865AF /* NewsBulletinControllerViewController.m */,
+				A02510B6223882DA00E0A2AA /* NewUsersViewController.h */,
+				A02510B7223882DB00E0A2AA /* NewUsersViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -858,6 +873,9 @@
 				A025109022379D3E00E0A2AA /* HomeHeaderView.m */,
 				2AFF017F2237ECF4007865AF /* NewsBulletinCell.h */,
 				2AFF01802237ECF4007865AF /* NewsBulletinCell.m */,
+				A02510B92238833500E0A2AA /* IconView.h */,
+				A02510BA2238833500E0A2AA /* IconView.m */,
+				A02510BB2238833500E0A2AA /* IconView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1099,6 +1117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F216B953220412BB009B811D /* Assets.xcassets in Resources */,
+				A02510BD2238833500E0A2AA /* IconView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1180,7 +1199,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A02510A22237CF0500E0A2AA /* JJOptionView.m in Sources */,
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
 				2AFF017B2237EB38007865AF /* InvestHeadView.m in Sources */,
 				F299D38E221A7D9200727305 /* GestureViewController.m in Sources */,
@@ -1210,6 +1228,7 @@
 				F26F4FF12212A94D009C6BB9 /* UIBarButtonItem+WNXBarButtonItem.m in Sources */,
 				2AFF01812237ECF4007865AF /* NewsBulletinCell.m in Sources */,
 				F26F4FF32212A94D009C6BB9 /* UIButton+ImageAndTitle.m in Sources */,
+				A02510C2223885AE00E0A2AA /* JJOptionView.m in Sources */,
 				F299D382221A7C2E00727305 /* PCLockLabel.m in Sources */,
 				A025109122379D3E00E0A2AA /* HomeHeaderView.m in Sources */,
 				F299D381221A7C2E00727305 /* PCCircleInfoView.m in Sources */,
@@ -1224,6 +1243,7 @@
 				2AFF016C2237E3FF007865AF /* InvestContectView.m in Sources */,
 				F299D36A221A5E2C00727305 /* MBProgressHUD+JJ.m in Sources */,
 				2AFF01782237EAA9007865AF /* InvestController.m in Sources */,
+				A02510B8223882DB00E0A2AA /* NewUsersViewController.m in Sources */,
 				F26F4FF42212A94D009C6BB9 /* UIColor+Extension.m in Sources */,
 				F299D398221A87F700727305 /* WBSettingController.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
@@ -1232,6 +1252,7 @@
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
 				F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */,
 				F26F503C2212A99E009C6BB9 /* MsgViewController.m in Sources */,
+				A02510BC2238833500E0A2AA /* IconView.m in Sources */,
 				F26F4FED2212A94D009C6BB9 /* NSString+Extenssion.m in Sources */,
 				F26F4FFA2212A94D009C6BB9 /* UIView+Extension.m in Sources */,
 				F26F4FE72212A94D009C6BB9 /* UIView+MDFAnimation.m in Sources */,
@@ -1252,6 +1273,7 @@
 				A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */,
 				A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */,
 				F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */,
+				A02510C3223885AE00E0A2AA /* JJOptionTableViewCell.m in Sources */,
 				F2D6607A2216A10A00943601 /* MeBannerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

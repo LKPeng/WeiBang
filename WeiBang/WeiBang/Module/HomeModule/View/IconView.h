@@ -1,5 +1,5 @@
 //
-//  HomeHeaderView.h
+//  IconView.h
 //  WeiBang
 //
 //  Created by 吴凯耀 on 2019/3/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeHeaderView : UIView
-@property (nonatomic,copy) dispatch_block_t rechargeBlock;
+@interface IconView : UIView
+
 @end
