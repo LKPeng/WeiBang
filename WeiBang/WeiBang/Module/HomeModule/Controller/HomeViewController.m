@@ -12,6 +12,7 @@
 #import "NewUsersViewController.h"
 #import "InvestController.h"
 #import "NewsBulletinControllerViewController.h"
+#import "NewsViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -53,6 +54,7 @@
     rightItem.imageInsets = UIEdgeInsetsMake(0, -15,0, 0);//设置向左偏移
     self.navigationItem.rightBarButtonItem = rightItem;
     
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 #pragma mark ----   点击  ----
@@ -108,7 +110,8 @@
             self.navigationController.tabBarController.selectedIndex = 1;
         };
         headerView.newsBlock = ^{
-            
+            NewsViewController *invest = [[NewsViewController alloc]init];
+            [self.navigationController pushViewController:invest animated:YES];
         };
         _tableView.tableHeaderView = headerView;
         _tableView.tableFooterView = [UIView new];

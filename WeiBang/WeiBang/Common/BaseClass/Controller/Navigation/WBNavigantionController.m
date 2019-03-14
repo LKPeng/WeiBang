@@ -152,7 +152,7 @@
         [leftButton setImage: leftButtonImg
                     forState:UIControlStateNormal];
         //        leftButton.backgroundColor = [UIColor redColor];
-        [leftButton addTarget:self action:@selector(popViewControllerAnimated:) forControlEvents:UIControlEventTouchUpInside];
+        [leftButton addTarget:self action:@selector(popToControllerAnimated:) forControlEvents:UIControlEventTouchUpInside];
         // 修改导航栏左边的item
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
         
@@ -195,6 +195,11 @@
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+
+- (void )popToControllerAnimated:(BOOL)animated {
+    [self popViewControllerAnimated:YES];
 }
 
 

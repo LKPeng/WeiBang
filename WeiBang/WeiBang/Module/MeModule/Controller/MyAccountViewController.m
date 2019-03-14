@@ -30,9 +30,6 @@
     [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
 
-- (BOOL)prefersStatusBarHidden {
-    return YES;
-}
 
 
 - (void)viewDidLoad {
@@ -62,6 +59,8 @@
     [settingBtn addTarget:self action:@selector(setFunction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:settingBtn];
     NSLog(@"1");
+    
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 

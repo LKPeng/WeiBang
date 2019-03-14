@@ -50,13 +50,23 @@
     }];
 }
 
-- (void)layoutSubviews{
+- (void)layoutSubviews{//test.secureTextEntry
     [super layoutSubviews];
     NSMutableAttributedString *placeholder = [[NSMutableAttributedString alloc] initWithString:self.accountText.placeholder];
     [placeholder addAttribute:NSFontAttributeName
                         value:[UIFont boldSystemFontOfSize:14]
                         range:NSMakeRange(0, self.accountText.placeholder.length)];
     _accountText.attributedPlaceholder = placeholder;
+}
+
+- (void)setTestSecureTextEntry:(BOOL)testSecureTextEntry{
+    _testSecureTextEntry = testSecureTextEntry;
+    if (testSecureTextEntry) {
+        self.accountText.secureTextEntry = YES;
+    }else{
+        self.accountText.secureTextEntry = NO;
+    }
+    
 }
 
 #pragma mark ----   懒加载  ----

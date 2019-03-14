@@ -1,31 +1,26 @@
 //
-//  InvestController.m
+//  NewsViewController.m
 //  WeiBang
 //
-//  Created by 刘昆朋 on 2019/3/12.
+//  Created by 刘昆朋 on 2019/3/13.
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 
-#import "InvestController.h"
-#import "NewsBulletinCell.h"
+#import "NewsViewController.h"
 #import "NewsBulletinModel.h"
-#import "InvestHeadView.h"
-#import "OpenAccountViewController.h"
+#import "newsCell.h"
 
-@interface InvestController ()<UITableViewDelegate,UITableViewDataSource>
+@interface NewsViewController ()<UITableViewDelegate,UITableViewDataSource>
+
 @property (nonatomic,strong) UITableView *myTableView;
 
 @property (nonatomic, strong) NSMutableArray<NewsBulletinModel *> *newsModels;
 
 @property(nonatomic, assign)NSInteger pageNum;
 
-/* 设备 */
-@property (strong, nonatomic) NSMutableArray *titleTextArray;
-
-@property(nonatomic, strong) UIButton *saveBtn;
 @end
 
-@implementation InvestController
+@implementation NewsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,17 +31,11 @@
     
     self.view.backgroundColor = kappMainColor;
     
-    [self setupNavBarTitleViewWithText:@"投资"];
+    [self setupNavBarTitleViewWithText:@"新闻区"];
     
     self.pageNum = 1;
     
-    [self createModel];
-    
-    [self.myTableView reloadData];
-    
-    [self.view addSubview:self.saveBtn];
-    
-    self.tabBarController.tabBar.hidden = YES;
+    [self requestMoneyPageData];
 }
 
 #pragma mark ----   加载数据  ----
@@ -75,43 +64,56 @@
 }
 
 - (void)createModel{
+    
     NewsBulletinModel *model1 = [[NewsBulletinModel alloc]init];
     model1.newsTime = @"2018-07-27";
     model1.newsContent = @"央视:国务院批准P2P合法地位正式确立";
     [self.newsModels addObject:model1];
     
-}
-
-- (void)setDataWithIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row%7 == 0){
-        [self.titleTextArray addObject: @"富桢流程测试"];
-        [self.titleTextArray addObject: @"预期年化收益率12%"];
-        [self.titleTextArray addObject: @"期限一个月"];
-    }else if (indexPath.row%7 == 1){
-        [self.titleTextArray addObject: @"车辆抵押"];
-        [self.titleTextArray addObject: @"预期年化收益率16%"];
-        [self.titleTextArray addObject: @"期限一个月"];
-    }else if (indexPath.row%7 == 2) {
-        [self.titleTextArray addObject: @"新年地产开盘"];
-        [self.titleTextArray addObject: @"预期年化收益率8%"];
-        [self.titleTextArray addObject: @"期限一个月"];
-    }else if (indexPath.row%7 == 3) {
-        [self.titleTextArray addObject: @"个人房屋抵押借款"];
-        [self.titleTextArray addObject: @"预期年化收益率5%"];
-        [self.titleTextArray addObject: @"期限一个月"];
-    }else{
-        NSString *text = [[NSString alloc]initWithFormat:@"个人标的测试流程%ld",(long)indexPath.row%5];
-        [self.titleTextArray addObject: text];
-        [self.titleTextArray addObject: @"预期年化收益率10%"];
-        [self.titleTextArray addObject: @"期限一个月"];
-    }
+    NewsBulletinModel *model2 = [[NewsBulletinModel alloc]init];
+    model2.newsTime = @"2018-07-29";
+    model2.newsContent = @"P2P对个人和社会的帮助";
+    [self.newsModels addObject:model2];
     
-}
-#pragma mark ----   点击  ----
-
-- (void)saveBtnClick{
-    OpenAccountViewController *open = [[OpenAccountViewController alloc]init];
-    [self.navigationController pushViewController:open animated:YES];
+    NewsBulletinModel *model3 = [[NewsBulletinModel alloc]init];
+    model3.newsTime = @"2018-07-30";
+    model3.newsContent = @"<<新闻联播>>证明报道P2P金融";
+    [self.newsModels addObject:model3];
+    
+    NewsBulletinModel *model4 = [[NewsBulletinModel alloc]init];
+    model4.newsTime = @"2018-08-03";
+    model4.newsContent = @"谷歌或进军互联网金融 曾为上市的P2P公司投资";
+    [self.newsModels addObject:model4];
+    
+    NewsBulletinModel *model5 = [[NewsBulletinModel alloc]init];
+    model5.newsTime = @"2018-08-05";
+    model5.newsContent = @"巨头纷纷进入P2P 资本或将成为最终摘桃者";
+    [self.newsModels addObject:model5];
+    
+    NewsBulletinModel *model6 = [[NewsBulletinModel alloc]init];
+    model6.newsTime = @"2018-08-07";
+    model6.newsContent = @"互联网金融信用缺失 需建立严格黑名单制";
+    [self.newsModels addObject:model6];
+    
+    NewsBulletinModel *model7 = [[NewsBulletinModel alloc]init];
+    model7.newsTime = @"2018-08-08";
+    model7.newsContent = @"互联网金融信用缺失 需建立严格黑名单制";
+    [self.newsModels addObject:model7];
+    
+    NewsBulletinModel *model8 = [[NewsBulletinModel alloc]init];
+    model8.newsTime = @"2018-08-10";
+    model8.newsContent = @"阿里无抵押贷款或冲击P2P网贷 可贷1000万";
+    [self.newsModels addObject:model8];
+    
+    NewsBulletinModel *model9 = [[NewsBulletinModel alloc]init];
+    model9.newsTime = @"2018-08-12";
+    model9.newsContent = @"张朝阳也来了?搜狐旗下公司搜易贷近日上线";
+    [self.newsModels addObject:model9];
+    
+    NewsBulletinModel *model10 = [[NewsBulletinModel alloc]init];
+    model10.newsTime = @"2018-08-15";
+    model10.newsContent = @"全国p2p网贷日成交额突破10亿 再次创新高";
+    [self.newsModels addObject:model10];
 }
 
 #pragma mark -  UITableViewDelegate && UITableViewDataSource
@@ -126,8 +128,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NewsBulletinCell *cell = [tableView dequeueReusableCellWithIdentifier: [NewsBulletinCell cellReuseID]];
+    newsCell *cell = [tableView dequeueReusableCellWithIdentifier: [newsCell cellReuseID]];
     cell.model = self.newsModels[indexPath.row];
+    cell.row = indexPath.row;
     return cell;
 }
 
@@ -146,7 +149,6 @@
     if ([self.myTableView respondsToSelector:@selector(setLayoutMargins:)]) {
         [self.myTableView setLayoutMargins:UIEdgeInsetsMake(0,0,0,0)];
     }
-    
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -189,7 +191,6 @@
 }
 
 
-
 #pragma mark ----   懒加载  ----
 
 - (UITableView *)myTableView{
@@ -202,16 +203,13 @@
         _myTableView.rowHeight = 60;
         _myTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         
-        InvestHeadView *headerView = [[InvestHeadView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleY_6(160 + 10 + 120 + 50 + 30 + 45))];
-        headerView.titleTextArray = self.titleTextArray;
-        headerView.backgroundColor = [UIColor whiteColor];
-        [headerView setDataWithIndexPath:1];
+        UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , 0.001)];
         _myTableView.tableHeaderView = headerView;
         _myTableView.tableFooterView = [UIView new];
-        [_myTableView regsiterCellWithCellClass:[NewsBulletinCell class] isNib:NO];
+        [_myTableView regsiterCellWithCellClass:[newsCell class] isNib:NO];
         
-//        [_myTableView addHeaderRefreshWithTarget:self eventAction:@selector(requestMoneyPageData)];
-//        [_myTableView addFooterRefreshWithTarget:self eventAction:@selector(requestMoneyPageNoData)];
+        [_myTableView addHeaderRefreshWithTarget:self eventAction:@selector(requestMoneyPageData)];
+        [_myTableView addFooterRefreshWithTarget:self eventAction:@selector(requestMoneyPageNoData)];
         
         [self.view addSubview: _myTableView];
     }
@@ -224,26 +222,4 @@
     }
     return _newsModels;
 }
-
-- (NSMutableArray *)titleTextArray{
-    if (!_titleTextArray) {
-        _titleTextArray = [[NSMutableArray alloc]init];
-    }
-    return _titleTextArray;
-}
-
-- (UIButton *)saveBtn{
-    if (!_saveBtn) {
-        UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [saveBtn setTitle:@"立即投资" forState:UIControlStateNormal];
-        saveBtn.backgroundColor = kappRed;
-        saveBtn.tintColor = [UIColor whiteColor];
-        saveBtn.titleLabel.font = kFontSize6(13);
-        saveBtn.frame = CGRectMake(10, SCREEN_HEIGHT - scaleY_6(10) - scaleY_6(40), SCREEN_WIDTH - 20, scaleY_6(40));
-        [saveBtn addTarget:self action:@selector(saveBtnClick) forControlEvents:UIControlEventTouchUpInside];
-        _saveBtn = saveBtn;
-    }
-    return _saveBtn;
-}
-
 @end

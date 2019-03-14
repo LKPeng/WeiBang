@@ -33,6 +33,7 @@ int count = 10;
     self.view.backgroundColor = kappMainColor;
     self.automaticallyAdjustsScrollViewInsets = true;
     [self.tableView reloadData];
+    self.tabBarController.tabBar.hidden = NO;
     
     JJOptionView *view1 = [[JJOptionView alloc] initWithFrame:CGRectMake(0, kNavBarHeight , KWIDTH, 40)];
     view1.delegate = self;

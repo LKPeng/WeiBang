@@ -124,7 +124,8 @@
     if (self.delegate && [self.delegate respondsToSelector:@selector(getCodeNumber)]) {
         [self.delegate getCodeNumber];
     }
-    [button addStartTime:60 title:@"发送验证码" waitTittle:@"秒"];
+//    [button addStartTime:60 title:@"发送验证码" waitTittle:@"秒"];
+    [MBProgressHUD showMessage:@"发送成功"];
 }
 
 #pragma mark ----   懒加载  ----
