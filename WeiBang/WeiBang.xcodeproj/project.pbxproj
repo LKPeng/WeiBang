@@ -191,6 +191,7 @@
 		A02510D82238DDE400E0A2AA /* SetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetTableViewCell.h; sourceTree = "<group>"; };
 		A02510D92238DDE400E0A2AA /* SetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetTableViewCell.m; sourceTree = "<group>"; };
 		A02510DA2238DDE400E0A2AA /* SetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetTableViewCell.xib; sourceTree = "<group>"; };
+		A0C94EB0223946F300290294 /* WeiBang.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeiBang.entitlements; sourceTree = "<group>"; };
 		B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiBang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B946220412B5009B811D /* WeiBang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B949220412B5009B811D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -450,6 +451,7 @@
 		F216B948220412B5009B811D /* WeiBang */ = {
 			isa = PBXGroup;
 			children = (
+				A0C94EB0223946F300290294 /* WeiBang.entitlements */,
 				F26F4F942212A94D009C6BB9 /* Common */,
 				F26F50202212A99E009C6BB9 /* Module */,
 				F26F4F2A22129F85009C6BB9 /* AppConfigFile */,
@@ -1123,6 +1125,11 @@
 				TargetAttributes = {
 					F216B945220412B5009B811D = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					F216B95D220412BB009B811D = {
 						CreatedOnToolsVersion = 9.4;
@@ -1481,8 +1488,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V4X3MNBDJ6;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeiBang/Common/Constants/WBPrefixHeader.pch;
@@ -1492,10 +1500,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lkp.WeiBang;
+				PRODUCT_BUNDLE_IDENTIFIER = lkp.WeiBangs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1505,8 +1515,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V4X3MNBDJ6;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WeiBang/Common/Constants/WBPrefixHeader.pch;
@@ -1516,10 +1527,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lkp.WeiBang;
+				PRODUCT_BUNDLE_IDENTIFIER = lkp.WeiBangs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
