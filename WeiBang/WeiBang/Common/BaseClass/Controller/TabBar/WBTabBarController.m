@@ -78,9 +78,11 @@
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
     NSString * longinBool = [[NSUserDefaults standardUserDefaults] objectForKey:@"user_login"];
     //判断用户是否登陆
-    if (![longinBool isEqualToString:@"YES"]) {
+    if ([longinBool isEqualToString:@"YES"]) {
+
+    }else{
         //这里拿到你想要的tabBarItem,这里的方法有很多,还有通过tag值,这里看你的需要了
-        if ([viewController.tabBarItem.title isEqualToString:@"Me"]) {
+        if ([viewController.tabBarItem.title isEqualToString:@"我的账户"]) {
             MeLoginController *vc = [MeLoginController new];
             WBNavigantionController *nav = [[WBNavigantionController alloc] initWithRootViewController:vc];
             [self setNavigation:nav];
