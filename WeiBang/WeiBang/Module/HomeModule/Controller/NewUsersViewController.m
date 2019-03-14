@@ -119,7 +119,7 @@ int cellCount = 10;
         _tableView.tableFooterView = [UIView new];
         UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , 0.001)];
         _tableView.tableHeaderView = headerView;
-//        _tableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight+25, 0);
+        _tableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight+10, 0);
         [_tableView regsiterCellWithCellClass:[HomeTableViewCell class] isNib:NO];
         [self.view addSubview: _tableView];
     }
