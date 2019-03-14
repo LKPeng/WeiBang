@@ -54,6 +54,7 @@
     rightItem.imageInsets = UIEdgeInsetsMake(0, -15,0, 0);//设置向左偏移
     self.navigationItem.rightBarButtonItem = rightItem;
     
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 #pragma mark ----   点击  ----
