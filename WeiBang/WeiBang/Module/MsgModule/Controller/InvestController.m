@@ -45,6 +45,8 @@
     [self.myTableView reloadData];
     
     [self.view addSubview:self.saveBtn];
+    
+    self.tabBarController.tabBar.hidden = YES;
 }
 
 #pragma mark ----   加载数据  ----
