@@ -8,7 +8,8 @@
 
 #import "VerificationCodeView.h"
 #define labelColor  RGB(166.0,166.0,166.0)
-@interface VerificationCodeView ()
+
+@interface VerificationCodeView ()<UITextFieldDelegate>
 @property (nonatomic,strong) UIButton *codeButton;
 @end
 @implementation VerificationCodeView
@@ -128,6 +129,16 @@
     [MBProgressHUD showMessage:@"发送成功"];
 }
 
+#pragma mark ----   UITextFieldDelegate  ----
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];//取消第一响应者
+    
+    return YES;
+}
+
+
 #pragma mark ----   懒加载  ----
 
 - (UIImageView *)accountImage{
@@ -140,6 +151,8 @@
 - (UITextField *)accountText{
     if (!_accountText) {
         _accountText = [[UITextField alloc]init];
+        _accountText.delegate = self;
+        _accountText.returnKeyType = UIReturnKeyDone;
     }
     return _accountText;
 }

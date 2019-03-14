@@ -130,6 +130,11 @@
     [self.navigationController pushViewController:regis animated:YES];
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.AccountView.accountText resignFirstResponder];
+    [self.passwordView.accountText resignFirstResponder];
+}
+
 - (void)btnClick{
     if (self.AccountView.accountText.text.length != 11) {
         [MBProgressHUD showMessage:@"请输入11位手机号码!"];
@@ -152,7 +157,7 @@
         _AccountView.accountImage.image = [UIImage imageNamed:@"zhanghao"];
         _AccountView.accountText.placeholder = @"请输入手机号码";
         _AccountView.testSecureTextEntry = NO;
-        
+        _AccountView.testkeyboardType = YES;
     }
     return _AccountView;
 }
@@ -163,6 +168,7 @@
         _passwordView.accountImage.image = [UIImage imageNamed:@"mima"];
         _passwordView.accountText.placeholder = @"请输入密码";
         _passwordView.testSecureTextEntry = YES;
+        _passwordView.testkeyboardType = NO;
     }
     return _passwordView;
 }

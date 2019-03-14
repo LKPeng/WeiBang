@@ -16,4 +16,7 @@
 
 @property (assign, nonatomic) BOOL testSecureTextEntry;
 
+@property (assign, nonatomic) BOOL testkeyboardType;
+
+
 @end

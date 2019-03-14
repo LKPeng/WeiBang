@@ -15,6 +15,7 @@
 @property (strong, nonatomic) TemplateView         *passwordView;
 @property (strong, nonatomic) TemplateView         *surePasswordView;
 
+@property (weak, nonatomic) VerificationCodeView *verificationCodeView;
 @end
 
 @implementation MeForgetController
@@ -64,7 +65,7 @@
     AccountView.accountImage.image = [UIImage imageNamed:@"zhanghao"];
     AccountView.accountText.placeholder = @"请输入手机验证码";
     [self.view addSubview:AccountView];
-    
+    self.verificationCodeView = AccountView;
     
     
     [_AccountView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -116,6 +117,10 @@
         return;
     }
     
+    if (self.verificationCodeView.accountText.text.length != 6) {
+        [MBProgressHUD showMessage:@"请输入6位验证码!"];
+        return;
+    }
     
     if (self.passwordView.accountText.text.length > 16 || 6 > self.passwordView.accountText.text.length) {
         [MBProgressHUD showMessage:@"请输入6-15位之间密码!"];
@@ -139,12 +144,21 @@
     [self bb_popViewController];
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.AccountView.accountText resignFirstResponder];
+    [self.passwordView.accountText resignFirstResponder];
+    [self.surePasswordView.accountText resignFirstResponder];
+    [self.verificationCodeView.accountText resignFirstResponder];
+}
+
+
 - (TemplateView *)AccountView{
     if (!_AccountView) {
         _AccountView = [[TemplateView alloc]init];
         _AccountView.accountImage.image = [UIImage imageNamed:@"zhanghao"];
         _AccountView.accountText.placeholder = @"请输入手机号码";
         _AccountView.testSecureTextEntry = NO;
+        _AccountView.testkeyboardType = YES;
     }
     return _AccountView;
 }
@@ -155,6 +169,7 @@
         _passwordView.accountImage.image = [UIImage imageNamed:@"mima"];
         _passwordView.accountText.placeholder = @"密码范围在6-15位之间";
         _passwordView.testSecureTextEntry = YES;
+        _passwordView.testkeyboardType = NO;
     }
     return _passwordView;
 }
@@ -165,6 +180,7 @@
         _surePasswordView.accountImage.image = [UIImage imageNamed:@"zhanghao"];
         _surePasswordView.accountText.placeholder = @"请输入确认密码";
         _surePasswordView.testSecureTextEntry = YES;
+        _surePasswordView.testkeyboardType = NO;
     }
     return _surePasswordView;
 }

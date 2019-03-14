@@ -8,6 +8,10 @@
 
 #import "TemplateView.h"
 
+@interface TemplateView()<UITextFieldDelegate>
+
+@end
+
 @implementation TemplateView
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -69,6 +73,25 @@
     
 }
 
+- (void)setTestkeyboardType:(BOOL)testkeyboardType{
+    _testkeyboardType = testkeyboardType;
+    if (testkeyboardType) {
+        self.accountText.keyboardType = UIKeyboardTypeNumberPad;
+    }else{
+        self.accountText.keyboardType = UIKeyboardTypeDefault;
+    }
+    
+}
+
+#pragma mark ----   UITextFieldDelegate  ----
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [textField resignFirstResponder];//取消第一响应者
+    
+    return YES;
+}
+
 #pragma mark ----   懒加载  ----
 
 - (UIImageView *)accountImage{
@@ -81,6 +104,8 @@
 - (UITextField *)accountText{
     if (!_accountText) {
         _accountText = [[UITextField alloc]init];
+        _accountText.delegate = self;
+        _accountText.returnKeyType = UIReturnKeyDone;
     }
     return _accountText;
 }

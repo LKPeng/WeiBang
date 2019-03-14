@@ -155,13 +155,21 @@
     [self bb_popViewController];
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.AccountView.accountText resignFirstResponder];
+    [self.passwordView.accountText resignFirstResponder];
+    [self.surePasswordView.accountText resignFirstResponder];
+    [self.pushView.accountText resignFirstResponder];
+    [self.verificationCodeView.accountText resignFirstResponder];
+}
+
 - (TemplateView *)AccountView{
     if (!_AccountView) {
         _AccountView = [[TemplateView alloc]init];
         _AccountView.accountImage.image = [UIImage imageNamed:@"zhanghao"];
         _AccountView.accountText.placeholder = @"请输入手机号码";
         _AccountView.testSecureTextEntry = NO;
-        
+        _AccountView.testkeyboardType = YES;
     }
     return _AccountView;
 }
@@ -172,6 +180,7 @@
         _passwordView.accountImage.image = [UIImage imageNamed:@"mima"];
         _passwordView.accountText.placeholder = @"密码范围在6-15位之间";
         _passwordView.testSecureTextEntry = YES;
+        _passwordView.testkeyboardType = NO;
     }
     return _passwordView;
 }
@@ -182,6 +191,7 @@
         _surePasswordView.accountImage.image = [UIImage imageNamed:@"zhanghao"];
         _surePasswordView.accountText.placeholder = @"请输入确认密码";
         _surePasswordView.testSecureTextEntry = YES;
+        _surePasswordView.testkeyboardType = NO;
         
     }
     return _surePasswordView;
@@ -192,6 +202,8 @@
         _pushView = [[TemplateView alloc]init];
         _pushView.accountImage.image = [UIImage imageNamed:@"mima"];
         _pushView.accountText.placeholder = @"请输入验证码(选填)";
+        _pushView.testSecureTextEntry = YES;
+        _pushView.testkeyboardType = NO;
     }
     return _pushView;
 }
