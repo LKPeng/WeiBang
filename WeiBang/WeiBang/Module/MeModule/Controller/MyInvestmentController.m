@@ -93,7 +93,7 @@
     [self addChildViewController:sub1];
     
     MyInvestmentSubController *sub2 = [[MyInvestmentSubController alloc]init];
-    sub1.registerType = RechargeTypeIncome;
+    sub2.registerType = RechargeTypeIncome;
     [self addChildViewController:sub2];
 }
 
