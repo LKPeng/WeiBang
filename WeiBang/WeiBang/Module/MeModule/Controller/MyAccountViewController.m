@@ -2,7 +2,7 @@
 //  MyAccountViewController.m
 //  WeiBang
 //
-//  Created by 吴凯耀 on 2019/3/12.
+//  Created by lkp on 2019/3/12.
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 
@@ -13,6 +13,8 @@
 #import "OpenAccountViewController.h"
 #import "IntroduceViewController.h"
 #import "SetViewController.h"
+
+#import "MyInvestmentController.h"
 
 @interface MyAccountViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -77,7 +79,7 @@
     if (section == 0) {
         return 1;
     }else if (section == 1) {
-        return 3;
+        return 2;
     }else if (section == 2) {
         return 2;
     }
@@ -131,8 +133,16 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    IntroduceViewController *vc = [[IntroduceViewController alloc] initWithNibName:@"IntroduceViewController" bundle:nil];
-    [self.navigationController pushViewController:vc animated:true];
+    NSLog(@"%ld--%ld",(long)indexPath.row ,(long)indexPath.section);
+    if (indexPath.row == 0 && indexPath.section == 2) {
+        
+        MyInvestmentController *vc = [[MyInvestmentController alloc]init];
+        [self.navigationController pushViewController:vc animated:true];
+    }else{
+        IntroduceViewController *vc = [[IntroduceViewController alloc] initWithNibName:@"IntroduceViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:true];
+    }
+
 }
 
 

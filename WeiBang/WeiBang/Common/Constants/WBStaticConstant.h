@@ -30,3 +30,11 @@ WB_EXTERN const CGFloat BBGestureSpeed;
 WB_EXTERN const CGFloat BBDistanceToPan;
 // The default is 0, 0 for full screen return, and also for distance.（默认为0，0为全屏返回，也可指定距离）
 WB_EXTERN const CGFloat BBDistanceToStart;
+
+
+typedef NS_ENUM(NSUInteger, RechargeType) {
+    /** 全部 */
+    RechargeTypeAll = 0,
+    /** 收入 */
+    RechargeTypeIncome = 1,
+};

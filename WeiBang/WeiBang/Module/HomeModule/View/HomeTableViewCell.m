@@ -2,7 +2,7 @@
 //  HomeTableViewCell.m
 //  WeiBang
 //
-//  Created by 吴凯耀 on 2019/3/12.
+//  Created by lkp on 2019/3/12.
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 
@@ -90,9 +90,9 @@
 
 - (void)setDataWithIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row%7 == 0){
-        self.titleLabel.text = @"富桢流程测试";
+
         self.rateLabel.text = @"预期年化收益率12%";
-        self.termLabel.text = @"期限一个月";
+
     }else if (indexPath.row%7 == 1){
         self.titleLabel.text = @"车辆抵押";
         self.rateLabel.text = @"预期年化收益率16%";
@@ -109,6 +109,43 @@
         self.titleLabel.text = [[NSString alloc]initWithFormat:@"个人标的测试流程%ld",(long)indexPath.row%5];
         self.rateLabel.text = @"预期年化收益率10%";
         self.termLabel.text = @"期限一个月";
+    }
+
+    
+    self.titleLabel.text = [NSString stringWithFormat:@"<<浣熊理财%ld号>>",(long)indexPath.row + 1];
+    NSString * number = [NSString translationArabicNum:indexPath.row + 1];
+    self.termLabel.text = [NSString stringWithFormat:@"期限%@个月",number];
+    
+    if (indexPath.row == 0) {
+        _moneyLabel.textColor = [UIColor lightGrayColor];
+        NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"100.00元可投金额"];
+        [text addAttribute:NSFontAttributeName
+                     value:[UIFont boldSystemFontOfSize:scaleX(18)]
+                     range:[@"100.00元可投金额" rangeOfString:@"100.00"]];
+        [text addAttribute:NSForegroundColorAttributeName
+                     value:[UIColor redColor]
+                     range:[@"100.00元可投金额" rangeOfString:@"100.00元"]];
+        _moneyLabel.attributedText = text;
+    }else if (indexPath.row == 1){
+        _moneyLabel.textColor = [UIColor lightGrayColor];
+        NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"3000.00元可投金额"];
+        [text addAttribute:NSFontAttributeName
+                     value:[UIFont boldSystemFontOfSize:scaleX(18)]
+                     range:[@"3000.00元可投金额" rangeOfString:@"3000.00"]];
+        [text addAttribute:NSForegroundColorAttributeName
+                     value:[UIColor redColor]
+                     range:[@"3000.00元可投金额" rangeOfString:@"3000.00元"]];
+        _moneyLabel.attributedText = text;
+    }else{
+        _moneyLabel.textColor = [UIColor lightGrayColor];
+        NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"0.00元可投金额"];
+        [text addAttribute:NSFontAttributeName
+                     value:[UIFont boldSystemFontOfSize:scaleX(18)]
+                     range:[@"0.00元可投金额" rangeOfString:@"0.00"]];
+        [text addAttribute:NSForegroundColorAttributeName
+                     value:[UIColor redColor]
+                     range:[@"0.00元可投金额" rangeOfString:@"0.00元"]];
+        _moneyLabel.attributedText = text;
     }
 }
 
@@ -132,15 +169,7 @@
     if (!_moneyLabel) {
         _moneyLabel = [[UILabel alloc]init];
         _moneyLabel.font = kFontSize6(11);
-        _moneyLabel.textColor = [UIColor lightGrayColor];
-        NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:@"0.00元可投金额"];
-        [text addAttribute:NSFontAttributeName
-                     value:[UIFont boldSystemFontOfSize:scaleX(18)]
-                     range:[@"0.00元可投金额" rangeOfString:@"0.00"]];
-        [text addAttribute:NSForegroundColorAttributeName
-                     value:[UIColor redColor]
-                     range:[@"0.00元可投金额" rangeOfString:@"0.00元"]];
-        _moneyLabel.attributedText = text;
+
     }
     return _moneyLabel;
 }

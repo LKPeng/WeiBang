@@ -2,7 +2,7 @@
 //  HomeHeaderView.m
 //  WeiBang
 //
-//  Created by 吴凯耀 on 2019/3/12.
+//  Created by lkp on 2019/3/12.
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 
@@ -61,7 +61,7 @@
 
 - (PlanADScrollView *)bannerView{
     if (!_bannerView) {
-        NSArray *imageUrl1s = @[@"1.jpg",@"2.jpg",@"3.jpg",@"4.jpg",@"5.jpg"];
+        NSArray *imageUrl1s = @[@"1.jpg",@"2.jpg",@"3.jpg"];
         _bannerView =[[PlanADScrollView alloc]initWithFrame:CGRectMake(0, 0, KWIDTH, scaleX(140))imageUrls:imageUrl1s placeholderimage:nil];
         _bannerView.delegate = self;
         _bannerView.pageContolStyle = PlanPageContolStyleNone;
@@ -133,7 +133,7 @@
 
 - (UIImageView *)centerImageView{
     if (!_centerImageView) {
-        _centerImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"1.jpg"]];
+        _centerImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"57b15da7033d0_1024.jpg"]];
         _centerImageView.frame = CGRectMake(0, CGRectGetMaxY(self.userButton.frame), KWIDTH, scaleX(140));
     }
     return _centerImageView;

@@ -100,4 +100,10 @@
 
 
 
+
+/**
+ *  将阿拉伯数字转换为中文数字
+ */
++(NSString *)translationArabicNum:(NSInteger)arabicNum;
+
 @end

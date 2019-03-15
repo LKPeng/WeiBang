@@ -43,11 +43,13 @@
     [self.contentView addSubview:self.newsContent];
     [self.contentView addSubview:self.lineView];
     
+    CGFloat height = (SCREEN_WIDTH - scaleX_6(10)*2) / 12 *8;
+    
     [self.newsImage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self).offset(scaleY_6(10));
         make.left.equalTo(self).offset(scaleX_6(10));
         make.right.equalTo(self).offset(-scaleX_6(10));
-        make.height.mas_equalTo(scaleY_6(80));
+        make.height.mas_equalTo(height);
     }];
     
     [self.newsTime mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -82,7 +84,7 @@
 
 - (void)setRow:(NSInteger)row{
     _row = row;
-    NSInteger imagetag =  (row)%5 + 1;
+    NSInteger imagetag =  (row)%3 + 1;
     NSString *imageName = [NSString stringWithFormat:@"%ld.jpg",(long)imagetag];
     self.newsImage.image = [UIImage imageNamed:imageName];
 }

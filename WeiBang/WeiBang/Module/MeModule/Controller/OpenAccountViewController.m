@@ -2,7 +2,7 @@
 //  OpenAccountViewController.m
 //  WeiBang
 //
-//  Created by 吴凯耀 on 2019/3/13.
+//  Created by lkp on 2019/3/13.
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 
@@ -10,6 +10,8 @@
 
 @interface OpenAccountViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *openButton;
+@property (weak, nonatomic) IBOutlet UITextField *userTextField;
+@property (weak, nonatomic) IBOutlet UITextField *userNumberField;
 
 @end
 
@@ -29,6 +31,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)openAccountButton:(UIButton *)sender {
+    if (self.userTextField.text.length == 0) {
+        [MBProgressHUD showMessage:@"请填写真实姓名"];
+        return;
+    }
+    
+    if (self.userNumberField.text.length == 0) {
+        [MBProgressHUD showMessage:@"请填写身份证号码"];
+        return;
+    }
+    [MBProgressHUD showMessage:@"开户失败5分钟后重试"];
+}
 
 /*
 #pragma mark - Navigation

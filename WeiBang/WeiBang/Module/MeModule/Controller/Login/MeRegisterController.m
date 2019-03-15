@@ -9,6 +9,7 @@
 #import "MeRegisterController.h"
 #import "TemplateView.h"
 #import "VerificationCodeView.h"
+#import "UnderlineButton.h"
 
 @interface MeRegisterController ()
 @property (strong, nonatomic) TemplateView         *AccountView;
@@ -17,6 +18,8 @@
 @property (strong, nonatomic) TemplateView         *pushView;
 
 @property (weak, nonatomic) VerificationCodeView *verificationCodeView;
+
+@property (strong, nonatomic) UnderlineButton         *underlineButton;
 @end
 
 @implementation MeRegisterController
@@ -109,12 +112,19 @@
     login.layer.cornerRadius = 2.f;
     [self.view addSubview:login];
     
-    //登录按钮
+    //按钮
     [login mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.pushView.mas_bottom).offset(scaleY_6(20));
         make.left.equalTo(self.view).offset(scaleX_6(15));
         make.right.equalTo(self.view).offset(-scaleX_6(15));
         make.height.mas_equalTo(scaleY_6(45));
+    }];
+    
+    [self.view addSubview:self.underlineButton];
+    
+    [_underlineButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(login.mas_bottom).offset(scaleY_6(10));
+        make.right.equalTo(login);
     }];
 }
 
@@ -148,6 +158,10 @@
     }
     
     [MBProgressHUD showMessage:@"注册失败,请稍后再试"];
+    
+}
+
+- (void)ClickagreeBtn{
     
 }
 
@@ -208,4 +222,16 @@
     return _pushView;
 }
 
+
+- (UnderlineButton *)underlineButton{
+    if (!_underlineButton) {
+        _underlineButton = [UnderlineButton buttonWithType:UIButtonTypeCustom];
+        [_underlineButton setColor:[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.8]];
+        _underlineButton.titleLabel.font = kFontSize6(14);
+        [_underlineButton setTitle:@"注册协议" forState:UIControlStateNormal];
+        [_underlineButton setTitleColor:[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.8] forState:UIControlStateNormal];
+        [_underlineButton addTarget:self action:@selector(ClickagreeBtn) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _underlineButton;
+}
 @end

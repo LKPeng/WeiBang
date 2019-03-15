@@ -23,6 +23,11 @@
 @property (strong, nonatomic) NSMutableArray *titleTextArray;
 
 @property(nonatomic, strong) UIButton *saveBtn;
+
+@property(nonatomic, weak) InvestHeadView *headerView;
+
+@property(nonatomic, strong) NSIndexPath *indexPath;
+
 @end
 
 @implementation InvestController
@@ -83,29 +88,29 @@
 }
 
 - (void)setDataWithIndexPath:(NSIndexPath *)indexPath{
+    
+    [self.titleTextArray addObject: [NSString stringWithFormat:@"<<浣熊理财%ld号>>",(long)indexPath.row + 1]];
     if (indexPath.row%7 == 0){
-        [self.titleTextArray addObject: @"富桢流程测试"];
+        
         [self.titleTextArray addObject: @"预期年化收益率12%"];
-        [self.titleTextArray addObject: @"期限一个月"];
     }else if (indexPath.row%7 == 1){
-        [self.titleTextArray addObject: @"车辆抵押"];
         [self.titleTextArray addObject: @"预期年化收益率16%"];
-        [self.titleTextArray addObject: @"期限一个月"];
     }else if (indexPath.row%7 == 2) {
-        [self.titleTextArray addObject: @"新年地产开盘"];
         [self.titleTextArray addObject: @"预期年化收益率8%"];
-        [self.titleTextArray addObject: @"期限一个月"];
     }else if (indexPath.row%7 == 3) {
-        [self.titleTextArray addObject: @"个人房屋抵押借款"];
         [self.titleTextArray addObject: @"预期年化收益率5%"];
-        [self.titleTextArray addObject: @"期限一个月"];
     }else{
-        NSString *text = [[NSString alloc]initWithFormat:@"个人标的测试流程%ld",(long)indexPath.row%5];
-        [self.titleTextArray addObject: text];
         [self.titleTextArray addObject: @"预期年化收益率10%"];
-        [self.titleTextArray addObject: @"期限一个月"];
     }
     
+    NSString * number = [NSString translationArabicNum:indexPath.row + 1];
+    [self.titleTextArray addObject: [NSString stringWithFormat:@"期限%@个月",number]];
+    self.indexPath = indexPath;
+}
+
+- (void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+    [self.headerView setDataWithIndexPath:self.indexPath.row];
 }
 #pragma mark ----   点击  ----
 
@@ -203,9 +208,11 @@
         _myTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         
         InvestHeadView *headerView = [[InvestHeadView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , scaleY_6(160 + 10 + 120 + 50 + 30 + 45))];
+        
         headerView.titleTextArray = self.titleTextArray;
         headerView.backgroundColor = [UIColor whiteColor];
-        [headerView setDataWithIndexPath:1];
+        self.headerView = headerView;
+//        [headerView setDataWithIndexPath:1];
         _myTableView.tableHeaderView = headerView;
         _myTableView.tableFooterView = [UIView new];
         [_myTableView regsiterCellWithCellClass:[NewsBulletinCell class] isNib:NO];

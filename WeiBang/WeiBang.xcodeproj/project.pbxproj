@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AC4C8AA223B4C500022055E /* UnderlineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8A9223B4C500022055E /* UnderlineButton.m */; };
+		2AC4C8AD223B6D530022055E /* MyInvestmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8AC223B6D530022055E /* MyInvestmentController.m */; };
+		2AC4C8B0223B6E0B0022055E /* MyInvestmentSubController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8AF223B6E0B0022055E /* MyInvestmentSubController.m */; };
+		2AC4C8B3223B704E0022055E /* MyInvestmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8B2223B704E0022055E /* MyInvestmentView.m */; };
 		2AFF01592237D172007865AF /* MeLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01582237D172007865AF /* MeLoginController.m */; };
 		2AFF015C2237D1DE007865AF /* TemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF015A2237D1DD007865AF /* TemplateView.m */; };
 		2AFF016B2237E3FF007865AF /* InvestInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01682237E3FF007865AF /* InvestInfoView.m */; };
@@ -123,6 +127,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AC4C8A8223B4C500022055E /* UnderlineButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnderlineButton.h; sourceTree = "<group>"; };
+		2AC4C8A9223B4C500022055E /* UnderlineButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnderlineButton.m; sourceTree = "<group>"; };
+		2AC4C8AB223B6D530022055E /* MyInvestmentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInvestmentController.h; sourceTree = "<group>"; };
+		2AC4C8AC223B6D530022055E /* MyInvestmentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInvestmentController.m; sourceTree = "<group>"; };
+		2AC4C8AE223B6E0B0022055E /* MyInvestmentSubController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInvestmentSubController.h; sourceTree = "<group>"; };
+		2AC4C8AF223B6E0B0022055E /* MyInvestmentSubController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInvestmentSubController.m; sourceTree = "<group>"; };
+		2AC4C8B1223B704E0022055E /* MyInvestmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInvestmentView.h; sourceTree = "<group>"; };
+		2AC4C8B2223B704E0022055E /* MyInvestmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInvestmentView.m; sourceTree = "<group>"; };
 		2AFF01572237D172007865AF /* MeLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeLoginController.h; sourceTree = "<group>"; };
 		2AFF01582237D172007865AF /* MeLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeLoginController.m; sourceTree = "<group>"; };
 		2AFF015A2237D1DD007865AF /* TemplateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateView.m; sourceTree = "<group>"; };
@@ -360,6 +372,8 @@
 				2AFF015A2237D1DD007865AF /* TemplateView.m */,
 				2AFF01702237E5FA007865AF /* VerificationCodeView.h */,
 				2AFF01712237E5FA007865AF /* VerificationCodeView.m */,
+				2AC4C8A8223B4C500022055E /* UnderlineButton.h */,
+				2AC4C8A9223B4C500022055E /* UnderlineButton.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -954,6 +968,10 @@
 				A02510CC2238A67100E0A2AA /* IntroduceViewController.xib */,
 				A02510D52238DCE700E0A2AA /* SetViewController.h */,
 				A02510D62238DCE700E0A2AA /* SetViewController.m */,
+				2AC4C8AB223B6D530022055E /* MyInvestmentController.h */,
+				2AC4C8AC223B6D530022055E /* MyInvestmentController.m */,
+				2AC4C8AE223B6E0B0022055E /* MyInvestmentSubController.h */,
+				2AC4C8AF223B6E0B0022055E /* MyInvestmentSubController.m */,
 				A02510CF2238A78600E0A2AA /* base.css */,
 				A02510D02238A78600E0A2AA /* base.js */,
 				A02510D12238A78700E0A2AA /* index.html */,
@@ -1015,6 +1033,8 @@
 				F2D660792216A10A00943601 /* MeBannerCell.m */,
 				F2D6607B2216AB1400943601 /* MeCoinCell.h */,
 				F2D6607C2216AB1400943601 /* MeCoinCell.m */,
+				2AC4C8B1223B704E0022055E /* MyInvestmentView.h */,
+				2AC4C8B2223B704E0022055E /* MyInvestmentView.m */,
 			);
 			path = MeViewController;
 			sourceTree = "<group>";
@@ -1284,6 +1304,7 @@
 				2AFF018A223933AA007865AF /* newsCell.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
+				2AC4C8AD223B6D530022055E /* MyInvestmentController.m in Sources */,
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
 				A02510C722389A4900E0A2AA /* OpenAccountViewController.m in Sources */,
 				A0251088223785C400E0A2AA /* ProgressView.m in Sources */,
@@ -1312,6 +1333,7 @@
 				F216B959220412BB009B811D /* main.m in Sources */,
 				F26F4FF72212A94D009C6BB9 /* UITableView+Extension.m in Sources */,
 				2AFF018D2239350B007865AF /* NewsViewCell.m in Sources */,
+				2AC4C8B3223B704E0022055E /* MyInvestmentView.m in Sources */,
 				A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */,
 				F299D38B221A7D8B00727305 /* GestureVerifyViewController.m in Sources */,
 				F26F4FF62212A94D009C6BB9 /* UIScrollView+Extension.m in Sources */,
@@ -1337,6 +1359,7 @@
 				F25989C322164C1A00657F7A /* MeHeadView.m in Sources */,
 				F26F4FE62212A94D009C6BB9 /* MDFAnimation.m in Sources */,
 				F23F72142213E53600D42A02 /* WBStaticConstant.m in Sources */,
+				2AC4C8B0223B6E0B0022055E /* MyInvestmentSubController.m in Sources */,
 				F299D380221A7C2E00727305 /* CALayer+Anim.m in Sources */,
 				F26F503A2212A99E009C6BB9 /* HomeViewController.m in Sources */,
 				F2D6607E2216AB1400943601 /* MeCoinCell.m in Sources */,
@@ -1347,6 +1370,7 @@
 				A02510CD2238A67100E0A2AA /* IntroduceViewController.m in Sources */,
 				F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */,
 				F26F4FEE2212A94D009C6BB9 /* NSString+Hash.m in Sources */,
+				2AC4C8AA223B4C500022055E /* UnderlineButton.m in Sources */,
 				F299D39C221A8C2100727305 /* WBSettingCell.m in Sources */,
 				F26F4FF82212A94D009C6BB9 /* UITableViewCell+Extension.m in Sources */,
 				A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */,
