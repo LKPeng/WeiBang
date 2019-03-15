@@ -23,6 +23,9 @@
 		2AC4C8CF223B957A0022055E /* userAgreement.html in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C8C6223B957A0022055E /* userAgreement.html */; };
 		2AC4C8D3223B975C0022055E /* MyWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8D2223B975C0022055E /* MyWebViewController.m */; };
 		2AC4C8D5223B9DBF0022055E /* base.css in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C8D4223B9DBF0022055E /* base.css */; };
+		2AC4C8D8223BA2A90022055E /* TranslateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8D7223BA2A90022055E /* TranslateView.m */; };
+		2AC4C8DA223BA2EF0022055E /* Translate.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4C8D9223BA2EF0022055E /* Translate.png */; };
+		2AC4C8DD223BA6000022055E /* MyTranlateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8DC223BA6000022055E /* MyTranlateController.m */; };
 		2AFF01592237D172007865AF /* MeLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01582237D172007865AF /* MeLoginController.m */; };
 		2AFF015C2237D1DE007865AF /* TemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF015A2237D1DD007865AF /* TemplateView.m */; };
 		2AFF016B2237E3FF007865AF /* InvestInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF01682237E3FF007865AF /* InvestInfoView.m */; };
@@ -159,6 +162,11 @@
 		2AC4C8D1223B975C0022055E /* MyWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWebViewController.h; sourceTree = "<group>"; };
 		2AC4C8D2223B975C0022055E /* MyWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWebViewController.m; sourceTree = "<group>"; };
 		2AC4C8D4223B9DBF0022055E /* base.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = base.css; sourceTree = "<group>"; };
+		2AC4C8D6223BA2A90022055E /* TranslateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslateView.h; sourceTree = "<group>"; };
+		2AC4C8D7223BA2A90022055E /* TranslateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslateView.m; sourceTree = "<group>"; };
+		2AC4C8D9223BA2EF0022055E /* Translate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Translate.png; sourceTree = "<group>"; };
+		2AC4C8DB223BA6000022055E /* MyTranlateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTranlateController.h; sourceTree = "<group>"; };
+		2AC4C8DC223BA6000022055E /* MyTranlateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTranlateController.m; sourceTree = "<group>"; };
 		2AFF01572237D172007865AF /* MeLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeLoginController.h; sourceTree = "<group>"; };
 		2AFF01582237D172007865AF /* MeLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeLoginController.m; sourceTree = "<group>"; };
 		2AFF015A2237D1DD007865AF /* TemplateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateView.m; sourceTree = "<group>"; };
@@ -452,6 +460,9 @@
 				A0251081223745CB00E0A2AA /* AccountItemTableViewCell.m */,
 				A02510832237573B00E0A2AA /* MyAccountHeaderView.h */,
 				A02510842237573B00E0A2AA /* MyAccountHeaderView.m */,
+				2AC4C8D6223BA2A90022055E /* TranslateView.h */,
+				2AC4C8D7223BA2A90022055E /* TranslateView.m */,
+				2AC4C8D9223BA2EF0022055E /* Translate.png */,
 			);
 			path = MyAccountViewController;
 			sourceTree = "<group>";
@@ -1010,6 +1021,8 @@
 				2AC4C8AC223B6D530022055E /* MyInvestmentController.m */,
 				2AC4C8AE223B6E0B0022055E /* MyInvestmentSubController.h */,
 				2AC4C8AF223B6E0B0022055E /* MyInvestmentSubController.m */,
+				2AC4C8DB223BA6000022055E /* MyTranlateController.h */,
+				2AC4C8DC223BA6000022055E /* MyTranlateController.m */,
 				2AC4C8D4223B9DBF0022055E /* base.css */,
 				2AC4C8B6223B8E700022055E /* base.js */,
 				2AC4C8B8223B8E710022055E /* index.html */,
@@ -1245,6 +1258,7 @@
 				2AC4C8C9223B957A0022055E /* introduce.html in Resources */,
 				2AC4C8B9223B8E710022055E /* ys.html in Resources */,
 				2AC4C8BA223B8E710022055E /* zc.html in Resources */,
+				2AC4C8DA223BA2EF0022055E /* Translate.png in Resources */,
 				A02510CE2238A67100E0A2AA /* IntroduceViewController.xib in Resources */,
 				A02510C822389A4900E0A2AA /* OpenAccountViewController.xib in Resources */,
 				2AC4C8BD223B8E710022055E /* index.html in Resources */,
@@ -1412,6 +1426,7 @@
 				2AC4C8B0223B6E0B0022055E /* MyInvestmentSubController.m in Sources */,
 				F299D380221A7C2E00727305 /* CALayer+Anim.m in Sources */,
 				F26F503A2212A99E009C6BB9 /* HomeViewController.m in Sources */,
+				2AC4C8D8223BA2A90022055E /* TranslateView.m in Sources */,
 				F2D6607E2216AB1400943601 /* MeCoinCell.m in Sources */,
 				F216B94B220412B5009B811D /* AppDelegate.m in Sources */,
 				A025108C223789D100E0A2AA /* HomeTableViewCell.m in Sources */,
@@ -1424,6 +1439,7 @@
 				F299D39C221A8C2100727305 /* WBSettingCell.m in Sources */,
 				F26F4FF82212A94D009C6BB9 /* UITableViewCell+Extension.m in Sources */,
 				A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */,
+				2AC4C8DD223BA6000022055E /* MyTranlateController.m in Sources */,
 				A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */,
 				F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */,
 				A02510C3223885AE00E0A2AA /* JJOptionTableViewCell.m in Sources */,

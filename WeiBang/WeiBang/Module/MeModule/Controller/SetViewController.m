@@ -10,6 +10,7 @@
 #import "SetTableViewCell.h"
 #import "IntroduceViewController.h"
 #import "MyWebViewController.h"
+#import "MyTranlateController.h"
 
 @interface SetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -55,8 +56,17 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    MyWebViewController *vc = [[MyWebViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:true];
+    if (indexPath.row == 2){
+        [self quitfunctionIN];
+    }else if (indexPath.row == 1){
+        
+        MyTranlateController *vc = [[MyTranlateController alloc]init];
+        [self.navigationController pushViewController:vc animated:true];
+    }else{
+        MyWebViewController *vc = [[MyWebViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:true];
+    }
+
 }
 
 #pragma mark ----   懒加载  ----
@@ -110,5 +120,25 @@
     [self presentViewController:alertVC animated:YES completion:nil];
 }
 
+-(void)quitfunctionIN{
+    
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"客服咨询  38410671@qq.com" message:@"版权所有：宁波御通网络科技有限公司" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction * cancelAc = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //点击取消要执行的代码
+    }];
+//    UIAlertAction *comfirmAc = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        //点击确定要执行的代码
+//        strongself
+//        [[NSUserDefaults standardUserDefaults] setObject:@"NO" forKey:@"user_login"];
+//        [MBProgressHUD showMessage:@"退出成功"];
+//        [strongSelf bb_popViewController];
+//    }];
+    [alertVC addAction:cancelAc];
+//    [alertVC addAction:comfirmAc];
+    [self presentViewController:alertVC animated:YES completion:nil];
+}
 
+- (void)baozhangclick{
+    
+}
 @end
