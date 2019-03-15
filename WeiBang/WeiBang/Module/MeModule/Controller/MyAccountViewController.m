@@ -15,6 +15,8 @@
 #import "SetViewController.h"
 
 #import "MyInvestmentController.h"
+#import "AboutUsViewController.h"
+#import "MyWebViewController.h"
 
 @interface MyAccountViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -138,8 +140,16 @@
         
         MyInvestmentController *vc = [[MyInvestmentController alloc]init];
         [self.navigationController pushViewController:vc animated:true];
-    }else{
-        IntroduceViewController *vc = [[IntroduceViewController alloc] initWithNibName:@"IntroduceViewController" bundle:nil];
+    }
+    else if (indexPath.row == 0 && indexPath.section == 1) {
+                IntroduceViewController *vc = [[IntroduceViewController alloc] initWithNibName:@"IntroduceViewController" bundle:nil];
+                [self.navigationController pushViewController:vc animated:true];
+    }
+    else{
+
+        
+        
+        MyWebViewController *vc = [[MyWebViewController alloc]init];
         [self.navigationController pushViewController:vc animated:true];
     }
 

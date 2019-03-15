@@ -27,8 +27,6 @@
         self.titleLabel.text = @"安全保障";
     }else if (row == 2) {
         self.titleLabel.text = @"帮助中心";
-    }else if (row == 3) {
-        self.titleLabel.text = @"快速入门";
     }
 }
 

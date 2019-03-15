@@ -11,6 +11,8 @@
 #import "VerificationCodeView.h"
 #import "UnderlineButton.h"
 
+#import "UserAgreementViewController.h"
+
 @interface MeRegisterController ()
 @property (strong, nonatomic) TemplateView         *AccountView;
 @property (strong, nonatomic) TemplateView         *passwordView;
@@ -162,7 +164,8 @@
 }
 
 - (void)ClickagreeBtn{
-    
+    UserAgreementViewController *vc = [[UserAgreementViewController alloc] initWithNibName:@"UserAgreementViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 - (void)popViewControllerAnimated:(UIButton *)button{

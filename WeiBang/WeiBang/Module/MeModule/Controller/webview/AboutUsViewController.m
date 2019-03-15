@@ -6,21 +6,21 @@
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 
-#import "IntroduceViewController.h"
+#import "AboutUsViewController.h"
 
-@interface IntroduceViewController ()
+@interface AboutUsViewController ()
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end
 
-@implementation IntroduceViewController
+@implementation AboutUsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.title = @"融泽介绍";
+    self.title = @"关于我们";
     
-    NSString * string = [[NSBundle mainBundle] pathForResource:@"zc" ofType:@"html"];
+    NSString * string = @"http://www.hangzhouchaoyin.com/about.html";
     NSURL *url = [[NSURL alloc] initWithString:string];
     [self.webView loadRequest:[[NSURLRequest alloc]initWithURL:url]];
 }

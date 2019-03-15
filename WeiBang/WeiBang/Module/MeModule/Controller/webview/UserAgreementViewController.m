@@ -6,21 +6,21 @@
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 
-#import "IntroduceViewController.h"
+#import "UserAgreementViewController.h"
 
-@interface IntroduceViewController ()
+@interface UserAgreementViewController ()
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end
 
-@implementation IntroduceViewController
+@implementation UserAgreementViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.title = @"融泽介绍";
+    self.title = @"用户注册及授权协议";
     
-    NSString * string = [[NSBundle mainBundle] pathForResource:@"zc" ofType:@"html"];
+    NSString * string = [[NSBundle mainBundle] pathForResource:@"userAgreement" ofType:@"html"];
     NSURL *url = [[NSURL alloc] initWithString:string];
     [self.webView loadRequest:[[NSURLRequest alloc]initWithURL:url]];
 }

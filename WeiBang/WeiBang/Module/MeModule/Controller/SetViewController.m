@@ -9,6 +9,7 @@
 #import "SetViewController.h"
 #import "SetTableViewCell.h"
 #import "IntroduceViewController.h"
+#import "MyWebViewController.h"
 
 @interface SetViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -39,7 +40,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 3;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -54,7 +55,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    IntroduceViewController *vc = [[IntroduceViewController alloc] initWithNibName:@"IntroduceViewController" bundle:nil];
+    MyWebViewController *vc = [[MyWebViewController alloc]init];
     [self.navigationController pushViewController:vc animated:true];
 }
 
