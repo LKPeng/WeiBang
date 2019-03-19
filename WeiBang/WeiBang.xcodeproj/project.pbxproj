@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AC4C8E32240F9B10022055E /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8E12240F9B10022055E /* HomeController.m */; };
+		2AC4C8E92240F9CF0022055E /* CircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8E82240F9CF0022055E /* CircleProgressView.m */; };
+		2AC4C8EC2240F9D90022055E /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8EB2240F9D90022055E /* HomeModel.m */; };
+		2AC4C8EF2240F9E00022055E /* HomeFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8EE2240F9E00022055E /* HomeFootView.m */; };
+		2AC4C8F22240F9E70022055E /* HomeProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8F12240F9E70022055E /* HomeProgressCell.m */; };
+		2AC4C8F52240F9F40022055E /* ProductListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8F42240F9F40022055E /* ProductListController.m */; };
+		2AC4C8F82240FA010022055E /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8F62240FA010022055E /* ProductListCell.m */; };
+		2AC4C8FB2240FA0A0022055E /* ProductListSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8FA2240FA0A0022055E /* ProductListSubView.m */; };
 		A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510952237A05200E0A2AA /* PlanPageControl.m */; };
 		A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510962237A05200E0A2AA /* PlanADScrollView.m */; };
 		A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */; };
@@ -75,6 +83,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AC4C8E12240F9B10022055E /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		2AC4C8E22240F9B10022055E /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		2AC4C8E72240F9CF0022055E /* CircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressView.h; sourceTree = "<group>"; };
+		2AC4C8E82240F9CF0022055E /* CircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressView.m; sourceTree = "<group>"; };
+		2AC4C8EA2240F9D90022055E /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		2AC4C8EB2240F9D90022055E /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		2AC4C8ED2240F9E00022055E /* HomeFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeFootView.h; sourceTree = "<group>"; };
+		2AC4C8EE2240F9E00022055E /* HomeFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeFootView.m; sourceTree = "<group>"; };
+		2AC4C8F02240F9E70022055E /* HomeProgressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeProgressCell.h; sourceTree = "<group>"; };
+		2AC4C8F12240F9E70022055E /* HomeProgressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeProgressCell.m; sourceTree = "<group>"; };
+		2AC4C8F32240F9F40022055E /* ProductListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListController.h; sourceTree = "<group>"; };
+		2AC4C8F42240F9F40022055E /* ProductListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListController.m; sourceTree = "<group>"; };
+		2AC4C8F62240FA010022055E /* ProductListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCell.m; sourceTree = "<group>"; };
+		2AC4C8F72240FA010022055E /* ProductListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCell.h; sourceTree = "<group>"; };
+		2AC4C8F92240FA0A0022055E /* ProductListSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListSubView.h; sourceTree = "<group>"; };
+		2AC4C8FA2240FA0A0022055E /* ProductListSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListSubView.m; sourceTree = "<group>"; };
 		31F2A15441CF236127A7E51B /* Pods-WeiBang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.release.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.release.xcconfig"; sourceTree = "<group>"; };
 		9AF203E0899EEC02D8792DAE /* Pods-WeiBang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.debug.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.debug.xcconfig"; sourceTree = "<group>"; };
 		A02510932237A05200E0A2AA /* PlanADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADScrollView.h; sourceTree = "<group>"; };
@@ -208,6 +232,10 @@
 		2AFF01662237E3DC007865AF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2AC4C8F72240FA010022055E /* ProductListCell.h */,
+				2AC4C8F62240FA010022055E /* ProductListCell.m */,
+				2AC4C8F92240FA0A0022055E /* ProductListSubView.h */,
+				2AC4C8FA2240FA0A0022055E /* ProductListSubView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -677,6 +705,8 @@
 			children = (
 				F26F50292212A99E009C6BB9 /* HomeViewController.h */,
 				F26F502A2212A99E009C6BB9 /* HomeViewController.m */,
+				2AC4C8E22240F9B10022055E /* HomeController.h */,
+				2AC4C8E12240F9B10022055E /* HomeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -684,6 +714,8 @@
 		F26F502B2212A99E009C6BB9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2AC4C8EA2240F9D90022055E /* HomeModel.h */,
+				2AC4C8EB2240F9D90022055E /* HomeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -691,6 +723,12 @@
 		F26F502C2212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2AC4C8E72240F9CF0022055E /* CircleProgressView.h */,
+				2AC4C8E82240F9CF0022055E /* CircleProgressView.m */,
+				2AC4C8ED2240F9E00022055E /* HomeFootView.h */,
+				2AC4C8EE2240F9E00022055E /* HomeFootView.m */,
+				2AC4C8F02240F9E70022055E /* HomeProgressCell.h */,
+				2AC4C8F12240F9E70022055E /* HomeProgressCell.m */,
 				A025109C2237A33500E0A2AA /* NoticeView */,
 				A02510922237A05200E0A2AA /* PlanADScrollView */,
 			);
@@ -745,6 +783,8 @@
 			children = (
 				F26F50352212A99E009C6BB9 /* MsgViewController.h */,
 				F26F50362212A99E009C6BB9 /* MsgViewController.m */,
+				2AC4C8F32240F9F40022055E /* ProductListController.h */,
+				2AC4C8F42240F9F40022055E /* ProductListController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -996,9 +1036,11 @@
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
 				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
 				F299D37D221A7C2E00727305 /* PCCircle.m in Sources */,
+				2AC4C8F22240F9E70022055E /* HomeProgressCell.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
 				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
+				2AC4C8F52240F9F40022055E /* ProductListController.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
 				F26F4FF52212A94D009C6BB9 /* UILabel+Attribute.m in Sources */,
@@ -1009,9 +1051,12 @@
 				F26F4FEA2212A94D009C6BB9 /* NSDate+Extension.m in Sources */,
 				F26F4FF12212A94D009C6BB9 /* UIBarButtonItem+WNXBarButtonItem.m in Sources */,
 				F26F4FF32212A94D009C6BB9 /* UIButton+ImageAndTitle.m in Sources */,
+				2AC4C8F82240FA010022055E /* ProductListCell.m in Sources */,
 				F299D382221A7C2E00727305 /* PCLockLabel.m in Sources */,
 				F299D381221A7C2E00727305 /* PCCircleInfoView.m in Sources */,
+				2AC4C8FB2240FA0A0022055E /* ProductListSubView.m in Sources */,
 				A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */,
+				2AC4C8E92240F9CF0022055E /* CircleProgressView.m in Sources */,
 				F216B959220412BB009B811D /* main.m in Sources */,
 				F26F4FF72212A94D009C6BB9 /* UITableView+Extension.m in Sources */,
 				A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */,
@@ -1029,13 +1074,16 @@
 				F23F72142213E53600D42A02 /* WBStaticConstant.m in Sources */,
 				F299D380221A7C2E00727305 /* CALayer+Anim.m in Sources */,
 				F26F503A2212A99E009C6BB9 /* HomeViewController.m in Sources */,
+				2AC4C8EF2240F9E00022055E /* HomeFootView.m in Sources */,
 				F216B94B220412B5009B811D /* AppDelegate.m in Sources */,
 				F26F4FE92212A94D009C6BB9 /* NSData+Base64.m in Sources */,
 				F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */,
 				F26F4FEE2212A94D009C6BB9 /* NSString+Hash.m in Sources */,
+				2AC4C8EC2240F9D90022055E /* HomeModel.m in Sources */,
 				F26F4FF82212A94D009C6BB9 /* UITableViewCell+Extension.m in Sources */,
 				A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */,
 				A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */,
+				2AC4C8E32240F9B10022055E /* HomeController.m in Sources */,
 				F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

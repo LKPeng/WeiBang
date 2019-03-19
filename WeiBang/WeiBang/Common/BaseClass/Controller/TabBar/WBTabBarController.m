@@ -8,8 +8,8 @@
 
 #import "WBTabBarController.h"
 
-#import "HomeViewController.h"
-#import "MsgViewController.h"
+#import "HomeController.h"
+#import "ProductListController.h"
 #import "MeViewController.h"
 
 #import "WBNavigantionController.h"
@@ -34,10 +34,10 @@
 }
 - (void)setUpAllChildViewController {
     
-    HomeViewController *home = [[HomeViewController alloc] init];
+    HomeController *home = [[HomeController alloc] init];
     [self setUpOneChildViewController:home image:[UIImage imageNamed:@"nav_home"] selectedImage:[UIImage imageNamed:@"nav_home"] title:@"首页"];
     
-    MsgViewController *msg = [[MsgViewController alloc] init];
+    ProductListController *msg = [[ProductListController alloc] init];
     [self setUpOneChildViewController:msg image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"投资区"];
     
     MeViewController *me = [[MeViewController alloc] init];

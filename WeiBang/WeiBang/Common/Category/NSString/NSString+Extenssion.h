@@ -106,4 +106,6 @@
  */
 +(NSString *)translationArabicNum:(NSInteger)arabicNum;
 
+
++ (NSMutableAttributedString *)setupAttributeString:(NSString *)text rangeText:(NSString *)rangeText textColor:(UIColor *)color;
 @end
