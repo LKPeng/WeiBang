@@ -10,12 +10,13 @@
 
 #import "HomeController.h"
 #import "ProductListController.h"
-#import "MeViewController.h"
-#import "DiscoverViewController.h"
+//#import "MeViewController.h"
+//#import "DiscoverViewController.h"
 
 #import "WBNavigantionController.h"
 
-
+#import "MyWalletViewController.h"
+#import "MoreViewController.h"
 
 #define navBackGroundColor kappMainGreen
 #define navTintColor [UIColor whiteColor]
@@ -41,10 +42,10 @@
     ProductListController *msg = [[ProductListController alloc] init];
     [self setUpOneChildViewController:msg image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"产品列表"];
     
-    DiscoverViewController *dis = [[DiscoverViewController alloc] init];
+    MyWalletViewController *dis = [[MyWalletViewController alloc] init];
     [self setUpOneChildViewController:dis image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"我的钱袋"];
     
-    MeViewController *me = [[MeViewController alloc] init];
+    MoreViewController *me = [[MoreViewController alloc] init];
     [self setUpOneChildViewController:me image:[UIImage imageNamed:@"nav_me"] selectedImage:[UIImage imageNamed:@"nav_me"] title:@"更多"];
 }
 - (void)setUpOneChildViewController:(UIViewController *)vc image:(UIImage *)image selectedImage:(UIImage *)selectedImage title:(NSString *)title {

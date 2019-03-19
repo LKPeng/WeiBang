@@ -19,6 +19,12 @@
 		2AC4C9032240FE940022055E /* JJOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8FF2240FE930022055E /* JJOptionView.m */; };
 		2AC4C9042240FE940022055E /* JJOptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C9002240FE930022055E /* JJOptionTableViewCell.m */; };
 		2AC4C908224100F50022055E /* ProductListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C907224100F50022055E /* ProductListModel.m */; };
+		2AC4C90B2241096A0022055E /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C9092241096A0022055E /* MoreViewController.m */; };
+		2AC4C90E224109770022055E /* MoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C90C224109770022055E /* MoreTableViewCell.m */; };
+		2AC4C911224109860022055E /* MyWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C90F224109850022055E /* MyWalletViewController.m */; };
+		2AC4C919224109CE0022055E /* MyRecodeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C914224109CD0022055E /* MyRecodeTableViewCell.m */; };
+		2AC4C91A224109CE0022055E /* MyWalletTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C915224109CD0022055E /* MyWalletTableViewCell.m */; };
+		2AC4C91B224109CE0022055E /* MyWalletHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C916224109CE0022055E /* MyWalletHeaderView.m */; };
 		A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510952237A05200E0A2AA /* PlanPageControl.m */; };
 		A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510962237A05200E0A2AA /* PlanADScrollView.m */; };
 		A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */; };
@@ -111,6 +117,18 @@
 		2AC4C9022240FE930022055E /* JJOptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJOptionTableViewCell.h; sourceTree = "<group>"; };
 		2AC4C906224100F50022055E /* ProductListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListModel.h; sourceTree = "<group>"; };
 		2AC4C907224100F50022055E /* ProductListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListModel.m; sourceTree = "<group>"; };
+		2AC4C9092241096A0022055E /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		2AC4C90A2241096A0022055E /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		2AC4C90C224109770022055E /* MoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableViewCell.m; sourceTree = "<group>"; };
+		2AC4C90D224109770022055E /* MoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTableViewCell.h; sourceTree = "<group>"; };
+		2AC4C90F224109850022055E /* MyWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWalletViewController.m; sourceTree = "<group>"; };
+		2AC4C910224109850022055E /* MyWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWalletViewController.h; sourceTree = "<group>"; };
+		2AC4C913224109CD0022055E /* MyRecodeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRecodeTableViewCell.h; sourceTree = "<group>"; };
+		2AC4C914224109CD0022055E /* MyRecodeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRecodeTableViewCell.m; sourceTree = "<group>"; };
+		2AC4C915224109CD0022055E /* MyWalletTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWalletTableViewCell.m; sourceTree = "<group>"; };
+		2AC4C916224109CE0022055E /* MyWalletHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWalletHeaderView.m; sourceTree = "<group>"; };
+		2AC4C917224109CE0022055E /* MyWalletTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWalletTableViewCell.h; sourceTree = "<group>"; };
+		2AC4C918224109CE0022055E /* MyWalletHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWalletHeaderView.h; sourceTree = "<group>"; };
 		31F2A15441CF236127A7E51B /* Pods-WeiBang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.release.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.release.xcconfig"; sourceTree = "<group>"; };
 		9AF203E0899EEC02D8792DAE /* Pods-WeiBang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.debug.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.debug.xcconfig"; sourceTree = "<group>"; };
 		A02510932237A05200E0A2AA /* PlanADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADScrollView.h; sourceTree = "<group>"; };
@@ -248,6 +266,19 @@
 				2AC4C907224100F50022055E /* ProductListModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2AC4C912224109B40022055E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4C913224109CD0022055E /* MyRecodeTableViewCell.h */,
+				2AC4C914224109CD0022055E /* MyRecodeTableViewCell.m */,
+				2AC4C918224109CE0022055E /* MyWalletHeaderView.h */,
+				2AC4C916224109CE0022055E /* MyWalletHeaderView.m */,
+				2AC4C917224109CE0022055E /* MyWalletTableViewCell.h */,
+				2AC4C915224109CD0022055E /* MyWalletTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2AFF01662237E3DC007865AF /* View */ = {
@@ -688,8 +719,7 @@
 			isa = PBXGroup;
 			children = (
 				F26F50222212A99E009C6BB9 /* Controller */,
-				F26F50252212A99E009C6BB9 /* Model */,
-				F26F50262212A99E009C6BB9 /* View */,
+				2AC4C912224109B40022055E /* View */,
 			);
 			path = DiscoverModule;
 			sourceTree = "<group>";
@@ -699,22 +729,10 @@
 			children = (
 				F26F50232212A99E009C6BB9 /* DiscoverViewController.h */,
 				F26F50242212A99E009C6BB9 /* DiscoverViewController.m */,
+				2AC4C910224109850022055E /* MyWalletViewController.h */,
+				2AC4C90F224109850022055E /* MyWalletViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		F26F50252212A99E009C6BB9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F26F50262212A99E009C6BB9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F26F50272212A99E009C6BB9 /* HomeModule */ = {
@@ -777,6 +795,8 @@
 			children = (
 				F26F502F2212A99E009C6BB9 /* MeViewController.h */,
 				F26F50302212A99E009C6BB9 /* MeViewController.m */,
+				2AC4C90A2241096A0022055E /* MoreViewController.h */,
+				2AC4C9092241096A0022055E /* MoreViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -792,6 +812,8 @@
 		F26F50322212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2AC4C90D224109770022055E /* MoreTableViewCell.h */,
+				2AC4C90C224109770022055E /* MoreTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1067,6 +1089,7 @@
 				2AC4C8FE2240FC310022055E /* ProductListProgessView.m in Sources */,
 				2AC4C8F22240F9E70022055E /* HomeProgressCell.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
+				2AC4C91A224109CE0022055E /* MyWalletTableViewCell.m in Sources */,
 				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				2AC4C8F52240F9F40022055E /* ProductListController.m in Sources */,
@@ -1074,6 +1097,7 @@
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
 				2AC4C908224100F50022055E /* ProductListModel.m in Sources */,
 				F26F4FF52212A94D009C6BB9 /* UILabel+Attribute.m in Sources */,
+				2AC4C90B2241096A0022055E /* MoreViewController.m in Sources */,
 				F26F4FEC2212A94D009C6BB9 /* NSString+Base64.m in Sources */,
 				F26F4FE82212A94D009C6BB9 /* NSAttributedString+CalculateHeight.m in Sources */,
 				F26F4FEB2212A94D009C6BB9 /* NSDecimalNumber+Quickly.m in Sources */,
@@ -1085,7 +1109,9 @@
 				F299D382221A7C2E00727305 /* PCLockLabel.m in Sources */,
 				F299D381221A7C2E00727305 /* PCCircleInfoView.m in Sources */,
 				2AC4C8FB2240FA0A0022055E /* ProductListSubView.m in Sources */,
+				2AC4C911224109860022055E /* MyWalletViewController.m in Sources */,
 				A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */,
+				2AC4C90E224109770022055E /* MoreTableViewCell.m in Sources */,
 				2AC4C8E92240F9CF0022055E /* CircleProgressView.m in Sources */,
 				F216B959220412BB009B811D /* main.m in Sources */,
 				F26F4FF72212A94D009C6BB9 /* UITableView+Extension.m in Sources */,
@@ -1093,6 +1119,7 @@
 				F26F4FF62212A94D009C6BB9 /* UIScrollView+Extension.m in Sources */,
 				F299D36A221A5E2C00727305 /* MBProgressHUD+JJ.m in Sources */,
 				F26F4FF42212A94D009C6BB9 /* UIColor+Extension.m in Sources */,
+				2AC4C91B224109CE0022055E /* MyWalletHeaderView.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
 				2AC4C9042240FE940022055E /* JJOptionTableViewCell.m in Sources */,
@@ -1111,6 +1138,7 @@
 				F26F4FE92212A94D009C6BB9 /* NSData+Base64.m in Sources */,
 				F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */,
 				F26F4FEE2212A94D009C6BB9 /* NSString+Hash.m in Sources */,
+				2AC4C919224109CE0022055E /* MyRecodeTableViewCell.m in Sources */,
 				2AC4C8EC2240F9D90022055E /* HomeModel.m in Sources */,
 				F26F4FF82212A94D009C6BB9 /* UITableViewCell+Extension.m in Sources */,
 				A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */,
@@ -1280,7 +1308,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiongLC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mingdaiLC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1307,7 +1335,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.huanxiongLC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mingdaiLC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
