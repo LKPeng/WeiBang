@@ -7,6 +7,7 @@
 //
 
 #import "ProductListSubView.h"
+#import "ProductListModel.h"
 
 @interface ProductListSubView ()
 @property(nonatomic,strong)UILabel *termLabel;
@@ -37,7 +38,7 @@
     }];
     
     UIView *lineView1 = [[UIView alloc]init];
-    lineView1.backgroundColor = kappLineColor;
+    lineView1.backgroundColor = RGB(243, 243, 243);
     [self addSubview:lineView1];
     
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -52,7 +53,7 @@
     }];
     
     UIView *lineView2 = [[UIView alloc]init];
-    lineView2.backgroundColor = kappLineColor;
+    lineView2.backgroundColor = RGB(243, 243, 243);
     [self addSubview:lineView2];
     
     [lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -68,13 +69,17 @@
     
 }
 
+- (void)setModel:(ProductListModel *)model{
+    _model = model;
+    self.termLabel.text = [NSString stringWithFormat:@"%ld天期限",(long)model.term];
+}
 #pragma mark ----   懒加载  ----
 
 - (UILabel *)termLabel
 {
     if (!_termLabel) {
         _termLabel = [[UILabel alloc] init];
-        _termLabel.font = kBoldFontSize6(14);
+        _termLabel.font = kFontSize6(13);
         _termLabel.textColor = [UIColor blackColor];
         _termLabel.text = @"30天期限";
     }
@@ -85,7 +90,7 @@
 {
     if (!_purchaseLabel) {
         _purchaseLabel = [[UILabel alloc] init];
-        _purchaseLabel.font = kBoldFontSize6(14);
+        _purchaseLabel.font = kFontSize6(13);
         _purchaseLabel.textColor = [UIColor blackColor];
         _purchaseLabel.text = @"1000元起购";
     }
@@ -96,7 +101,7 @@
 {
     if (!_wayLabel) {
         _wayLabel = [[UILabel alloc] init];
-        _wayLabel.font = kBoldFontSize6(14);
+        _wayLabel.font = kFontSize6(13);
         _wayLabel.textColor = [UIColor blackColor];
         _wayLabel.text = @"按息付息";
     }

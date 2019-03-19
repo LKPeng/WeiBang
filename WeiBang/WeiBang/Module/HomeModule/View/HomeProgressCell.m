@@ -11,7 +11,7 @@
 #import "HomeModel.h"
 
 #define kappMainGreen     RGB(54,153,30)
-#define kappMainOrange    RGB(248,124,6)
+
 #define kappMainGray      RGB(175,175,175)
 #define kappMainTitleGray RGB(195,195,195)
 

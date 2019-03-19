@@ -266,6 +266,9 @@ tmp;\
 #define kappLineColor RGB(249, 249, 249)
 //#define kappRed RGB(238,61,61)
 #define kappMainGreen     RGB(54,153,30)
+#define kappMainTitleGray  [UIColor colorWithRed:195/255.0 green:195/255.0 blue:195/255.0 alpha:1.0f]
+#define kappMainOrange    RGB(248,124,6)
+
 ///MARK:- property属性快速声明
 // 字符串属性
 #define PropertyString(s) \

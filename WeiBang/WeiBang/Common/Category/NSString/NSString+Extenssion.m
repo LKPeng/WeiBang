@@ -484,7 +484,7 @@
         
         [attributeStr addAttribute:NSForegroundColorAttributeName value:color range:hightlightTextRange];
         
-        [attributeStr addAttribute:NSFontAttributeName value:kBoldFontSize6(18) range:hightlightTextRange];
+        [attributeStr addAttribute:NSFontAttributeName value:kBoldFontSize6(15) range:hightlightTextRange];
         return attributeStr;
         
     }else {

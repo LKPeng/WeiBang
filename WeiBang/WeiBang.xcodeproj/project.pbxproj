@@ -15,6 +15,10 @@
 		2AC4C8F52240F9F40022055E /* ProductListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8F42240F9F40022055E /* ProductListController.m */; };
 		2AC4C8F82240FA010022055E /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8F62240FA010022055E /* ProductListCell.m */; };
 		2AC4C8FB2240FA0A0022055E /* ProductListSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8FA2240FA0A0022055E /* ProductListSubView.m */; };
+		2AC4C8FE2240FC310022055E /* ProductListProgessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8FD2240FC310022055E /* ProductListProgessView.m */; };
+		2AC4C9032240FE940022055E /* JJOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C8FF2240FE930022055E /* JJOptionView.m */; };
+		2AC4C9042240FE940022055E /* JJOptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C9002240FE930022055E /* JJOptionTableViewCell.m */; };
+		2AC4C908224100F50022055E /* ProductListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4C907224100F50022055E /* ProductListModel.m */; };
 		A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510952237A05200E0A2AA /* PlanPageControl.m */; };
 		A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510962237A05200E0A2AA /* PlanADScrollView.m */; };
 		A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */; };
@@ -99,6 +103,14 @@
 		2AC4C8F72240FA010022055E /* ProductListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCell.h; sourceTree = "<group>"; };
 		2AC4C8F92240FA0A0022055E /* ProductListSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListSubView.h; sourceTree = "<group>"; };
 		2AC4C8FA2240FA0A0022055E /* ProductListSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListSubView.m; sourceTree = "<group>"; };
+		2AC4C8FC2240FC310022055E /* ProductListProgessView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListProgessView.h; sourceTree = "<group>"; };
+		2AC4C8FD2240FC310022055E /* ProductListProgessView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListProgessView.m; sourceTree = "<group>"; };
+		2AC4C8FF2240FE930022055E /* JJOptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJOptionView.m; sourceTree = "<group>"; };
+		2AC4C9002240FE930022055E /* JJOptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJOptionTableViewCell.m; sourceTree = "<group>"; };
+		2AC4C9012240FE930022055E /* JJOptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJOptionView.h; sourceTree = "<group>"; };
+		2AC4C9022240FE930022055E /* JJOptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJOptionTableViewCell.h; sourceTree = "<group>"; };
+		2AC4C906224100F50022055E /* ProductListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListModel.h; sourceTree = "<group>"; };
+		2AC4C907224100F50022055E /* ProductListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListModel.m; sourceTree = "<group>"; };
 		31F2A15441CF236127A7E51B /* Pods-WeiBang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.release.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.release.xcconfig"; sourceTree = "<group>"; };
 		9AF203E0899EEC02D8792DAE /* Pods-WeiBang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.debug.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.debug.xcconfig"; sourceTree = "<group>"; };
 		A02510932237A05200E0A2AA /* PlanADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADScrollView.h; sourceTree = "<group>"; };
@@ -229,13 +241,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AC4C905224100DB0022055E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4C906224100F50022055E /* ProductListModel.h */,
+				2AC4C907224100F50022055E /* ProductListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2AFF01662237E3DC007865AF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2AC4C9022240FE930022055E /* JJOptionTableViewCell.h */,
+				2AC4C9002240FE930022055E /* JJOptionTableViewCell.m */,
+				2AC4C9012240FE930022055E /* JJOptionView.h */,
+				2AC4C8FF2240FE930022055E /* JJOptionView.m */,
 				2AC4C8F72240FA010022055E /* ProductListCell.h */,
 				2AC4C8F62240FA010022055E /* ProductListCell.m */,
 				2AC4C8F92240FA0A0022055E /* ProductListSubView.h */,
 				2AC4C8FA2240FA0A0022055E /* ProductListSubView.m */,
+				2AC4C8FC2240FC310022055E /* ProductListProgessView.h */,
+				2AC4C8FD2240FC310022055E /* ProductListProgessView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -773,6 +800,7 @@
 			isa = PBXGroup;
 			children = (
 				F26F50342212A99E009C6BB9 /* Controller */,
+				2AC4C905224100DB0022055E /* Model */,
 				2AFF01662237E3DC007865AF /* View */,
 			);
 			path = MsgModule;
@@ -1036,6 +1064,7 @@
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
 				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
 				F299D37D221A7C2E00727305 /* PCCircle.m in Sources */,
+				2AC4C8FE2240FC310022055E /* ProductListProgessView.m in Sources */,
 				2AC4C8F22240F9E70022055E /* HomeProgressCell.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
 				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
@@ -1043,6 +1072,7 @@
 				2AC4C8F52240F9F40022055E /* ProductListController.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
+				2AC4C908224100F50022055E /* ProductListModel.m in Sources */,
 				F26F4FF52212A94D009C6BB9 /* UILabel+Attribute.m in Sources */,
 				F26F4FEC2212A94D009C6BB9 /* NSString+Base64.m in Sources */,
 				F26F4FE82212A94D009C6BB9 /* NSAttributedString+CalculateHeight.m in Sources */,
@@ -1065,6 +1095,7 @@
 				F26F4FF42212A94D009C6BB9 /* UIColor+Extension.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
+				2AC4C9042240FE940022055E /* JJOptionTableViewCell.m in Sources */,
 				F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */,
 				F26F503C2212A99E009C6BB9 /* MsgViewController.m in Sources */,
 				F26F4FED2212A94D009C6BB9 /* NSString+Extenssion.m in Sources */,
@@ -1073,6 +1104,7 @@
 				F26F4FE62212A94D009C6BB9 /* MDFAnimation.m in Sources */,
 				F23F72142213E53600D42A02 /* WBStaticConstant.m in Sources */,
 				F299D380221A7C2E00727305 /* CALayer+Anim.m in Sources */,
+				2AC4C9032240FE940022055E /* JJOptionView.m in Sources */,
 				F26F503A2212A99E009C6BB9 /* HomeViewController.m in Sources */,
 				2AC4C8EF2240F9E00022055E /* HomeFootView.m in Sources */,
 				F216B94B220412B5009B811D /* AppDelegate.m in Sources */,

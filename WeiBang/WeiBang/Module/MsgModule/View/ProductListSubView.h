@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class ProductListModel;
 @interface ProductListSubView : UITableViewCell
-
+@property (nonatomic, strong) ProductListModel *model;
 @end

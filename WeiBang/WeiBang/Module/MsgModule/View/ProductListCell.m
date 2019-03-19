@@ -8,13 +8,14 @@
 
 #import "ProductListCell.h"
 #import "ProductListSubView.h"
-#import "CircleProgressView.h"
+#import "ProductListProgessView.h"
+#import "ProductListModel.h"
 
 @interface ProductListCell()
 @property(nonatomic,strong)UILabel *termLabel;
 @property(nonatomic,strong)UILabel *progressLabel;
 @property(nonatomic,strong)ProductListSubView *productListSubView;
-@property(nonatomic,weak)  CircleProgressView *circleProgressView;
+@property(nonatomic,weak)  ProductListProgessView *circleProgressView;
 @end
 
 @implementation ProductListCell
@@ -53,7 +54,7 @@
     }];
     
     UIView *lineView1 = [[UIView alloc]init];
-    lineView1.backgroundColor = kappLineColor;
+    lineView1.backgroundColor = RGB(243, 243, 243);
     [self addSubview:lineView1];
     
     [lineView1 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -64,14 +65,31 @@
     
     
     
-    CircleProgressView *circleProgressView = [[CircleProgressView alloc] initWithFrame:CGRectMake(scaleX_6(15), scaleY_6(15), circleWH , circleWH) withRadius:scaleX_6(24) withLineWidth:5.0f];
+    ProductListProgessView *circleProgressView = [[ProductListProgessView alloc] initWithFrame:CGRectMake(scaleX_6(20), scaleY_6(30), circleWH , circleWH) withRadius:scaleX_6(24) withLineWidth:5.0f];
     
     [self.contentView addSubview:circleProgressView];
     self.circleProgressView = circleProgressView;
     
-    [self.circleProgressView updateProgress:0.0833 andTerm:30];
-    self.circleProgressView.backClear = YES;
+//    [self.circleProgressView updateProgress:0.0833 andTerm:30];
+//    self.circleProgressView.backClear = YES;
     
+}
+
+
+- (void)setModel:(ProductListModel *)model{
+    _model = model;
+    
+    [self.circleProgressView updateProgress:model.Progress andTerm:model.term];
+    self.circleProgressView.backClear = YES;
+    self.termLabel.text = model.moneyTerm;
+    
+    
+//    NSString *str0 = [NSString stringWithFormat:@"%.2f",model.Progress];
+    NSString *str1 = [NSString stringWithFormat:@"%.2f%%",model.Profit*100];
+    NSMutableAttributedString *indroStr = [NSString setupAttributeString:[NSString stringWithFormat:@"年化收益  %@",str1] rangeText:str1 textColor:kappMainOrange];
+    _progressLabel.attributedText = indroStr;
+    
+    self.productListSubView.model = model;
 }
 
 #pragma mark ----   懒加载  ----
@@ -79,9 +97,9 @@
 {
     if (!_termLabel) {
         _termLabel = [[UILabel alloc] init];
-        _termLabel.font = kBoldFontSize6(14);
+        _termLabel.font = kFontSize6(13);
         _termLabel.textColor = [UIColor blackColor];
-        _termLabel.text = @"银票通30天";
+//        _termLabel.text = @"银票通30天";
     }
     return _termLabel;
 }
@@ -90,8 +108,8 @@
 {
     if (!_progressLabel) {
         _progressLabel = [[UILabel alloc] init];
-        _progressLabel.font = kBoldFontSize6(14);
-        _progressLabel.textColor = [UIColor blackColor];
+        _progressLabel.font = kFontSize6(13);
+        _progressLabel.textColor = kappMainTitleGray;
         _progressLabel.text = @"年化收益 8.28%";
     }
     return _progressLabel;

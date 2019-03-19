@@ -10,14 +10,16 @@
 
 #import "PlanADScrollView.h"
 #import "HomeFootView.h"
-#import "HomeModel.h"
+#import "ProductListModel.h"
 #import "ProductListCell.h"
 
-@interface ProductListController ()<UITableViewDelegate,UITableViewDataSource>
+#import "JJOptionView.h"
+
+@interface ProductListController ()<UITableViewDelegate,UITableViewDataSource,JJOptionViewDelegate>
 
 @property (nonatomic,strong) UITableView *tableView;
 
-@property (nonatomic, strong) NSMutableArray<HomeModel *> *HomeModels;
+@property (nonatomic, strong) NSMutableArray<ProductListModel *> *HomeModels;
 
 @end
 
@@ -46,43 +48,59 @@
     self.navigationItem.rightBarButtonItem = rightItem;
     
     self.tabBarController.tabBar.hidden = NO;
+    
 }
 
 #pragma mark ----   数据  ----
 
 - (void)createItem{
-    HomeModel *model1 = [[HomeModel alloc]init];
+    ProductListModel *model1 = [[ProductListModel alloc]init];
     model1.moneyTerm = @"银票通30天";
     model1.Progress = 0.0838;
     model1.term = 30;
     model1.total = 47000.00;
     model1.startAccount = 1000;
+    model1.Profit = 0.0838;
     [self.HomeModels addObject:model1];
     
-    HomeModel *model2 = [[HomeModel alloc]init];
+    ProductListModel *model2 = [[ProductListModel alloc]init];
     model2.moneyTerm = @"银票通30天";
-    model2.Progress = 0.0838;
-    model2.term = 30;
+    model2.Progress = 0.40;
+    model2.term = 60;
     model2.total = 47000.00;
     model2.startAccount = 1000;
+    model2.Profit = 0.40;
     [self.HomeModels addObject:model2];
     
-    HomeModel *model3 = [[HomeModel alloc]init];
+    ProductListModel *model3 = [[ProductListModel alloc]init];
     model3.moneyTerm = @"银票通30天";
-    model3.Progress = 0.0838;
-    model3.term = 30;
+    model3.Progress = 0.54;
+    model3.term = 90;
     model3.total = 47000.00;
     model3.startAccount = 1000;
+    model3.Profit = 0.54;
     [self.HomeModels addObject:model3];
     
+    ProductListModel *model4 = [[ProductListModel alloc]init];
+    model4.moneyTerm = @"银票通30天";
+    model4.Progress = 1.2;
+    model4.term = 30;
+    model4.total = 47000.00;
+    model4.startAccount = 1000;
+    model4.Profit = 0.54;
+    [self.HomeModels addObject:model4];
+    
     [self.tableView reloadData];
+    
+    JJOptionView *view1 = [[JJOptionView alloc] initWithFrame:CGRectMake(0, kNavBarHeight , KWIDTH, 40)];
+    view1.delegate = self;
+    [self.view addSubview:view1];
 }
 #pragma mark ----   点击  ----
 
-//- (void)cancleButtonClicked{
-//    NewsBulletinControllerViewController *invest = [[NewsBulletinControllerViewController alloc]init];
-//    [self.navigationController pushViewController:invest animated:YES];
-//}
+- (void)cancleButtonClicked{
+    
+}
 
 
 
@@ -93,7 +111,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.HomeModels.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -103,7 +121,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ProductListCell *cell = [tableView dequeueReusableCellWithIdentifier:[ProductListCell cellReuseID]];
-//    cell.model = self.HomeModels[indexPath.row];
+    cell.model = self.HomeModels[indexPath.row];
     return cell;
 }
 
@@ -168,7 +186,8 @@
         adjustsScrollViewInsets_NO(_tableView, self);
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight+22, 0);
+//        _tableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight+22, 0);
+        _tableView.contentInset = UIEdgeInsetsMake(40, 0, kTabBarHeight+25, 0);
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.tableFooterView = [UIView new];
         UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , 0.001)];
@@ -179,7 +198,7 @@
     return _tableView;
 }
 
-- (NSMutableArray<HomeModel *> *)HomeModels{
+- (NSMutableArray<ProductListModel *> *)HomeModels{
     if (!_HomeModels) {
         _HomeModels = [[NSMutableArray alloc]init];
     }
