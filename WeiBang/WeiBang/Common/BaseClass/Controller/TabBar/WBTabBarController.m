@@ -11,12 +11,13 @@
 #import "HomeController.h"
 #import "ProductListController.h"
 #import "MeViewController.h"
+#import "DiscoverViewController.h"
 
 #import "WBNavigantionController.h"
 
 
 
-#define navBackGroundColor kappRed
+#define navBackGroundColor kappMainGreen
 #define navTintColor [UIColor whiteColor]
 #define titleColor [UIColor whiteColor]
 #define My_BaDouNavigationTitleFont [UIFont boldSystemFontOfSize:17]
@@ -38,10 +39,13 @@
     [self setUpOneChildViewController:home image:[UIImage imageNamed:@"nav_home"] selectedImage:[UIImage imageNamed:@"nav_home"] title:@"首页"];
     
     ProductListController *msg = [[ProductListController alloc] init];
-    [self setUpOneChildViewController:msg image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"投资区"];
+    [self setUpOneChildViewController:msg image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"产品列表"];
+    
+    DiscoverViewController *dis = [[DiscoverViewController alloc] init];
+    [self setUpOneChildViewController:dis image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"我的钱袋"];
     
     MeViewController *me = [[MeViewController alloc] init];
-    [self setUpOneChildViewController:me image:[UIImage imageNamed:@"nav_me"] selectedImage:[UIImage imageNamed:@"nav_me"] title:@"我的账户"];
+    [self setUpOneChildViewController:me image:[UIImage imageNamed:@"nav_me"] selectedImage:[UIImage imageNamed:@"nav_me"] title:@"更多"];
 }
 - (void)setUpOneChildViewController:(UIViewController *)vc image:(UIImage *)image selectedImage:(UIImage *)selectedImage title:(NSString *)title {
     vc.title = title;

@@ -264,7 +264,8 @@ tmp;\
 
 //下横线颜色
 #define kappLineColor RGB(249, 249, 249)
-#define kappRed RGB(238,61,61)
+//#define kappRed RGB(238,61,61)
+#define kappMainGreen     RGB(54,153,30)
 ///MARK:- property属性快速声明
 // 字符串属性
 #define PropertyString(s) \
