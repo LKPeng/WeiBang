@@ -11,11 +11,9 @@
 #import "HomeViewController.h"
 #import "MsgViewController.h"
 #import "MeViewController.h"
-#import "MyAccountViewController.h"
 
 #import "WBNavigantionController.h"
 
-#import "MeLoginController.h"
 
 
 #define navBackGroundColor kappRed
@@ -42,7 +40,7 @@
     MsgViewController *msg = [[MsgViewController alloc] init];
     [self setUpOneChildViewController:msg image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"投资区"];
     
-    MyAccountViewController *me = [[MyAccountViewController alloc] init];
+    MeViewController *me = [[MeViewController alloc] init];
     [self setUpOneChildViewController:me image:[UIImage imageNamed:@"nav_me"] selectedImage:[UIImage imageNamed:@"nav_me"] title:@"我的账户"];
 }
 - (void)setUpOneChildViewController:(UIViewController *)vc image:(UIImage *)image selectedImage:(UIImage *)selectedImage title:(NSString *)title {
@@ -75,25 +73,6 @@
     
 }
 
-- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
-    NSString * longinBool = [[NSUserDefaults standardUserDefaults] objectForKey:@"user_login"];
-    //判断用户是否登陆
-    if ([longinBool isEqualToString:@"YES"]) {
-
-    }else{
-        //这里拿到你想要的tabBarItem,这里的方法有很多,还有通过tag值,这里看你的需要了
-        if ([viewController.tabBarItem.title isEqualToString:@"我的账户"]) {
-            MeLoginController *vc = [MeLoginController new];
-            WBNavigantionController *nav = [[WBNavigantionController alloc] initWithRootViewController:vc];
-            [self setNavigation:nav];
-            [self presentViewController:nav animated:YES completion:nil];
-            //这里的NO是关键,如果是这个tabBarItem,就不要让他点击进去
-            return NO;
-        }
-    }
-    //当然其余的还是要点击进去的
-    return YES;
-}
 
 @end
 

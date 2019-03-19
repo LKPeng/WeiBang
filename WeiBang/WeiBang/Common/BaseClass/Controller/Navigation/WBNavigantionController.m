@@ -11,8 +11,6 @@
 #import "AppDelegate.h"
 #import "WBGestureBaseController.h"
 
-#import "GestureViewController.h"
-#import "GestureVerifyViewController.h"
 
 @interface WBNavigantionController ()<UIGestureRecognizerDelegate,UINavigationControllerDelegate>
 
@@ -115,10 +113,6 @@
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
-    if ([[self getCurrentViewController] class] == [GestureViewController class] && [[self getCurrentViewController] class] == [GestureViewController class]) {
-        NSLog(@"return");
-        return NO;
-    }
     
     
     WBGestureBaseController *topView = (WBGestureBaseController *)self.topViewController;
