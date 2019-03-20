@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OpenAccountViewController">
             <connections>
                 <outlet property="openButton" destination="10w-hT-42Q" id="ceQ-iq-fs8"/>
+                <outlet property="telTextField" destination="n53-wV-Tvd" id="ISd-Yu-dLy"/>
                 <outlet property="userNumberField" destination="QRf-6N-TeG" id="026-bV-d6F"/>
                 <outlet property="userTextField" destination="esr-ch-yWT" id="szh-ya-gS6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,7 +23,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esr-ch-yWT">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入真实姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esr-ch-yWT">
                     <rect key="frame" x="20" y="140" width="335" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="ei1-06-0pb"/>
@@ -31,26 +32,44 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QRf-6N-TeG">
-                    <rect key="frame" x="20" y="235" width="335" height="45"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入身份证号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QRf-6N-TeG">
+                    <rect key="frame" x="20" y="230" width="335" height="45"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n53-wV-Tvd">
+                    <rect key="frame" x="20" y="320" width="335" height="45"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="真实姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptb-Tb-J1v">
-                    <rect key="frame" x="20" y="117.5" width="65.5" height="19.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <rect key="frame" x="20" y="120" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身份证号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hn-NJ-xmj">
-                    <rect key="frame" x="20" y="212" width="66" height="20"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <rect key="frame" x="20" y="210" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请填写本人身份证信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSl-Ot-nlD">
+                    <rect key="frame" x="136.5" y="473" width="102.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0l7-sH-Dfu">
+                    <rect key="frame" x="20" y="300" width="43" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10w-hT-42Q">
-                    <rect key="frame" x="20" y="330" width="335" height="50"/>
+                    <rect key="frame" x="20" y="415" width="335" height="50"/>
                     <color key="backgroundColor" red="0.054573810530000003" green="0.63441143129999999" blue="0.079383614980000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="7ut-lx-22f"/>
@@ -67,30 +86,30 @@
                         <action selector="openAccountButton:" destination="-1" eventType="touchUpInside" id="QyH-yR-Qyr"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请填写本人身份证信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSl-Ot-nlD">
-                    <rect key="frame" x="136.5" y="388" width="102.5" height="12"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Ptb-Tb-J1v" firstAttribute="leading" secondItem="esr-ch-yWT" secondAttribute="leading" id="2Ey-hd-8Jk"/>
+                <constraint firstItem="n53-wV-Tvd" firstAttribute="top" secondItem="0l7-sH-Dfu" secondAttribute="bottom" constant="3" id="4ND-1Z-VC8"/>
                 <constraint firstItem="QRf-6N-TeG" firstAttribute="trailing" secondItem="esr-ch-yWT" secondAttribute="trailing" id="5NK-jX-t5M"/>
                 <constraint firstItem="lSl-Ot-nlD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5f8-At-RAy"/>
                 <constraint firstItem="QRf-6N-TeG" firstAttribute="leading" secondItem="esr-ch-yWT" secondAttribute="leading" id="FdA-wc-4Sl"/>
+                <constraint firstItem="10w-hT-42Q" firstAttribute="top" secondItem="n53-wV-Tvd" secondAttribute="bottom" constant="50" id="FvK-Fi-FNI"/>
+                <constraint firstItem="n53-wV-Tvd" firstAttribute="trailing" secondItem="QRf-6N-TeG" secondAttribute="trailing" id="JTe-iZ-xOO"/>
+                <constraint firstItem="n53-wV-Tvd" firstAttribute="top" secondItem="QRf-6N-TeG" secondAttribute="bottom" constant="45" id="LeG-36-Z5z"/>
                 <constraint firstItem="esr-ch-yWT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="TkM-qF-LhD"/>
                 <constraint firstItem="10w-hT-42Q" firstAttribute="trailing" secondItem="QRf-6N-TeG" secondAttribute="trailing" id="VLh-ue-prC"/>
                 <constraint firstItem="QRf-6N-TeG" firstAttribute="top" secondItem="0hn-NJ-xmj" secondAttribute="bottom" constant="3" id="Wod-fZ-xAA"/>
                 <constraint firstItem="esr-ch-yWT" firstAttribute="top" secondItem="Ptb-Tb-J1v" secondAttribute="bottom" constant="3" id="XYs-dy-49w"/>
                 <constraint firstAttribute="trailing" secondItem="esr-ch-yWT" secondAttribute="trailing" constant="20" id="a3s-fp-6Zj"/>
                 <constraint firstItem="esr-ch-yWT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="140" id="eBa-a5-eHw"/>
+                <constraint firstItem="n53-wV-Tvd" firstAttribute="height" secondItem="QRf-6N-TeG" secondAttribute="height" id="fvI-5K-m84"/>
+                <constraint firstItem="0l7-sH-Dfu" firstAttribute="leading" secondItem="n53-wV-Tvd" secondAttribute="leading" id="fxg-a3-9ZO"/>
                 <constraint firstItem="QRf-6N-TeG" firstAttribute="height" secondItem="esr-ch-yWT" secondAttribute="height" id="gZg-QC-ciS"/>
                 <constraint firstItem="0hn-NJ-xmj" firstAttribute="leading" secondItem="QRf-6N-TeG" secondAttribute="leading" id="iWY-D3-k4h"/>
-                <constraint firstItem="10w-hT-42Q" firstAttribute="top" secondItem="QRf-6N-TeG" secondAttribute="bottom" constant="50" id="kjR-BS-iDO"/>
+                <constraint firstItem="n53-wV-Tvd" firstAttribute="leading" secondItem="QRf-6N-TeG" secondAttribute="leading" id="ngX-W7-sW9"/>
                 <constraint firstItem="10w-hT-42Q" firstAttribute="leading" secondItem="QRf-6N-TeG" secondAttribute="leading" id="pWc-IX-2tC"/>
-                <constraint firstItem="QRf-6N-TeG" firstAttribute="top" secondItem="esr-ch-yWT" secondAttribute="bottom" constant="50" id="tMA-pf-DAl"/>
+                <constraint firstItem="QRf-6N-TeG" firstAttribute="top" secondItem="esr-ch-yWT" secondAttribute="bottom" constant="45" id="tMA-pf-DAl"/>
                 <constraint firstItem="lSl-Ot-nlD" firstAttribute="top" secondItem="10w-hT-42Q" secondAttribute="bottom" constant="8" id="vtB-XO-l6d"/>
             </constraints>
             <point key="canvasLocation" x="-48" y="67"/>
