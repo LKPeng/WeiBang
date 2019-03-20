@@ -52,10 +52,10 @@
     titleLable.backgroundColor = [UIColor clearColor];
     [self.view addSubview:titleLable];
     
-    UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - scaleX_6(40) -scaleX_6(10), kStatusBarHeight, scaleX_6(40), scaleX_6(40))];
-    [settingBtn setImage:[UIImage imageNamed:@"设置"] forState:UIControlStateNormal];
-    [settingBtn addTarget:self action:@selector(setFunction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:settingBtn];
+//    UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - scaleX_6(40) -scaleX_6(10), kStatusBarHeight, scaleX_6(40), scaleX_6(40))];
+//    [settingBtn setImage:[UIImage imageNamed:@"设置"] forState:UIControlStateNormal];
+//    [settingBtn addTarget:self action:@selector(setFunction) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:settingBtn];
     NSLog(@"1");
     
     self.tabBarController.tabBar.hidden = NO;
