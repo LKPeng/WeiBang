@@ -71,7 +71,7 @@
     
     self.tabBarController.tabBar.hidden = NO;
     
-    [self.tableView addSubview:self.tipLabel];
+    [self.view addSubview:self.tipLabel];
     
 }
 

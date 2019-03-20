@@ -25,6 +25,10 @@
 
 @property (strong, nonatomic) UnderlineButton         *underlineButton;
 @property (strong, nonatomic) UnderlineButton         *ysButton;
+
+@property (strong, nonatomic) UIButton *AgreeSelectBtn;
+@property (strong, nonatomic) UIButton *PrivacySelectBtn;
+
 @end
 
 @implementation MeRegisterController
@@ -125,17 +129,65 @@
         make.height.mas_equalTo(scaleY_6(45));
     }];
     
-    [self.view addSubview:self.underlineButton];
     
-    [_underlineButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    /*
+     * 注册协议
+     */
+
+    [self.view addSubview:self.AgreeSelectBtn];
+    [self.AgreeSelectBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(login.mas_bottom).offset(scaleY_6(10));
-        make.right.equalTo(login);
+        make.leading.mas_equalTo(login);
+        make.size.mas_equalTo(CGSizeMake(scaleY_6(20), scaleY_6(20)));
     }];
+    
+    UILabel *textTitleL = [[UILabel alloc]init];
+    textTitleL.text = @"我已阅读并同意";
+    textTitleL.font = kFontSize6(13);
+    textTitleL.textColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.8];
+    [self.view addSubview:textTitleL];
+    
+    [textTitleL mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.AgreeSelectBtn.mas_top);
+    make.left.equalTo(self.AgreeSelectBtn.mas_right).offset(scaleX_6(8));
+        make.bottom.equalTo(self.AgreeSelectBtn.mas_bottom);
+    }];
+    
+    [self.view addSubview:self.underlineButton];
+    [_underlineButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(self.AgreeSelectBtn.mas_centerY);
+        make.left.equalTo(textTitleL.mas_right).offset(scaleX_6(5));
+    }];
+    
+
+    /*
+     * 隐私协议
+     */
+    
+    [self.view addSubview:self.PrivacySelectBtn];
+    [self.PrivacySelectBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.AgreeSelectBtn.mas_bottom).offset(scaleY_6(10));
+        make.leading.mas_equalTo(login);
+        make.size.mas_equalTo(CGSizeMake(scaleY_6(20), scaleY_6(20)));
+    }];
+    
+    UILabel *textTitleL1 = [[UILabel alloc]init];
+    textTitleL1.text = @"我已阅读并同意";
+    textTitleL1.font = kFontSize6(13);
+    textTitleL1.textColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.8];
+    [self.view addSubview:textTitleL1];
+    
+    [textTitleL1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.PrivacySelectBtn.mas_top);
+        make.left.equalTo(self.PrivacySelectBtn.mas_right).offset(scaleX_6(8));
+        make.bottom.equalTo(self.PrivacySelectBtn.mas_bottom);
+    }];
+    
     
     [self.view addSubview:self.ysButton];
     [self.ysButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(login.mas_bottom).offset(scaleY_6(10));
-        make.leading.mas_equalTo(login);
+        make.centerY.mas_equalTo(self.PrivacySelectBtn.mas_centerY);
+        make.left.equalTo(textTitleL1.mas_right).offset(scaleX_6(5));
     }];
     
     [self.view addSubview:self.tipLabel];
@@ -170,10 +222,20 @@
         return;
     }
     
+    if (!self.AgreeSelectBtn.selected) {
+        [MBProgressHUD showMessage:@"请阅读并同意注册协议"];
+        return;
+    }
+    
+    if (!self.PrivacySelectBtn.selected) {
+        [MBProgressHUD showMessage:@"请阅读并同意隐私协议"];
+        return;
+    }
+    
     [MBProgressHUD showMessage:@"注册失败,请稍后再试"];
     
 }
-
+#pragma mark - 按钮点击事件
 - (void)ClickagreeBtn{
     RegistrationAgreementController *vc = [[RegistrationAgreementController alloc] init];
     [self.navigationController pushViewController:vc animated:true];
@@ -182,6 +244,14 @@
 - (void)ClickYSBtn{
     PrivacyViewController *vc = [[PrivacyViewController alloc] init];
     [self.navigationController pushViewController:vc animated:true];
+}
+
+- (void)ClickAgreeSelectBtn{
+    self.AgreeSelectBtn.selected =! self.AgreeSelectBtn.selected;
+}
+
+- (void)ClickPrivacySelectBtn{
+    self.PrivacySelectBtn.selected =! self.PrivacySelectBtn.selected;
 }
 
 - (void)popViewControllerAnimated:(UIButton *)button{
@@ -268,9 +338,33 @@
 
 - (UILabel *)tipLabel{
     if (!_tipLabel) {
-        _tipLabel = [[CopyrightTipLabel alloc] initWithFrame:CGRectMake(0, self.view.height-20, KWIDTH, 15)];
+        _tipLabel = [[CopyrightTipLabel alloc] initWithFrame:CGRectMake(0, self.view.height-30, KWIDTH, 15)];
         _tipLabel.textColor = [UIColor blackColor];
     }
     return _tipLabel;
 }
+
+
+- (UIButton *)AgreeSelectBtn{
+    if(!_AgreeSelectBtn){
+        _AgreeSelectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _AgreeSelectBtn.selected = YES;
+        [_AgreeSelectBtn setImage:[UIImage imageNamed:@"条款_未选中"] forState:UIControlStateNormal];
+        [_AgreeSelectBtn setImage:[UIImage imageNamed:@"条款_选中"] forState:UIControlStateSelected];
+        [_AgreeSelectBtn addTarget:self action:@selector(ClickAgreeSelectBtn) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _AgreeSelectBtn;
+}
+
+- (UIButton *)PrivacySelectBtn{
+    if(!_PrivacySelectBtn){
+        _PrivacySelectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _PrivacySelectBtn.selected = YES;
+        [_PrivacySelectBtn setImage:[UIImage imageNamed:@"条款_未选中"] forState:UIControlStateNormal];
+        [_PrivacySelectBtn setImage:[UIImage imageNamed:@"条款_选中"] forState:UIControlStateSelected];
+        [_PrivacySelectBtn addTarget:self action:@selector(ClickPrivacySelectBtn) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _PrivacySelectBtn;
+}
+
 @end

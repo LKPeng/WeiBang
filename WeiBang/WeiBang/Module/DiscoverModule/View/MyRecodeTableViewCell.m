@@ -47,7 +47,7 @@
     [self addSubview:self.iconImageView1];
     [self.iconImageView1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.mas_equalTo(line.mas_leading).offset(scaleX(-3));
-        make.width.height.mas_equalTo(scaleX(18));
+        make.width.height.mas_equalTo(scaleX(10));
         make.bottom.mas_equalTo(scaleX(-3));
     }];
     
@@ -66,7 +66,7 @@
     [self addSubview:self.iconImageView2];
     [self.iconImageView2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.mas_equalTo(scaleX(-3));
-        make.width.height.mas_equalTo(scaleX(18));
+        make.width.height.mas_equalTo(scaleX(10));
         make.bottom.mas_equalTo(scaleX(-3));
     }];
 }
@@ -128,14 +128,14 @@
 
 - (UIImageView *)iconImageView1{
     if (!_iconImageView1) {
-        _iconImageView1 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"u2779"]];
+        _iconImageView1 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"活动中心"]];
     }
     return _iconImageView1;
 }
 
 - (UIImageView *)iconImageView2{
     if (!_iconImageView2) {
-        _iconImageView2 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"u2779"]];
+        _iconImageView2 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"活动中心"]];
     }
     return _iconImageView2;
 }

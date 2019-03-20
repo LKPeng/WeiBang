@@ -45,10 +45,10 @@
 
 - (UITableView *)tableView{
     if(!_tableView){
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , KHIGHT - 10 - 50) style:UITableViewStyleGrouped];
-        _tableView.bounces = NO;
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, KWIDTH , KHIGHT - 10 - 50) style:UITableViewStyleGrouped];
         _tableView.backgroundColor = [UIColor whiteColor];
         adjustsScrollViewInsets_NO(_tableView, self);
+        _tableView.contentInset = UIEdgeInsetsMake(0, 0, 50 + 20, 0);
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableView regsiterCellWithCellClass:[RNOLInvestDetailListCell class] isNib:YES];
         _tableView.height -= kBottomHeight;
@@ -65,6 +65,8 @@
     [self setupNavBarTitleViewWithText:@"投资理财"];
     self.view.backgroundColor = [UIColor whiteColor];
     [self createmodel];
+    
+    self.tabBarController.tabBar.hidden = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -110,15 +112,15 @@
     self.tableView.tableHeaderView = self.header;
     [self.tableView reloadData];
     
-    UIView *bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, KHIGHT - 10 - 50, KWIDTH , 50)];
+    UIView *bottomView = [[UIView alloc] initWithFrame:CGRectMake(50, KHIGHT - scaleY_6(50), KWIDTH - 100, scaleY_6(40) )];
     bottomView.y -= kBottomHeight;
     bottomView.backgroundColor =  [UIColor whiteColor];;
     [self.view addSubview: bottomView];
     
     UIButton *immediatelyLoanBtn = [self createRNOLStyleBlueButtonWithButtonTitle:@"立即投资"];
-    immediatelyLoanBtn.x = 50;
+    immediatelyLoanBtn.x = 0;
     immediatelyLoanBtn.width = KWIDTH - 100;
-    immediatelyLoanBtn.height = 50;
+    immediatelyLoanBtn.height = scaleY_6(40);
     immediatelyLoanBtn.y = 0;
     [immediatelyLoanBtn addTarget:self action:@selector(immediatelyLoanAction) forControlEvents:UIControlEventTouchUpInside];
     [bottomView addSubview: immediatelyLoanBtn];

@@ -178,7 +178,7 @@
 
 - (UILabel *)tipLabel{
     if (!_tipLabel) {
-        _tipLabel = [[CopyrightTipLabel alloc] initWithFrame:CGRectMake(0, self.view.height-20, KWIDTH, 15)];
+        _tipLabel = [[CopyrightTipLabel alloc] initWithFrame:CGRectMake(0, self.view.height-30, KWIDTH, 15)];
         _tipLabel.textColor = [UIColor blackColor];
     }
     return _tipLabel;
