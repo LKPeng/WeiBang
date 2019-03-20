@@ -8,6 +8,7 @@
 
 #import "HomeFootView.h"
 #import "HomeModel.h"
+#import "OpenAccountViewController.h"
 
 #define kappMainGreen     RGB(54,153,30)
 #define kappMainTitleGray  [UIColor colorWithRed:195/255.0 green:195/255.0 blue:195/255.0 alpha:1.0f]
@@ -68,7 +69,23 @@
 #pragma mark ----   点击事件  ----
 
 - (void)immediatelyButtonClick{
+    UIViewController *controller = [self findViewController:self];
     
+    OpenAccountViewController *rechargeInfor = [[OpenAccountViewController alloc]init];
+    
+    [controller.navigationController pushViewController:rechargeInfor animated:YES];
+}
+//获取当前控制器
+- (UIViewController *)findViewController:(UIView *)sourceView
+{
+    id target=sourceView;
+    while (target) {
+        target = ((UIResponder *)target).nextResponder;
+        if ([target isKindOfClass:[UIViewController class]]) {
+            break;
+        }
+    }
+    return target;
 }
 
 #pragma mark ----   懒加载  ----

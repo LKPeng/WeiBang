@@ -45,7 +45,7 @@
     [self setUpOneChildViewController:msg image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"产品列表"];
     
     MyWalletViewController *dis = [[MyWalletViewController alloc] init];
-    [self setUpOneChildViewController:dis image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"我的钱袋"];
+    [self setUpOneChildViewController:dis image:[UIImage imageNamed:@"nav_news"] selectedImage:[UIImage imageNamed:@"nav_news"] title:@"我的钱袋"];
     
     MoreViewController *me = [[MoreViewController alloc] init];
     [self setUpOneChildViewController:me image:[UIImage imageNamed:@"nav_me"] selectedImage:[UIImage imageNamed:@"nav_me"] title:@"更多"];
