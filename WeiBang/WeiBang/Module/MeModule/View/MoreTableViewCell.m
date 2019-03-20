@@ -36,7 +36,7 @@
     [self.contentView addSubview:self.insImageView];
     [self.insImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.contentView.mas_right).offset(-scaleX(10));
-        make.size.mas_equalTo(CGSizeMake(8, 23));
+        make.size.mas_equalTo(CGSizeMake(15, 15));
         make.centerY.mas_equalTo(self.contentView.mas_centerY);
     }];
     
@@ -52,18 +52,24 @@
     if (indexpath.section == 0) {
         if (indexpath.row == 0) {
             self.titleLabel.text = @"活动中心";
+            self.iconImageView.image = [UIImage imageNamed:@"活动中心.png"];
         }else if (indexpath.row == 1) {
             self.titleLabel.text = @"消息公告";
+            self.iconImageView.image = [UIImage imageNamed:@"消息公告.png"];
         }
     }else if (indexpath.section == 1) {
         if (indexpath.row == 0) {
             self.titleLabel.text = @"邀请好友";
+            self.iconImageView.image = [UIImage imageNamed:@"邀请好友.png"];
         }else if (indexpath.row == 1) {
             self.titleLabel.text = @"关于我们";
+            self.iconImageView.image = [UIImage imageNamed:@"关于我们.png"];
         }else if (indexpath.row == 2) {
             self.titleLabel.text = @"帮助中心";
+            self.iconImageView.image = [UIImage imageNamed:@"帮助中心.png"];
         }else if (indexpath.row == 3) {
             self.titleLabel.text = @"客服电话";
+            self.iconImageView.image = [UIImage imageNamed:@"客服电话.png"];
         }
     }
 }
@@ -87,7 +93,7 @@
 
 - (UIImageView *)insImageView{
     if (!_insImageView) {
-        _insImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"u2825"]];
+        _insImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"right_in"]];
     }
     return _insImageView;
 }

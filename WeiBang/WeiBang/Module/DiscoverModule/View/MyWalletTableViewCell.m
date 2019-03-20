@@ -37,7 +37,7 @@
     [self.contentView addSubview:self.insImageView];
     [self.insImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.contentView.mas_right).offset(-scaleX(10));
-        make.size.mas_equalTo(CGSizeMake(8, 23));
+        make.size.mas_equalTo(CGSizeMake(15, 15));
         make.centerY.mas_equalTo(self.contentView.mas_centerY);
     }];
     
@@ -59,15 +59,19 @@
     if (indexpath.row == 0) {
         self.titleLabel.text = @"充值提现";
         self.moneyLabel.text = @"6元";
+        self.iconImageView.image = [UIImage imageNamed:@"充值提现.png"];
     }else if (indexpath.row == 1) {
         self.titleLabel.text = @"关于我们";
         self.moneyLabel.text = @"";
+        self.iconImageView.image = [UIImage imageNamed:@"关于我们.png"];
     }else if (indexpath.row == 2) {
         self.titleLabel.text = @"资金记录";
         self.moneyLabel.text = @"";
+        self.iconImageView.image = [UIImage imageNamed:@"资金记录.png"];
     }else if (indexpath.row == 3) {
         self.titleLabel.text = @"自动投资";
         self.moneyLabel.text = @"";
+        self.iconImageView.image = [UIImage imageNamed:@"自动投资.png"];
     }
 }
 
@@ -101,7 +105,7 @@
 
 - (UIImageView *)insImageView{
     if (!_insImageView) {
-        _insImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"u2825"]];
+        _insImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"right_in"]];
     }
     return _insImageView;
 }

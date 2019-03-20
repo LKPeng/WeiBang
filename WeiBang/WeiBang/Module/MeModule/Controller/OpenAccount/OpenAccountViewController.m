@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *openButton;
 @property (weak, nonatomic) IBOutlet UITextField *userTextField;
 @property (weak, nonatomic) IBOutlet UITextField *userNumberField;
+@property (weak, nonatomic) IBOutlet UITextField *telTextField;
 
 @end
 
@@ -31,6 +32,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:true];
+}
+
+
 - (IBAction)openAccountButton:(UIButton *)sender {
     if (self.userTextField.text.length == 0) {
         [MBProgressHUD showMessage:@"请填写真实姓名"];
@@ -41,6 +47,12 @@
         [MBProgressHUD showMessage:@"请填写身份证号码"];
         return;
     }
+    
+    if (self.telTextField.text.length != 11) {
+        [MBProgressHUD showMessage:@"请填写11位手机号码"];
+        return;
+    }
+    
     [MBProgressHUD showMessage:@"开户失败5分钟后重试"];
 }
 
