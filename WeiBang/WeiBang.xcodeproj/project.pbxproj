@@ -52,6 +52,12 @@
 		F26AD19E2241EAE2001126AC /* NewsBulletinControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD19C2241EAE2001126AC /* NewsBulletinControllerViewController.m */; };
 		F26AD1A12241EAEB001126AC /* NewsBulletinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1A02241EAEB001126AC /* NewsBulletinModel.m */; };
 		F26AD1A42241EAF2001126AC /* NewsBulletinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1A32241EAF2001126AC /* NewsBulletinCell.m */; };
+		F26AD1A7224223E9001126AC /* RNOLNewHandInvestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1A5224223E9001126AC /* RNOLNewHandInvestViewController.m */; };
+		F26AD1AB22422423001126AC /* RNOLNewBidHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1A822422422001126AC /* RNOLNewBidHeader.m */; };
+		F26AD1AC22422423001126AC /* RNOLNewBidHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26AD1A922422423001126AC /* RNOLNewBidHeader.xib */; };
+		F26AD1B022422464001126AC /* RNOLInvestDetailListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1AE22422464001126AC /* RNOLInvestDetailListCell.m */; };
+		F26AD1B122422464001126AC /* RNOLInvestDetailListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26AD1AF22422464001126AC /* RNOLInvestDetailListCell.xib */; };
+		F26AD1B722422657001126AC /* RNOLNewHandInvestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1B622422657001126AC /* RNOLNewHandInvestModel.m */; };
 		F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F992212A94D009C6BB9 /* WBGestureBaseController.m */; };
 		F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F9C2212A94D009C6BB9 /* WBNavigantionController.m */; };
 		F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F9F2212A94D009C6BB9 /* WBTabBarController.m */; };
@@ -204,6 +210,16 @@
 		F26AD1A02241EAEB001126AC /* NewsBulletinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBulletinModel.m; sourceTree = "<group>"; };
 		F26AD1A22241EAF2001126AC /* NewsBulletinCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBulletinCell.h; sourceTree = "<group>"; };
 		F26AD1A32241EAF2001126AC /* NewsBulletinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBulletinCell.m; sourceTree = "<group>"; };
+		F26AD1A5224223E9001126AC /* RNOLNewHandInvestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOLNewHandInvestViewController.m; sourceTree = "<group>"; };
+		F26AD1A6224223E9001126AC /* RNOLNewHandInvestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOLNewHandInvestViewController.h; sourceTree = "<group>"; };
+		F26AD1A822422422001126AC /* RNOLNewBidHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOLNewBidHeader.m; sourceTree = "<group>"; };
+		F26AD1A922422423001126AC /* RNOLNewBidHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RNOLNewBidHeader.xib; sourceTree = "<group>"; };
+		F26AD1AA22422423001126AC /* RNOLNewBidHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOLNewBidHeader.h; sourceTree = "<group>"; };
+		F26AD1AD22422464001126AC /* RNOLInvestDetailListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOLInvestDetailListCell.h; sourceTree = "<group>"; };
+		F26AD1AE22422464001126AC /* RNOLInvestDetailListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOLInvestDetailListCell.m; sourceTree = "<group>"; };
+		F26AD1AF22422464001126AC /* RNOLInvestDetailListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RNOLInvestDetailListCell.xib; sourceTree = "<group>"; };
+		F26AD1B522422657001126AC /* RNOLNewHandInvestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOLNewHandInvestModel.h; sourceTree = "<group>"; };
+		F26AD1B622422657001126AC /* RNOLNewHandInvestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOLNewHandInvestModel.m; sourceTree = "<group>"; };
 		F26F4F982212A94D009C6BB9 /* WBGestureBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGestureBaseController.h; sourceTree = "<group>"; };
 		F26F4F992212A94D009C6BB9 /* WBGestureBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGestureBaseController.m; sourceTree = "<group>"; };
 		F26F4F9B2212A94D009C6BB9 /* WBNavigantionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNavigantionController.h; sourceTree = "<group>"; };
@@ -845,6 +861,8 @@
 				2AC4C8E12240F9B10022055E /* HomeController.m */,
 				F26AD19D2241EAE2001126AC /* NewsBulletinControllerViewController.h */,
 				F26AD19C2241EAE2001126AC /* NewsBulletinControllerViewController.m */,
+				F26AD1A6224223E9001126AC /* RNOLNewHandInvestViewController.h */,
+				F26AD1A5224223E9001126AC /* RNOLNewHandInvestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -856,6 +874,8 @@
 				2AC4C8EB2240F9D90022055E /* HomeModel.m */,
 				F26AD19F2241EAEB001126AC /* NewsBulletinModel.h */,
 				F26AD1A02241EAEB001126AC /* NewsBulletinModel.m */,
+				F26AD1B522422657001126AC /* RNOLNewHandInvestModel.h */,
+				F26AD1B622422657001126AC /* RNOLNewHandInvestModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -871,6 +891,12 @@
 				2AC4C8F12240F9E70022055E /* HomeProgressCell.m */,
 				F26AD1A22241EAF2001126AC /* NewsBulletinCell.h */,
 				F26AD1A32241EAF2001126AC /* NewsBulletinCell.m */,
+				F26AD1AA22422423001126AC /* RNOLNewBidHeader.h */,
+				F26AD1A822422422001126AC /* RNOLNewBidHeader.m */,
+				F26AD1A922422423001126AC /* RNOLNewBidHeader.xib */,
+				F26AD1AD22422464001126AC /* RNOLInvestDetailListCell.h */,
+				F26AD1AE22422464001126AC /* RNOLInvestDetailListCell.m */,
+				F26AD1AF22422464001126AC /* RNOLInvestDetailListCell.xib */,
 				A025109C2237A33500E0A2AA /* NoticeView */,
 				A02510922237A05200E0A2AA /* PlanADScrollView */,
 			);
@@ -1106,6 +1132,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26AD1B122422464001126AC /* RNOLInvestDetailListCell.xib in Resources */,
+				F26AD1AC22422423001126AC /* RNOLNewBidHeader.xib in Resources */,
 				A0F9C7F32241E5C100BD88C5 /* OpenAccountViewController.xib in Resources */,
 				F216B953220412BB009B811D /* Assets.xcassets in Resources */,
 			);
@@ -1196,6 +1224,7 @@
 				A0F9C7F62241E7D900BD88C5 /* NothingViewController.m in Sources */,
 				F26AD1892241EA9F001126AC /* MeForgetController.m in Sources */,
 				2AC4C8FE2240FC310022055E /* ProductListProgessView.m in Sources */,
+				F26AD1A7224223E9001126AC /* RNOLNewHandInvestViewController.m in Sources */,
 				2AC4C8F22240F9E70022055E /* HomeProgressCell.m in Sources */,
 				F26AD19E2241EAE2001126AC /* NewsBulletinControllerViewController.m in Sources */,
 				F26AD1952241EAAD001126AC /* VerificationCodeView.m in Sources */,
@@ -1226,6 +1255,7 @@
 				2AC4C8FB2240FA0A0022055E /* ProductListSubView.m in Sources */,
 				2AC4C911224109860022055E /* MyWalletViewController.m in Sources */,
 				A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */,
+				F26AD1B722422657001126AC /* RNOLNewHandInvestModel.m in Sources */,
 				2AC4C90E224109770022055E /* MoreTableViewCell.m in Sources */,
 				2AC4C8E92240F9CF0022055E /* CircleProgressView.m in Sources */,
 				F26AD1A12241EAEB001126AC /* NewsBulletinModel.m in Sources */,
@@ -1238,6 +1268,7 @@
 				F26AD1932241EAAD001126AC /* TemplateView.m in Sources */,
 				F26F4FF42212A94D009C6BB9 /* UIColor+Extension.m in Sources */,
 				2AC4C91B224109CE0022055E /* MyWalletHeaderView.m in Sources */,
+				F26AD1AB22422423001126AC /* RNOLNewBidHeader.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
 				2AC4C9042240FE940022055E /* JJOptionTableViewCell.m in Sources */,
@@ -1262,6 +1293,7 @@
 				2AC4C8EC2240F9D90022055E /* HomeModel.m in Sources */,
 				F26F4FF82212A94D009C6BB9 /* UITableViewCell+Extension.m in Sources */,
 				A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */,
+				F26AD1B022422464001126AC /* RNOLInvestDetailListCell.m in Sources */,
 				A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */,
 				2AC4C8E32240F9B10022055E /* HomeController.m in Sources */,
 				F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */,
