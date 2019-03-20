@@ -13,9 +13,11 @@
 #import "OpenAccountViewController.h"
 #import "NothingViewController.h"
 #import "MyWebViewController.h"
+#import "CopyrightTipLabel.h"
 
 @interface MyWalletViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
+@property(nonatomic,strong) CopyrightTipLabel *tipLabel;
 @end
 
 @implementation MyWalletViewController
@@ -59,6 +61,8 @@
     NSLog(@"1");
     
     self.tabBarController.tabBar.hidden = NO;
+    
+    [self.view addSubview:self.tipLabel];
 }
 
 
@@ -153,5 +157,12 @@
         [self.view addSubview: _tableView];
     }
     return _tableView;
+}
+
+- (UILabel *)tipLabel{
+    if (!_tipLabel) {
+        _tipLabel = [[CopyrightTipLabel alloc] initWithFrame:CGRectMake(0, self.view.height-20-kTabBarHeight, KWIDTH, 15)];
+    }
+    return _tipLabel;
 }
 @end

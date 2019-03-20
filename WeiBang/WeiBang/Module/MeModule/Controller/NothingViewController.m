@@ -7,11 +7,13 @@
 //
 
 #import "NothingViewController.h"
+#import "CopyrightTipLabel.h"
 
 @interface NothingViewController ()
 {
     NSString *_titleText;
 }
+@property(nonatomic,strong) CopyrightTipLabel *tipLabel;
 @end
 
 @implementation NothingViewController
@@ -30,7 +32,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = kappMainColor;
     
-    
+    [self.view addSubview:self.tipLabel];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,14 +40,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+- (UILabel *)tipLabel{
+    if (!_tipLabel) {
+        _tipLabel = [[CopyrightTipLabel alloc] initWithFrame:CGRectMake(0, self.view.height-20, KWIDTH, 15)];
+    }
+    return _tipLabel;
+}
 
 @end

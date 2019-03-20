@@ -68,6 +68,12 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2018 杭州中民贷通投资控股有限公司 Copyright Reserved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3f-ej-FZw">
+                    <rect key="frame" x="85" y="645" width="280" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10w-hT-42Q">
                     <rect key="frame" x="20" y="415" width="335" height="50"/>
                     <color key="backgroundColor" red="0.054573810530000003" green="0.63441143129999999" blue="0.079383614980000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -91,8 +97,10 @@
             <constraints>
                 <constraint firstItem="Ptb-Tb-J1v" firstAttribute="leading" secondItem="esr-ch-yWT" secondAttribute="leading" id="2Ey-hd-8Jk"/>
                 <constraint firstItem="n53-wV-Tvd" firstAttribute="top" secondItem="0l7-sH-Dfu" secondAttribute="bottom" constant="3" id="4ND-1Z-VC8"/>
+                <constraint firstAttribute="trailing" secondItem="n3f-ej-FZw" secondAttribute="trailing" constant="10" id="538-ds-cPB"/>
                 <constraint firstItem="QRf-6N-TeG" firstAttribute="trailing" secondItem="esr-ch-yWT" secondAttribute="trailing" id="5NK-jX-t5M"/>
                 <constraint firstItem="lSl-Ot-nlD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5f8-At-RAy"/>
+                <constraint firstAttribute="bottom" secondItem="n3f-ej-FZw" secondAttribute="bottom" constant="10" id="9wZ-d7-8vu"/>
                 <constraint firstItem="QRf-6N-TeG" firstAttribute="leading" secondItem="esr-ch-yWT" secondAttribute="leading" id="FdA-wc-4Sl"/>
                 <constraint firstItem="10w-hT-42Q" firstAttribute="top" secondItem="n53-wV-Tvd" secondAttribute="bottom" constant="50" id="FvK-Fi-FNI"/>
                 <constraint firstItem="n53-wV-Tvd" firstAttribute="trailing" secondItem="QRf-6N-TeG" secondAttribute="trailing" id="JTe-iZ-xOO"/>

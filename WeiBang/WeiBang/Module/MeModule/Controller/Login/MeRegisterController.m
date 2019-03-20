@@ -13,13 +13,14 @@
 #import "PrivacyViewController.h"
 #import "RegistrationAgreementController.h"
 //#import "UserAgreementViewController.h"
+#import "CopyrightTipLabel.h"
 
 @interface MeRegisterController ()
 @property (strong, nonatomic) TemplateView         *AccountView;
 @property (strong, nonatomic) TemplateView         *passwordView;
 @property (strong, nonatomic) TemplateView         *surePasswordView;
 @property (strong, nonatomic) TemplateView         *pushView;
-
+@property(nonatomic,strong) CopyrightTipLabel *tipLabel;
 @property (weak, nonatomic) VerificationCodeView *verificationCodeView;
 
 @property (strong, nonatomic) UnderlineButton         *underlineButton;
@@ -136,6 +137,8 @@
         make.top.equalTo(login.mas_bottom).offset(scaleY_6(10));
         make.leading.mas_equalTo(login);
     }];
+    
+    [self.view addSubview:self.tipLabel];
 }
 
 /*
@@ -261,5 +264,13 @@
         [_ysButton addTarget:self action:@selector(ClickYSBtn) forControlEvents:UIControlEventTouchUpInside];
     }
     return _ysButton;
+}
+
+- (UILabel *)tipLabel{
+    if (!_tipLabel) {
+        _tipLabel = [[CopyrightTipLabel alloc] initWithFrame:CGRectMake(0, self.view.height-20, KWIDTH, 15)];
+        _tipLabel.textColor = [UIColor blackColor];
+    }
+    return _tipLabel;
 }
 @end

@@ -10,6 +10,7 @@
 #import "TemplateView.h"
 #import "MeRegisterController.h"
 #import "MeForgetController.h"
+#import "CopyrightTipLabel.h"
 
 #define LFloginfont  14
 #define LFregistfont  12
@@ -17,7 +18,7 @@
 @interface MeLoginController ()
 @property (strong, nonatomic) TemplateView         *AccountView;
 @property (strong, nonatomic) TemplateView         *passwordView;
-
+@property(nonatomic,strong) CopyrightTipLabel *tipLabel;
 @end
 
 @implementation MeLoginController
@@ -114,6 +115,8 @@
         make.right.equalTo(self.view).offset(-scaleX_6(15));
         make.top.equalTo(login.mas_bottom).offset(scaleY_6(15));
     }];
+    
+    [self.view addSubview:self.tipLabel];
 }
 
 - (void)popViewControllerAnimated:(UIButton *)button{
@@ -171,5 +174,13 @@
         _passwordView.testkeyboardType = NO;
     }
     return _passwordView;
+}
+
+- (UILabel *)tipLabel{
+    if (!_tipLabel) {
+        _tipLabel = [[CopyrightTipLabel alloc] initWithFrame:CGRectMake(0, self.view.height-20, KWIDTH, 15)];
+        _tipLabel.textColor = [UIColor blackColor];
+    }
+    return _tipLabel;
 }
 @end

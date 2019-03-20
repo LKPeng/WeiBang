@@ -11,10 +11,12 @@
 #import "MyWebViewController.h"
 #import "OpenAccountViewController.h"
 #import "NothingViewController.h"
+#import "CopyrightTipLabel.h"
 
 @interface MoreViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UIButton *logoutButton;
+@property(nonatomic,strong) CopyrightTipLabel *tipLabel;
 @end
 
 @implementation MoreViewController
@@ -35,6 +37,8 @@
     self.view.backgroundColor = kappMainColor;
     [self.tableView reloadData];
     self.tabBarController.tabBar.hidden = NO;
+    
+    [self.view addSubview:self.tipLabel];
 }
 
 
@@ -164,6 +168,13 @@
         [_logoutButton addTarget:self action:@selector(settingBack) forControlEvents:UIControlEventTouchUpInside];
     }
     return _logoutButton;
+}
+
+- (UILabel *)tipLabel{
+    if (!_tipLabel) {
+        _tipLabel = [[CopyrightTipLabel alloc] initWithFrame:CGRectMake(0, self.view.height-20-kTabBarHeight, KWIDTH, 15)];
+    }
+    return _tipLabel;
 }
 
 @end

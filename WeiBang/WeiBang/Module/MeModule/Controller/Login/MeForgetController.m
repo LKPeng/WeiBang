@@ -9,12 +9,12 @@
 #import "MeForgetController.h"
 #import "TemplateView.h"
 #import "VerificationCodeView.h"
-
+#import "CopyrightTipLabel.h"
 @interface MeForgetController ()
 @property (strong, nonatomic) TemplateView         *AccountView;
 @property (strong, nonatomic) TemplateView         *passwordView;
 @property (strong, nonatomic) TemplateView         *surePasswordView;
-
+@property(nonatomic,strong) CopyrightTipLabel *tipLabel;
 @property (weak, nonatomic) VerificationCodeView *verificationCodeView;
 @end
 
@@ -67,7 +67,6 @@
     [self.view addSubview:AccountView];
     self.verificationCodeView = AccountView;
     
-    
     [_AccountView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view.mas_left).offset(scaleX_6(15));
         make.right.equalTo(self.view.mas_right).offset(-scaleX_6(15));
@@ -109,6 +108,8 @@
         make.right.equalTo(self.view).offset(-scaleX_6(15));
         make.height.mas_equalTo(scaleY_6(45));
     }];
+    
+    [self.view addSubview:self.tipLabel];
 }
 
 - (void)btnClick{
@@ -186,7 +187,13 @@
 }
 
 
-
+- (UILabel *)tipLabel{
+    if (!_tipLabel) {
+        _tipLabel = [[CopyrightTipLabel alloc] initWithFrame:CGRectMake(0, self.view.height-20, KWIDTH, 15)];
+        _tipLabel.textColor = [UIColor blackColor];
+    }
+    return _tipLabel;
+}
 
 
 

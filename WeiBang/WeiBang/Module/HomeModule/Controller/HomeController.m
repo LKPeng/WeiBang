@@ -12,7 +12,7 @@
 #import "HomeProgressCell.h"
 #import "HomeFootView.h"
 #import "HomeModel.h"
-
+#import "CopyrightTipLabel.h"
 
 #import "NewsViewController.h"
 
@@ -27,6 +27,8 @@
 @property(strong,nonatomic) HomeFootView *homeFootView;
 
 @property (nonatomic, strong) NSMutableArray<HomeModel *> *HomeModels;
+
+@property(nonatomic,strong) CopyrightTipLabel *tipLabel;
 
 @end
 
@@ -68,6 +70,9 @@
     self.navigationItem.rightBarButtonItem = rightItem;
     
     self.tabBarController.tabBar.hidden = NO;
+    
+    [self.tableView addSubview:self.tipLabel];
+    
 }
 
 #pragma mark ----   数据  ----
@@ -213,6 +218,13 @@
         _HomeModels = [[NSMutableArray alloc]init];
     }
     return _HomeModels;
+}
+
+- (UILabel *)tipLabel{
+    if (!_tipLabel) {
+        _tipLabel = [[CopyrightTipLabel alloc] initWithFrame:CGRectMake(0, self.view.height-15-kTabBarHeight, KWIDTH, 15)];
+    }
+    return _tipLabel;
 }
 @end
 
