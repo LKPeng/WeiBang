@@ -18,6 +18,8 @@
 #import "MyWalletViewController.h"
 #import "MoreViewController.h"
 
+#import "MeLoginController.h"
+
 #define navBackGroundColor kappMainGreen
 #define navTintColor [UIColor whiteColor]
 #define titleColor [UIColor whiteColor]
@@ -77,6 +79,28 @@
     nav.navigationBar.titleTextAttributes = textAttrs;
     
 }
+
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+    NSString * longinBool = [[NSUserDefaults standardUserDefaults] objectForKey:@"user_login"];
+    //判断用户是否登陆
+    if ([longinBool isEqualToString:@"YES"]) {
+        
+    }else{
+        //这里拿到你想要的tabBarItem,这里的方法有很多,还有通过tag值,这里看你的需要了
+        if ([viewController.tabBarItem.title isEqualToString:@"更多"]) {
+            MeLoginController *vc = [MeLoginController new];
+            WBNavigantionController *nav = [[WBNavigantionController alloc] initWithRootViewController:vc];
+            [self setNavigation:nav];
+            [self presentViewController:nav animated:YES completion:nil];
+            //这里的NO是关键,如果是这个tabBarItem,就不要让他点击进去
+            return NO;
+        }
+    }
+    //当然其余的还是要点击进去的
+    return YES;
+}
+
 
 
 @end

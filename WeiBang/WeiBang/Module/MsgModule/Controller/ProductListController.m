@@ -15,6 +15,8 @@
 
 #import "JJOptionView.h"
 
+#import "NewsBulletinControllerViewController.h"
+
 @interface ProductListController ()<UITableViewDelegate,UITableViewDataSource,JJOptionViewDelegate>
 
 @property (nonatomic,strong) UITableView *tableView;
@@ -90,6 +92,42 @@
     model4.Profit = 0.54;
     [self.HomeModels addObject:model4];
     
+    ProductListModel *model8 = [[ProductListModel alloc]init];
+    model8.moneyTerm = @"银票通30天";
+    model8.Progress = 1.2;
+    model8.term = 30;
+    model8.total = 47000.00;
+    model8.startAccount = 1000;
+    model8.Profit = 0.54;
+    [self.HomeModels addObject:model4];
+    
+    ProductListModel *model5 = [[ProductListModel alloc]init];
+    model5.moneyTerm = @"银票通30天";
+    model5.Progress = 1.2;
+    model5.term = 30;
+    model5.total = 47000.00;
+    model5.startAccount = 1000;
+    model5.Profit = 0.54;
+    [self.HomeModels addObject:model5];
+    
+    ProductListModel *model6 = [[ProductListModel alloc]init];
+    model6.moneyTerm = @"银票通30天";
+    model6.Progress = 1.2;
+    model6.term = 30;
+    model6.total = 47000.00;
+    model6.startAccount = 1000;
+    model6.Profit = 0.54;
+    [self.HomeModels addObject:model6];
+    
+    ProductListModel *model7 = [[ProductListModel alloc]init];
+    model7.moneyTerm = @"银票通30天";
+    model7.Progress = 1.2;
+    model7.term = 30;
+    model7.total = 47000.00;
+    model7.startAccount = 1000;
+    model7.Profit = 0.54;
+    [self.HomeModels addObject:model7];
+    
     [self.tableView reloadData];
     
     JJOptionView *view1 = [[JJOptionView alloc] initWithFrame:CGRectMake(0, kNavBarHeight , KWIDTH, 40)];
@@ -99,7 +137,8 @@
 #pragma mark ----   点击  ----
 
 - (void)cancleButtonClicked{
-    
+    NewsBulletinControllerViewController *news = [[NewsBulletinControllerViewController alloc]init];
+    [self.navigationController pushViewController:news animated:YES];
 }
 
 
@@ -187,7 +226,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
 //        _tableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight+22, 0);
-        _tableView.contentInset = UIEdgeInsetsMake(40, 0, kTabBarHeight+25, 0);
+        _tableView.contentInset = UIEdgeInsetsMake(40, 0, kTabBarHeight+25+40, 0);
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.tableFooterView = [UIView new];
         UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH , 0.001)];

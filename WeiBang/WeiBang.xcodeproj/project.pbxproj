@@ -41,6 +41,17 @@
 		F216B96E220412BB009B811D /* WeiBangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B96D220412BB009B811D /* WeiBangUITests.m */; };
 		F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */ = {isa = PBXBuildFile; fileRef = F23F69612215329300C2AE87 /* AppautoSizeScale.m */; };
 		F23F72142213E53600D42A02 /* WBStaticConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F23F72132213E53600D42A02 /* WBStaticConstant.m */; };
+		F26AD1892241EA9F001126AC /* MeForgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1842241EA9F001126AC /* MeForgetController.m */; };
+		F26AD18A2241EA9F001126AC /* MeLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1862241EA9F001126AC /* MeLoginController.m */; };
+		F26AD18B2241EA9F001126AC /* MeRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1882241EA9F001126AC /* MeRegisterController.m */; };
+		F26AD1932241EAAD001126AC /* TemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD18E2241EAAD001126AC /* TemplateView.m */; };
+		F26AD1942241EAAD001126AC /* UnderlineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1902241EAAD001126AC /* UnderlineButton.m */; };
+		F26AD1952241EAAD001126AC /* VerificationCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1922241EAAD001126AC /* VerificationCodeView.m */; };
+		F26AD1982241EAD1001126AC /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1962241EAD1001126AC /* NewsViewController.m */; };
+		F26AD19B2241EAD7001126AC /* newsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1992241EAD7001126AC /* newsCell.m */; };
+		F26AD19E2241EAE2001126AC /* NewsBulletinControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD19C2241EAE2001126AC /* NewsBulletinControllerViewController.m */; };
+		F26AD1A12241EAEB001126AC /* NewsBulletinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1A02241EAEB001126AC /* NewsBulletinModel.m */; };
+		F26AD1A42241EAF2001126AC /* NewsBulletinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1A32241EAF2001126AC /* NewsBulletinCell.m */; };
 		F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F992212A94D009C6BB9 /* WBGestureBaseController.m */; };
 		F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F9C2212A94D009C6BB9 /* WBNavigantionController.m */; };
 		F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F9F2212A94D009C6BB9 /* WBTabBarController.m */; };
@@ -171,6 +182,28 @@
 		F23F72112213E50400D42A02 /* WBEnumHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEnumHeader.h; sourceTree = "<group>"; };
 		F23F72122213E53600D42A02 /* WBStaticConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBStaticConstant.h; sourceTree = "<group>"; };
 		F23F72132213E53600D42A02 /* WBStaticConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBStaticConstant.m; sourceTree = "<group>"; };
+		F26AD1832241EA9F001126AC /* MeForgetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeForgetController.h; sourceTree = "<group>"; };
+		F26AD1842241EA9F001126AC /* MeForgetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeForgetController.m; sourceTree = "<group>"; };
+		F26AD1852241EA9F001126AC /* MeLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeLoginController.h; sourceTree = "<group>"; };
+		F26AD1862241EA9F001126AC /* MeLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeLoginController.m; sourceTree = "<group>"; };
+		F26AD1872241EA9F001126AC /* MeRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeRegisterController.h; sourceTree = "<group>"; };
+		F26AD1882241EA9F001126AC /* MeRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeRegisterController.m; sourceTree = "<group>"; };
+		F26AD18D2241EAAD001126AC /* TemplateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateView.h; sourceTree = "<group>"; };
+		F26AD18E2241EAAD001126AC /* TemplateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateView.m; sourceTree = "<group>"; };
+		F26AD18F2241EAAD001126AC /* UnderlineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderlineButton.h; sourceTree = "<group>"; };
+		F26AD1902241EAAD001126AC /* UnderlineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderlineButton.m; sourceTree = "<group>"; };
+		F26AD1912241EAAD001126AC /* VerificationCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationCodeView.h; sourceTree = "<group>"; };
+		F26AD1922241EAAD001126AC /* VerificationCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationCodeView.m; sourceTree = "<group>"; };
+		F26AD1962241EAD1001126AC /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		F26AD1972241EAD1001126AC /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		F26AD1992241EAD7001126AC /* newsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newsCell.m; sourceTree = "<group>"; };
+		F26AD19A2241EAD7001126AC /* newsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newsCell.h; sourceTree = "<group>"; };
+		F26AD19C2241EAE2001126AC /* NewsBulletinControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBulletinControllerViewController.m; sourceTree = "<group>"; };
+		F26AD19D2241EAE2001126AC /* NewsBulletinControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBulletinControllerViewController.h; sourceTree = "<group>"; };
+		F26AD19F2241EAEB001126AC /* NewsBulletinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBulletinModel.h; sourceTree = "<group>"; };
+		F26AD1A02241EAEB001126AC /* NewsBulletinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBulletinModel.m; sourceTree = "<group>"; };
+		F26AD1A22241EAF2001126AC /* NewsBulletinCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBulletinCell.h; sourceTree = "<group>"; };
+		F26AD1A32241EAF2001126AC /* NewsBulletinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBulletinCell.m; sourceTree = "<group>"; };
 		F26F4F982212A94D009C6BB9 /* WBGestureBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGestureBaseController.h; sourceTree = "<group>"; };
 		F26F4F992212A94D009C6BB9 /* WBGestureBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGestureBaseController.m; sourceTree = "<group>"; };
 		F26F4F9B2212A94D009C6BB9 /* WBNavigantionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNavigantionController.h; sourceTree = "<group>"; };
@@ -305,6 +338,8 @@
 				2AC4C8FA2240FA0A0022055E /* ProductListSubView.m */,
 				2AC4C8FC2240FC310022055E /* ProductListProgessView.h */,
 				2AC4C8FD2240FC310022055E /* ProductListProgessView.m */,
+				F26AD19A2241EAD7001126AC /* newsCell.h */,
+				F26AD1992241EAD7001126AC /* newsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -423,6 +458,32 @@
 			children = (
 			);
 			path = Album;
+			sourceTree = "<group>";
+		};
+		F26AD1822241EA9F001126AC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F26AD1832241EA9F001126AC /* MeForgetController.h */,
+				F26AD1842241EA9F001126AC /* MeForgetController.m */,
+				F26AD1852241EA9F001126AC /* MeLoginController.h */,
+				F26AD1862241EA9F001126AC /* MeLoginController.m */,
+				F26AD1872241EA9F001126AC /* MeRegisterController.h */,
+				F26AD1882241EA9F001126AC /* MeRegisterController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F26AD18C2241EAAD001126AC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F26AD18D2241EAAD001126AC /* TemplateView.h */,
+				F26AD18E2241EAAD001126AC /* TemplateView.m */,
+				F26AD18F2241EAAD001126AC /* UnderlineButton.h */,
+				F26AD1902241EAAD001126AC /* UnderlineButton.m */,
+				F26AD1912241EAAD001126AC /* VerificationCodeView.h */,
+				F26AD1922241EAAD001126AC /* VerificationCodeView.m */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		F26F4F2A22129F85009C6BB9 /* AppConfigFile */ = {
@@ -782,6 +843,8 @@
 				F26F502A2212A99E009C6BB9 /* HomeViewController.m */,
 				2AC4C8E22240F9B10022055E /* HomeController.h */,
 				2AC4C8E12240F9B10022055E /* HomeController.m */,
+				F26AD19D2241EAE2001126AC /* NewsBulletinControllerViewController.h */,
+				F26AD19C2241EAE2001126AC /* NewsBulletinControllerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -791,6 +854,8 @@
 			children = (
 				2AC4C8EA2240F9D90022055E /* HomeModel.h */,
 				2AC4C8EB2240F9D90022055E /* HomeModel.m */,
+				F26AD19F2241EAEB001126AC /* NewsBulletinModel.h */,
+				F26AD1A02241EAEB001126AC /* NewsBulletinModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -804,6 +869,8 @@
 				2AC4C8EE2240F9E00022055E /* HomeFootView.m */,
 				2AC4C8F02240F9E70022055E /* HomeProgressCell.h */,
 				2AC4C8F12240F9E70022055E /* HomeProgressCell.m */,
+				F26AD1A22241EAF2001126AC /* NewsBulletinCell.h */,
+				F26AD1A32241EAF2001126AC /* NewsBulletinCell.m */,
 				A025109C2237A33500E0A2AA /* NoticeView */,
 				A02510922237A05200E0A2AA /* PlanADScrollView */,
 			);
@@ -831,6 +898,7 @@
 				A0F9C7F52241E7D900BD88C5 /* NothingViewController.m */,
 				A0F9C7EE2241E5B800BD88C5 /* OpenAccount */,
 				A0F9C7E52241E10100BD88C5 /* AboutUs */,
+				F26AD1822241EA9F001126AC /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -846,6 +914,7 @@
 		F26F50322212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F26AD18C2241EAAD001126AC /* Login */,
 				2AC4C90D224109770022055E /* MoreTableViewCell.h */,
 				2AC4C90C224109770022055E /* MoreTableViewCell.m */,
 			);
@@ -869,6 +938,8 @@
 				F26F50362212A99E009C6BB9 /* MsgViewController.m */,
 				2AC4C8F32240F9F40022055E /* ProductListController.h */,
 				2AC4C8F42240F9F40022055E /* ProductListController.m */,
+				F26AD1972241EAD1001126AC /* NewsViewController.h */,
+				F26AD1962241EAD1001126AC /* NewsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1118,13 +1189,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26AD18B2241EA9F001126AC /* MeRegisterController.m in Sources */,
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
 				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
 				F299D37D221A7C2E00727305 /* PCCircle.m in Sources */,
 				A0F9C7F62241E7D900BD88C5 /* NothingViewController.m in Sources */,
+				F26AD1892241EA9F001126AC /* MeForgetController.m in Sources */,
 				2AC4C8FE2240FC310022055E /* ProductListProgessView.m in Sources */,
 				2AC4C8F22240F9E70022055E /* HomeProgressCell.m in Sources */,
+				F26AD19E2241EAE2001126AC /* NewsBulletinControllerViewController.m in Sources */,
+				F26AD1952241EAAD001126AC /* VerificationCodeView.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
+				F26AD19B2241EAD7001126AC /* newsCell.m in Sources */,
 				2AC4C91A224109CE0022055E /* MyWalletTableViewCell.m in Sources */,
 				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
@@ -1133,6 +1209,7 @@
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
 				2AC4C908224100F50022055E /* ProductListModel.m in Sources */,
 				F26F4FF52212A94D009C6BB9 /* UILabel+Attribute.m in Sources */,
+				F26AD18A2241EA9F001126AC /* MeLoginController.m in Sources */,
 				2AC4C90B2241096A0022055E /* MoreViewController.m in Sources */,
 				F26F4FEC2212A94D009C6BB9 /* NSString+Base64.m in Sources */,
 				F26F4FE82212A94D009C6BB9 /* NSAttributedString+CalculateHeight.m in Sources */,
@@ -1151,11 +1228,14 @@
 				A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */,
 				2AC4C90E224109770022055E /* MoreTableViewCell.m in Sources */,
 				2AC4C8E92240F9CF0022055E /* CircleProgressView.m in Sources */,
+				F26AD1A12241EAEB001126AC /* NewsBulletinModel.m in Sources */,
 				F216B959220412BB009B811D /* main.m in Sources */,
 				F26F4FF72212A94D009C6BB9 /* UITableView+Extension.m in Sources */,
 				A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */,
 				F26F4FF62212A94D009C6BB9 /* UIScrollView+Extension.m in Sources */,
 				F299D36A221A5E2C00727305 /* MBProgressHUD+JJ.m in Sources */,
+				F26AD1A42241EAF2001126AC /* NewsBulletinCell.m in Sources */,
+				F26AD1932241EAAD001126AC /* TemplateView.m in Sources */,
 				F26F4FF42212A94D009C6BB9 /* UIColor+Extension.m in Sources */,
 				2AC4C91B224109CE0022055E /* MyWalletHeaderView.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
@@ -1164,8 +1244,10 @@
 				F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */,
 				F26F503C2212A99E009C6BB9 /* MsgViewController.m in Sources */,
 				F26F4FED2212A94D009C6BB9 /* NSString+Extenssion.m in Sources */,
+				F26AD1982241EAD1001126AC /* NewsViewController.m in Sources */,
 				F26F4FFA2212A94D009C6BB9 /* UIView+Extension.m in Sources */,
 				F26F4FE72212A94D009C6BB9 /* UIView+MDFAnimation.m in Sources */,
+				F26AD1942241EAAD001126AC /* UnderlineButton.m in Sources */,
 				F26F4FE62212A94D009C6BB9 /* MDFAnimation.m in Sources */,
 				F23F72142213E53600D42A02 /* WBStaticConstant.m in Sources */,
 				F299D380221A7C2E00727305 /* CALayer+Anim.m in Sources */,

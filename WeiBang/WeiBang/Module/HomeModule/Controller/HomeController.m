@@ -13,6 +13,9 @@
 #import "HomeFootView.h"
 #import "HomeModel.h"
 
+
+#import "NewsViewController.h"
+
 @interface HomeController ()<UITableViewDelegate,UITableViewDataSource,PlanADScrollViewDelegate>
 
 @property (nonatomic,strong) UITableView *tableView;
@@ -54,7 +57,7 @@
     [self.tableView reloadData];
     
     UIButton *cancleButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [cancleButton setTitle:@"公告" forState:UIControlStateNormal];
+    [cancleButton setTitle:@"新闻" forState:UIControlStateNormal];
     [cancleButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [cancleButton addTarget:self action:@selector(cancleButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     
@@ -80,7 +83,10 @@
 #pragma mark ----   点击  ----
 
 - (void)cancleButtonClicked{
+
     
+    NewsViewController *news = [[NewsViewController alloc]init];
+    [self.navigationController pushViewController:news animated:YES];
 }
 
 
