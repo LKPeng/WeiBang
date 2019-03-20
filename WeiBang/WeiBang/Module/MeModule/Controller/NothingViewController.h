@@ -9,5 +9,5 @@
 #import "WBGestureBaseController.h"
 
 @interface NothingViewController : WBGestureBaseController
-
+@property(nonatomic,copy) NSString *titleText;
 @end

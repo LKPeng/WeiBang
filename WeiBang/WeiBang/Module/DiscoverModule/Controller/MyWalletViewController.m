@@ -12,6 +12,7 @@
 #import "MyRecodeTableViewCell.h"
 #import "OpenAccountViewController.h"
 #import "NothingViewController.h"
+#import "MyWebViewController.h"
 
 @interface MyWalletViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -51,10 +52,10 @@
     titleLable.backgroundColor = [UIColor clearColor];
     [self.view addSubview:titleLable];
     
-//    UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - scaleX_6(40) -scaleX_6(10), kStatusBarHeight, scaleX_6(40), scaleX_6(40))];
-//    [settingBtn setImage:[UIImage imageNamed:@"设置"] forState:UIControlStateNormal];
-//    [settingBtn addTarget:self action:@selector(setFunction) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:settingBtn];
+    UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - scaleX_6(40) -scaleX_6(10), kStatusBarHeight, scaleX_6(40), scaleX_6(40))];
+    [settingBtn setImage:[UIImage imageNamed:@"设置"] forState:UIControlStateNormal];
+    [settingBtn addTarget:self action:@selector(setFunction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:settingBtn];
     NSLog(@"1");
     
     self.tabBarController.tabBar.hidden = NO;
@@ -62,8 +63,8 @@
 
 
 -(void)setFunction{
-//    SetViewController *vc = [[SetViewController alloc] init];
-//    [self.navigationController pushViewController:vc animated:true];
+    //    SetViewController *vc = [[SetViewController alloc] init];
+    //    [self.navigationController pushViewController:vc animated:true];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -119,8 +120,16 @@
     if (indexPath.section == 1 && indexPath.row == 0) {
         OpenAccountViewController *vc = [[OpenAccountViewController alloc] initWithNibName:@"OpenAccountViewController" bundle:nil];
         [self.navigationController pushViewController:vc animated:true];
-    }else{
+    }else if (indexPath.section == 1 && indexPath.row == 1) {
+        MyWebViewController *vc = [[MyWebViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }else if (indexPath.section == 1){
         NothingViewController *vc = [[NothingViewController alloc] init];
+        if (indexPath.row == 2){
+            vc.titleText = @"资金记录";
+        }else if (indexPath.row == 3) {
+            vc.titleText = @"自动投资";
+        }
         [self.navigationController pushViewController:vc animated:true];
     }
 }

@@ -60,7 +60,7 @@
         self.titleLabel.text = @"充值提现";
         self.moneyLabel.text = @"6元";
     }else if (indexpath.row == 1) {
-        self.titleLabel.text = @"红包及奖励";
+        self.titleLabel.text = @"关于我们";
         self.moneyLabel.text = @"";
     }else if (indexpath.row == 2) {
         self.titleLabel.text = @"资金记录";

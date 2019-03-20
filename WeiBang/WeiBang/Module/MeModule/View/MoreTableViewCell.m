@@ -57,13 +57,13 @@
         }
     }else if (indexpath.section == 1) {
         if (indexpath.row == 0) {
-            self.titleLabel.text = @"充值提现";
+            self.titleLabel.text = @"邀请好友";
         }else if (indexpath.row == 1) {
             self.titleLabel.text = @"关于我们";
         }else if (indexpath.row == 2) {
-            self.titleLabel.text = @"资金记录";
+            self.titleLabel.text = @"帮助中心";
         }else if (indexpath.row == 3) {
-            self.titleLabel.text = @"自动投资";
+            self.titleLabel.text = @"客服电话";
         }
     }
 }

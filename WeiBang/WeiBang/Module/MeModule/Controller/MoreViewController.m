@@ -43,21 +43,6 @@
     //    [self.navigationController pushViewController:vc animated:true];
 }
 
-- (void)settingBack{
-    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提示" message:@"确定要退出登录吗？" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction * cancelAc = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        //点击取消要执行的代码
-    }];
-    UIAlertAction *comfirmAc = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        //点击确定要执行的代码
-        [[NSUserDefaults standardUserDefaults] setObject:@"NO" forKey:@"user_login"];
-        [MBProgressHUD showMessage:@"退出成功"];
-    }];
-    [alertVC addAction:cancelAc];
-    [alertVC addAction:comfirmAc];
-    [self presentViewController:alertVC animated:YES completion:nil];
-}
-
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 2;
 }
@@ -104,12 +89,26 @@
     if (indexPath.row == 1 && indexPath.section == 1) {
         MyWebViewController *vc = [[MyWebViewController alloc] init];
         [self.navigationController pushViewController:vc animated:true];
-    }else if (indexPath.section == 1 && indexPath.row == 0){
-        OpenAccountViewController *vc = [[OpenAccountViewController alloc] initWithNibName:@"OpenAccountViewController" bundle:nil];
-        [self.navigationController pushViewController:vc animated:true];
     }else{
-        NothingViewController *vc = [[NothingViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:true];
+        if (indexPath.section == 0) {
+            NothingViewController *vc = [[NothingViewController alloc] init];
+            if (indexPath.row == 0){
+                vc.titleText = @"活动中心";
+            }else if (indexPath.row == 1) {
+                vc.titleText = @"消息公告";
+            }
+            [self.navigationController pushViewController:vc animated:true];
+        }else{
+            NothingViewController *vc = [[NothingViewController alloc] init];
+            if (indexPath.row == 2){
+                vc.titleText = @"帮助中心";
+            }else if (indexPath.row == 3) {
+                vc.titleText = @"客服电话";
+            }else if (indexPath.row == 0) {
+                vc.titleText = @"邀请好友";
+            }
+            [self.navigationController pushViewController:vc animated:true];
+        }
     }
 }
 
@@ -147,7 +146,6 @@
         [_logoutButton setBackgroundColor:[UIColor colorWithHexString:@"#2A890B"] forState:UIControlStateNormal];
         _logoutButton.layer.cornerRadius = scaleX(6);
         _logoutButton.clipsToBounds = true;
-        [_logoutButton addTarget:self action:@selector(settingBack) forControlEvents:UIControlEventTouchUpInside];
     }
     return _logoutButton;
 }
