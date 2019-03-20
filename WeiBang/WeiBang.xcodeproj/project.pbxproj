@@ -58,6 +58,7 @@
 		F26AD1B022422464001126AC /* RNOLInvestDetailListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1AE22422464001126AC /* RNOLInvestDetailListCell.m */; };
 		F26AD1B122422464001126AC /* RNOLInvestDetailListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26AD1AF22422464001126AC /* RNOLInvestDetailListCell.xib */; };
 		F26AD1B722422657001126AC /* RNOLNewHandInvestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1B622422657001126AC /* RNOLNewHandInvestModel.m */; };
+		F26AD1BA2242425B001126AC /* RegistrationAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26AD1B92242425B001126AC /* RegistrationAgreementController.m */; };
 		F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F992212A94D009C6BB9 /* WBGestureBaseController.m */; };
 		F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F9C2212A94D009C6BB9 /* WBNavigantionController.m */; };
 		F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F4F9F2212A94D009C6BB9 /* WBTabBarController.m */; };
@@ -220,6 +221,8 @@
 		F26AD1AF22422464001126AC /* RNOLInvestDetailListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RNOLInvestDetailListCell.xib; sourceTree = "<group>"; };
 		F26AD1B522422657001126AC /* RNOLNewHandInvestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOLNewHandInvestModel.h; sourceTree = "<group>"; };
 		F26AD1B622422657001126AC /* RNOLNewHandInvestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOLNewHandInvestModel.m; sourceTree = "<group>"; };
+		F26AD1B82242425B001126AC /* RegistrationAgreementController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrationAgreementController.h; sourceTree = "<group>"; };
+		F26AD1B92242425B001126AC /* RegistrationAgreementController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistrationAgreementController.m; sourceTree = "<group>"; };
 		F26F4F982212A94D009C6BB9 /* WBGestureBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGestureBaseController.h; sourceTree = "<group>"; };
 		F26F4F992212A94D009C6BB9 /* WBGestureBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGestureBaseController.m; sourceTree = "<group>"; };
 		F26F4F9B2212A94D009C6BB9 /* WBNavigantionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNavigantionController.h; sourceTree = "<group>"; };
@@ -395,6 +398,8 @@
 			children = (
 				A0F9C7EB2241E1BF00BD88C5 /* MyWebViewController.h */,
 				A0F9C7EC2241E1C000BD88C5 /* MyWebViewController.m */,
+				F26AD1B82242425B001126AC /* RegistrationAgreementController.h */,
+				F26AD1B92242425B001126AC /* RegistrationAgreementController.m */,
 			);
 			path = AboutUs;
 			sourceTree = "<group>";
@@ -1292,6 +1297,7 @@
 				2AC4C919224109CE0022055E /* MyRecodeTableViewCell.m in Sources */,
 				2AC4C8EC2240F9D90022055E /* HomeModel.m in Sources */,
 				F26F4FF82212A94D009C6BB9 /* UITableViewCell+Extension.m in Sources */,
+				F26AD1BA2242425B001126AC /* RegistrationAgreementController.m in Sources */,
 				A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */,
 				F26AD1B022422464001126AC /* RNOLInvestDetailListCell.m in Sources */,
 				A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */,

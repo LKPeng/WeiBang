@@ -11,6 +11,7 @@
 #import "VerificationCodeView.h"
 #import "UnderlineButton.h"
 
+#import "RegistrationAgreementController.h"
 //#import "UserAgreementViewController.h"
 
 @interface MeRegisterController ()
@@ -164,8 +165,8 @@
 }
 
 - (void)ClickagreeBtn{
-//    UserAgreementViewController *vc = [[UserAgreementViewController alloc] initWithNibName:@"UserAgreementViewController" bundle:nil];
-//    [self.navigationController pushViewController:vc animated:true];
+    RegistrationAgreementController *vc = [[RegistrationAgreementController alloc] init];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 - (void)popViewControllerAnimated:(UIButton *)button{

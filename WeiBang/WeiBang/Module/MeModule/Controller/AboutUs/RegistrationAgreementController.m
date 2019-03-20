@@ -1,20 +1,21 @@
 //
-//  MyWebViewController.m
+//  RegistrationAgreementController.m
 //  WeiBang
 //
-//  Created by 刘昆朋 on 2019/3/15.
+//  Created by tchzt on 2019/3/20.
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 
-#import "MyWebViewController.h"
+#import "RegistrationAgreementController.h"
 
-@interface MyWebViewController ()<UIWebViewDelegate>
+@interface RegistrationAgreementController ()<UIWebViewDelegate>
 @property (nonatomic,weak) UIWebView *webView ;
 //@property (nonatomic,weak) WKWebView *webView;
 
 @end
 
-@implementation MyWebViewController
+@implementation RegistrationAgreementController
+
 
 
 - (void)viewDidLoad {
@@ -53,7 +54,7 @@
     //    [webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     //
     
-    [self setupNavBarTitleViewWithText:@"关于我们"];
+    [self setupNavBarTitleViewWithText:@"注册协议"];
     
     self.view.backgroundColor = [UIColor whiteColor];
     //双十二
@@ -72,7 +73,7 @@
     [self.view insertSubview:webView atIndex:0];
     self.webView = webView;
     
-    NSString * string = @"http://zmindaitong.com/about.html";
+    NSString * string = @"http://zmindaitong.com/zyPrivacy.html";
     NSURL *url = [[NSURL alloc] initWithString:string];
     // 加载网页
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -86,24 +87,24 @@
     
     
     
-//    //返回按钮
-//    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    backBtn.frame = CGRectMake(10, LFScreenH - LFTabBarH, 30, 30);
-//    if kDevice_Is_iPhoneX{
-//        backBtn.y =   LFScreenH - LF_XtabBarHeight;
-//    }
-//    [backBtn setImage:[UIImage imageNamed:@"IP_Back"] forState:UIControlStateNormal];
-//    [backBtn setImage:[UIImage imageNamed:@"IP_Back"] forState:UIControlStateSelected];
-//    [backBtn addTarget:self action:@selector(ClickbackBtnBtn) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:backBtn];
-//
+    //    //返回按钮
+    //    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    //    backBtn.frame = CGRectMake(10, LFScreenH - LFTabBarH, 30, 30);
+    //    if kDevice_Is_iPhoneX{
+    //        backBtn.y =   LFScreenH - LF_XtabBarHeight;
+    //    }
+    //    [backBtn setImage:[UIImage imageNamed:@"IP_Back"] forState:UIControlStateNormal];
+    //    [backBtn setImage:[UIImage imageNamed:@"IP_Back"] forState:UIControlStateSelected];
+    //    [backBtn addTarget:self action:@selector(ClickbackBtnBtn) forControlEvents:UIControlEventTouchUpInside];
+    //    [self.view addSubview:backBtn];
+    //
     
     
     
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ToLogin) name:LFTestJSObjectToLoginNotification object:nil];
-//
-//
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(Toshop) name:LFTestJSObjectToshopNotification object:nil];
+    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ToLogin) name:LFTestJSObjectToLoginNotification object:nil];
+    //
+    //
+    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(Toshop) name:LFTestJSObjectToshopNotification object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -155,7 +156,6 @@
 ////    [LFShowAlertView showAlert:@"网络繁忙，请稍后~" controll:self];
 //    [self.navigationController popViewControllerAnimated:YES];
 //}
-
 
 
 @end
