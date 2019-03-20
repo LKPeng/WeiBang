@@ -29,6 +29,7 @@
 		A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510962237A05200E0A2AA /* PlanADScrollView.m */; };
 		A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */; };
 		A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */; };
+		A07284552242477500782414 /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07284542242477400782414 /* PrivacyViewController.m */; };
 		A0F9C7ED2241E1C000BD88C5 /* MyWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F9C7EC2241E1C000BD88C5 /* MyWebViewController.m */; };
 		A0F9C7F22241E5C100BD88C5 /* OpenAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F9C7EF2241E5C000BD88C5 /* OpenAccountViewController.m */; };
 		A0F9C7F32241E5C100BD88C5 /* OpenAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F9C7F02241E5C100BD88C5 /* OpenAccountViewController.xib */; };
@@ -161,6 +162,8 @@
 		A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanADCollectionViewCell.m; sourceTree = "<group>"; };
 		A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOLHomeNoticeView.m; sourceTree = "<group>"; };
 		A025109E2237A33500E0A2AA /* RNOLHomeNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOLHomeNoticeView.h; sourceTree = "<group>"; };
+		A07284532242477400782414 /* PrivacyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
+		A07284542242477400782414 /* PrivacyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
 		A0C94EB0223946F300290294 /* WeiBang.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeiBang.entitlements; sourceTree = "<group>"; };
 		A0F9C7EB2241E1BF00BD88C5 /* MyWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebViewController.h; sourceTree = "<group>"; };
 		A0F9C7EC2241E1C000BD88C5 /* MyWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebViewController.m; sourceTree = "<group>"; };
@@ -400,6 +403,8 @@
 				A0F9C7EC2241E1C000BD88C5 /* MyWebViewController.m */,
 				F26AD1B82242425B001126AC /* RegistrationAgreementController.h */,
 				F26AD1B92242425B001126AC /* RegistrationAgreementController.m */,
+				A07284532242477400782414 /* PrivacyViewController.h */,
+				A07284542242477400782414 /* PrivacyViewController.m */,
 			);
 			path = AboutUs;
 			sourceTree = "<group>";
@@ -1261,6 +1266,7 @@
 				2AC4C911224109860022055E /* MyWalletViewController.m in Sources */,
 				A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */,
 				F26AD1B722422657001126AC /* RNOLNewHandInvestModel.m in Sources */,
+				A07284552242477500782414 /* PrivacyViewController.m in Sources */,
 				2AC4C90E224109770022055E /* MoreTableViewCell.m in Sources */,
 				2AC4C8E92240F9CF0022055E /* CircleProgressView.m in Sources */,
 				F26AD1A12241EAEB001126AC /* NewsBulletinModel.m in Sources */,

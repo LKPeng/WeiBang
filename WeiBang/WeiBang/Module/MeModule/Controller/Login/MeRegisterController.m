@@ -10,7 +10,7 @@
 #import "TemplateView.h"
 #import "VerificationCodeView.h"
 #import "UnderlineButton.h"
-
+#import "PrivacyViewController.h"
 #import "RegistrationAgreementController.h"
 //#import "UserAgreementViewController.h"
 
@@ -23,6 +23,7 @@
 @property (weak, nonatomic) VerificationCodeView *verificationCodeView;
 
 @property (strong, nonatomic) UnderlineButton         *underlineButton;
+@property (strong, nonatomic) UnderlineButton         *ysButton;
 @end
 
 @implementation MeRegisterController
@@ -129,6 +130,12 @@
         make.top.equalTo(login.mas_bottom).offset(scaleY_6(10));
         make.right.equalTo(login);
     }];
+    
+    [self.view addSubview:self.ysButton];
+    [self.ysButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(login.mas_bottom).offset(scaleY_6(10));
+        make.leading.mas_equalTo(login);
+    }];
 }
 
 /*
@@ -166,6 +173,11 @@
 
 - (void)ClickagreeBtn{
     RegistrationAgreementController *vc = [[RegistrationAgreementController alloc] init];
+    [self.navigationController pushViewController:vc animated:true];
+}
+
+- (void)ClickYSBtn{
+    PrivacyViewController *vc = [[PrivacyViewController alloc] init];
     [self.navigationController pushViewController:vc animated:true];
 }
 
@@ -237,5 +249,17 @@
         [_underlineButton addTarget:self action:@selector(ClickagreeBtn) forControlEvents:UIControlEventTouchUpInside];
     }
     return _underlineButton;
+}
+
+- (UnderlineButton *)ysButton{
+    if (!_ysButton) {
+        _ysButton = [UnderlineButton buttonWithType:UIButtonTypeCustom];
+        [_ysButton setColor:[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.8]];
+        _ysButton.titleLabel.font = kFontSize6(14);
+        [_ysButton setTitle:@"隐私协议" forState:UIControlStateNormal];
+        [_ysButton setTitleColor:[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.8] forState:UIControlStateNormal];
+        [_ysButton addTarget:self action:@selector(ClickYSBtn) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _ysButton;
 }
 @end
