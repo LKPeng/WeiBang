@@ -93,21 +93,21 @@
     [self.HomeModels addObject:model4];
     
     ProductListModel *model8 = [[ProductListModel alloc]init];
-    model8.moneyTerm = @"银票通30天";
+    model8.moneyTerm = @"银票通90天";
     model8.Progress = 1.2;
-    model8.term = 30;
+    model8.term = 90;
     model8.total = 47000.00;
     model8.startAccount = 1000;
-    model8.Profit = 0.54;
-    [self.HomeModels addObject:model4];
+    model8.Profit = 0.0972;
+    [self.HomeModels addObject:model8];
     
     ProductListModel *model5 = [[ProductListModel alloc]init];
-    model5.moneyTerm = @"银票通30天";
+    model5.moneyTerm = @"银票通14天";
     model5.Progress = 1.2;
     model5.term = 30;
     model5.total = 47000.00;
     model5.startAccount = 1000;
-    model5.Profit = 0.54;
+    model5.Profit = 0.0594;
     [self.HomeModels addObject:model5];
     
     ProductListModel *model6 = [[ProductListModel alloc]init];
