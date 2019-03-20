@@ -17,6 +17,8 @@
 
 #import "NewsBulletinControllerViewController.h"
 
+#import "RNOLNewHandInvestViewController.h"
+
 @interface ProductListController ()<UITableViewDelegate,UITableViewDataSource,JJOptionViewDelegate>
 
 @property (nonatomic,strong) UITableView *tableView;
@@ -214,6 +216,11 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    RNOLNewHandInvestViewController *rechargeInfor = [[RNOLNewHandInvestViewController alloc]init];
+    
+    [self.navigationController pushViewController:rechargeInfor animated:YES];
+    
 }
 
 

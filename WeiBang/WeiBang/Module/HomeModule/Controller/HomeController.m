@@ -16,6 +16,8 @@
 
 #import "NewsViewController.h"
 
+
+
 @interface HomeController ()<UITableViewDelegate,UITableViewDataSource,PlanADScrollViewDelegate>
 
 @property (nonatomic,strong) UITableView *tableView;
