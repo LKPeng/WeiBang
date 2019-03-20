@@ -10,6 +10,8 @@
 #import "MyWalletHeaderView.h"
 #import "MyWalletTableViewCell.h"
 #import "MyRecodeTableViewCell.h"
+#import "OpenAccountViewController.h"
+#import "NothingViewController.h"
 
 @interface MyWalletViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -114,7 +116,13 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if (indexPath.section == 1 && indexPath.row == 0) {
+        OpenAccountViewController *vc = [[OpenAccountViewController alloc] initWithNibName:@"OpenAccountViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:true];
+    }else{
+        NothingViewController *vc = [[NothingViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }
 }
 
 

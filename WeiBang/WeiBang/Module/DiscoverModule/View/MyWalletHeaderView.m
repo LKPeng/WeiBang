@@ -81,7 +81,7 @@
         _nameLabel.font = kFontSize6(13);
         _nameLabel.textColor = [UIColor whiteColor];
         _nameLabel.textAlignment = NSTextAlignmentCenter;
-        _nameLabel.text = @"王志杰";
+        _nameLabel.text = @"刘俊熙";
     }
     return _nameLabel;
 }

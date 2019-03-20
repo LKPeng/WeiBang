@@ -59,7 +59,7 @@
         if (indexpath.row == 0) {
             self.titleLabel.text = @"充值提现";
         }else if (indexpath.row == 1) {
-            self.titleLabel.text = @"红包及奖励";
+            self.titleLabel.text = @"关于我们";
         }else if (indexpath.row == 2) {
             self.titleLabel.text = @"资金记录";
         }else if (indexpath.row == 3) {

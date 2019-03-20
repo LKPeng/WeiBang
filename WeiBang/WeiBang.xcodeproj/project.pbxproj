@@ -29,6 +29,10 @@
 		A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510962237A05200E0A2AA /* PlanADScrollView.m */; };
 		A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */; };
 		A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */; };
+		A0F9C7ED2241E1C000BD88C5 /* MyWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F9C7EC2241E1C000BD88C5 /* MyWebViewController.m */; };
+		A0F9C7F22241E5C100BD88C5 /* OpenAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F9C7EF2241E5C000BD88C5 /* OpenAccountViewController.m */; };
+		A0F9C7F32241E5C100BD88C5 /* OpenAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F9C7F02241E5C100BD88C5 /* OpenAccountViewController.xib */; };
+		A0F9C7F62241E7D900BD88C5 /* NothingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F9C7F52241E7D900BD88C5 /* NothingViewController.m */; };
 		D5E9A4519650E96C703ECB0F /* Pods_WeiBang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */; };
 		F216B94B220412B5009B811D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F216B94A220412B5009B811D /* AppDelegate.m */; };
 		F216B953220412BB009B811D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F216B952220412BB009B811D /* Assets.xcassets */; };
@@ -140,6 +144,13 @@
 		A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOLHomeNoticeView.m; sourceTree = "<group>"; };
 		A025109E2237A33500E0A2AA /* RNOLHomeNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOLHomeNoticeView.h; sourceTree = "<group>"; };
 		A0C94EB0223946F300290294 /* WeiBang.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeiBang.entitlements; sourceTree = "<group>"; };
+		A0F9C7EB2241E1BF00BD88C5 /* MyWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebViewController.h; sourceTree = "<group>"; };
+		A0F9C7EC2241E1C000BD88C5 /* MyWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebViewController.m; sourceTree = "<group>"; };
+		A0F9C7EF2241E5C000BD88C5 /* OpenAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenAccountViewController.m; sourceTree = "<group>"; };
+		A0F9C7F02241E5C100BD88C5 /* OpenAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenAccountViewController.xib; sourceTree = "<group>"; };
+		A0F9C7F12241E5C100BD88C5 /* OpenAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenAccountViewController.h; sourceTree = "<group>"; };
+		A0F9C7F42241E7D900BD88C5 /* NothingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NothingViewController.h; sourceTree = "<group>"; };
+		A0F9C7F52241E7D900BD88C5 /* NothingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NothingViewController.m; sourceTree = "<group>"; };
 		B41321330B06DDBE912A2796 /* Pods_WeiBang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiBang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B946220412B5009B811D /* WeiBang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F216B949220412B5009B811D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -326,6 +337,25 @@
 				A025109E2237A33500E0A2AA /* RNOLHomeNoticeView.h */,
 			);
 			path = NoticeView;
+			sourceTree = "<group>";
+		};
+		A0F9C7E52241E10100BD88C5 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				A0F9C7EB2241E1BF00BD88C5 /* MyWebViewController.h */,
+				A0F9C7EC2241E1C000BD88C5 /* MyWebViewController.m */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		A0F9C7EE2241E5B800BD88C5 /* OpenAccount */ = {
+			isa = PBXGroup;
+			children = (
+				A0F9C7F12241E5C100BD88C5 /* OpenAccountViewController.h */,
+				A0F9C7EF2241E5C000BD88C5 /* OpenAccountViewController.m */,
+				A0F9C7F02241E5C100BD88C5 /* OpenAccountViewController.xib */,
+			);
+			path = OpenAccount;
 			sourceTree = "<group>";
 		};
 		AD87216239263BC406F97D25 /* Pods */ = {
@@ -797,6 +827,10 @@
 				F26F50302212A99E009C6BB9 /* MeViewController.m */,
 				2AC4C90A2241096A0022055E /* MoreViewController.h */,
 				2AC4C9092241096A0022055E /* MoreViewController.m */,
+				A0F9C7F42241E7D900BD88C5 /* NothingViewController.h */,
+				A0F9C7F52241E7D900BD88C5 /* NothingViewController.m */,
+				A0F9C7EE2241E5B800BD88C5 /* OpenAccount */,
+				A0F9C7E52241E10100BD88C5 /* AboutUs */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1001,6 +1035,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F9C7F32241E5C100BD88C5 /* OpenAccountViewController.xib in Resources */,
 				F216B953220412BB009B811D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1086,6 +1121,7 @@
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
 				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
 				F299D37D221A7C2E00727305 /* PCCircle.m in Sources */,
+				A0F9C7F62241E7D900BD88C5 /* NothingViewController.m in Sources */,
 				2AC4C8FE2240FC310022055E /* ProductListProgessView.m in Sources */,
 				2AC4C8F22240F9E70022055E /* HomeProgressCell.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
@@ -1102,6 +1138,8 @@
 				F26F4FE82212A94D009C6BB9 /* NSAttributedString+CalculateHeight.m in Sources */,
 				F26F4FEB2212A94D009C6BB9 /* NSDecimalNumber+Quickly.m in Sources */,
 				F26F4FEF2212A94D009C6BB9 /* NSString+UUID.m in Sources */,
+				A0F9C7ED2241E1C000BD88C5 /* MyWebViewController.m in Sources */,
+				A0F9C7F22241E5C100BD88C5 /* OpenAccountViewController.m in Sources */,
 				F26F4FEA2212A94D009C6BB9 /* NSDate+Extension.m in Sources */,
 				F26F4FF12212A94D009C6BB9 /* UIBarButtonItem+WNXBarButtonItem.m in Sources */,
 				F26F4FF32212A94D009C6BB9 /* UIButton+ImageAndTitle.m in Sources */,

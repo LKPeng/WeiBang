@@ -8,6 +8,9 @@
 
 #import "MoreViewController.h"
 #import "MoreTableViewCell.h"
+#import "MyWebViewController.h"
+#import "OpenAccountViewController.h"
+#import "NothingViewController.h"
 
 @interface MoreViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -29,7 +32,6 @@
 - (void)setup{
     
     [self setupNavBarTitleViewWithText:@"更多"];
-    
     self.view.backgroundColor = kappMainColor;
     [self.tableView reloadData];
     self.tabBarController.tabBar.hidden = NO;
@@ -84,7 +86,16 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if (indexPath.row == 1 && indexPath.section == 1) {
+        MyWebViewController *vc = [[MyWebViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }else if (indexPath.section == 1 && indexPath.row == 0){
+        OpenAccountViewController *vc = [[OpenAccountViewController alloc] initWithNibName:@"OpenAccountViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:true];
+    }else{
+        NothingViewController *vc = [[NothingViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }
 }
 
 
