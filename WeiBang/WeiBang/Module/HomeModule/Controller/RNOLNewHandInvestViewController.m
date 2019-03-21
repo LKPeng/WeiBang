@@ -176,7 +176,7 @@
     }else if (indexPath.row == 3){
         cell.valueLabel.text = @"2天1小时";
     }else if (indexPath.row == 4){
-        cell.valueLabel.text = @"《借款协议》";
+        cell.valueLabel.text = @"《投资协议》";
     }else if (indexPath.row == 5){
         cell.valueLabel.text = @"新手专享3次投资,累计限额5万元";
     }
