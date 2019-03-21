@@ -12,6 +12,7 @@
 @property (strong, nonatomic) UIImageView *iconImageView;
 @property (strong, nonatomic) UIImageView *insImageView;
 @property (strong, nonatomic) UILabel *titleLabel;
+@property (strong,nonatomic) UILabel *telePhone;
 @end
 
 @implementation MoreTableViewCell
@@ -46,6 +47,12 @@
         make.centerY.mas_equalTo(self.contentView.mas_centerY);
         make.right.equalTo(self.insImageView.mas_left).offset(-scaleX(10));
     }];
+    
+    [self.contentView addSubview:self.telePhone];
+    [self.telePhone mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(self.contentView.mas_centerY);
+        make.trailing.mas_equalTo(self.insImageView.mas_leading).offset(scaleX(-5));
+    }];
 }
 
 -(void)setDataWithIndexPath:(NSIndexPath*)indexpath{
@@ -59,18 +66,20 @@
         }
     }else if (indexpath.section == 1) {
         if (indexpath.row == 0) {
-            self.titleLabel.text = @"邀请好友";
-            self.iconImageView.image = [UIImage imageNamed:@"邀请好友.png"];
-        }else if (indexpath.row == 1) {
             self.titleLabel.text = @"关于我们";
             self.iconImageView.image = [UIImage imageNamed:@"关于我们.png"];
-        }else if (indexpath.row == 2) {
+        }else if (indexpath.row == 1) {
             self.titleLabel.text = @"帮助中心";
             self.iconImageView.image = [UIImage imageNamed:@"帮助中心.png"];
-        }else if (indexpath.row == 3) {
+        }else if (indexpath.row == 2) {
             self.titleLabel.text = @"客服电话";
             self.iconImageView.image = [UIImage imageNamed:@"客服电话.png"];
         }
+    }
+    if (!(indexpath.section == 1 && indexpath.row == 2)) {
+        self.telePhone.text = @"";
+    }else{
+        self.telePhone.text = @"400-2351280";
     }
 }
 
@@ -89,6 +98,15 @@
         _titleLabel.textColor = [UIColor blackColor];
     }
     return _titleLabel;
+}
+
+- (UILabel *)telePhone{
+    if (!_telePhone) {
+        _telePhone = [[UILabel alloc]init];
+        _telePhone.font = kFontSize6(12);
+        _telePhone.textColor = [UIColor lightGrayColor];
+    }
+    return _telePhone;
 }
 
 - (UIImageView *)insImageView{

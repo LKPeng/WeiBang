@@ -70,7 +70,7 @@
     if (section == 0) {
         return 2;
     }
-    return 4;
+    return 3;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return scaleX(42);
@@ -105,7 +105,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row == 1 && indexPath.section == 1) {
+    if (indexPath.row == 0 && indexPath.section == 1) {
         MyWebViewController *vc = [[MyWebViewController alloc] init];
         [self.navigationController pushViewController:vc animated:true];
     }else{
@@ -119,12 +119,10 @@
             [self.navigationController pushViewController:vc animated:true];
         }else{
             NothingViewController *vc = [[NothingViewController alloc] init];
-            if (indexPath.row == 2){
+            if (indexPath.row == 1){
                 vc.titleText = @"帮助中心";
-            }else if (indexPath.row == 3) {
+            }else if (indexPath.row == 2) {
                 vc.titleText = @"客服电话";
-            }else if (indexPath.row == 0) {
-                vc.titleText = @"邀请好友";
             }
             [self.navigationController pushViewController:vc animated:true];
         }
