@@ -73,7 +73,7 @@
     model2.term = 60;
     model2.total = 47000.00;
     model2.startAccount = 1000;
-    model2.Profit = 0.40;
+    model2.Profit = 0.0128;
     [self.HomeModels addObject:model2];
     
     ProductListModel *model3 = [[ProductListModel alloc]init];
@@ -82,7 +82,7 @@
     model3.term = 90;
     model3.total = 47000.00;
     model3.startAccount = 1000;
-    model3.Profit = 0.54;
+    model3.Profit = 0.0312;
     [self.HomeModels addObject:model3];
     
     ProductListModel *model4 = [[ProductListModel alloc]init];
@@ -91,7 +91,7 @@
     model4.term = 30;
     model4.total = 47000.00;
     model4.startAccount = 1000;
-    model4.Profit = 0.54;
+    model4.Profit = 0.0326;
     [self.HomeModels addObject:model4];
     
     ProductListModel *model8 = [[ProductListModel alloc]init];
@@ -118,7 +118,7 @@
     model6.term = 30;
     model6.total = 47000.00;
     model6.startAccount = 1000;
-    model6.Profit = 0.54;
+    model6.Profit = 0.0458;
     [self.HomeModels addObject:model6];
     
     ProductListModel *model7 = [[ProductListModel alloc]init];
@@ -127,7 +127,7 @@
     model7.term = 30;
     model7.total = 47000.00;
     model7.startAccount = 1000;
-    model7.Profit = 0.54;
+    model7.Profit = 0.0838;
     [self.HomeModels addObject:model7];
     
     [self.tableView reloadData];
