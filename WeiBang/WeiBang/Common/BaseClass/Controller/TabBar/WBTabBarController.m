@@ -8,15 +8,15 @@
 
 #import "WBTabBarController.h"
 
-#import "HomeController.h"
-#import "ProductListController.h"
-//#import "MeViewController.h"
+#import "HomeViewController.h"
+#import "MsgViewController.h"
+#import "DiscoverViewController.h"
+
+#import "MeViewController.h"
 //#import "DiscoverViewController.h"
 
 #import "WBNavigantionController.h"
 
-#import "MyWalletViewController.h"
-#import "MoreViewController.h"
 
 #import "MeLoginController.h"
 
@@ -38,16 +38,16 @@
 }
 - (void)setUpAllChildViewController {
     
-    HomeController *home = [[HomeController alloc] init];
+    HomeViewController *home = [[HomeViewController alloc] init];
     [self setUpOneChildViewController:home image:[UIImage imageNamed:@"nav_home"] selectedImage:[UIImage imageNamed:@"nav_home"] title:@"首页"];
     
-    ProductListController *msg = [[ProductListController alloc] init];
+    MsgViewController *msg = [[MsgViewController alloc] init];
     [self setUpOneChildViewController:msg image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"产品列表"];
     
-    MyWalletViewController *dis = [[MyWalletViewController alloc] init];
+    DiscoverViewController *dis = [[DiscoverViewController alloc] init];
     [self setUpOneChildViewController:dis image:[UIImage imageNamed:@"nav_news"] selectedImage:[UIImage imageNamed:@"nav_news"] title:@"我的钱袋"];
     
-    MoreViewController *me = [[MoreViewController alloc] init];
+    MeViewController *me = [[MeViewController alloc] init];
     [self setUpOneChildViewController:me image:[UIImage imageNamed:@"nav_me"] selectedImage:[UIImage imageNamed:@"nav_me"] title:@"更多"];
 }
 - (void)setUpOneChildViewController:(UIViewController *)vc image:(UIImage *)image selectedImage:(UIImage *)selectedImage title:(NSString *)title {
@@ -81,25 +81,25 @@
 }
 
 
-- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
-    NSString * longinBool = [[NSUserDefaults standardUserDefaults] objectForKey:@"user_login"];
-    //判断用户是否登陆
-    if ([longinBool isEqualToString:@"YES"]) {
-        
-    }else{
-        //这里拿到你想要的tabBarItem,这里的方法有很多,还有通过tag值,这里看你的需要了
-        if ([viewController.tabBarItem.title isEqualToString:@"更多"]) {
-            MeLoginController *vc = [MeLoginController new];
-            WBNavigantionController *nav = [[WBNavigantionController alloc] initWithRootViewController:vc];
-            [self setNavigation:nav];
-            [self presentViewController:nav animated:YES completion:nil];
-            //这里的NO是关键,如果是这个tabBarItem,就不要让他点击进去
-            return NO;
-        }
-    }
-    //当然其余的还是要点击进去的
-    return YES;
-}
+//- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+//    NSString * longinBool = [[NSUserDefaults standardUserDefaults] objectForKey:@"user_login"];
+//    //判断用户是否登陆
+//    if ([longinBool isEqualToString:@"YES"]) {
+//        
+//    }else{
+//        //这里拿到你想要的tabBarItem,这里的方法有很多,还有通过tag值,这里看你的需要了
+//        if ([viewController.tabBarItem.title isEqualToString:@"更多"]) {
+//            MeLoginController *vc = [MeLoginController new];
+//            WBNavigantionController *nav = [[WBNavigantionController alloc] initWithRootViewController:vc];
+//            [self setNavigation:nav];
+//            [self presentViewController:nav animated:YES completion:nil];
+//            //这里的NO是关键,如果是这个tabBarItem,就不要让他点击进去
+//            return NO;
+//        }
+//    }
+//    //当然其余的还是要点击进去的
+//    return YES;
+//}
 
 
 
