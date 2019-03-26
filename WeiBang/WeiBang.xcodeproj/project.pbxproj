@@ -13,6 +13,8 @@
 		A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */; };
 		A07284552242477500782414 /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07284542242477400782414 /* PrivacyViewController.m */; };
 		A072845822424B9500782414 /* CopyrightTipLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A072845722424B9500782414 /* CopyrightTipLabel.m */; };
+		A0DF59BA2249C8030031EBD6 /* HTForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF59B72249C8020031EBD6 /* HTForgetViewController.m */; };
+		A0DF59BB2249C8030031EBD6 /* HTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF59B92249C8020031EBD6 /* HTLoginViewController.m */; };
 		A0F9C7ED2241E1C000BD88C5 /* MyWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F9C7EC2241E1C000BD88C5 /* MyWebViewController.m */; };
 		A0F9C7F22241E5C100BD88C5 /* OpenAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F9C7EF2241E5C000BD88C5 /* OpenAccountViewController.m */; };
 		A0F9C7F32241E5C100BD88C5 /* OpenAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F9C7F02241E5C100BD88C5 /* OpenAccountViewController.xib */; };
@@ -102,6 +104,10 @@
 		A072845622424B9500782414 /* CopyrightTipLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyrightTipLabel.h; sourceTree = "<group>"; };
 		A072845722424B9500782414 /* CopyrightTipLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyrightTipLabel.m; sourceTree = "<group>"; };
 		A0C94EB0223946F300290294 /* WeiBang.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeiBang.entitlements; sourceTree = "<group>"; };
+		A0DF59B62249C8020031EBD6 /* HTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTLoginViewController.h; sourceTree = "<group>"; };
+		A0DF59B72249C8020031EBD6 /* HTForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTForgetViewController.m; sourceTree = "<group>"; };
+		A0DF59B82249C8020031EBD6 /* HTForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTForgetViewController.h; sourceTree = "<group>"; };
+		A0DF59B92249C8020031EBD6 /* HTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTLoginViewController.m; sourceTree = "<group>"; };
 		A0F9C7EB2241E1BF00BD88C5 /* MyWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebViewController.h; sourceTree = "<group>"; };
 		A0F9C7EC2241E1C000BD88C5 /* MyWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebViewController.m; sourceTree = "<group>"; };
 		A0F9C7EF2241E5C000BD88C5 /* OpenAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenAccountViewController.m; sourceTree = "<group>"; };
@@ -390,6 +396,10 @@
 				F26AD1862241EA9F001126AC /* MeLoginController.m */,
 				F26AD1872241EA9F001126AC /* MeRegisterController.h */,
 				F26AD1882241EA9F001126AC /* MeRegisterController.m */,
+				A0DF59B82249C8020031EBD6 /* HTForgetViewController.h */,
+				A0DF59B72249C8020031EBD6 /* HTForgetViewController.m */,
+				A0DF59B62249C8020031EBD6 /* HTLoginViewController.h */,
+				A0DF59B92249C8020031EBD6 /* HTLoginViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1092,6 +1102,7 @@
 				F26AD1952241EAAD001126AC /* VerificationCodeView.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
 				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
+				A0DF59BB2249C8030031EBD6 /* HTLoginViewController.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
@@ -1121,6 +1132,7 @@
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
 				F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */,
+				A0DF59BA2249C8030031EBD6 /* HTForgetViewController.m in Sources */,
 				F26F503C2212A99E009C6BB9 /* MsgViewController.m in Sources */,
 				F26F4FED2212A94D009C6BB9 /* NSString+Extenssion.m in Sources */,
 				F26F4FFA2212A94D009C6BB9 /* UIView+Extension.m in Sources */,

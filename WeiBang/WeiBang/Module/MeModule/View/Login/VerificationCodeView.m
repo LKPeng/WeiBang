@@ -161,13 +161,13 @@
     if (!_codeButton) {
         _codeButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _codeButton.backgroundColor = [UIColor whiteColor];
-        [_codeButton setTitleColor:kappMainGreen forState:UIControlStateNormal];
+        [_codeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_codeButton setTitle:@"发送验证码" forState:UIControlStateNormal];
         _codeButton.titleLabel.font = KFontSize(12);
         [_codeButton.layer setCornerRadius:5];
         _codeButton.layer.masksToBounds = YES;
-        [_codeButton.layer setBorderColor:kappMainGreen.CGColor];
-        [_codeButton.layer setBorderWidth:1.0];
+//        [_codeButton.layer setBorderColor:kappMainGreen.CGColor];
+        _codeButton.backgroundColor = [UIColor colorWithHexString:@"#69BBFE"];
         [_codeButton addTarget:self action:@selector(getCodeAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _codeButton;
