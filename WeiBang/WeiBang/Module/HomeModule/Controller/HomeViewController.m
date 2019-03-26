@@ -9,17 +9,20 @@
 #import "HomeViewController.h"
 #import "CopyrightTipLabel.h"
 
+
 @interface HomeViewController ()
-@property(nonatomic,strong) CopyrightTipLabel *tipLabel;
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setUI];
 }
 
+-(void)setUI{
 
+}
 
 @end
 

@@ -13,8 +13,14 @@
 		A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A025109D2237A33500E0A2AA /* RNOLHomeNoticeView.m */; };
 		A07284552242477500782414 /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07284542242477400782414 /* PrivacyViewController.m */; };
 		A072845822424B9500782414 /* CopyrightTipLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A072845722424B9500782414 /* CopyrightTipLabel.m */; };
+		A08ED8A6224A2E0400477ECF /* DiscoverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A08ED8A5224A2E0400477ECF /* DiscoverHeaderView.m */; };
+		A08ED8A9224A310000477ECF /* DiscoverCellTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A08ED8A8224A310000477ECF /* DiscoverCellTitleView.m */; };
+		A08ED8AD224A33C600477ECF /* DiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A08ED8AB224A33C600477ECF /* DiscoverTableViewCell.m */; };
+		A08ED8AE224A33C600477ECF /* DiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08ED8AC224A33C600477ECF /* DiscoverTableViewCell.xib */; };
 		A0DF59BA2249C8030031EBD6 /* HTForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF59B72249C8020031EBD6 /* HTForgetViewController.m */; };
 		A0DF59BB2249C8030031EBD6 /* HTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF59B92249C8020031EBD6 /* HTLoginViewController.m */; };
+		A0DF59C62249D7030031EBD6 /* HomeItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF59C52249D7030031EBD6 /* HomeItemView.m */; };
+		A0DF59C82249D7150031EBD6 /* HomeItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0DF59C72249D7150031EBD6 /* HomeItemView.xib */; };
 		A0F9C7ED2241E1C000BD88C5 /* MyWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F9C7EC2241E1C000BD88C5 /* MyWebViewController.m */; };
 		A0F9C7F22241E5C100BD88C5 /* OpenAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F9C7EF2241E5C000BD88C5 /* OpenAccountViewController.m */; };
 		A0F9C7F32241E5C100BD88C5 /* OpenAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F9C7F02241E5C100BD88C5 /* OpenAccountViewController.xib */; };
@@ -103,11 +109,21 @@
 		A07284542242477400782414 /* PrivacyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
 		A072845622424B9500782414 /* CopyrightTipLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyrightTipLabel.h; sourceTree = "<group>"; };
 		A072845722424B9500782414 /* CopyrightTipLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyrightTipLabel.m; sourceTree = "<group>"; };
+		A08ED8A4224A2E0400477ECF /* DiscoverHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DiscoverHeaderView.h; path = WeiBang/Module/DiscoverModule/View/DiscoverHeaderView.h; sourceTree = SOURCE_ROOT; };
+		A08ED8A5224A2E0400477ECF /* DiscoverHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DiscoverHeaderView.m; path = WeiBang/Module/DiscoverModule/View/DiscoverHeaderView.m; sourceTree = SOURCE_ROOT; };
+		A08ED8A7224A310000477ECF /* DiscoverCellTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DiscoverCellTitleView.h; path = WeiBang/Module/DiscoverModule/View/DiscoverCellTitleView.h; sourceTree = SOURCE_ROOT; };
+		A08ED8A8224A310000477ECF /* DiscoverCellTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DiscoverCellTitleView.m; path = WeiBang/Module/DiscoverModule/View/DiscoverCellTitleView.m; sourceTree = SOURCE_ROOT; };
+		A08ED8AA224A33C600477ECF /* DiscoverTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DiscoverTableViewCell.h; path = WeiBang/Module/DiscoverModule/View/DiscoverTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		A08ED8AB224A33C600477ECF /* DiscoverTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DiscoverTableViewCell.m; path = WeiBang/Module/DiscoverModule/View/DiscoverTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		A08ED8AC224A33C600477ECF /* DiscoverTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DiscoverTableViewCell.xib; path = WeiBang/Module/DiscoverModule/View/DiscoverTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		A0C94EB0223946F300290294 /* WeiBang.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeiBang.entitlements; sourceTree = "<group>"; };
 		A0DF59B62249C8020031EBD6 /* HTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTLoginViewController.h; sourceTree = "<group>"; };
 		A0DF59B72249C8020031EBD6 /* HTForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTForgetViewController.m; sourceTree = "<group>"; };
 		A0DF59B82249C8020031EBD6 /* HTForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTForgetViewController.h; sourceTree = "<group>"; };
 		A0DF59B92249C8020031EBD6 /* HTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTLoginViewController.m; sourceTree = "<group>"; };
+		A0DF59C42249D7030031EBD6 /* HomeItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeItemView.h; sourceTree = "<group>"; };
+		A0DF59C52249D7030031EBD6 /* HomeItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeItemView.m; sourceTree = "<group>"; };
+		A0DF59C72249D7150031EBD6 /* HomeItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeItemView.xib; sourceTree = "<group>"; };
 		A0F9C7EB2241E1BF00BD88C5 /* MyWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebViewController.h; sourceTree = "<group>"; };
 		A0F9C7EC2241E1C000BD88C5 /* MyWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebViewController.m; sourceTree = "<group>"; };
 		A0F9C7EF2241E5C000BD88C5 /* OpenAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenAccountViewController.m; sourceTree = "<group>"; };
@@ -256,6 +272,16 @@
 		2AC4C912224109B40022055E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A08ED8A4224A2E0400477ECF /* DiscoverHeaderView.h */,
+				A08ED8A5224A2E0400477ECF /* DiscoverHeaderView.m */,
+				A08ED8A7224A310000477ECF /* DiscoverCellTitleView.h */,
+				A08ED8A8224A310000477ECF /* DiscoverCellTitleView.m */,
+				A08ED8AA224A33C600477ECF /* DiscoverTableViewCell.h */,
+				A08ED8AB224A33C600477ECF /* DiscoverTableViewCell.m */,
+				A08ED8AC224A33C600477ECF /* DiscoverTableViewCell.xib */,
+				A0DF59C42249D7030031EBD6 /* HomeItemView.h */,
+				A0DF59C52249D7030031EBD6 /* HomeItemView.m */,
+				A0DF59C72249D7150031EBD6 /* HomeItemView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1011,6 +1037,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08ED8AE224A33C600477ECF /* DiscoverTableViewCell.xib in Resources */,
+				A0DF59C82249D7150031EBD6 /* HomeItemView.xib in Resources */,
 				A0F9C7F32241E5C100BD88C5 /* OpenAccountViewController.xib in Resources */,
 				F216B953220412BB009B811D /* Assets.xcassets in Resources */,
 			);
@@ -1121,6 +1149,7 @@
 				F299D382221A7C2E00727305 /* PCLockLabel.m in Sources */,
 				F299D381221A7C2E00727305 /* PCCircleInfoView.m in Sources */,
 				A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */,
+				A08ED8AD224A33C600477ECF /* DiscoverTableViewCell.m in Sources */,
 				A07284552242477500782414 /* PrivacyViewController.m in Sources */,
 				F216B959220412BB009B811D /* main.m in Sources */,
 				F26F4FF72212A94D009C6BB9 /* UITableView+Extension.m in Sources */,
@@ -1129,6 +1158,7 @@
 				F299D36A221A5E2C00727305 /* MBProgressHUD+JJ.m in Sources */,
 				F26AD1932241EAAD001126AC /* TemplateView.m in Sources */,
 				F26F4FF42212A94D009C6BB9 /* UIColor+Extension.m in Sources */,
+				A0DF59C62249D7030031EBD6 /* HomeItemView.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
 				F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */,
@@ -1145,9 +1175,11 @@
 				F216B94B220412B5009B811D /* AppDelegate.m in Sources */,
 				F26F4FE92212A94D009C6BB9 /* NSData+Base64.m in Sources */,
 				F26F4FE42212A94D009C6BB9 /* WBNavigantionController.m in Sources */,
+				A08ED8A6224A2E0400477ECF /* DiscoverHeaderView.m in Sources */,
 				F26F4FEE2212A94D009C6BB9 /* NSString+Hash.m in Sources */,
 				F26F4FF82212A94D009C6BB9 /* UITableViewCell+Extension.m in Sources */,
 				F26AD1BA2242425B001126AC /* RegistrationAgreementController.m in Sources */,
+				A08ED8A9224A310000477ECF /* DiscoverCellTitleView.m in Sources */,
 				A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */,
 				A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */,
 				F26F4FE32212A94D009C6BB9 /* WBGestureBaseController.m in Sources */,
