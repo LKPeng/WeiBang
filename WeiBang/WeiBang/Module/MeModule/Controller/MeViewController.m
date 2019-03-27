@@ -12,6 +12,7 @@
 #import "HTLoginViewController.h"
 #import "WBNavigantionController.h"
 
+
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UIView *headerView;
@@ -91,7 +92,7 @@
     }else{
         MeItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[MeItemTableViewCell cellReuseID]];
         cell.yhqBlock = ^{
-
+            
         };
         cell.yhkBlock = ^{
             
@@ -151,7 +152,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight+22, 0);
-//        self.headerView = [[DiscoverHeaderView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH, scaleX(290))];
+        //        self.headerView = [[DiscoverHeaderView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH, scaleX(290))];
         _tableView.tableHeaderView = self.headerView;
         _tableView.tableFooterView = [UIView new];
         [_tableView registerNib:[UINib nibWithNibName:@"MeAccountTableViewCell" bundle:nil] forCellReuseIdentifier:[MeAccountTableViewCell cellReuseID]];
@@ -203,7 +204,7 @@
         _openAccountButton.titleLabel.font = [UIFont systemFontOfSize:scaleX(13)];
         _openAccountButton.layer.cornerRadius = scaleX(18);
         _openAccountButton.clipsToBounds = true;
-//        [_openAccountButton addTarget:self action:@selector(loginFunction) forControlEvents:UIControlEventTouchUpInside];
+        //        [_openAccountButton addTarget:self action:@selector(loginFunction) forControlEvents:UIControlEventTouchUpInside];
     }
     return _openAccountButton;
 }

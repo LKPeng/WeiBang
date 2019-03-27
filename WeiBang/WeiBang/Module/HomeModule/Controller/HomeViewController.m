@@ -7,7 +7,7 @@
 //
 
 #import "HomeViewController.h"
-
+#import "LendViewController.h"
 #import "HomeView.h"
 
 @interface HomeViewController ()
@@ -37,8 +37,12 @@
     self.view.backgroundColor = KWhiteColor;
     
     HomeView *home = [[HomeView alloc]init];
-    [self.view addSubview:home];
+    home.borrowBlock = ^{
+        LendViewController *vc = [[LendViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    };
     
+    [self.view addSubview:home];
     
     [headView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(scaleX_6(330));

@@ -28,6 +28,11 @@
 		A08ED8B8224B1D9000477ECF /* MeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A08ED8B7224B1D9000477ECF /* MeHeaderView.m */; };
 		A08ED8BC224B268500477ECF /* MeItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A08ED8BA224B268500477ECF /* MeItemTableViewCell.m */; };
 		A08ED8BD224B268500477ECF /* MeItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08ED8BB224B268500477ECF /* MeItemTableViewCell.xib */; };
+		A08ED8D0224B72A500477ECF /* LendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08ED8CF224B72A500477ECF /* LendViewController.m */; };
+		A08ED8D8224B72BB00477ECF /* LendTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A08ED8D3224B72BB00477ECF /* LendTitleTableViewCell.m */; };
+		A08ED8D9224B72BB00477ECF /* LendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08ED8D4224B72BB00477ECF /* LendTableViewCell.xib */; };
+		A08ED8DA224B72BB00477ECF /* LendTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08ED8D5224B72BB00477ECF /* LendTitleTableViewCell.xib */; };
+		A08ED8DB224B72BB00477ECF /* LendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A08ED8D6224B72BB00477ECF /* LendTableViewCell.m */; };
 		A0DF59BA2249C8030031EBD6 /* HTForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF59B72249C8020031EBD6 /* HTForgetViewController.m */; };
 		A0DF59BB2249C8030031EBD6 /* HTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF59B92249C8020031EBD6 /* HTLoginViewController.m */; };
 		A0DF59C62249D7030031EBD6 /* HomeItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF59C52249D7030031EBD6 /* HomeItemView.m */; };
@@ -147,6 +152,14 @@
 		A08ED8B9224B268500477ECF /* MeItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeItemTableViewCell.h; sourceTree = "<group>"; };
 		A08ED8BA224B268500477ECF /* MeItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeItemTableViewCell.m; sourceTree = "<group>"; };
 		A08ED8BB224B268500477ECF /* MeItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeItemTableViewCell.xib; sourceTree = "<group>"; };
+		A08ED8CE224B72A500477ECF /* LendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LendViewController.h; sourceTree = "<group>"; };
+		A08ED8CF224B72A500477ECF /* LendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LendViewController.m; sourceTree = "<group>"; };
+		A08ED8D2224B72BB00477ECF /* LendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LendTableViewCell.h; sourceTree = "<group>"; };
+		A08ED8D3224B72BB00477ECF /* LendTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LendTitleTableViewCell.m; sourceTree = "<group>"; };
+		A08ED8D4224B72BB00477ECF /* LendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LendTableViewCell.xib; sourceTree = "<group>"; };
+		A08ED8D5224B72BB00477ECF /* LendTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LendTitleTableViewCell.xib; sourceTree = "<group>"; };
+		A08ED8D6224B72BB00477ECF /* LendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LendTableViewCell.m; sourceTree = "<group>"; };
+		A08ED8D7224B72BB00477ECF /* LendTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LendTitleTableViewCell.h; sourceTree = "<group>"; };
 		A0C94EB0223946F300290294 /* WeiBang.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeiBang.entitlements; sourceTree = "<group>"; };
 		A0DF59B62249C8020031EBD6 /* HTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTLoginViewController.h; sourceTree = "<group>"; };
 		A0DF59B72249C8020031EBD6 /* HTForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTForgetViewController.m; sourceTree = "<group>"; };
@@ -360,6 +373,28 @@
 				A025109E2237A33500E0A2AA /* RNOLHomeNoticeView.h */,
 			);
 			path = NoticeView;
+			sourceTree = "<group>";
+		};
+		A08ED8CD224B72A500477ECF /* Lend */ = {
+			isa = PBXGroup;
+			children = (
+				A08ED8CE224B72A500477ECF /* LendViewController.h */,
+				A08ED8CF224B72A500477ECF /* LendViewController.m */,
+			);
+			path = Lend;
+			sourceTree = "<group>";
+		};
+		A08ED8D1224B72BB00477ECF /* Lend */ = {
+			isa = PBXGroup;
+			children = (
+				A08ED8D2224B72BB00477ECF /* LendTableViewCell.h */,
+				A08ED8D3224B72BB00477ECF /* LendTitleTableViewCell.m */,
+				A08ED8D4224B72BB00477ECF /* LendTableViewCell.xib */,
+				A08ED8D5224B72BB00477ECF /* LendTitleTableViewCell.xib */,
+				A08ED8D6224B72BB00477ECF /* LendTableViewCell.m */,
+				A08ED8D7224B72BB00477ECF /* LendTitleTableViewCell.h */,
+			);
+			path = Lend;
 			sourceTree = "<group>";
 		};
 		A0F9C7E52241E10100BD88C5 /* AboutUs */ = {
@@ -837,6 +872,7 @@
 			children = (
 				F26F50292212A99E009C6BB9 /* HomeViewController.h */,
 				F26F502A2212A99E009C6BB9 /* HomeViewController.m */,
+				A08ED8CD224B72A500477ECF /* Lend */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -851,6 +887,7 @@
 		F26F502C2212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A08ED8D1224B72BB00477ECF /* Lend */,
 				2A060462224B625F00DD5E9B /* HomeView.h */,
 				2A060463224B625F00DD5E9B /* HomeView.m */,
 				A025109C2237A33500E0A2AA /* NoticeView */,
@@ -1089,7 +1126,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A08ED8AE224A33C600477ECF /* DiscoverTableViewCell.xib in Resources */,
+				A08ED8D9224B72BB00477ECF /* LendTableViewCell.xib in Resources */,
 				A0DF59C82249D7150031EBD6 /* HomeItemView.xib in Resources */,
+				A08ED8DA224B72BB00477ECF /* LendTitleTableViewCell.xib in Resources */,
 				A08ED8BD224B268500477ECF /* MeItemTableViewCell.xib in Resources */,
 				A0F9C7F32241E5C100BD88C5 /* OpenAccountViewController.xib in Resources */,
 				A08ED8B5224B1A0800477ECF /* MeAccountTableViewCell.xib in Resources */,
@@ -1181,6 +1220,7 @@
 				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
 				F299D37D221A7C2E00727305 /* PCCircle.m in Sources */,
 				F26AD1892241EA9F001126AC /* MeForgetController.m in Sources */,
+				A08ED8DB224B72BB00477ECF /* LendTableViewCell.m in Sources */,
 				F26AD1952241EAAD001126AC /* VerificationCodeView.m in Sources */,
 				2A060470224B628000DD5E9B /* msgSectionView.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
@@ -1231,6 +1271,7 @@
 				F26AD1942241EAAD001126AC /* UnderlineButton.m in Sources */,
 				F26F4FE62212A94D009C6BB9 /* MDFAnimation.m in Sources */,
 				F23F72142213E53600D42A02 /* WBStaticConstant.m in Sources */,
+				A08ED8D0224B72A500477ECF /* LendViewController.m in Sources */,
 				F299D380221A7C2E00727305 /* CALayer+Anim.m in Sources */,
 				F26F503A2212A99E009C6BB9 /* HomeViewController.m in Sources */,
 				A08ED8BC224B268500477ECF /* MeItemTableViewCell.m in Sources */,
@@ -1241,6 +1282,7 @@
 				F26F4FEE2212A94D009C6BB9 /* NSString+Hash.m in Sources */,
 				F26F4FF82212A94D009C6BB9 /* UITableViewCell+Extension.m in Sources */,
 				F26AD1BA2242425B001126AC /* RegistrationAgreementController.m in Sources */,
+				A08ED8D8224B72BB00477ECF /* LendTitleTableViewCell.m in Sources */,
 				A08ED8A9224A310000477ECF /* DiscoverCellTitleView.m in Sources */,
 				A025109F2237A33500E0A2AA /* RNOLHomeNoticeView.m in Sources */,
 				A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */,
