@@ -13,6 +13,15 @@
 		2A06046F224B628000DD5E9B /* MsgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A060469224B628000DD5E9B /* MsgModel.m */; };
 		2A060470224B628000DD5E9B /* msgSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A06046B224B628000DD5E9B /* msgSectionView.m */; };
 		2A060473224B628900DD5E9B /* BalanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A060471224B628900DD5E9B /* BalanceController.m */; };
+		2A0604D6224B875700DD5E9B /* PersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604D1224B875700DD5E9B /* PersonalController.m */; };
+		2A0604D7224B875700DD5E9B /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604D3224B875700DD5E9B /* SettingController.m */; };
+		2A0604D8224B875700DD5E9B /* NothingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604D5224B875700DD5E9B /* NothingViewController.m */; };
+		2A0604E1224B876400DD5E9B /* SetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604DB224B876400DD5E9B /* SetTableViewCell.m */; };
+		2A0604E2224B876400DD5E9B /* PersonalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604DC224B876400DD5E9B /* PersonalCell.m */; };
+		2A0604E3224B876400DD5E9B /* SetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0604DE224B876400DD5E9B /* SetTableViewCell.xib */; };
+		2A0604E4224B876400DD5E9B /* PersonalHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604DF224B876400DD5E9B /* PersonalHeadCell.m */; };
+		2A0604E7224B886D00DD5E9B /* ProductListSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604E6224B886D00DD5E9B /* ProductListSubView.m */; };
+		2A0604EA224B8AB400DD5E9B /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604E9224B8AB400DD5E9B /* HomeCell.m */; };
 		A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510952237A05200E0A2AA /* PlanPageControl.m */; };
 		A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510962237A05200E0A2AA /* PlanADScrollView.m */; };
 		A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */; };
@@ -123,6 +132,23 @@
 		2A06046C224B628000DD5E9B /* MsgHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgHeadView.h; sourceTree = "<group>"; };
 		2A060471224B628900DD5E9B /* BalanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceController.m; sourceTree = "<group>"; };
 		2A060472224B628900DD5E9B /* BalanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceController.h; sourceTree = "<group>"; };
+		2A0604D0224B875700DD5E9B /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		2A0604D1224B875700DD5E9B /* PersonalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalController.m; sourceTree = "<group>"; };
+		2A0604D2224B875700DD5E9B /* NothingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NothingViewController.h; sourceTree = "<group>"; };
+		2A0604D3224B875700DD5E9B /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		2A0604D4224B875700DD5E9B /* PersonalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalController.h; sourceTree = "<group>"; };
+		2A0604D5224B875700DD5E9B /* NothingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NothingViewController.m; sourceTree = "<group>"; };
+		2A0604DA224B876400DD5E9B /* PersonalHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalHeadCell.h; sourceTree = "<group>"; };
+		2A0604DB224B876400DD5E9B /* SetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTableViewCell.m; sourceTree = "<group>"; };
+		2A0604DC224B876400DD5E9B /* PersonalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCell.m; sourceTree = "<group>"; };
+		2A0604DD224B876400DD5E9B /* SetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetTableViewCell.h; sourceTree = "<group>"; };
+		2A0604DE224B876400DD5E9B /* SetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetTableViewCell.xib; sourceTree = "<group>"; };
+		2A0604DF224B876400DD5E9B /* PersonalHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalHeadCell.m; sourceTree = "<group>"; };
+		2A0604E0224B876400DD5E9B /* PersonalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCell.h; sourceTree = "<group>"; };
+		2A0604E5224B886D00DD5E9B /* ProductListSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListSubView.h; sourceTree = "<group>"; };
+		2A0604E6224B886D00DD5E9B /* ProductListSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListSubView.m; sourceTree = "<group>"; };
+		2A0604E8224B8AB400DD5E9B /* HomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		2A0604E9224B8AB400DD5E9B /* HomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 		31F2A15441CF236127A7E51B /* Pods-WeiBang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.release.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.release.xcconfig"; sourceTree = "<group>"; };
 		9AF203E0899EEC02D8792DAE /* Pods-WeiBang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.debug.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.debug.xcconfig"; sourceTree = "<group>"; };
 		A02510932237A05200E0A2AA /* PlanADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADScrollView.h; sourceTree = "<group>"; };
@@ -306,6 +332,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A0604CF224B875700DD5E9B /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				2A0604D0224B875700DD5E9B /* SettingController.h */,
+				2A0604D3224B875700DD5E9B /* SettingController.m */,
+				2A0604D4224B875700DD5E9B /* PersonalController.h */,
+				2A0604D1224B875700DD5E9B /* PersonalController.m */,
+				2A0604D2224B875700DD5E9B /* NothingViewController.h */,
+				2A0604D5224B875700DD5E9B /* NothingViewController.m */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		2A0604D9224B876400DD5E9B /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				2A0604DA224B876400DD5E9B /* PersonalHeadCell.h */,
+				2A0604DB224B876400DD5E9B /* SetTableViewCell.m */,
+				2A0604DC224B876400DD5E9B /* PersonalCell.m */,
+				2A0604DD224B876400DD5E9B /* SetTableViewCell.h */,
+				2A0604DE224B876400DD5E9B /* SetTableViewCell.xib */,
+				2A0604DF224B876400DD5E9B /* PersonalHeadCell.m */,
+				2A0604E0224B876400DD5E9B /* PersonalCell.h */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
 		2AC4C905224100DB0022055E /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -887,9 +940,13 @@
 		F26F502C2212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A08ED8D1224B72BB00477ECF /* Lend */,
 				2A060462224B625F00DD5E9B /* HomeView.h */,
 				2A060463224B625F00DD5E9B /* HomeView.m */,
+				2A0604E5224B886D00DD5E9B /* ProductListSubView.h */,
+				2A0604E6224B886D00DD5E9B /* ProductListSubView.m */,
+				2A0604E8224B8AB400DD5E9B /* HomeCell.h */,
+				2A0604E9224B8AB400DD5E9B /* HomeCell.m */,
+				A08ED8D1224B72BB00477ECF /* Lend */,
 				A025109C2237A33500E0A2AA /* NoticeView */,
 				A02510922237A05200E0A2AA /* PlanADScrollView */,
 			);
@@ -911,6 +968,7 @@
 			children = (
 				F26F502F2212A99E009C6BB9 /* MeViewController.h */,
 				F26F50302212A99E009C6BB9 /* MeViewController.m */,
+				2A0604CF224B875700DD5E9B /* Personal */,
 				A0F9C7EE2241E5B800BD88C5 /* OpenAccount */,
 				A0F9C7E52241E10100BD88C5 /* AboutUs */,
 				F26AD1822241EA9F001126AC /* Login */,
@@ -929,6 +987,7 @@
 		F26F50322212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A0604D9224B876400DD5E9B /* Personal */,
 				F26AD18C2241EAAD001126AC /* Login */,
 				A08ED8B1224B1A0800477ECF /* MeAccountTableViewCell.h */,
 				A08ED8B2224B1A0800477ECF /* MeAccountTableViewCell.m */,
@@ -1128,6 +1187,7 @@
 				A08ED8AE224A33C600477ECF /* DiscoverTableViewCell.xib in Resources */,
 				A08ED8D9224B72BB00477ECF /* LendTableViewCell.xib in Resources */,
 				A0DF59C82249D7150031EBD6 /* HomeItemView.xib in Resources */,
+				2A0604E3224B876400DD5E9B /* SetTableViewCell.xib in Resources */,
 				A08ED8DA224B72BB00477ECF /* LendTitleTableViewCell.xib in Resources */,
 				A08ED8BD224B268500477ECF /* MeItemTableViewCell.xib in Resources */,
 				A0F9C7F32241E5C100BD88C5 /* OpenAccountViewController.xib in Resources */,
@@ -1215,6 +1275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F26AD18B2241EA9F001126AC /* MeRegisterController.m in Sources */,
+				2A0604E7224B886D00DD5E9B /* ProductListSubView.m in Sources */,
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
 				2A060473224B628900DD5E9B /* BalanceController.m in Sources */,
 				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
@@ -1225,7 +1286,9 @@
 				2A060470224B628000DD5E9B /* msgSectionView.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
 				2A060464224B625F00DD5E9B /* HomeView.m in Sources */,
+				2A0604E2224B876400DD5E9B /* PersonalCell.m in Sources */,
 				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
+				2A0604E1224B876400DD5E9B /* SetTableViewCell.m in Sources */,
 				A0DF59BB2249C8030031EBD6 /* HTLoginViewController.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
@@ -1241,10 +1304,12 @@
 				A0F9C7F22241E5C100BD88C5 /* OpenAccountViewController.m in Sources */,
 				F26F4FEA2212A94D009C6BB9 /* NSDate+Extension.m in Sources */,
 				F26F4FF12212A94D009C6BB9 /* UIBarButtonItem+WNXBarButtonItem.m in Sources */,
+				2A0604EA224B8AB400DD5E9B /* HomeCell.m in Sources */,
 				F26F4FF32212A94D009C6BB9 /* UIButton+ImageAndTitle.m in Sources */,
 				A072845822424B9500782414 /* CopyrightTipLabel.m in Sources */,
 				F299D382221A7C2E00727305 /* PCLockLabel.m in Sources */,
 				F299D381221A7C2E00727305 /* PCCircleInfoView.m in Sources */,
+				2A0604D6224B875700DD5E9B /* PersonalController.m in Sources */,
 				A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */,
 				2A06046E224B628000DD5E9B /* MsgTableViewCell.m in Sources */,
 				A08ED8AD224A33C600477ECF /* DiscoverTableViewCell.m in Sources */,
@@ -1261,10 +1326,13 @@
 				A08ED8B8224B1D9000477ECF /* MeHeaderView.m in Sources */,
 				A0DF59C62249D7030031EBD6 /* HomeItemView.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
+				2A0604D8224B875700DD5E9B /* NothingViewController.m in Sources */,
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
 				F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */,
+				2A0604E4224B876400DD5E9B /* PersonalHeadCell.m in Sources */,
 				A0DF59BA2249C8030031EBD6 /* HTForgetViewController.m in Sources */,
 				F26F503C2212A99E009C6BB9 /* MsgViewController.m in Sources */,
+				2A0604D7224B875700DD5E9B /* SettingController.m in Sources */,
 				F26F4FED2212A94D009C6BB9 /* NSString+Extenssion.m in Sources */,
 				F26F4FFA2212A94D009C6BB9 /* UIView+Extension.m in Sources */,
 				F26F4FE72212A94D009C6BB9 /* UIView+MDFAnimation.m in Sources */,

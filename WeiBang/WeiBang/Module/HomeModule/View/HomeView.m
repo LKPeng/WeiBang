@@ -7,6 +7,7 @@
 //
 
 #import "HomeView.h"
+#import "ProductListSubView.h"
 
 @interface HomeView()
 /* 设备 */
@@ -66,8 +67,8 @@
         make.top.equalTo(self.percentLabel.mas_bottom).offset(scaleY_6(15));
     }];
     
-    UIView *subView = [[UIView alloc]init];
-    subView.backgroundColor = [UIColor lightGrayColor];
+    ProductListSubView *subView = [[ProductListSubView alloc]init];
+    subView.backgroundColor = [UIColor whiteColor];
     [self addSubview:subView];
     
     [subView mas_makeConstraints:^(MASConstraintMaker *make) {
