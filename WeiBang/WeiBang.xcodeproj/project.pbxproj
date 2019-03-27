@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A060464224B625F00DD5E9B /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A060463224B625F00DD5E9B /* HomeView.m */; };
+		2A06046D224B628000DD5E9B /* MsgHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A060466224B627F00DD5E9B /* MsgHeadView.m */; };
+		2A06046E224B628000DD5E9B /* MsgTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A060468224B627F00DD5E9B /* MsgTableViewCell.m */; };
+		2A06046F224B628000DD5E9B /* MsgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A060469224B628000DD5E9B /* MsgModel.m */; };
+		2A060470224B628000DD5E9B /* msgSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A06046B224B628000DD5E9B /* msgSectionView.m */; };
+		2A060473224B628900DD5E9B /* BalanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A060471224B628900DD5E9B /* BalanceController.m */; };
 		A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510952237A05200E0A2AA /* PlanPageControl.m */; };
 		A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510962237A05200E0A2AA /* PlanADScrollView.m */; };
 		A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */; };
@@ -100,6 +106,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A060462224B625F00DD5E9B /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		2A060463224B625F00DD5E9B /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		2A060465224B627F00DD5E9B /* MsgTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgTableViewCell.h; sourceTree = "<group>"; };
+		2A060466224B627F00DD5E9B /* MsgHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgHeadView.m; sourceTree = "<group>"; };
+		2A060467224B627F00DD5E9B /* MsgModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgModel.h; sourceTree = "<group>"; };
+		2A060468224B627F00DD5E9B /* MsgTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgTableViewCell.m; sourceTree = "<group>"; };
+		2A060469224B628000DD5E9B /* MsgModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgModel.m; sourceTree = "<group>"; };
+		2A06046A224B628000DD5E9B /* msgSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msgSectionView.h; sourceTree = "<group>"; };
+		2A06046B224B628000DD5E9B /* msgSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = msgSectionView.m; sourceTree = "<group>"; };
+		2A06046C224B628000DD5E9B /* MsgHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgHeadView.h; sourceTree = "<group>"; };
+		2A060471224B628900DD5E9B /* BalanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceController.m; sourceTree = "<group>"; };
+		2A060472224B628900DD5E9B /* BalanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceController.h; sourceTree = "<group>"; };
 		31F2A15441CF236127A7E51B /* Pods-WeiBang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.release.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.release.xcconfig"; sourceTree = "<group>"; };
 		9AF203E0899EEC02D8792DAE /* Pods-WeiBang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.debug.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.debug.xcconfig"; sourceTree = "<group>"; };
 		A02510932237A05200E0A2AA /* PlanADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADScrollView.h; sourceTree = "<group>"; };
@@ -302,6 +320,14 @@
 		2AFF01662237E3DC007865AF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A06046C224B628000DD5E9B /* MsgHeadView.h */,
+				2A060466224B627F00DD5E9B /* MsgHeadView.m */,
+				2A060467224B627F00DD5E9B /* MsgModel.h */,
+				2A060469224B628000DD5E9B /* MsgModel.m */,
+				2A06046A224B628000DD5E9B /* msgSectionView.h */,
+				2A06046B224B628000DD5E9B /* msgSectionView.m */,
+				2A060465224B627F00DD5E9B /* MsgTableViewCell.h */,
+				2A060468224B627F00DD5E9B /* MsgTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -825,6 +851,8 @@
 		F26F502C2212A99E009C6BB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A060462224B625F00DD5E9B /* HomeView.h */,
+				2A060463224B625F00DD5E9B /* HomeView.m */,
 				A025109C2237A33500E0A2AA /* NoticeView */,
 				A02510922237A05200E0A2AA /* PlanADScrollView */,
 			);
@@ -892,6 +920,8 @@
 			children = (
 				F26F50352212A99E009C6BB9 /* MsgViewController.h */,
 				F26F50362212A99E009C6BB9 /* MsgViewController.m */,
+				2A060472224B628900DD5E9B /* BalanceController.h */,
+				2A060471224B628900DD5E9B /* BalanceController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1147,11 +1177,14 @@
 			files = (
 				F26AD18B2241EA9F001126AC /* MeRegisterController.m in Sources */,
 				F26F503B2212A99E009C6BB9 /* MeViewController.m in Sources */,
+				2A060473224B628900DD5E9B /* BalanceController.m in Sources */,
 				F299D37E221A7C2E00727305 /* PCCircleView.m in Sources */,
 				F299D37D221A7C2E00727305 /* PCCircle.m in Sources */,
 				F26AD1892241EA9F001126AC /* MeForgetController.m in Sources */,
 				F26AD1952241EAAD001126AC /* VerificationCodeView.m in Sources */,
+				2A060470224B628000DD5E9B /* msgSectionView.m in Sources */,
 				F26F4FF02212A94D009C6BB9 /* NullSafe.m in Sources */,
+				2A060464224B625F00DD5E9B /* HomeView.m in Sources */,
 				F299D37F221A7C2E00727305 /* PCCircleViewConst.m in Sources */,
 				A0DF59BB2249C8030031EBD6 /* HTLoginViewController.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
@@ -1162,6 +1195,7 @@
 				F26F4FEC2212A94D009C6BB9 /* NSString+Base64.m in Sources */,
 				F26F4FE82212A94D009C6BB9 /* NSAttributedString+CalculateHeight.m in Sources */,
 				F26F4FEB2212A94D009C6BB9 /* NSDecimalNumber+Quickly.m in Sources */,
+				2A06046D224B628000DD5E9B /* MsgHeadView.m in Sources */,
 				F26F4FEF2212A94D009C6BB9 /* NSString+UUID.m in Sources */,
 				A0F9C7ED2241E1C000BD88C5 /* MyWebViewController.m in Sources */,
 				A0F9C7F22241E5C100BD88C5 /* OpenAccountViewController.m in Sources */,
@@ -1172,9 +1206,11 @@
 				F299D382221A7C2E00727305 /* PCLockLabel.m in Sources */,
 				F299D381221A7C2E00727305 /* PCCircleInfoView.m in Sources */,
 				A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */,
+				2A06046E224B628000DD5E9B /* MsgTableViewCell.m in Sources */,
 				A08ED8AD224A33C600477ECF /* DiscoverTableViewCell.m in Sources */,
 				A07284552242477500782414 /* PrivacyViewController.m in Sources */,
 				F216B959220412BB009B811D /* main.m in Sources */,
+				2A06046F224B628000DD5E9B /* MsgModel.m in Sources */,
 				F26F4FF72212A94D009C6BB9 /* UITableView+Extension.m in Sources */,
 				A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */,
 				F26F4FF62212A94D009C6BB9 /* UIScrollView+Extension.m in Sources */,
