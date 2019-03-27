@@ -89,6 +89,7 @@
 }
 - (void)popViewControllerAnimated:(UIButton *)button{
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:true];
 }
 //选择登录
 -(void)switchLoginFunction{
@@ -121,6 +122,7 @@
     }
     [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"user_login"];
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:true];
 }
 //注册事件
 -(void)registerFunction{

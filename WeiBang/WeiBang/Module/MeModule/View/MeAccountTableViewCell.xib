@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="MeAccountTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户余额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f49-H9-wXD">
+                        <rect key="frame" x="10" y="17.5" width="49.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJj-Vn-5Wk">
+                        <rect key="frame" x="325.5" y="0.0" width="49.5" height="49.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LJj-Vn-5Wk" secondAttribute="height" id="TXE-K4-MYG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="提现">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="withdrawClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZIY-WJ-8lM"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pF-ur-hvk">
+                        <rect key="frame" x="275.5" y="0.0" width="49.5" height="49.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="充值"/>
+                        <connections>
+                            <action selector="rechargeClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ucQ-BQ-41o"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMd-9b-9m2">
+                        <rect key="frame" x="275" y="8" width="0.5" height="33.5"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="GfM-0G-nZI"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jry-9s-YPM">
+                        <rect key="frame" x="224.5" y="17.5" width="25.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_in" translatesAutoresizingMaskIntoConstraints="NO" id="RCQ-qM-M0U">
+                        <rect key="frame" x="258" y="19" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="You-WT-McQ"/>
+                            <constraint firstAttribute="width" constant="12" id="lrb-fJ-INC"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0pF-ur-hvk" firstAttribute="leading" secondItem="IMd-9b-9m2" secondAttribute="trailing" id="E6l-hm-fs7"/>
+                    <constraint firstItem="f49-H9-wXD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IpO-d8-JVK"/>
+                    <constraint firstAttribute="bottom" secondItem="LJj-Vn-5Wk" secondAttribute="bottom" id="P9P-OM-8PI"/>
+                    <constraint firstItem="0pF-ur-hvk" firstAttribute="width" secondItem="LJj-Vn-5Wk" secondAttribute="width" id="QGO-4c-7b6"/>
+                    <constraint firstItem="0pF-ur-hvk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RPj-gN-kJ9"/>
+                    <constraint firstAttribute="bottom" secondItem="0pF-ur-hvk" secondAttribute="bottom" id="RzR-TX-omj"/>
+                    <constraint firstAttribute="trailing" secondItem="LJj-Vn-5Wk" secondAttribute="trailing" id="URk-uT-hDi"/>
+                    <constraint firstItem="LJj-Vn-5Wk" firstAttribute="leading" secondItem="0pF-ur-hvk" secondAttribute="trailing" id="VUL-5l-98t"/>
+                    <constraint firstItem="jry-9s-YPM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ak5-BU-aSQ"/>
+                    <constraint firstItem="IMd-9b-9m2" firstAttribute="leading" secondItem="jry-9s-YPM" secondAttribute="trailing" constant="25" id="gxa-QM-Rol"/>
+                    <constraint firstItem="RCQ-qM-M0U" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hJi-3p-SyF"/>
+                    <constraint firstItem="LJj-Vn-5Wk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kse-ET-vQK"/>
+                    <constraint firstItem="f49-H9-wXD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="opt-W7-hNl"/>
+                    <constraint firstAttribute="bottom" secondItem="IMd-9b-9m2" secondAttribute="bottom" constant="8" id="qaf-pR-doa"/>
+                    <constraint firstItem="IMd-9b-9m2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="vn6-t8-bJs"/>
+                    <constraint firstItem="IMd-9b-9m2" firstAttribute="leading" secondItem="RCQ-qM-M0U" secondAttribute="trailing" constant="5" id="zEC-W7-WQF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="140.5" y="100"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right_in" width="32" height="32"/>
+    </resources>
+</document>
