@@ -46,10 +46,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUI];
+    [self setItem];
 }
 
 -(void)setUI{
     [self.view addSubview:self.tableView];
+}
+
+-(void)setItem{
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    leftButton.frame = CGRectMake(0, 0, 30, 30);
+    leftButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    UIImage *leftButtonImg = [UIImage imageNamed:@"set"];
+    [leftButton setImage: leftButtonImg
+                forState:UIControlStateNormal];
+    [leftButton addTarget:self action:@selector(setUpFunction) forControlEvents:UIControlEventTouchUpInside];
+    // 修改导航栏左边的item
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+}
+
+-(void)setUpFunction{
+    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -124,8 +141,6 @@
     HTLoginViewController *vc = [HTLoginViewController new];
     [self.navigationController pushViewController:vc animated:true];
 }
-
-
 
 //---------------------------------懒加载----------
 - (UITableView *)tableView{
