@@ -28,6 +28,9 @@
     [self addSubview:headView];
     
     HomeView *home = [[HomeView alloc]init];
+    home.borrowBlock = ^{
+        !self.borrowBlock? : self.borrowBlock();
+    };
     [self addSubview:home];
     
     [headView mas_makeConstraints:^(MASConstraintMaker *make) {

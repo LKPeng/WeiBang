@@ -2,7 +2,7 @@
 //  NothingViewController.h
 //  WeiBang
 //
-//  Created by XXX on 2019/3/20.
+//  Created by 吴凯耀 on 2019/3/20.
 //  Copyright © 2019年 lkp. All rights reserved.
 //
 

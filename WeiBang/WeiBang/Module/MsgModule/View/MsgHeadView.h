@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MsgHeadView : UIView
-
+@property (nonatomic,copy) dispatch_block_t borrowBlock;
 @end
