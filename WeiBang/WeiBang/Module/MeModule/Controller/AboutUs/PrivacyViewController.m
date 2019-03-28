@@ -38,7 +38,7 @@
     [self.view insertSubview:webView atIndex:0];
     self.webView = webView;
     
-    NSString * string = @"http://zmindaitong.com/dyPrivacy.html";
+    NSString * string = @" http://gxzqxd.com/dyPrivacy.html";
     NSURL *url = [[NSURL alloc] initWithString:string];
     // 加载网页
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
