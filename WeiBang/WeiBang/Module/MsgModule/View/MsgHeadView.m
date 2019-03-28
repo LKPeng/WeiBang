@@ -24,7 +24,7 @@
 - (void)setup{
     
     UIView *headView = [[UIView alloc]init];
-    headView.backgroundColor = [UIColor lightGrayColor];
+    headView.backgroundColor = RGB(221, 230, 240);
     [self addSubview:headView];
     
     HomeView *home = [[HomeView alloc]init];

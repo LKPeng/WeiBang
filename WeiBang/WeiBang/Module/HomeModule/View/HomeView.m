@@ -42,7 +42,7 @@
     [self addSubview:self.timesButton];
     
     UIView *lineView = [[UIView alloc]init];
-    lineView.backgroundColor = [UIColor blackColor];
+    lineView.backgroundColor = RGB(235, 235, 235);
     [self addSubview:lineView];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -117,7 +117,7 @@
     if (!_percentLabel) {
         _percentLabel = [[UILabel alloc]init];
         _percentLabel.text = @"8% + 5%";
-        _percentLabel.textColor = [UIColor redColor];
+        _percentLabel.textColor = kappMainRed;
         _percentLabel.font = kFontSize6(25);
     }
     return _percentLabel;
@@ -127,7 +127,7 @@
     if (!_historyLabel) {
         _historyLabel = [[UILabel alloc]init];
         _historyLabel.text = @"· 历史年化利率 ·";
-        _historyLabel.textColor = [UIColor redColor];
+        _historyLabel.textColor = kappMainRed;
         _historyLabel.font = kFontSize6(11);
     }
     return _historyLabel;
@@ -136,7 +136,7 @@
 - (UIButton *)borrowButton{
     if (!_borrowButton) {
         _borrowButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _borrowButton.backgroundColor = [UIColor redColor];
+        _borrowButton.backgroundColor = kappMainRed;
         [_borrowButton setTitle:@"立即出借" forState:UIControlStateNormal];
         _borrowButton.titleLabel.textColor = KWhiteColor;
         [_borrowButton addTarget:self action:@selector(borrowButtonClick) forControlEvents:UIControlEventTouchUpInside];
@@ -149,9 +149,9 @@
     if (!_timesButton) {
         _timesButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_timesButton setTitle:@"限购一次" forState:UIControlStateNormal];
-        _timesButton.backgroundColor = [UIColor redColor];
+        _timesButton.backgroundColor = kappMainRed;
         _timesButton.titleLabel.textColor = KWhiteColor;
-        _timesButton.titleLabel.font = kFontSize6(11);
+        _timesButton.titleLabel.font = kFontSize6(9);
     }
     return _timesButton;
 }
