@@ -10,6 +10,7 @@
 
 @interface LendTitleTableViewCell()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 @end
 
 @implementation LendTitleTableViewCell

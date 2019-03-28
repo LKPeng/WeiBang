@@ -22,6 +22,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
     self.icon_right_const.constant = scaleX(10);
     self.time_left_const.constant = scaleX(10);
     self.icon_left_const.constant = scaleX(15);
