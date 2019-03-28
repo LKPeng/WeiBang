@@ -94,13 +94,21 @@
 }
 
 - (void)setUpFunctionUp{
-    PersonalController *open = [[PersonalController alloc]init];
-    [self.navigationController pushViewController:open animated:YES];
+    if (![self isUserLogin]){
+        [self loginFunction];
+    }else{
+        PersonalController *open = [[PersonalController alloc]init];
+        [self.navigationController pushViewController:open animated:YES];
+    }
 }
 
 -(void)setUpFunction{
-    SettingController *open = [[SettingController alloc]init];
-    [self.navigationController pushViewController:open animated:YES];
+    if (![self isUserLogin]){
+        [self loginFunction];
+    }else{
+        SettingController *open = [[SettingController alloc]init];
+        [self.navigationController pushViewController:open animated:YES];
+    }
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
