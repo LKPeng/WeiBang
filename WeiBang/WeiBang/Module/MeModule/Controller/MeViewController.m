@@ -17,6 +17,8 @@
 #import "BalanceController.h"
 #import "PersonalController.h"
 #import "MyWebViewController.h"
+#import "OpenViewController.h"
+
 
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -169,6 +171,10 @@
         cell.kfzxBlock = ^{
             if (![self isUserLogin]){
                 [self loginFunction];
+            }else{
+                NothingViewController *vc = [[NothingViewController alloc] init];
+                vc.titleText = @"客服中心";
+                [self.navigationController pushViewController:vc animated:true];
             }
         };
         return cell;
@@ -206,6 +212,12 @@
 -(void)loginFunction{
     HTLoginViewController *vc = [HTLoginViewController new];
     [self.navigationController pushViewController:vc animated:true];
+}
+
+-(void)openAccountFunction{
+    OpenViewController *setting = [[OpenViewController alloc]init];
+    
+    [self.navigationController pushViewController:setting animated:YES];
 }
 
 //---------------------------------懒加载----------
@@ -273,7 +285,7 @@
         _openAccountButton.titleLabel.font = [UIFont systemFontOfSize:scaleX(13)];
         _openAccountButton.layer.cornerRadius = scaleX(18);
         _openAccountButton.clipsToBounds = true;
-        //        [_openAccountButton addTarget:self action:@selector(loginFunction) forControlEvents:UIControlEventTouchUpInside];
+                [_openAccountButton addTarget:self action:@selector(openAccountFunction) forControlEvents:UIControlEventTouchUpInside];
     }
     return _openAccountButton;
 }
