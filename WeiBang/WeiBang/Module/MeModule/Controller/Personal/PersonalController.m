@@ -110,10 +110,10 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row == 0 && indexPath.section == 1) {
-        MyWebViewController *vc = [[MyWebViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:true];
-    }else{
+//    if (indexPath.row == 0 && indexPath.section == 1) {
+//        MyWebViewController *vc = [[MyWebViewController alloc] init];
+//        [self.navigationController pushViewController:vc animated:true];
+//    }else{
 //        if (indexPath.section == 0) {
 //            NothingViewController *vc = [[NothingViewController alloc] init];
 //            if (indexPath.row == 0){
@@ -131,7 +131,7 @@
 //            }
 //            [self.navigationController pushViewController:vc animated:true];
 //        }
-    }
+//    }
 }
 
 

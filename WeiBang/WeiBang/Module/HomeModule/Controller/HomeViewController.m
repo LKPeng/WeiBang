@@ -183,7 +183,8 @@
         _myTableView.showsVerticalScrollIndicator = NO;
         _myTableView.showsHorizontalScrollIndicator = NO;
         _myTableView.contentInset = UIEdgeInsetsMake(0, 0, 10, 0);
-        
+        adjustsScrollViewInsets_NO(_myTableView, self);
+        _myTableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight+22, 0);
         [_myTableView regsiterCellWithCellClass:[HomeCell class] isNib:NO];
     }
     return _myTableView;

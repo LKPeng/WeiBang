@@ -42,12 +42,12 @@
     //1组
     NSMutableArray *modelArray0 = [[NSMutableArray alloc]init];
     MsgModel *model0 = [MsgModel new];
-    model0.percent = @"8%";
+    model0.percent = @"9.5%";
     model0.title = @"到期还本付息";
-    model0.history = @"183天 项目期限";
-    model0.borrow = @"最小出借金额1000元";
-    model0.sectionTitle = @"安心投";
-    model0.sectionTxt = @"自动到期，安心出借";
+    model0.history = @"365天 项目期限";
+    model0.borrow = @"最小出借金额1万元";
+    model0.sectionTitle = @"每日抢标";
+    model0.sectionTxt = @"11点,14点,17点,20点准时抢!";
     [modelArray0 addObject:model0];
     
     MsgModel *model1 = [MsgModel new];
@@ -55,8 +55,8 @@
     model1.title = @"到期还本付息";
     model1.history = @"183天 项目期限";
     model1.borrow = @"最小出借金额1000元";
-    model1.sectionTitle = @"安心投";
-    model1.sectionTxt = @"自动到期，安心出借";
+    model1.sectionTitle = @"每日抢标";
+    model1.sectionTxt = @"11点,14点,17点,20点准时抢!";
     [modelArray0 addObject:model1];
     
     [self.dataArray addObject:modelArray0];
@@ -64,9 +64,9 @@
     //2组
     NSMutableArray *modelArray1 = [[NSMutableArray alloc]init];
     MsgModel *model1_0 = [MsgModel new];
-    model1_0.percent = @"8%";
+    model1_0.percent = @"6.5%";
     model1_0.title = @"到期还本付息";
-    model1_0.history = @"183天 项目期限";
+    model1_0.history = @"274天 项目期限";
     model1_0.borrow = @"最小出借金额1000元";
     model1_0.sectionTitle = @"安心投";
     model1_0.sectionTxt = @"自动到期，安心出借";
@@ -78,30 +78,30 @@
     NSMutableArray *modelArray2 = [[NSMutableArray alloc]init];
     
     MsgModel *model2_0 = [MsgModel new];
-    model2_0.percent = @"8%";
+    model2_0.percent = @"5.5%";
     model2_0.title = @"到期还本付息";
     model2_0.history = @"183天 项目期限";
     model2_0.borrow = @"最小出借金额1000元";
-    model2_0.sectionTitle = @"安心投";
-    model2_0.sectionTxt = @"自动到期，安心出借";
+    model2_0.sectionTitle = @"约定返";
+    model2_0.sectionTxt = @"每日回款,月月领钱";
     [modelArray2 addObject:model2_0];
     
     MsgModel *model2_1 = [MsgModel new];
-    model2_1.percent = @"8%";
+    model2_1.percent = @"8.0%";
     model2_1.title = @"到期还本付息";
-    model2_1.history = @"183天 项目期限";
+    model2_1.history = @"134天 项目期限";
     model2_1.borrow = @"最小出借金额1000元";
-    model2_1.sectionTitle = @"安心投";
-    model2_1.sectionTxt = @"自动到期，安心出借";
+    model2_1.sectionTitle = @"约定返";
+    model2_1.sectionTxt = @"每日回款,月月领钱";
     [modelArray2 addObject:model2_1];
     
     MsgModel *model2_2 = [MsgModel new];
-    model2_2.percent = @"8%";
+    model2_2.percent = @"8.5%";
     model2_2.title = @"到期还本付息";
     model2_2.history = @"183天 项目期限";
     model2_2.borrow = @"最小出借金额1000元";
-    model2_2.sectionTitle = @"安心投";
-    model2_2.sectionTxt = @"自动到期，安心出借";
+    model2_2.sectionTitle = @"约定返";
+    model2_2.sectionTxt = @"每日回款,月月领钱";
     [modelArray2 addObject:model2_2];
     
     [self.dataArray addObject:modelArray2];
@@ -244,7 +244,8 @@
         _myTableView.showsVerticalScrollIndicator = NO;
         _myTableView.showsHorizontalScrollIndicator = NO;
         _myTableView.contentInset = UIEdgeInsetsMake(0, 0, 10, 0);
-        
+        adjustsScrollViewInsets_NO(_myTableView, self);
+        _myTableView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight, 0);
         MsgHeadView *headView = [[MsgHeadView alloc]initWithFrame:CGRectMake(0, 0, KWIDTH, scaleY_6(330))];
         headView.borrowBlock = ^{
             LendViewController *vc = [[LendViewController alloc] init];

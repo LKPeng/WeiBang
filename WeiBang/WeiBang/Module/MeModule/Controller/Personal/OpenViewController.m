@@ -156,6 +156,7 @@
         [_logoutButton setBackgroundColor:kappMainRed forState:UIControlStateNormal];
         _logoutButton.layer.cornerRadius = scaleX(6);
         _logoutButton.clipsToBounds = true;
+        adjustsScrollViewInsets_NO(_myTableView, self);
         [_logoutButton addTarget:self action:@selector(settingBack) forControlEvents:UIControlEventTouchUpInside];
     }
     return _logoutButton;
