@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *time_start;
 @property (weak, nonatomic) IBOutlet UILabel *time_keep;
 @property (weak, nonatomic) IBOutlet UILabel *time_end;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *label_width_const;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *label_width_const2;
 
 @end
 
@@ -32,6 +34,8 @@
     self.replaceView_left_const.constant    = scaleX_6(20);
     self.replaceView_right_const.constant   = scaleX_6(20);
     self.replaceView_height_const.constant  = scaleX_6(45);
+    self.label_width_const.constant         = scaleX_6(250);
+    self.label_width_const2.constant        = scaleX_6(250);
     
     self.time_in.text       = [self getCurrentTimesAddDays:0];
     self.time_start.text    = [self getCurrentTimesAddDays:1];

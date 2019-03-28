@@ -48,7 +48,7 @@
     if (indexPath.section == 1){
         return scaleX_6(60);
     }
-    return scaleX_6(520);
+    return scaleX_6(520)>=520?scaleX_6(520):490;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
