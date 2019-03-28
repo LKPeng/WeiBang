@@ -11,7 +11,7 @@
 #import "MsgTableViewCell.h"
 #import "msgSectionView.h"
 #import "MsgHeadView.h"
-
+#import "LendViewController.h"
 #import "BalanceController.h"
 
 @interface MsgViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -246,9 +246,13 @@
         _myTableView.contentInset = UIEdgeInsetsMake(0, 0, 10, 0);
         
         MsgHeadView *headView = [[MsgHeadView alloc]initWithFrame:CGRectMake(0, 0, KWIDTH, scaleY_6(330))];
+        headView.borrowBlock = ^{
+            LendViewController *vc = [[LendViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:true];
+        };
         _myTableView.tableHeaderView = headView;
-        
         [_myTableView regsiterCellWithCellClass:[MsgTableViewCell class] isNib:NO];
+        
     }
     return _myTableView;
 }

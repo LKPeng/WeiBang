@@ -25,12 +25,12 @@
 }
 
 - (void)setUp{
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tuijian"]];
     [self addSubview:imageView];
     [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.mas_equalTo(scaleX(10));
-        make.top.mas_equalTo(scaleX(5));
-        make.bottom.mas_equalTo(scaleX(5));
+        make.leading.mas_equalTo(scaleX(0));
+        make.top.mas_equalTo(0);
+        make.bottom.mas_equalTo(0);
         make.width.mas_equalTo(imageView.mas_height);
     }];
     
@@ -41,7 +41,7 @@
     [self addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self);
-        make.leading.mas_equalTo(imageView.mas_trailing).offset(scaleX(5));
+        make.leading.mas_equalTo(imageView.mas_trailing);
     }];
 }
 

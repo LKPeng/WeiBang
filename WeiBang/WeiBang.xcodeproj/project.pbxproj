@@ -15,7 +15,6 @@
 		2A060473224B628900DD5E9B /* BalanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A060471224B628900DD5E9B /* BalanceController.m */; };
 		2A0604D6224B875700DD5E9B /* PersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604D1224B875700DD5E9B /* PersonalController.m */; };
 		2A0604D7224B875700DD5E9B /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604D3224B875700DD5E9B /* SettingController.m */; };
-		2A0604D8224B875700DD5E9B /* NothingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604D5224B875700DD5E9B /* NothingViewController.m */; };
 		2A0604E1224B876400DD5E9B /* SetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604DB224B876400DD5E9B /* SetTableViewCell.m */; };
 		2A0604E2224B876400DD5E9B /* PersonalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604DC224B876400DD5E9B /* PersonalCell.m */; };
 		2A0604E3224B876400DD5E9B /* SetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0604DE224B876400DD5E9B /* SetTableViewCell.xib */; };
@@ -45,6 +44,7 @@
 		A08ED8D9224B72BB00477ECF /* LendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08ED8D4224B72BB00477ECF /* LendTableViewCell.xib */; };
 		A08ED8DA224B72BB00477ECF /* LendTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08ED8D5224B72BB00477ECF /* LendTitleTableViewCell.xib */; };
 		A08ED8DB224B72BB00477ECF /* LendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A08ED8D6224B72BB00477ECF /* LendTableViewCell.m */; };
+		A0D519A4224C6EF800621AEA /* NothingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D519A2224C6EF800621AEA /* NothingViewController.m */; };
 		A0DF59BA2249C8030031EBD6 /* HTForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF59B72249C8020031EBD6 /* HTForgetViewController.m */; };
 		A0DF59BB2249C8030031EBD6 /* HTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF59B92249C8020031EBD6 /* HTLoginViewController.m */; };
 		A0DF59C62249D7030031EBD6 /* HomeItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DF59C52249D7030031EBD6 /* HomeItemView.m */; };
@@ -137,10 +137,8 @@
 		2A060472224B628900DD5E9B /* BalanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceController.h; sourceTree = "<group>"; };
 		2A0604D0224B875700DD5E9B /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
 		2A0604D1224B875700DD5E9B /* PersonalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalController.m; sourceTree = "<group>"; };
-		2A0604D2224B875700DD5E9B /* NothingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NothingViewController.h; sourceTree = "<group>"; };
 		2A0604D3224B875700DD5E9B /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
 		2A0604D4224B875700DD5E9B /* PersonalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalController.h; sourceTree = "<group>"; };
-		2A0604D5224B875700DD5E9B /* NothingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NothingViewController.m; sourceTree = "<group>"; };
 		2A0604DA224B876400DD5E9B /* PersonalHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalHeadCell.h; sourceTree = "<group>"; };
 		2A0604DB224B876400DD5E9B /* SetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTableViewCell.m; sourceTree = "<group>"; };
 		2A0604DC224B876400DD5E9B /* PersonalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCell.m; sourceTree = "<group>"; };
@@ -196,6 +194,8 @@
 		A08ED8D6224B72BB00477ECF /* LendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LendTableViewCell.m; sourceTree = "<group>"; };
 		A08ED8D7224B72BB00477ECF /* LendTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LendTitleTableViewCell.h; sourceTree = "<group>"; };
 		A0C94EB0223946F300290294 /* WeiBang.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeiBang.entitlements; sourceTree = "<group>"; };
+		A0D519A2224C6EF800621AEA /* NothingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NothingViewController.m; sourceTree = "<group>"; };
+		A0D519A3224C6EF800621AEA /* NothingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NothingViewController.h; sourceTree = "<group>"; };
 		A0DF59B62249C8020031EBD6 /* HTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTLoginViewController.h; sourceTree = "<group>"; };
 		A0DF59B72249C8020031EBD6 /* HTForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTForgetViewController.m; sourceTree = "<group>"; };
 		A0DF59B82249C8020031EBD6 /* HTForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTForgetViewController.h; sourceTree = "<group>"; };
@@ -348,8 +348,6 @@
 				2A0604D3224B875700DD5E9B /* SettingController.m */,
 				2A0604D4224B875700DD5E9B /* PersonalController.h */,
 				2A0604D1224B875700DD5E9B /* PersonalController.m */,
-				2A0604D2224B875700DD5E9B /* NothingViewController.h */,
-				2A0604D5224B875700DD5E9B /* NothingViewController.m */,
 				2A0604EB224B903900DD5E9B /* OpenViewController.h */,
 				2A0604EC224B903900DD5E9B /* OpenViewController.m */,
 			);
@@ -463,6 +461,15 @@
 				A08ED8D7224B72BB00477ECF /* LendTitleTableViewCell.h */,
 			);
 			path = Lend;
+			sourceTree = "<group>";
+		};
+		A0D519A1224C6EF000621AEA /* NothingVC */ = {
+			isa = PBXGroup;
+			children = (
+				A0D519A3224C6EF800621AEA /* NothingViewController.h */,
+				A0D519A2224C6EF800621AEA /* NothingViewController.m */,
+			);
+			path = NothingVC;
 			sourceTree = "<group>";
 		};
 		A0F9C7E52241E10100BD88C5 /* AboutUs */ = {
@@ -983,6 +990,7 @@
 			children = (
 				F26F502F2212A99E009C6BB9 /* MeViewController.h */,
 				F26F50302212A99E009C6BB9 /* MeViewController.m */,
+				A0D519A1224C6EF000621AEA /* NothingVC */,
 				2A0604CF224B875700DD5E9B /* Personal */,
 				A0F9C7EE2241E5B800BD88C5 /* OpenAccount */,
 				A0F9C7E52241E10100BD88C5 /* AboutUs */,
@@ -1343,7 +1351,6 @@
 				A08ED8B8224B1D9000477ECF /* MeHeaderView.m in Sources */,
 				A0DF59C62249D7030031EBD6 /* HomeItemView.m in Sources */,
 				F26F4FF22212A94D009C6BB9 /* UIButton+Extension.m in Sources */,
-				2A0604D8224B875700DD5E9B /* NothingViewController.m in Sources */,
 				F26F4FFB2212A94D009C6BB9 /* UIViewController+Extension.m in Sources */,
 				F26F4FE52212A94D009C6BB9 /* WBTabBarController.m in Sources */,
 				2A0604E4224B876400DD5E9B /* PersonalHeadCell.m in Sources */,
@@ -1352,6 +1359,7 @@
 				2A0604D7224B875700DD5E9B /* SettingController.m in Sources */,
 				F26F4FED2212A94D009C6BB9 /* NSString+Extenssion.m in Sources */,
 				F26F4FFA2212A94D009C6BB9 /* UIView+Extension.m in Sources */,
+				A0D519A4224C6EF800621AEA /* NothingViewController.m in Sources */,
 				F26F4FE72212A94D009C6BB9 /* UIView+MDFAnimation.m in Sources */,
 				F26AD1942241EAAD001126AC /* UnderlineButton.m in Sources */,
 				F26F4FE62212A94D009C6BB9 /* MDFAnimation.m in Sources */,

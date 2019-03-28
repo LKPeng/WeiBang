@@ -11,8 +11,9 @@
 #import "MeItemTableViewCell.h"
 #import "HTLoginViewController.h"
 #import "WBNavigantionController.h"
-
+#import "NothingViewController.h"
 #import "OpenViewController.h"
+
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UIView *headerView;
@@ -93,13 +94,17 @@
     }else{
         MeItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[MeItemTableViewCell cellReuseID]];
         cell.yhqBlock = ^{
-            
+            NothingViewController *vc = [[NothingViewController alloc] init];
+            vc.titleText = @"优惠券";
+            [self.navigationController pushViewController:vc animated:true];
         };
         cell.yhkBlock = ^{
             
         };
         cell.wdjfBlock = ^{
-            
+            NothingViewController *vc = [[NothingViewController alloc] init];
+            vc.titleText = @"我的积分";
+            [self.navigationController pushViewController:vc animated:true];
         };
         cell.gywmBlock = ^{
             
@@ -175,10 +180,14 @@
         tip.textAlignment = NSTextAlignmentCenter;
         [_headerView addSubview:tip];
         
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"WechatIMG4"]];
-        imageView.frame = CGRectMake(0, 0, KWIDTH, KHIGHT*0.4-scaleX(76));
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
-        [_headerView addSubview:imageView];
+        UIImageView *imageView1 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"me_bg_icon1"]];
+        imageView1.frame = CGRectMake(0, scaleX(40), KWIDTH, KHIGHT*0.4-scaleX(36));
+        imageView1.contentMode = UIViewContentModeScaleAspectFit;
+        [_headerView addSubview:imageView1];
+        UIImageView *imageView2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"me_bg_icon2"]];
+        imageView2.frame = CGRectMake(KWIDTH*0.3, 0, KWIDTH*0.4, KHIGHT*0.4-scaleX(110));
+        imageView2.contentMode = UIViewContentModeScaleAspectFit;
+        [_headerView addSubview:imageView2];
     }
     return _headerView;
 }
