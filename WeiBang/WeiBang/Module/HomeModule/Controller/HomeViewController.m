@@ -58,7 +58,8 @@
     pingLable.font = kFontSize6(17);
     pingLable.textAlignment = NSTextAlignmentCenter;
     [head addSubview:pingLable];
-    pingLable.frame = CGRectMake(0, CGRectGetMaxY(home.frame) + scaleY_6(15), KWIDTH, scaleY_6(30));
+    pingLable.frame = CGRectMake((KWIDTH - scaleX_6(330))/2, scaleY_6(45), scaleX_6(330), scaleY_6(30));
+//    pingLable.frame = CGRectMake(0, CGRectGetMaxY(home.frame) + scaleY_6(15), KWIDTH, scaleY_6(30));
 
     
     self.headView = head;
@@ -68,15 +69,12 @@
     
 
     UILabel *pTextLable = [[UILabel alloc]init];
+    pTextLable.textAlignment = NSTextAlignmentCenter;
     pTextLable.text = @"专注小额借贷的网贷投资平台 用户量持续飙升";
     pTextLable.font = kFontSize6(12);
-    [self.view addSubview:pTextLable];
+    [head addSubview:pTextLable];
 
-    [pTextLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.view.mas_bottom).offset(-scaleY_6(10));
-        make.height.mas_equalTo(scaleY_6(20));
-        make.centerX.mas_equalTo(self.view.mas_centerX);
-    }];
+    pTextLable.frame = CGRectMake(0, CGRectGetMaxY(home.frame) + scaleY_6(15), KWIDTH, scaleY_6(30));
 
     [self.view addSubview:self.tipLabel];
 }

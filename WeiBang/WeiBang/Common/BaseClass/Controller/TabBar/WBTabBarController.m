@@ -19,9 +19,9 @@
 #import "HTLoginViewController.h"
 
 
-#define navBackGroundColor kappMainGreen
-#define navTintColor [UIColor whiteColor]
-#define titleColor [UIColor whiteColor]
+#define navBackGroundColor KWhiteColor
+#define navTintColor [UIColor blackColor]
+#define titleColor [UIColor blackColor]
 #define My_BaDouNavigationTitleFont [UIFont boldSystemFontOfSize:17]
 
 @interface WBTabBarController ()<UITabBarControllerDelegate>
@@ -36,7 +36,7 @@
     self.delegate = self;
 }
 - (void)setUpAllChildViewController {
-    
+
     HomeViewController *home = [[HomeViewController alloc] init];
     [self setUpOneChildViewController:home image:[UIImage imageNamed:@"nav_home"] selectedImage:[UIImage imageNamed:@"nav_home"] title:@"首页"];
     

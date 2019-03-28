@@ -34,7 +34,7 @@
     [self addSubview:home];
     
     [headView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(scaleX_6(330));
+        make.left.right.equalTo(self);
         make.height.mas_equalTo(scaleY_6(60));
         make.centerX.mas_equalTo(self.mas_centerX);
         make.top.equalTo(self);

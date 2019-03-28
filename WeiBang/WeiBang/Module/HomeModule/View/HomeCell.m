@@ -25,7 +25,7 @@
 
 - (void)setUp{
     UILabel *title = [[UILabel alloc]init];
-    title.text = @"了解PPmoney";
+    title.text = @"了解柚子";
     [self.contentView addSubview:title];
     [title mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self.contentView.mas_centerX);
@@ -37,10 +37,12 @@
     
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftButton setBackgroundImage:[UIImage imageNamed:@"shuju.jpeg"] forState:UIControlStateNormal];
+    leftButton.userInteractionEnabled = NO;
     [self.contentView addSubview:leftButton];
-    
+
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [rightButton setBackgroundImage:[UIImage imageNamed:@"zijin.jpeg"] forState:UIControlStateNormal];
+    rightButton.userInteractionEnabled = NO;
     [self.contentView addSubview:rightButton];
     
     [leftButton mas_makeConstraints:^(MASConstraintMaker *make) {
