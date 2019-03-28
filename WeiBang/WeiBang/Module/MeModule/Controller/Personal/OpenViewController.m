@@ -30,6 +30,46 @@
 
 
 - (void)settingBack{
+    
+    
+    NSIndexPath *indexPath0 = [NSIndexPath indexPathForRow:0 inSection:0];
+    OpenCell *cell0 =(OpenCell *)[self.myTableView cellForRowAtIndexPath:indexPath0];
+    
+    NSIndexPath *indexPath1 = [NSIndexPath indexPathForRow:1 inSection:0];
+    OpenCell *cell1 =(OpenCell *)[self.myTableView cellForRowAtIndexPath:indexPath1];
+    
+    NSIndexPath *indexPath2 = [NSIndexPath indexPathForRow:0 inSection:1];
+    OpenCell *cell2 =(OpenCell *)[self.myTableView cellForRowAtIndexPath:indexPath2];
+    
+    NSIndexPath *indexPath3 = [NSIndexPath indexPathForRow:1 inSection:1];
+    OpenCell *cell3 =(OpenCell *)[self.myTableView cellForRowAtIndexPath:indexPath3];
+    
+    NSLog(@"cell0 - %@",cell0.open.text);
+    NSLog(@"cell1 - %@",cell1.open.text);
+    NSLog(@"cell2 - %@",cell2.open.text);
+    NSLog(@"cell3 - %@",cell3.open.text);
+    
+    if (cell0.open.text.length == 0) {
+        [MBProgressHUD showMessage:@"请输入姓名"];
+        return;
+    }
+    if (cell1.open.text.length == 0) {
+        [MBProgressHUD showMessage:@"请输入证件号码"];
+        return;
+    }
+    if (cell2.open.text.length == 0) {
+        [MBProgressHUD showMessage:@"请输入卡号"];
+        return;
+    }
+    
+    if (cell3.open.text.length == 0) {
+        [MBProgressHUD showMessage:@"请输入手机号"];
+        return;
+    }
+    
+    [self.view endEditing:YES];
+    
+    
     [MBProgressHUD showMessage:@"敬请期待..."];
 }
 
@@ -140,7 +180,7 @@
         _myTableView.showsHorizontalScrollIndicator = NO;
         _myTableView.contentInset = UIEdgeInsetsMake(0, 0, 10, 0);
         
-        UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, KWIDTH, scaleY_6(80))];
+        UIView *headView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, KWIDTH, scaleY_6(60))];
         _myTableView.tableHeaderView = headView;
         
         [_myTableView regsiterCellWithCellClass:[OpenCell class] isNib:NO];
