@@ -33,7 +33,7 @@
 }
 
 - (void)setup{
-    self.title = @"设置";
+    [self setupNavBarTitleViewWithText:@"设置"];
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = true;
     [self.tableView reloadData];

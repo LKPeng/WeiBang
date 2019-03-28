@@ -30,6 +30,7 @@
     
     self.view.backgroundColor = KWhiteColor;
     
+    [self setupNavBarTitleViewWithText:@"产品"];
     //    self.modelArray = [[NSMutableArray alloc]init];
     
     [self createModel];

@@ -41,13 +41,13 @@
     [self setUpOneChildViewController:home image:[UIImage imageNamed:@"nav_home"] selectedImage:[UIImage imageNamed:@"nav_home"] title:@"首页"];
     
     MsgViewController *msg = [[MsgViewController alloc] init];
-    [self setUpOneChildViewController:msg image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"产品列表"];
+    [self setUpOneChildViewController:msg image:[UIImage imageNamed:@"nav_find"] selectedImage:[UIImage imageNamed:@"nav_find"] title:@"产品"];
     
     DiscoverViewController *dis = [[DiscoverViewController alloc] init];
-    [self setUpOneChildViewController:dis image:[UIImage imageNamed:@"nav_news"] selectedImage:[UIImage imageNamed:@"nav_news"] title:@"我的钱袋"];
+    [self setUpOneChildViewController:dis image:[UIImage imageNamed:@"nav_news"] selectedImage:[UIImage imageNamed:@"nav_news"] title:@"发现"];
     
     MeViewController *me = [[MeViewController alloc] init];
-    [self setUpOneChildViewController:me image:[UIImage imageNamed:@"nav_me"] selectedImage:[UIImage imageNamed:@"nav_me"] title:@"更多"];
+    [self setUpOneChildViewController:me image:[UIImage imageNamed:@"nav_me"] selectedImage:[UIImage imageNamed:@"nav_me"] title:@"我的"];
 }
 - (void)setUpOneChildViewController:(UIViewController *)vc image:(UIImage *)image selectedImage:(UIImage *)selectedImage title:(NSString *)title {
     vc.title = title;

@@ -29,6 +29,9 @@
 }
 
 -(void)setUI{
+    
+    [self setupNavBarTitleViewWithText:@"首页"];
+    
     [self.view addSubview:self.myTableView];
     
     UIView *head =  [[UIView alloc]init];
