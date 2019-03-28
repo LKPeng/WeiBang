@@ -12,7 +12,7 @@
 #import "HTLoginViewController.h"
 #import "WBNavigantionController.h"
 
-
+#import "OpenViewController.h"
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UIView *headerView;
@@ -67,7 +67,8 @@
 }
 
 -(void)setUpFunction{
-    
+    OpenViewController *open = [[OpenViewController alloc]init];
+    [self.navigationController pushViewController:open animated:YES];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

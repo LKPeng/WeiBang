@@ -22,6 +22,9 @@
 		2A0604E4224B876400DD5E9B /* PersonalHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604DF224B876400DD5E9B /* PersonalHeadCell.m */; };
 		2A0604E7224B886D00DD5E9B /* ProductListSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604E6224B886D00DD5E9B /* ProductListSubView.m */; };
 		2A0604EA224B8AB400DD5E9B /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604E9224B8AB400DD5E9B /* HomeCell.m */; };
+		2A0604ED224B903900DD5E9B /* OpenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604EC224B903900DD5E9B /* OpenViewController.m */; };
+		2A0604F0224B906800DD5E9B /* OpenCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604EF224B906800DD5E9B /* OpenCell.m */; };
+		2A0604F3224B91D000DD5E9B /* OpenSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0604F2224B91D000DD5E9B /* OpenSectionView.m */; };
 		A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510952237A05200E0A2AA /* PlanPageControl.m */; };
 		A025109A2237A05300E0A2AA /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510962237A05200E0A2AA /* PlanADScrollView.m */; };
 		A025109B2237A05300E0A2AA /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A02510982237A05200E0A2AA /* PlanADCollectionViewCell.m */; };
@@ -149,6 +152,12 @@
 		2A0604E6224B886D00DD5E9B /* ProductListSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListSubView.m; sourceTree = "<group>"; };
 		2A0604E8224B8AB400DD5E9B /* HomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
 		2A0604E9224B8AB400DD5E9B /* HomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		2A0604EB224B903900DD5E9B /* OpenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenViewController.h; sourceTree = "<group>"; };
+		2A0604EC224B903900DD5E9B /* OpenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenViewController.m; sourceTree = "<group>"; };
+		2A0604EE224B906800DD5E9B /* OpenCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCell.h; sourceTree = "<group>"; };
+		2A0604EF224B906800DD5E9B /* OpenCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCell.m; sourceTree = "<group>"; };
+		2A0604F1224B91D000DD5E9B /* OpenSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenSectionView.h; sourceTree = "<group>"; };
+		2A0604F2224B91D000DD5E9B /* OpenSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenSectionView.m; sourceTree = "<group>"; };
 		31F2A15441CF236127A7E51B /* Pods-WeiBang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.release.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.release.xcconfig"; sourceTree = "<group>"; };
 		9AF203E0899EEC02D8792DAE /* Pods-WeiBang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiBang.debug.xcconfig"; path = "Target Support Files/Pods-WeiBang/Pods-WeiBang.debug.xcconfig"; sourceTree = "<group>"; };
 		A02510932237A05200E0A2AA /* PlanADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADScrollView.h; sourceTree = "<group>"; };
@@ -341,6 +350,8 @@
 				2A0604D1224B875700DD5E9B /* PersonalController.m */,
 				2A0604D2224B875700DD5E9B /* NothingViewController.h */,
 				2A0604D5224B875700DD5E9B /* NothingViewController.m */,
+				2A0604EB224B903900DD5E9B /* OpenViewController.h */,
+				2A0604EC224B903900DD5E9B /* OpenViewController.m */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -348,13 +359,17 @@
 		2A0604D9224B876400DD5E9B /* Personal */ = {
 			isa = PBXGroup;
 			children = (
-				2A0604DA224B876400DD5E9B /* PersonalHeadCell.h */,
-				2A0604DB224B876400DD5E9B /* SetTableViewCell.m */,
-				2A0604DC224B876400DD5E9B /* PersonalCell.m */,
 				2A0604DD224B876400DD5E9B /* SetTableViewCell.h */,
-				2A0604DE224B876400DD5E9B /* SetTableViewCell.xib */,
-				2A0604DF224B876400DD5E9B /* PersonalHeadCell.m */,
+				2A0604DB224B876400DD5E9B /* SetTableViewCell.m */,
 				2A0604E0224B876400DD5E9B /* PersonalCell.h */,
+				2A0604DC224B876400DD5E9B /* PersonalCell.m */,
+				2A0604DA224B876400DD5E9B /* PersonalHeadCell.h */,
+				2A0604DF224B876400DD5E9B /* PersonalHeadCell.m */,
+				2A0604DE224B876400DD5E9B /* SetTableViewCell.xib */,
+				2A0604EE224B906800DD5E9B /* OpenCell.h */,
+				2A0604EF224B906800DD5E9B /* OpenCell.m */,
+				2A0604F1224B91D000DD5E9B /* OpenSectionView.h */,
+				2A0604F2224B91D000DD5E9B /* OpenSectionView.m */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -1291,6 +1306,7 @@
 				2A0604E1224B876400DD5E9B /* SetTableViewCell.m in Sources */,
 				A0DF59BB2249C8030031EBD6 /* HTLoginViewController.m in Sources */,
 				F23F69632215329300C2AE87 /* AppautoSizeScale.m in Sources */,
+				2A0604F0224B906800DD5E9B /* OpenCell.m in Sources */,
 				F26F4FF92212A94D009C6BB9 /* UITextView+Placeholder.m in Sources */,
 				F26F50392212A99E009C6BB9 /* DiscoverViewController.m in Sources */,
 				F26F4FF52212A94D009C6BB9 /* UILabel+Attribute.m in Sources */,
@@ -1315,6 +1331,7 @@
 				A08ED8AD224A33C600477ECF /* DiscoverTableViewCell.m in Sources */,
 				A07284552242477500782414 /* PrivacyViewController.m in Sources */,
 				F216B959220412BB009B811D /* main.m in Sources */,
+				2A0604F3224B91D000DD5E9B /* OpenSectionView.m in Sources */,
 				2A06046F224B628000DD5E9B /* MsgModel.m in Sources */,
 				F26F4FF72212A94D009C6BB9 /* UITableView+Extension.m in Sources */,
 				A02510992237A05300E0A2AA /* PlanPageControl.m in Sources */,
@@ -1342,6 +1359,7 @@
 				A08ED8D0224B72A500477ECF /* LendViewController.m in Sources */,
 				F299D380221A7C2E00727305 /* CALayer+Anim.m in Sources */,
 				F26F503A2212A99E009C6BB9 /* HomeViewController.m in Sources */,
+				2A0604ED224B903900DD5E9B /* OpenViewController.m in Sources */,
 				A08ED8BC224B268500477ECF /* MeItemTableViewCell.m in Sources */,
 				F216B94B220412B5009B811D /* AppDelegate.m in Sources */,
 				F26F4FE92212A94D009C6BB9 /* NSData+Base64.m in Sources */,
