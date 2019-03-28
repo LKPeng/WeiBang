@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupNavBarTitleViewWithText:@"余额"];
+    
     self.view.backgroundColor = KWhiteColor;
     UIImageView *balanceImageView = [[UIImageView alloc]init];
     balanceImageView.image = [UIImage imageNamed:@"balanceMoney"];

@@ -25,7 +25,7 @@
 
 - (void)setUp{
     UILabel *title = [[UILabel alloc]init];
-    title.text = @"了解柚子";
+    title.text = @"了解赢鑫";
     [self.contentView addSubview:title];
     [title mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self.contentView.mas_centerX);

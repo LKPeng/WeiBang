@@ -13,6 +13,9 @@
 #import "WBNavigantionController.h"
 #import "NothingViewController.h"
 #import "OpenViewController.h"
+#import "SettingController.h"
+#import "BalanceController.h"
+#import "PersonalController.h"
 
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -65,10 +68,28 @@
     [leftButton addTarget:self action:@selector(setUpFunction) forControlEvents:UIControlEventTouchUpInside];
     // 修改导航栏左边的item
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+    
+    
+    
+    UIButton *leftButton0 = [UIButton buttonWithType:UIButtonTypeCustom];
+    leftButton0.frame = CGRectMake(0, 0, 30, 30);
+    leftButton0.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    UIImage *leftButtonImg0 = [UIImage imageNamed:@"gerenxinxi"];
+    [leftButton0 setImage: leftButtonImg0
+                forState:UIControlStateNormal];
+    [leftButton0 addTarget:self action:@selector(setUpFunctionUp) forControlEvents:UIControlEventTouchUpInside];
+    // 修改导航栏左边的item
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton0];
+    
+}
+
+- (void)setUpFunctionUp{
+    PersonalController *open = [[PersonalController alloc]init];
+    [self.navigationController pushViewController:open animated:YES];
 }
 
 -(void)setUpFunction{
-    OpenViewController *open = [[OpenViewController alloc]init];
+    SettingController *open = [[SettingController alloc]init];
     [self.navigationController pushViewController:open animated:YES];
 }
 
@@ -99,7 +120,8 @@
             [self.navigationController pushViewController:vc animated:true];
         };
         cell.yhkBlock = ^{
-            
+            BalanceController *balance = [[BalanceController alloc]init];
+            [self.navigationController pushViewController:balance animated:YES];
         };
         cell.wdjfBlock = ^{
             NothingViewController *vc = [[NothingViewController alloc] init];

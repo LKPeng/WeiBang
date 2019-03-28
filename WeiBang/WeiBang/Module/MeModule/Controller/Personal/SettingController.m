@@ -190,7 +190,7 @@
         _quitButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 60, KWIDTH-20, 50)];
         [_quitButton setTitle:@"退出登录" forState:UIControlStateNormal];
         [_quitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _quitButton.backgroundColor = kappMainColor;
+        _quitButton.backgroundColor = kappMainRed;
         _quitButton.layer.cornerRadius = 6;
         _quitButton.clipsToBounds = true;
         [_quitButton addTarget:self action:@selector(quitfunction) forControlEvents:UIControlEventTouchUpInside];

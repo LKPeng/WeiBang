@@ -14,14 +14,23 @@
 
 @property (strong, nonatomic) UITableView *myTableView;
 
+
+@property (nonatomic,strong) UIButton *logoutButton;
 @end
 
 @implementation OpenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupNavBarTitleViewWithText:@"充值"];
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.myTableView];
+}
+
+
+
+- (void)settingBack{
+    [MBProgressHUD showMessage:@"敬请期待..."];
 }
 
 
@@ -121,7 +130,12 @@
         _myTableView.dataSource  = self;
         _myTableView.delegate = self;
         _myTableView.backgroundColor = kappMainColor;
-        _myTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+        
+        UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH, scaleX(62))];
+        footerView.backgroundColor = [UIColor colorWithHexString:@"#f2f4f4"];;
+        [footerView addSubview:self.logoutButton];
+        _myTableView.tableFooterView = footerView;
+        
         _myTableView.showsVerticalScrollIndicator = NO;
         _myTableView.showsHorizontalScrollIndicator = NO;
         _myTableView.contentInset = UIEdgeInsetsMake(0, 0, 10, 0);
@@ -132,6 +146,19 @@
         [_myTableView regsiterCellWithCellClass:[OpenCell class] isNib:NO];
     }
     return _myTableView;
+}
+
+- (UIButton *)logoutButton{
+    if (!_logoutButton){
+        _logoutButton = [[UIButton alloc] initWithFrame:CGRectMake(scaleX(10), scaleX(20), KWIDTH-scaleX(20), scaleX(45))];
+        [_logoutButton setTitle:@"立即充值" forState:UIControlStateNormal];
+        [_logoutButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_logoutButton setBackgroundColor:kappMainRed forState:UIControlStateNormal];
+        _logoutButton.layer.cornerRadius = scaleX(6);
+        _logoutButton.clipsToBounds = true;
+        [_logoutButton addTarget:self action:@selector(settingBack) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _logoutButton;
 }
 
 @end

@@ -12,7 +12,7 @@
 #import "msgSectionView.h"
 #import "MsgHeadView.h"
 #import "LendViewController.h"
-#import "BalanceController.h"
+
 
 @interface MsgViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -221,8 +221,8 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    BalanceController *balance = [[BalanceController alloc]init];
-    [self.navigationController pushViewController:balance animated:YES];
+    LendViewController *vc = [[LendViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 

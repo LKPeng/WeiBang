@@ -7,6 +7,7 @@
 //
 
 #import "MeAccountTableViewCell.h"
+#import "OpenViewController.h"
 
 @implementation MeAccountTableViewCell
 
@@ -22,9 +23,29 @@
 }
 
 - (IBAction)rechargeClick:(UIButton *)sender {
+    
+    UIViewController *controller = [self findViewController:self];
+    
+    OpenViewController *setting = [[OpenViewController alloc]init];
+    
+    [controller.navigationController pushViewController:setting animated:YES];
 }
 
 - (IBAction)withdrawClick:(UIButton *)sender {
+    [MBProgressHUD showMessage:@"您暂时没有余额"];
 }
+
+- (UIViewController *)findViewController:(UIView *)sourceView
+{
+    id target=sourceView;
+    while (target) {
+        target = ((UIResponder *)target).nextResponder;
+        if ([target isKindOfClass:[UIViewController class]]) {
+            break;
+        }
+    }
+    return target;
+}
+
 
 @end
