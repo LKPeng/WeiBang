@@ -16,6 +16,7 @@
 #import "SettingController.h"
 #import "BalanceController.h"
 #import "PersonalController.h"
+#import "MyWebViewController.h"
 
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -31,9 +32,7 @@
     //去掉导航栏底部的黑线
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     
-    NSString * longinBool = [[NSUserDefaults standardUserDefaults] objectForKey:@"user_login"];
-    //判断用户是否登陆
-    if ([longinBool isEqualToString:@"YES"]) {
+    if ([self isUserLogin]){
         [self.loginButton removeFromSuperview];
         [self.headerView addSubview:self.openAccountButton];
     }else{
@@ -52,6 +51,17 @@
     [super viewDidLoad];
     [self setUI];
     [self setItem];
+}
+
+-(BOOL)isUserLogin{
+    NSString * longinBool = [[NSUserDefaults standardUserDefaults] objectForKey:@"user_login"];
+    BOOL islogin = YES;
+    if ([longinBool isEqualToString:@"YES"]) {
+        islogin = YES;
+    }else{
+        islogin = NO;
+    }
+    return islogin;
 }
 
 -(void)setUI{
@@ -115,24 +125,43 @@
     }else{
         MeItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[MeItemTableViewCell cellReuseID]];
         cell.yhqBlock = ^{
-            NothingViewController *vc = [[NothingViewController alloc] init];
-            vc.titleText = @"优惠券";
-            [self.navigationController pushViewController:vc animated:true];
+            if (![self isUserLogin]){
+                [self loginFunction];
+            }else{
+                NothingViewController *vc = [[NothingViewController alloc] init];
+                vc.titleText = @"优惠券";
+                [self.navigationController pushViewController:vc animated:true];
+            }
         };
         cell.yhkBlock = ^{
-            BalanceController *balance = [[BalanceController alloc]init];
-            [self.navigationController pushViewController:balance animated:YES];
+            if (![self isUserLogin]){
+                [self loginFunction];
+            }else{
+                BalanceController *balance = [[BalanceController alloc]init];
+                [self.navigationController pushViewController:balance animated:YES];
+            }
         };
         cell.wdjfBlock = ^{
-            NothingViewController *vc = [[NothingViewController alloc] init];
-            vc.titleText = @"我的积分";
-            [self.navigationController pushViewController:vc animated:true];
+            if (![self isUserLogin]){
+                [self loginFunction];
+            }else{
+                NothingViewController *vc = [[NothingViewController alloc] init];
+                vc.titleText = @"我的积分";
+                [self.navigationController pushViewController:vc animated:true];
+            }
         };
         cell.gywmBlock = ^{
-            
+            if (![self isUserLogin]){
+                [self loginFunction];
+            }else{
+                MyWebViewController *vc = [[MyWebViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:true];
+            }
         };
         cell.kfzxBlock = ^{
-            
+            if (![self isUserLogin]){
+                [self loginFunction];
+            }
         };
         return cell;
     }
