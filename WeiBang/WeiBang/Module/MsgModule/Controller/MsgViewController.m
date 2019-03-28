@@ -13,7 +13,6 @@
 #import "MsgHeadView.h"
 #import "LendViewController.h"
 
-
 @interface MsgViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *myTableView;

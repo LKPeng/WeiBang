@@ -10,9 +10,13 @@
 #import "TemplateView.h"
 #import "VerificationCodeView.h"
 #import "HTForgetViewController.h"
+#import "UnderlineButton.h"
+#import "PrivacyViewController.h"
+#import "RegistrationAgreementController.h"
 
 @interface HTLoginViewController ()
 @property(nonatomic,strong) UIImageView *topView;
+@property(nonatomic,strong) UILabel *topLabel;
 @property(nonatomic,strong) UIButton *switchLoginBtn;
 @property(nonatomic,strong) UIButton *switchRegisterBtn;
 @property(nonatomic,strong) UIView *line1;
@@ -28,6 +32,10 @@
 @property(nonatomic,strong) UIButton *forgetBtn;
 @property(nonatomic,strong) UIButton *loginBtn;
 @property(nonatomic,strong) UIButton *registerBtn;
+@property (strong, nonatomic) UnderlineButton         *underlineButton;
+@property (strong, nonatomic) UnderlineButton         *ysButton;
+@property (strong, nonatomic) UIButton *AgreeSelectBtn;
+@property (strong, nonatomic) UIButton *PrivacySelectBtn;
 @end
 
 @implementation HTLoginViewController
@@ -67,14 +75,12 @@
 
 -(void)setUI{
     
-    [self.view addSubview:self.topView];
+    [self.view addSubview:self.topLabel];
     [self.view addSubview:self.switchLoginBtn];
     [self.view addSubview:self.switchRegisterBtn];
     [self.view addSubview:self.line1];
     [self.view addSubview:self.line2];
     [self.view addSubview:self.switchLoginView];
-    
-    
 }
 
 -(void)setBackItem{
@@ -140,12 +146,39 @@
         [MBProgressHUD showMessage:@"请输入6位验证码!"];
         return;
     }
+    
+    if (!self.AgreeSelectBtn.selected) {
+        [MBProgressHUD showMessage:@"请阅读并同意注册协议"];
+        return;
+    }
+    
+    if (!self.PrivacySelectBtn.selected) {
+        [MBProgressHUD showMessage:@"请阅读并同意隐私协议"];
+        return;
+    }
+    
     [MBProgressHUD showMessage:@"注册失败,请稍后再试"];
 }
 //忘记密码
 -(void)forgetPasswordFunction{
     HTForgetViewController *vc = [[HTForgetViewController alloc] init];
     [self.navigationController pushViewController:vc animated:true];
+}
+
+#pragma mark - 按钮点击事件
+- (void)ClickagreeBtn{
+    RegistrationAgreementController *vc = [[RegistrationAgreementController alloc] init];
+    [self.navigationController pushViewController:vc animated:true];
+}
+- (void)ClickYSBtn{
+    PrivacyViewController *vc = [[PrivacyViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:true];
+}
+- (void)ClickAgreeSelectBtn{
+    self.AgreeSelectBtn.selected =! self.AgreeSelectBtn.selected;
+}
+- (void)ClickPrivacySelectBtn{
+    self.PrivacySelectBtn.selected =! self.PrivacySelectBtn.selected;
 }
 //------------------------------------懒加载--------------------------------------
 
@@ -157,6 +190,22 @@
         _topView.contentMode = UIViewContentModeScaleToFill;
     }
     return _topView;
+}
+
+-(UILabel *)topLabel {
+    if (!_topLabel){
+        _topLabel = [[UILabel alloc] init];
+        _topLabel.text = @"赢鑫金融";
+        _topLabel.frame = CGRectMake(0, 0, KWIDTH, scaleX(160));
+        [_topLabel setTextColor:[UIColor colorWithHexString:@"#A76E22"]];
+        _topLabel.font = [UIFont boldSystemFontOfSize:scaleX(50)];
+        _topLabel.textAlignment = NSTextAlignmentCenter;
+        //分割线
+        UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, scaleX(159), KWIDTH, 0.5)];
+        line.backgroundColor = [UIColor lightGrayColor];
+        [_topLabel addSubview:line];
+    }
+    return _topLabel;
 }
 
 - (UIButton *)switchLoginBtn{
@@ -234,7 +283,7 @@
 
 -(UIView *)switchRegisterView{
     if (!_switchRegisterView) {
-        _switchRegisterView = [[UIView alloc] initWithFrame:CGRectMake(0, scaleX(200), KWIDTH, KHIGHT*0.5)];
+        _switchRegisterView = [[UIView alloc] initWithFrame:CGRectMake(0, scaleX(200), KWIDTH, KHIGHT*0.7)];
         _switchRegisterView.backgroundColor = [UIColor whiteColor];
         [_switchRegisterView addSubview:self.registerAccountView];
         [self.registerAccountView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -270,6 +319,64 @@
             make.leading.mas_equalTo(scaleX(40));
             make.width.mas_equalTo(KWIDTH-scaleX(80));
             make.height.mas_equalTo(scaleX(40));
+        }];
+        
+        /*
+         * 注册协议
+         */
+        
+        [_switchRegisterView addSubview:self.AgreeSelectBtn];
+        [self.AgreeSelectBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.registerBtn.mas_bottom).offset(scaleY_6(10));
+            make.leading.mas_equalTo(self.registerBtn);
+            make.size.mas_equalTo(CGSizeMake(scaleY_6(20), scaleY_6(20)));
+        }];
+        
+        UILabel *textTitleL = [[UILabel alloc]init];
+        textTitleL.text = @"我已阅读并同意";
+        textTitleL.font = kFontSize6(12);
+        textTitleL.textColor = [UIColor lightGrayColor];//[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.8];
+        [_switchRegisterView addSubview:textTitleL];
+        
+        [textTitleL mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.AgreeSelectBtn.mas_top);
+            make.left.equalTo(self.AgreeSelectBtn.mas_right).offset(scaleX_6(8));
+            make.bottom.equalTo(self.AgreeSelectBtn.mas_bottom);
+        }];
+        
+        [_switchRegisterView addSubview:self.underlineButton];
+        [_underlineButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self.AgreeSelectBtn.mas_centerY);
+            make.left.equalTo(textTitleL.mas_right).offset(scaleX_6(5));
+        }];
+        
+        /*
+         * 隐私协议
+         */
+        
+        [_switchRegisterView addSubview:self.PrivacySelectBtn];
+        [self.PrivacySelectBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.AgreeSelectBtn.mas_bottom).offset(scaleY_6(5));
+            make.leading.mas_equalTo(self.registerBtn);
+            make.size.mas_equalTo(CGSizeMake(scaleY_6(20), scaleY_6(20)));
+        }];
+        
+        UILabel *textTitleL1 = [[UILabel alloc]init];
+        textTitleL1.text = @"我已阅读并同意";
+        textTitleL1.font = kFontSize6(12);
+        textTitleL1.textColor = [UIColor lightGrayColor];
+        [_switchRegisterView addSubview:textTitleL1];
+        
+        [textTitleL1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.PrivacySelectBtn.mas_top);
+            make.left.equalTo(self.PrivacySelectBtn.mas_right).offset(scaleX_6(8));
+            make.bottom.equalTo(self.PrivacySelectBtn.mas_bottom);
+        }];
+        
+        [_switchRegisterView addSubview:self.ysButton];
+        [self.ysButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self.PrivacySelectBtn.mas_centerY);
+            make.left.equalTo(textTitleL1.mas_right).offset(scaleX_6(5));
         }];
     }
     return _switchRegisterView;
@@ -382,5 +489,49 @@
     return _forgetBtn;
 }
 
+- (UnderlineButton *)underlineButton{
+    if (!_underlineButton) {
+        _underlineButton = [UnderlineButton buttonWithType:UIButtonTypeCustom];
+        [_underlineButton setColor:[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.8]];
+        _underlineButton.titleLabel.font = kFontSize6(12);
+        [_underlineButton setTitle:@"<注册协议>" forState:UIControlStateNormal];
+        [_underlineButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [_underlineButton addTarget:self action:@selector(ClickagreeBtn) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _underlineButton;
+}
 
+- (UnderlineButton *)ysButton{
+    if (!_ysButton) {
+        _ysButton = [UnderlineButton buttonWithType:UIButtonTypeCustom];
+        [_ysButton setColor:[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.8]];
+        _ysButton.titleLabel.font = kFontSize6(12);
+        [_ysButton setTitle:@"<隐私协议>" forState:UIControlStateNormal];
+        [_ysButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [_ysButton addTarget:self action:@selector(ClickYSBtn) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _ysButton;
+}
+
+- (UIButton *)AgreeSelectBtn{
+    if(!_AgreeSelectBtn){
+        _AgreeSelectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _AgreeSelectBtn.selected = YES;
+        [_AgreeSelectBtn setImage:[UIImage imageNamed:@"条款_未选中"] forState:UIControlStateNormal];
+        [_AgreeSelectBtn setImage:[UIImage imageNamed:@"条款_选中"] forState:UIControlStateSelected];
+        [_AgreeSelectBtn addTarget:self action:@selector(ClickAgreeSelectBtn) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _AgreeSelectBtn;
+}
+
+- (UIButton *)PrivacySelectBtn{
+    if(!_PrivacySelectBtn){
+        _PrivacySelectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _PrivacySelectBtn.selected = YES;
+        [_PrivacySelectBtn setImage:[UIImage imageNamed:@"条款_未选中"] forState:UIControlStateNormal];
+        [_PrivacySelectBtn setImage:[UIImage imageNamed:@"条款_选中"] forState:UIControlStateSelected];
+        [_PrivacySelectBtn addTarget:self action:@selector(ClickPrivacySelectBtn) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _PrivacySelectBtn;
+}
 @end
